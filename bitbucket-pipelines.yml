@@ -29,5 +29,5 @@ pipelines:
     - step: *GCS
     stage: 
     - step: *GCS
-    master: 
-    - step: *GCS
+    # master: 
+    # - step: *GCS
