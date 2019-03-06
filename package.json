@@ -16,8 +16,12 @@
     "stylelint": "npm run stylelint:css && npm run stylelint:scss",
     "stylelint:fix": "npm run stylelint:css --fix && npm run stylelint:scss --fix",
     "stylelint:css": "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
-    "stylelint:scss": "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
-    "prepush": "npm run eslint && npm run stylelint && npm run build"
+    "stylelint:scss": "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run eslint && npm run stylelint && npm run build"
+    }
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
