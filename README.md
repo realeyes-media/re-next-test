@@ -175,8 +175,3 @@ This repository comes with basic example content pre-configured to work with For
 - [Sign up for a Forestry account](https://app.forestry.io/signup), and import this repository as an "Existing Site"
 - When prompted for the "Project root", enter `hugo`
 
-# Contributing
-All contributions are welcome! Please see our [Code of Conduct](/.github/CODE_OF_CONDUCT.md) & [Support](/.github/SUPPORT.md) guidelines.
-
-## Licensing
-This boilerplate project is released under the [MIT license](/LICENSE).
