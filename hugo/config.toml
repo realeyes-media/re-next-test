@@ -1,0 +1,78 @@
+# Site settings
+# --------------
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ .Site.Params.myvariable }}.
+baseURL= "/"
+languageCode= "en"
+title= "Realeyes-Website"
+paginate = 5
+copyright = "All rights reserved - 2018"
+theme = "hugo-theme-casper"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Build settings
+# --------------
+
+# Set the destination the same as the Gulpfile for consistency
+destination = "../dist/"
+
+# Enable this to have links relativized by Hugo
+# E.g,  if your /post/first/ page contains a link
+# to /about/, Hugo will rewrite the URL to ../../about/
+relativeURLs = false
+
+# Enable to have links open in new tab
+hrefTargetBlank = false
+
+# Enable rendering of Emojis in markdown
+enableEmoji = true
+
+# Site Params
+# -------------
+[params]
+  description = "Welcome to my website"
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  cover = "/img/darius-soodmand-116253.jpg"
+  author = "RealEyes"
+  authorlocation = "Earth, Milky Way Galaxy"
+  authorwebsite = ""
+  authorbio= ""
+  logo = ""
+  hjsStyle = "default"
+  paginatedsections = ["posts"]
+
+# Site Menus
+# See the Hugo docs for usage in layouts
+# https://gohugo.io/content-management/menus/
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+
+# Related Content
+# ---------------
+# Enable the options below to use Hugo's related
+# pages feature for related posts, etc.
+# https://gohugo.io/content-management/related/
+# [related]
+#   includeNewer = true
+#   threshold = 10
+#   toLower = true
+#[[related.indices]]
+#   name = "Section"
+#   weight = 200
+#[[related.indices]]
+#   name = "keywords"
+#   weight = 150
+#[[related.indices]]
+#   name = "categories"
+#   weight = 150
+#[[related.indices]]
+#   name = "tags"
+#   weight = 100
+#[[related.indices]]
+#   name = "date"
+#   pattern = "2006"
+#   weight = 10
+
