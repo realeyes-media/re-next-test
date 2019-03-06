@@ -60,7 +60,7 @@ gulp.task("server", ["build"], () => {
       this.emit(end)
     })
   gulp.watch(gulpConfig.svg.watch, ["svg"])
-    .on('error', (err) => { 
+    .on('error', (err) => {
       log(err, err.toString(), ["SVG"])
       this.emit(end)
     })
