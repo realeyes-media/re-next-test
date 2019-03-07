@@ -6132,6 +6132,15 @@ ul.social {
 .contactInfo {
   float: right; }
 
+.secondInfo {
+  float: right;
+  position: relative;
+  top: 48%;
+  left: 20%; }
+
+.secondInfo p {
+  font-weight: bold; }
+
 .bg-contain {
   background-size: contain; }
 
