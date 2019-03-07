@@ -6077,7 +6077,6 @@ ul.social {
   .contact-image .container {
     height: 100%;
     display: flex;
-    float: left;
     justify-content: center;
     flex-direction: column; }
   .contact-image .row {
@@ -6091,7 +6090,7 @@ ul.social {
       @media (min-width: 768px) {
         .contact-image .contact-text h1 {
           font-size: 4rem;
-          width: 80%; } }
+          width: 100%; } }
     .contact-image .contact-text h2 {
       font-size: 2.2rem; }
       @media (min-width: 768px) {
@@ -6103,7 +6102,7 @@ ul.social {
       @media (min-width: 768px) {
         .contact-image .contact-text p {
           font-size: 16px;
-          width: 60%; } }
+          width: 100%; } }
   .contact-image .contact-down {
     flex: 0;
     text-align: center;
@@ -6129,6 +6128,9 @@ ul.social {
 
 .streamIt {
   color: yellow; }
+
+.contactInfo {
+  float: right; }
 
 .bg-contain {
   background-size: contain; }

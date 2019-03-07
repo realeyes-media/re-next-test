@@ -10,7 +10,6 @@
     .container {
       height: 100%;
       display: flex;
-      float: left;
       justify-content: center;
       flex-direction: column;
     }
@@ -25,7 +24,7 @@
         font-size: 3rem;
         @include media-breakpoint-up(md) {
           font-size: 4rem;
-          width: 80%;
+          width: 100%;
         }
       }
       h2 {
@@ -39,7 +38,7 @@
         line-height: 1.3;
         @include media-breakpoint-up(md) {
           font-size: 16px;;
-          width: 60%;
+          width: 100%;
         }
       }
     }
@@ -73,5 +72,9 @@
 
   .streamIt {
       color: yellow;
+  }
+
+  .contactInfo {
+      float: right;
   }
   
