@@ -6124,8 +6124,8 @@ ul.social {
   background-blend-mode: overlay; }
 
 .contact-image .row {
-  text-align: right;
-  color: white; }
+  color: white;
+  position: relative; }
 
 .streamIt {
   color: yellow; }
