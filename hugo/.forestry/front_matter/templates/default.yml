@@ -1,7 +1,6 @@
 ---
 label: Default
 hide_body: false
-display_field: date
 fields:
 - type: datetime
   name: date
