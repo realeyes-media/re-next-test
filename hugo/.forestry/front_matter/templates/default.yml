@@ -1,0 +1,18 @@
+---
+label: Default
+hide_body: false
+display_field: date
+fields:
+- type: datetime
+  name: date
+  label: Publish Date
+  description: The date you want to show that this published (back date for old articles)
+  config:
+    required: true
+- type: text
+  label: Blog Post Title
+  name: title
+  description: The title for the blog post. This will show up in the URL as well as
+    the website content.
+  config:
+    required: true
