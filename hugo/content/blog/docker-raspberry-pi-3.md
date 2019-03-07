@@ -1,4 +1,5 @@
 +++
+author = "Marcy Nugent"
 date = "2018-07-24T20:00:00+00:00"
 title = "Docker Raspberry Pi 3"
 
