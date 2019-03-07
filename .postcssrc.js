@@ -10,7 +10,7 @@ module.exports = function (ctx = {}) {
         parser: "postcss-scss",
         plugins: {
             "precss": {},
-            "postcss-cssnext": {},
+            "postcss-preset-env": {},
             "cssnano": (isProduction) ? { autoprefixer: false } : false,
             "laggard": {},
             "postcss-reporter": {},

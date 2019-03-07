@@ -1,0 +1,33 @@
+image: quay.io/realeyes/alpine-node-git-ci:latest
+pipelines:
+  custom:
+    defined-steps:
+    - step: &marcliget
+        name: Download and save MarCLI
+        script:
+          # Install wget if it's missing, and grab MarCLI
+          - apk update && apk add ca-certificates curl && update-ca-certificates
+          - curl -u "${MARCLI_DL_USER}:${MARCLI_DL_PASS}" -o marcli -L ${MARCLI_DL_URL}/${MARCLI_PLATFORM}/${MARCLI_VERSION}
+          - chmod +x marcli
+        artifacts:
+          - marcli
+    - step: &GCS
+        name: Build and Deliver to Google Cloud Storage
+        script:
+          # Build
+          - unset NPM_CONFIG_USER
+          - npm install
+          - npm run build
+          # Deliver to GCS
+          - echo $GCLOUD_API_KEYFILE | base64 -d > ./gcloud-api-key.json
+          - gcloud auth activate-service-account --key-file gcloud-api-key.json
+          - gcloud config set project $GCLOUD_PROJECT
+          - chmod +x ci/deploy.sh
+          - ci/deploy.sh ${BITBUCKET_BRANCH}-web realeyes.dev
+  branches:
+    dev:
+    - step: *GCS
+    stage: 
+    - step: *GCS
+    # master: 
+    # - step: *GCS

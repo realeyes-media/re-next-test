@@ -94,7 +94,7 @@ npm run hugo -- new posts/example-post.md
 # Inline SVG
 Any SVGs found in `src/img/` will be combined into a single SVG Sprite at `hugo/static/svg/sprite.symbol.svg`.
 
-This boilerplate comes with a simple partial for using SVGs in your layouts. You can select an svg by passing in it's ID.
+This repo comes with a simple partial for using SVGs in your layouts. You can select an svg by passing in it's ID.
 
 ```
 {{/* Using a logo stored at src/img/github.svg */}}
@@ -103,7 +103,7 @@ This boilerplate comes with a simple partial for using SVGs in your layouts. You
 **Note: the `class`, `width`, and `height` params are optional**
 
 # Testing
-This boilerplate comes with standard [ESLint](https://eslint.org/) and [StyleLint](https://github.com/stylelint/stylelint) configurations that will lint your CSS and JS for errors or common style issues, which work with most popular IDEs.
+This repo comes with standard [ESLint](https://eslint.org/) and [StyleLint](https://github.com/stylelint/stylelint) configurations that will lint your CSS and JS for errors or common style issues, which work with most popular IDEs.
 
 The tests can also be run from the command line:
 
@@ -117,7 +117,7 @@ If you want to automatically fix lint errors, you can do this from the command l
 
 # Cleanup
 
-This boilerplate is self-cleaning, and will remove the production `dist/` and development `.tmp/` folders every time a command is run to ensure that their contents are always up to date.
+This project is self-cleaning, and will remove the production `dist/` and development `.tmp/` folders every time a command is run to ensure that their contents are always up to date.
 
 If you wish to manually cleanup, run:
 
