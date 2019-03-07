@@ -54,8 +54,8 @@ sections:
   label: Pages
   create: all
   match: "*"
-upload_dir: hugo/uploads
-public_path: "/uploads"
+upload_dir: hugo/static
+public_path: "/static"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
