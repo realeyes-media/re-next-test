@@ -6016,25 +6016,21 @@ ul.social {
   background-blend-mode: overlay;
   background-color: #1c3ed3;
   height: 400px;
-  position: relative;
-  padding-top: 60px; }
-  .hero-image .container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-  .hero-image .row {
-    height: inherit; }
+  position: relative; }
+  .hero-image .container-fluid {
+    margin: 0px;
+    justify-content: center; }
   .hero-image .hero-text {
     flex: 0;
     color: #ffffff;
-    margin: auto 0; }
+    margin: 1.2rem;
+    padding: 1.2rem;
+    margin-top: 7rem; }
     .hero-image .hero-text h1 {
       font-size: 3rem; }
       @media (min-width: 768px) {
         .hero-image .hero-text h1 {
-          font-size: 4rem;
-          width: 80%; } }
+          font-size: 3.5rem; } }
     .hero-image .hero-text h2 {
       font-size: 2.2rem; }
       @media (min-width: 768px) {
@@ -6045,8 +6041,27 @@ ul.social {
       line-height: 1.3; }
       @media (min-width: 768px) {
         .hero-image .hero-text p {
-          font-size: 1.6rem;
-          width: 60%; } }
+          font-size: 1.6rem; } }
+    .hero-image .hero-text div {
+      font-size: 0.5rem;
+      margin-top: 3rem;
+      width: 90%; }
+      @media (min-width: 768px) {
+        .hero-image .hero-text div {
+          font-size: 0.7rem;
+          width: 90%; } }
+  .hero-image .study-info {
+    flex: 0;
+    color: #ffffff;
+    margin: 1.2rem;
+    padding: 1.2rem;
+    margin-top: 20rem;
+    margin-left: 8rem; }
+  .hero-image .arrow-next {
+    color: #ffffff;
+    text-align: right; }
+  .hero-image .arrow-prev {
+    color: #ffffff; }
   .hero-image .hero-down {
     flex: 0;
     text-align: center;
@@ -6062,9 +6077,6 @@ ul.social {
 
 .hero-image-setheight {
   height: 460px; }
-
-.hero-image-blend-overlay {
-  background-blend-mode: overlay; }
 
 .bg-contain {
   background-size: contain; }

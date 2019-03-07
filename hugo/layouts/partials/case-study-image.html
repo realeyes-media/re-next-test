@@ -1,0 +1,31 @@
+<div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .background | relURL }}');">
+    <div class="container-fluid">
+        <div class="row top">
+            <div class="col-12 col-md-7">
+                <div class="hero-text">
+                    <span class="hero-section">{{ .section }}</span>
+                    <h1>{{ .heading }}</h1>
+                    <p>{{ .subheading }}</p>
+                    <div>{{ .description }}</div>
+                </div> 
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="study-info">
+                    <div>Timeline</div>
+                    <div class="study-info-data">3 Months</div>
+                    <div>Platforms</div>
+                    <div class="study-info-data">Mobile Web</div>
+                    <div class="study-info-data">Native Android</div>
+                    <div class="study-info-data">Native iOS</div>
+                    <div>Deliverables</div>
+                    <div class="study-info-data">Ipsum Text</div>
+                </div>
+            </div>          
+        </div>
+        <div class="row bottom">
+            <div class="col-6 arrow-prev">&lt--- Previous</div>
+            <div class="col-6 arrow-next">Next ---&gt</div>
+        </div>
+    </div>
+</div>
+{{ .Site.BaseURL }}
