@@ -13,6 +13,8 @@ pipelines:
           - marcli
     - step: &GCS
         name: Build and Deliver to Google Cloud Storage
+        caches:
+          - node
         script:
           # Build
           - unset NPM_CONFIG_USER
