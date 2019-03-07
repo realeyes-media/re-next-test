@@ -15,5 +15,9 @@ fields:
     the website content.
   config:
     required: true
-pages:
-- content/blog/docker-raspberry-pi-3.md
+- type: text
+  label: Author
+  name: author
+  description: RealEyes Staff member that wrote the article.
+  config:
+    required: true
