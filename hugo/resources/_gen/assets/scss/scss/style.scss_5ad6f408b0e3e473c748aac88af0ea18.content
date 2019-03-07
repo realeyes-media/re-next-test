@@ -6070,7 +6070,7 @@ ul.social {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  background-color: #1c3ed3;
+  background-color: #000000;
   height: 400px;
   position: relative;
   padding-top: 60px; }
@@ -6122,6 +6122,13 @@ ul.social {
 
 .contact-image-blend-overlay {
   background-blend-mode: overlay; }
+
+.contact-image .row {
+  text-align: right;
+  color: white; }
+
+.streamIt {
+  color: yellow; }
 
 .bg-contain {
   background-size: contain; }
