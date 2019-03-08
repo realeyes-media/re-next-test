@@ -6018,8 +6018,14 @@ ul.social {
   height: 400px;
   position: relative; }
   .hero-image .container-fluid {
+    height: inherit;
     margin: 0px;
+    height: 100%;
     justify-content: center; }
+  .hero-image .bottom {
+    height: 5%; }
+  .hero-image .top {
+    height: 95%; }
   .hero-image .hero-text {
     flex: 0;
     color: #ffffff;
@@ -6027,12 +6033,12 @@ ul.social {
     padding: 1.2rem;
     margin-top: 7rem; }
     .hero-image .hero-text h1 {
-      font-size: 3rem; }
+      font-size: 2.5rem; }
       @media (min-width: 768px) {
         .hero-image .hero-text h1 {
           font-size: 3.5rem; } }
     .hero-image .hero-text h2 {
-      font-size: 2.2rem; }
+      font-size: 1.8rem; }
       @media (min-width: 768px) {
         .hero-image .hero-text h2 {
           font-size: 2.4rem; } }
@@ -6054,9 +6060,22 @@ ul.social {
     flex: 0;
     color: #ffffff;
     margin: 1.2rem;
-    padding: 1.2rem;
-    margin-top: 20rem;
-    margin-left: 8rem; }
+    padding: 1.2rem; }
+    @media (min-width: 768px) {
+      .hero-image .study-info {
+        margin-top: 20rem;
+        margin-left: 8rem; } }
+    .hero-image .study-info h1 {
+      margin-bottom: 0;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        .hero-image .study-info h1 {
+          font-size: 1rem; } }
+    .hero-image .study-info div {
+      font-size: 0.5rem; }
+      @media (min-width: 768px) {
+        .hero-image .study-info div {
+          font-size: 0.7rem; } }
   .hero-image .arrow-next {
     color: #ffffff;
     text-align: right; }
