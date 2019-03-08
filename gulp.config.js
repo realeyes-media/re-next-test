@@ -1,9 +1,8 @@
 // Configures gulp build
 // See gulpfile.babel.js for build pipeline
-import {resolve} from "path"
-import hugo from "hugo-bin"
+import { resolve } from "path"
 
-export default function(env) {
+export default function (env) {
   const src = "src/"
   const dest = "hugo/"
   const tmp = ".tmp/"
@@ -17,7 +16,7 @@ export default function(env) {
     build: build,
     generator: {
       label: "Hugo",
-      command: hugo,
+      command: 'hugo',
       args: {
         default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
         development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
