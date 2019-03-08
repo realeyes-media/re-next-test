@@ -6145,6 +6145,9 @@ ul.social {
 .address {
   margin-bottom: 0px; }
 
+.bill {
+  color: red; }
+
 input[type=text], select, textarea {
   width: 100%;
   /* Full width */
