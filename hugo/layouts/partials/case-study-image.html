@@ -4,7 +4,8 @@
             <div class="col-12 col-md-7">
                 <div class="hero-text">
                     <span class="hero-section">{{ .section }}</span>
-                    <h1>{{ .heading }}</h1>
+                    <h1>{{ .heading1 }}</h1>
+                    <h2>{{ .heading2 }}</h2>
                     <p>{{ .subheading }}</p>
                     <div>{{ .description }}</div>
                 </div> 
@@ -13,12 +14,10 @@
                 <div class="study-info">
                     <h1>Timeline</h1>
                     <div>3 Months</div>
-                    <br>
                     <h1>Platforms</h1>
                     <div>Mobile Web</div>
                     <div>Native Android</div>
                     <div>Native iOS</div>
-                    <br>
                     <h1>Deliverables</h1>
                     <div>Ipsum Text</div>
                 </div>
@@ -28,6 +27,10 @@
             <div class="col-6 arrow-prev">&lt--- Previous</div>
             <div class="col-6 arrow-next">Next ---&gt</div>
         </div>
+    </div>
+            <img src='{{ .Site.BaseURL }}/img/placeholder-img1.png'/>
+    <div class="quote">
+        'QUOTE'
     </div>
 </div>
 {{ .Site.BaseURL }}

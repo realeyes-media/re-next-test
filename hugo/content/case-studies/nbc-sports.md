@@ -1,7 +1,8 @@
 ---
 title: 'NBC Sports'
 date: 2018-02-10T11:52:18+07:00
-heroHeading: 'A Pivotal Year of Streaming Events'
+heroHeading1: 'A Pivotal Year'
+heroHeading2: 'Streaming Events'
 heroSubHeading: 'NBC SPORTS & REALEYES'
 heroBackground: 'images/jason-blackeye-1191801-unsplash.jpg'
 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
