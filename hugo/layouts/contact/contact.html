@@ -10,43 +10,43 @@
 <div class="intro intro-small">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-6">
         <h1>{{ .Title }}</h1>
       </div>
+      <div class="col-6">
+          <form action="action_page.php">
+        
+              <label for="help">I would like RealEyes to help with</label>
+              <select id="help" name="help">
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+              </select>
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+        
+            <label for="email">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+        
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company">
+        
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
     </div>
   </div>
-</div>
-<div class="container">
-  <form action="action_page.php">
-
-      <label for="help">I would like RealEyes to help with</label>
-      <select id="help" name="help">
-        <option value="option1">Option1</option>
-        <option value="option2">Option2</option>
-        <option value="option3">Option3</option>
-      </select>
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email">
-
-    <label for="email">Phone Number</label>
-    <input type="text" id="phone" name="phone" placeholder="Phone Number">
-
-    <label for="company">Company</label>
-    <input type="text" id="company" name="company" placeholder="Company">
-
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
 </div>
 {{ end }}
