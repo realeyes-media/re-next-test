@@ -19,9 +19,9 @@
     .contact-text {
       flex: 0;
       color: #ffffff;
-      margin: auto 0;
+      margin-left: 30px;
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
         @include media-breakpoint-up(md) {
           font-size: 4rem;
@@ -58,7 +58,7 @@
     }
   }
   .contact-image-fullscreen {
-    height: 100vh;
+    height: 100%;
   }
   .contact-image-setheight {
     height: 460px;
@@ -82,9 +82,9 @@
 
   .secondInfo{
     float: right;
-    position: relative;
-    top: 57%;
-    right: 20%;
+    // position: relative;
+    // top: 57%;
+    // right: 4%;
   }
   .secondInfo p{
     font-weight: bold;
