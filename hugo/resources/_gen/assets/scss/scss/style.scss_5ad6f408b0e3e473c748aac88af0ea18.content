@@ -6069,7 +6069,7 @@ ul.social {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  background-color: #000000;
+  background-color: #84AFC4;
   height: 400px;
   position: relative;
   padding-top: 60px; }
@@ -6085,10 +6085,12 @@ ul.social {
     color: #ffffff;
     margin: auto 0; }
     .contact-image .contact-text h1 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      font-weight: bold; }
       @media (min-width: 768px) {
         .contact-image .contact-text h1 {
           font-size: 4rem;
+          font-weight: bold;
           width: 100%; } }
     .contact-image .contact-text h2 {
       font-size: 2.2rem; }
@@ -6126,7 +6128,7 @@ ul.social {
   position: relative; }
 
 .streamIt {
-  color: yellow; }
+  color: #25325D; }
 
 .contactInfo {
   float: right; }
@@ -6140,9 +6142,8 @@ ul.social {
 .secondInfo p {
   font-weight: bold; }
 
-.viewMap {
-  position: absolute;
-  bottom: 49%; }
+.address {
+  margin-bottom: 0px; }
 
 input[type=text], select, textarea {
   width: 100%;
@@ -6175,6 +6176,16 @@ input[type=submit]:hover {
   background-color: #45a049; }
 
 /* Add a background color and some padding around the form */
+hr {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px; }
+
 .bg-contain {
   background-size: contain; }
 

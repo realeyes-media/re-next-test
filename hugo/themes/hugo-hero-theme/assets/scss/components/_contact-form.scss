@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     // background-position: top center;
     background-blend-mode: overlay;
-    background-color: $black;
+    background-color: #84AFC4;
     height: 400px;
     position: relative;
     padding-top: 60px;
@@ -22,8 +22,10 @@
       margin: auto 0;
       h1 {
         font-size: 3rem;
+        font-weight: bold;
         @include media-breakpoint-up(md) {
           font-size: 4rem;
+          font-weight: bold;
           width: 100%;
         }
       }
@@ -71,7 +73,7 @@
   }
 
   .streamIt {
-      color: yellow;
+      color: #25325D;
   }
 
   .contactInfo {
@@ -88,9 +90,8 @@
     font-weight: bold;
   }
 
-  .viewMap {
-    position: absolute;
-    bottom: 49%;
+  .address{
+    margin-bottom: 0px;
   }
 
   input[type=text], select, textarea {
@@ -126,3 +127,14 @@
   //   padding: 20px;
   // }
   
+
+  hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
