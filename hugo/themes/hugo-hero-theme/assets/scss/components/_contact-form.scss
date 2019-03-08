@@ -7,6 +7,7 @@
     height: 400px;
     position: relative;
     padding-top: 60px;
+    padding-bottom: 8rem;
     .container {
       height: 100%;
       display: flex;
@@ -24,7 +25,7 @@
         font-size: 2.5rem;
         font-weight: bold;
         @include media-breakpoint-up(md) {
-          font-size: 4rem;
+          font-size: 5rem;
           font-weight: bold;
           width: 100%;
         }
@@ -37,6 +38,7 @@
       }
       p {
         font-size: 16px;
+        margin-bottom: 4.4rem;
         line-height: 1.3;
         @include media-breakpoint-up(md) {
           font-size: 16px;;
@@ -82,13 +84,11 @@
 
   .secondInfo{
     float: right;
-    // position: relative;
-    // top: 57%;
-    // right: 4%;
+    position: absolute;
+    top: 57%;
+    right: 4%;
   }
-  .secondInfo p{
-    font-weight: bold;
-  }
+  
 
   .address{
     margin-bottom: 0px;
@@ -147,8 +147,29 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
+    margin-bottom: 60px;
 }
 
-.infoPhone {
-  margin-top: 39px;
+.heading {
+  margin-bottom: 0px;
 }
+
+h4 {
+  font-weight: bold;
+}
+
+.bottomSpan {
+  color: #8F8F8F;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.joinTeam {
+  margin-top: 20px;
+}
+
+
+
+
