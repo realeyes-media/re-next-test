@@ -7,11 +7,11 @@ import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
 import named from "vinyl-named"
 import newer from "gulp-newer"
-import {dirname, basename} from "path"
+import { dirname, basename } from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
 import runsequence from "run-sequence"
-import {spawn} from "child_process"
+import { spawn } from "child_process"
 import sprite from "gulp-svg-sprite"
 import sourcemaps from "gulp-sourcemaps"
 import through from "through2"
@@ -75,6 +75,7 @@ gulp.task("server", ["build"], () => {
     .on('error', (err) => {
       log(err, err.toString(), [gulpConfig.generator.label])
       this.emit(end)
+      process.exit(1)
     })
 })
 
@@ -94,11 +95,12 @@ gulp.task("styles", cb => {
 gulp.task("styles:production", cb => {
   const task = gulp
     .src(gulpConfig.styles.src)
-    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(
-      postcss({env: "production"}).on("error", err =>
+      postcss({ env: "production" }).on("error", err => {
         log(err, err.toString(), "PostCSS")
-      )
+        process.exit(1)
+      })
     )
     .pipe(sourcemaps.write("."))
     .pipe(
@@ -129,7 +131,10 @@ gulp.task("styles:development", cb => {
 
   return gulp
     .src(gulpConfig.styles.src)
-    .pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
+    .pipe(postcss().on("error", err => {
+      log(err, err.toString(), "PostCSS")
+      process.exit(1)
+    }))
     .pipe(
       rename(path => {
         path.dirname = "/"
@@ -161,9 +166,10 @@ gulp.task("scripts:production", cb => {
     .src(gulpConfig.scripts.src)
     .pipe(named())
     .pipe(
-      webpack(webpackConfig("production")).on("error", function(err) {
+      webpack(webpackConfig("production")).on("error", function (err) {
         log(err, err.toString(), "Webpack")
         this.emit("end")
+        process.exit(1)
       })
     )
     .pipe(
@@ -194,9 +200,10 @@ gulp.task("scripts:development", cb => {
     .src(gulpConfig.scripts.src)
     .pipe(named())
     .pipe(
-      webpack(webpackConfig()).on("error", function(err) {
+      webpack(webpackConfig()).on("error", function (err) {
         log(err, err.toString(), "Webpack")
         this.emit("end")
+        process.exit(1)
       })
     )
     .pipe(
@@ -219,7 +226,7 @@ gulp.task("images", () => {
   return gulp
     .src(gulpConfig.images.src)
     .pipe(newer(gulpConfig.images.dest))
-    .pipe(imagemin([], {verbose: isProduction ? true : false}))
+    .pipe(imagemin([], { verbose: isProduction ? true : false }))
     .pipe(gulp.dest(gulpConfig.images.dest))
     .pipe(browserSync.stream())
 })
@@ -247,7 +254,7 @@ gulp.task("svg", () => {
  * Cleans the build and temp directories
  */
 gulp.task("clean", () => {
-  return del([gulpConfig.tmp, gulpConfig.build], {dot: true})
+  return del([gulpConfig.tmp, gulpConfig.build], { dot: true })
 })
 
 /**
@@ -264,7 +271,7 @@ function build(cb) {
   process.env[generatorEnvVar] = env
   console.log(generatorEnvVar)
 
-  const generator = spawn(gulpConfig.generator.command, args, {env: process.env, stdio: "pipe", encoding: "utf-8"})
+  const generator = spawn(gulpConfig.generator.command, args, { env: process.env, stdio: "pipe", encoding: "utf-8" })
 
   generator.stdout.on("data", data => {
     log(null, data.toString(), gulpConfig.generator.label)
@@ -277,6 +284,7 @@ function build(cb) {
   generator.on("error", err => {
     log(err, err.toString(), gulpConfig.generator.label)
     cb("Build failed")
+    process.exit(1)
   })
 
   generator.on("close", code => {

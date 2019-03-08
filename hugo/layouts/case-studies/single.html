@@ -5,6 +5,6 @@
 {{ define "main" }}
 {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
 <div class="container pt-4 pt-md-10 pb-4 pb-md-10">
-
+    {{.Content}}
 </div>
 {{ end }}

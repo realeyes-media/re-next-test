@@ -5437,11 +5437,11 @@ ol {
 
 .header {
   color: #1c3ed3;
-  background-color: #ffffff;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
+  font-family: "Futura-Bold", "-apple-system";
   height: 60px; }
   .header .container {
     display: flex;
@@ -5472,7 +5472,7 @@ ol {
   .footer .footer-title {
     color: #ffffff;
     font-size: 1.3rem;
-    font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    font-family: "Futura-Bold", "-apple-system";
     margin-bottom: 10px;
     flex: 0; }
     @media (min-width: 576px) {
@@ -5570,6 +5570,7 @@ ol {
             margin-left: 0; } }
 
 .logo {
+  color: #ffffff;
   display: none; }
   @media (min-width: 576px) {
     .logo {
@@ -5584,6 +5585,7 @@ ol {
     height: 100%; }
 
 .logo-mobile {
+  color: #ffffff;
   display: block;
   width: 40px;
   padding: 10px 0 10px 0; }
@@ -5609,24 +5611,21 @@ ol {
     justify-content: flex-start; }
     .main-menu > ul > li {
       list-style: none;
-      font-size: 0.9rem; }
+      font-size: 1rem; }
       .main-menu > ul > li > a {
         padding: 10px 14px 10px 14px;
         display: inline-block;
         font-weight: regular;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #1c3ed3; }
-        .main-menu > ul > li > a:hover {
-          background: #1c3ed3;
-          color: #ffffff;
-          text-decoration: none; }
-      .main-menu > ul > li.active > a {
-        background: #1c3ed3;
         text-decoration: none;
         color: #ffffff; }
+        .main-menu > ul > li > a:hover {
+          color: #ffffff;
+          text-decoration: underline; }
+      .main-menu > ul > li.active > a {
+        text-decoration: underline;
+        color: #ffffff; }
         .main-menu > ul > li.active > a:hover {
-          text-decoration: none;
+          text-decoration: underline;
           background: #1c3ed3;
           transition: all 225ms ease-in 0s;
           color: #ffffff; }
@@ -5666,7 +5665,7 @@ ol {
         animation-delay: 0.6s; }
   .main-menu-mobile ul {
     font-size: 2rem;
-    font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    font-family: "Futura-Bold", "-apple-system";
     text-align: center;
     list-style: none;
     padding: 0;
@@ -5747,7 +5746,7 @@ ul.social {
   .hamburger .hamburger-inner,
   .hamburger .hamburger-inner::before,
   .hamburger .hamburger-inner::after {
-    background: #1c3ed3; }
+    background: #ffffff; }
   .hamburger .hamburger-inner::after {
     width: 18px;
     right: 0; }
@@ -5782,7 +5781,7 @@ ul.social {
   color: #1c3ed3;
   font-size: 2.4rem;
   line-height: 1.2;
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system; }
+  font-family: "Futura-Bold", "-apple-system"; }
   @media (min-width: 768px) {
     .title-1 {
       font-size: 3rem; } }
@@ -5832,7 +5831,7 @@ ul.social {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, -apple-system; }
 
 .content h1 {
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Futura-Bold", "-apple-system";
   line-height: 1.2;
   font-weight: 300;
   color: #333333; }
@@ -5842,7 +5841,7 @@ ul.social {
       font-weight: 300; } }
 
 .content h2 {
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Futura-Bold", "-apple-system";
   line-height: 1.4;
   font-weight: 400;
   color: #333333; }
@@ -5883,7 +5882,7 @@ ul.social {
     color: #1c3ed3;
     font-size: 2.4rem;
     line-height: 1.2;
-    font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    font-family: "Futura-Bold", "-apple-system";
     width: 70%; }
     @media (min-width: 576px) {
       .intro h1 {
@@ -6016,9 +6015,9 @@ ul.social {
   background-blend-mode: overlay;
   background-color: #1c3ed3;
   height: 400px;
-  position: relative;
-  padding-top: 60px; }
+  position: relative; }
   .hero-image .container {
+    padding-top: 60px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -6189,7 +6188,7 @@ ul.social {
   .service-summary .service-content {
     flex: 1; }
     .service-summary .service-content .service-title {
-      font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+      font-family: "Futura-Bold", "-apple-system";
       font-size: 1.5rem; }
     .service-summary .service-content p {
       color: #666;
@@ -6211,7 +6210,7 @@ ul.social {
     padding: 20px;
     border-bottom: 2px solid #1c3ed3; }
     .work-summary .work-content .work-title {
-      font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+      font-family: "Futura-Bold", "-apple-system";
       font-size: 1.5rem; }
     .work-summary .work-content p {
       color: #666;
@@ -6219,7 +6218,7 @@ ul.social {
 
 .page-work-single h1.title {
   font-size: 3rem;
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Futura-Bold", "-apple-system";
   color: #1c3ed3; }
 
 .page-work-single .work-image img {
