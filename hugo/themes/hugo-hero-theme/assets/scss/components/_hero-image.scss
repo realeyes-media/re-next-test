@@ -8,9 +8,35 @@
   position: relative;
   .quote {
     background-color: #F6E8A8;
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.3rem;
+      font-weight: normal;
+      padding-top: 4rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+      padding-bottom: 0;
+      @include media-breakpoint-up(md) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      color: #616058;
+      padding-top: 1.5rem;
+      padding-bottom: 2.5rem;
+      padding-left: 40%;
+      padding-right: 6rem;
+      text-align: right;
+      font-size: 0.8rem;
+      margin-bottom: 0;
+      @include media-breakpoint-up(md) {
+        font-size: 1rem;
+        padding-left: 60%;
+      }
+    }
   }
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto
   }
   .container-fluid {
@@ -74,7 +100,7 @@
     padding-left: 2.4rem;
     @include media-breakpoint-up(md) {
       margin-top: 20rem;
-      margin-left: 8rem;
+      margin-left: 20%;
     }
     h1 {
       font-family: Helvetica;

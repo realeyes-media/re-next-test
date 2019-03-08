@@ -3,6 +3,8 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ partial "case-study-image.html" (dict "background" .Params.heroBackground "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "subheading" .Params.heroSubHeading "description" .Params.description "content" .)}}
-
+{{ partial "case-study-image.html" (dict "background" .Params.heroBackground "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "subheading" .Params.heroSubHeading "description" .Params.description "quote" .Params.quote "quotee" .Params.quotee "quoteeInfo" .Params.quoteeInfo "content" .)}}
+<div class="container-fluid">
+    <div style="padding: 3rem">{{ .Content}}</p>
+</div>
 {{ end }}
