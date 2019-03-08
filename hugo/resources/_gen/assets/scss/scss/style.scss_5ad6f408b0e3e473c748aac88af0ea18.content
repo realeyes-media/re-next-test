@@ -6140,6 +6140,10 @@ ul.social {
 .secondInfo p {
   font-weight: bold; }
 
+.viewMap {
+  position: absolute;
+  bottom: 49%; }
+
 .bg-contain {
   background-size: contain; }
 
