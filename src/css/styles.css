@@ -5,11 +5,6 @@
 */
 @import "imports/reset.css";
 
-body {
-  font-family: sans-serif;
-  font-size: 1em;
-}
-
-.tag-head.main-header {
-  height: 80vh;
+.hero-text-left {
+  width: 60%;
 }
