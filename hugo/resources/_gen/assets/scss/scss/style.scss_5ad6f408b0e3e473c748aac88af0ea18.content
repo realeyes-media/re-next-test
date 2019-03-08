@@ -6136,17 +6136,18 @@ ul.social {
 .secondInfo {
   float: right;
   position: relative;
-  top: 48%;
-  left: 20%; }
+  top: 57%;
+  right: 20%; }
 
 .secondInfo p {
   font-weight: bold; }
 
 .address {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-weight: bold; }
 
-.bill {
-  color: red; }
+.innerContainer {
+  margin: 80px; }
 
 input[type=text], select, textarea {
   width: 100%;
@@ -6188,6 +6189,9 @@ hr {
   overflow: hidden;
   border-style: inset;
   border-width: 1px; }
+
+.infoPhone {
+  margin-top: 39px; }
 
 .bg-contain {
   background-size: contain; }
