@@ -6,5 +6,10 @@
 @import "imports/reset.css";
 
 .hero-text-left {
-  width: 60%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.who-left {
+  width: 30%;
 }

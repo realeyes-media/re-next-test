@@ -1,8 +1,8 @@
-baseURL = "www.example.com"
 languageCode = "en-us"
 title = "RealEyes Media"
 themesDir = "themes"
 theme = "hugo-hero-theme"
+relativeURLs = true
 
 [params]
   google_analytics_id=""

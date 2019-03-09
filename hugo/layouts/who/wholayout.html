@@ -1,0 +1,31 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-who{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-solid-color.html" (dict "background" "#da6161" "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "heroContent" .Params.heroContent "content" .)}}
+{{ $headless := .Site.GetPage "/who/who-content" }}
+{{ $pages := $headless.Resources.ByType "page" }}
+{{ $pages := sort $pages ".Params.weight" }}
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10 text-center text-md-left">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h2>Real Solutions</h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <p>MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS</p>
+            <p>BESPOKE DEVELOPMENT</p>
+            <p>MEDIA WORKFLOW SOLUTIONS/AUGMENTATION</p>
+            <p>LIVE STREAMING PLATFORM SOLUTIONS</p>
+        </div>
+        <div class="col-sm">
+
+        </div>
+    </div>
+</div>
+
+{{ end }}
