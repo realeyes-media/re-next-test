@@ -3,132 +3,44 @@
   background-repeat: no-repeat;
   // background-position: top center;
   background-blend-mode: overlay;
-  background-color: #25325A;
+  background-color: $primary;
   height: 400px;
   position: relative;
-  .quote {
-    background-color: #F6E8A8;
-    h1 {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 1.3rem;
-      font-weight: normal;
-      padding-top: 4rem;
-      padding-left: 6rem;
-      padding-right: 6rem;
-      padding-bottom: 0;
-      @include media-breakpoint-up(md) {
-        font-size: 2rem;
-      }
-    }
-    p {
-      color: #616058;
-      padding-top: 1.5rem;
-      padding-bottom: 2.5rem;
-      padding-left: 40%;
-      padding-right: 6rem;
-      text-align: right;
-      font-size: 0.8rem;
-      margin-bottom: 0;
-      @include media-breakpoint-up(md) {
-        font-size: 1rem;
-        padding-left: 60%;
-      }
-    }
-  }
-  img {
-    width: 100%;
-    height: auto
-  }
-  .container-fluid {
-    height: inherit;
-    margin: 0px;
+  .container {
+    padding-top: 60px;
     height: 100%;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
   }
-  .bottom {
-    height: 5%;
-  }
-  .top {
-    height: 95%;
+  .row {
+    height: inherit;
   }
   .hero-text {
     flex: 0;
     color: #ffffff;
-    margin: 1.2rem;
-    padding: 1.2rem;
-    margin-top: 7rem;
-    
+    margin: auto 0;
     h1 {
-      font-size: 2.5rem;
-      font-family: Helvetica;
-      font-weight: bold;
+      font-size: 3rem;
       @include media-breakpoint-up(md) {
-        font-size: 3.5rem;
+        font-size: 4rem;
+        width: 80%;
       }
     }
     h2 {
-      font-size: 2.5rem;
-      font-family: Helvetica;
-      font-weight: bold;
-      color: #AFD0E2;
+      font-size: 2.2rem;
       @include media-breakpoint-up(md) {
-        font-size: 3.5rem;
+        font-size: 2.4rem;
       }
     }
     p {
-      font-size: 1.3rem;
-      line-height: 1.5;
-      padding-top: 0.5rem;
-      font-family: Helvetica;
+      font-size: 1.6rem;
+      line-height: 1.3;
       @include media-breakpoint-up(md) {
         font-size: 1.6rem;
+        width: 60%;
       }
     }
-    div {
-      font-size: 0.5rem;
-      margin-top: 3rem;
-      width: 90%;
-      @include media-breakpoint-up(md) {
-        font-size: 0.85rem;
-        width: 90%;
-      }
-    }
-  }
-  .study-info {
-    flex: 0;
-    color: #ffffff;
-    padding-left: 2.4rem;
-    @include media-breakpoint-up(md) {
-      margin-top: 20rem;
-      margin-left: 20%;
-    }
-    h1 {
-      font-family: Helvetica;
-      margin-bottom: 0;
-      font-size: 1rem;
-      padding-top: 0.8rem;
-      @include media-breakpoint-up(md) {
-        font-size: 1rem;
-      }
-    }
-    div {
-      font-family: Helvetica;
-      font-size: 0.5rem;
-      @include media-breakpoint-up(md) {
-        font-size: 0.7rem;
-      }
-    }
-  }
-  .arrow-next {
-    color:#ffffff;
-    text-align: right;
-    padding: 2.4rem;
-    padding-left: 0;
-  }
-  .arrow-prev {
-    padding: 2.4rem;
-    padding-right: 0;
-    color:#ffffff;
   }
   .hero-down {
     flex: 0;
@@ -144,11 +56,11 @@
   }
 }
 .hero-image-fullscreen {
-  height: 100%;
+  height: 100vh;
 }
 .hero-image-setheight {
   height: 460px;
 }
-// .hero-image-blend-overlay {
-//   background-blend-mode: overlay;
-// }
+.hero-image-blend-overlay {
+  background-blend-mode: overlay;
+}
