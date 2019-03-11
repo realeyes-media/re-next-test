@@ -3,6 +3,9 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
+
+{{ partial "contact-hero-header.html" (dict "background" .Params.contactBackground "heading" .Params.contactHeading "subheading" .Params.contactSubHeading "content" .)}}
+
 <div class="intro intro-small">
   <div class="container">
     <div class="row">

@@ -1,1 +1,5 @@
-{"Target":"css/style.min.d8674e2ad36052585d5028e03ab1ca4a527111f27e766461978728d8756414b9.css","MediaType":"text/css","Data":{"Integrity":"sha256-2GdOKtNgUlhdUCjgOrHKSlJxEfJ+dmRhl4co2HVkFLk="}}
+<<<<<<< HEAD
+{"Target":"css/style.min.9042ce8745355960758c08ddb4cd7173c70140868063ea61df9307463cfd4768.css","MediaType":"text/css","Data":{"Integrity":"sha256-kELOh0U1WWB1jAjdtM1xc8cBQIaAY+ph35MHRjz9R2g="}}
+=======
+{"Target":"css/style.min.20011a14e6e29f787a982affb5055e01685f8d45f2c7f0ac72105e118e1f5889.css","MediaType":"text/css","Data":{"Integrity":"sha256-IAEaFObin3h6mCr/tQVeAWhfjUXyx/CschBeEY4fWIk="}}
+>>>>>>> dev
