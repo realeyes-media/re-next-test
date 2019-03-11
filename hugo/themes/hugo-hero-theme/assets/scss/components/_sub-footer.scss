@@ -6,9 +6,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  h1 {
-    color: white;
-  }
   .sub-footer-inner {
     display: flex;
     flex-direction: column;
@@ -79,11 +76,26 @@
   border-style: inset;
   border-width: 1px;
   margin-bottom: 60px;
-  margin-top: 8rem;
+  margin-top: 11rem;
   width: 80%;
   position: absolute;
   margin-left: 10%;
   border: solid 2px white;
+  @include media-breakpoint-up(md) {
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-bottom: 60px;
+    margin-top: 8rem;
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+    border: solid 2px white;
+   }
 }
 
 .sub-footer-bottom {
@@ -91,4 +103,17 @@
   position: relative;
   bottom: 31%;
   left: 10%;
+}
+
+.mainTitle {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 73%;
+  @include media-breakpoint-up(md) {
+   color: white;
+   font-size: 3rem;
+   width: 100%;
+  }
 }
