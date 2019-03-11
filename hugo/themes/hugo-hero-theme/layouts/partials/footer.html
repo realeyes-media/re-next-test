@@ -1,22 +1,15 @@
 <div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 columns">
-        <div class="footer-inner">
-          <div class="top">
-            <h2>Work with RealEyes</h2>
-            <button class="button">Contact Us</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-12 col-lg-6 columns">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
           <div class="footer-inner">
-            <div class="bottom">
-              <h2>Articles & Updates</h2>
-              <button class="button">Read Them</button>
-            </div>
+            <ul class="footer-menu">
+              <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+              <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
+              <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
+            </ul>
           </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
