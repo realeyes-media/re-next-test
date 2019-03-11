@@ -1,0 +1,32 @@
+.page-who {
+    .absolute-who-image {
+        @include media-breakpoint-up(sm) {
+            position: relative;
+            width: 100%;
+        }
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 50rem;
+            right: 0px;
+            width: 20rem;
+            height: 30rem;
+        }
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top: 25rem;
+            right: 0px;
+            width: 28rem;
+            height: 35rem;
+        }
+        @include media-breakpoint-up(xl) {
+            position: absolute;
+            top: 20rem;
+            right: 0px;
+            width: 28rem;
+            height: 35rem;
+        }
+        img {
+            height: 100%;
+        }
+    }
+}

@@ -13,6 +13,13 @@
     justify-content: center;
     flex-direction: column;
   }
+  .container-fluid {
+    padding-top: 3.75rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .row {
     height: inherit;
   }
