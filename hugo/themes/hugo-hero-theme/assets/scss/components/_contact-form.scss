@@ -1,0 +1,222 @@
+.contact-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: top center;
+    background-blend-mode: overlay;
+    background-color: #84AFC4;
+    height: 400px;
+    position: relative;
+    padding-top: 60px;
+    // padding-bottom: 8rem;
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .row {
+      height: inherit;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .contact-text {
+      flex: 0;
+      color: #ffffff;
+      margin-left: 30px;
+      @include media-breakpoint-up(lg) {
+      flex: 0;
+      color: #ffffff;
+      margin-left: 80px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        @include media-breakpoint-up(md) {
+          font-size: 5rem;
+          font-weight: bold;
+          width: 100%;
+        }
+      }
+      h2 {
+        font-size: 2.2rem;
+        @include media-breakpoint-up(md) {
+          font-size: 2.4rem;
+        }
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 4.4rem;
+        line-height: 1.3;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+          width: 100%;
+        }
+      }
+    }
+    .contact-down {
+      flex: 0;
+      text-align: center;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .contact-section {
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+  .contact-image-fullscreen {
+    height: 100%;
+  }
+  .contact-image-setheight {
+    height: 460px;
+  }
+  .contact-image-blend-overlay {
+    background-blend-mode: overlay;
+  }
+
+  .contact-image .row {
+      color: white;
+      position: relative;
+  }
+
+  .streamIt {
+      color: #25325D;
+  }
+
+  .contactInfo {
+      float: right;
+  }
+
+  .secondInfo{
+    float: right;
+    position: absolute;
+    top: 49%;
+    right: 10%;
+    text-align: right;
+  }
+  
+
+  .address{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .innerContainer {
+    margin-top: 40%;
+    margin-bottom: 54%;
+    @include media-breakpoint-up(lg) {
+      margin-top: 12%;
+      margin-bottom: 5%;
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  // .container {
+  //   border-radius: 5px;
+  //   background-color: #f2f2f2;
+  //   padding: 20px;
+  // }
+  
+
+  hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-bottom: 60px;
+    margin-top: 5rem;
+    width: 90%;
+}
+
+.heading {
+  margin-bottom: 0px;
+}
+
+
+.bottomSpan {
+  color: #8F8F8F;
+}
+
+.centerText {
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 7%;
+  @include media-breakpoint-up(lg) {
+  text-align: center;
+  margin: 0 auto;
+  }
+}
+
+.joinTeam {
+  margin-top: 20px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 0px;
+  }
+}
+
+.infoEmail {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.viewMap {
+  color: #384883;
+}
+
+.contactTitle {
+  color: #25325D;
+}
+
+.subHeading {
+  padding: 7px;
+}
+
+.bottomSubtitle {
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "contact-hero-header.html" (dict "background" .Params.contactBackground "heading" .Params.contactHeading "subheading" .Params.contactSubHeading "content" .)}}
+
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 bill">
+            <hr>
+          </div>
+      <div class="col-6">
+        <h1 class="contactTitle">{{ .Title }}</h1>
+      </div>
+      <div class="col-6">
+          <form action="action_page.php">
+        
+              <label for="help">I would like RealEyes to help with</label>
+              <select id="help" name="help">
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+              </select>
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        
+            <label for="email">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+        
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+        <div class="col-12">
+          <hr>
+        </div>
+        <div class="row centerText">
+        <div class="col-12 col-lg-6">
+            <h4 class="bottomSubtitle">New business enquiries</h4>
+            <span class="bottomSpan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+          <div class="col-12 col-lg-6 joinTeam">
+              <h4 class="bottomSubtitle">Join the team</h4>
+              <span class="bottomSpan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </div>
+            </div>
+    </div>
+  </div>
+</div>
+{{ end }}
