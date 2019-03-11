@@ -78,15 +78,23 @@
   width: 100%;
   background-color: #292F64;
   color: white;
+  height: 150px;
+  padding: 24px;
 }
 
 .bottom {
   background-color: #282B4D;
   width: 100%;
   color: white;
+  height: 150px;
+  padding: 24px;
 }
 
 .columns {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.container {
+  max-width: 100%;
 }
