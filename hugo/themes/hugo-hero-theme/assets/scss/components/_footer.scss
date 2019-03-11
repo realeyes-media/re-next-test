@@ -1,5 +1,4 @@
 .footer {
-  background: $secondary;
   padding-top: 20px;
   padding-bottom: 20px;
   .footer-inner {
@@ -73,4 +72,21 @@
       }
     }
   }
+}
+
+.top {
+  width: 100%;
+  background-color: #292F64;
+  color: white;
+}
+
+.bottom {
+  background-color: #282B4D;
+  width: 100%;
+  color: white;
+}
+
+.columns {
+  padding-right: 0px;
+  padding-left: 0px;
 }
