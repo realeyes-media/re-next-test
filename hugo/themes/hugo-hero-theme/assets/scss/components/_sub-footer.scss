@@ -1,15 +1,19 @@
 .sub-footer {
-  background: darken($secondary, 10%);
+  background: darken(black, 10%);
   padding-top: 20px;
   padding-bottom: 20px;
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  h2 {
+    color: white;
+  }
   .sub-footer-inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 280px;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -58,4 +62,25 @@
       }
     }
   }
+}
+
+.streamIt {
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.hr { 
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  margin-bottom: 60px;
+  margin-top: 8rem;
+  width: 80%;
+  position: absolute;
+  margin-left: 10%;
 }
