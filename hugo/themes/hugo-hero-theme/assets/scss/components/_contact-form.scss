@@ -178,6 +178,8 @@
 .centerText {
   text-align: left;
   margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 7%;
   @include media-breakpoint-up(lg) {
   text-align: center;
   margin: 0 auto;
@@ -210,6 +212,7 @@
 
 .bottomSubtitle {
   margin-bottom: 5%;
+  font-weight: bold;
 }
 
 
