@@ -176,8 +176,12 @@
 }
 
 .centerText {
+  text-align: left;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
   text-align: center;
   margin: 0 auto;
+  }
 }
 
 .joinTeam {
@@ -202,6 +206,10 @@
 
 .subHeading {
   padding: 7px;
+}
+
+.bottomSubtitle {
+  margin-bottom: 5%;
 }
 
 
