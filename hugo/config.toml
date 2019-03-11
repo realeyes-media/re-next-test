@@ -1,3 +1,4 @@
+baseURL = ""
 languageCode = "en-us"
 title = "RealEyes Media"
 themesDir = "themes"
