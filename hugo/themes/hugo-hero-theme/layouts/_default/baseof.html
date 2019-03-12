@@ -42,6 +42,7 @@
   {{ else }}
   <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
   {{ end }}
+  <script type="text/javascript" src="{{ .Site.BaseURL }}/js/scripts.min.js"></script>
 
   {{ partial "google-analytics.html" . }}
 
