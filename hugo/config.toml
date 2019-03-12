@@ -15,8 +15,8 @@ theme = "hugo-hero-theme"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
     meta_og_description = "RealEyes Media"
     meta_twitter_card = "summary"
-    meta_twitter_site = "@realeyes"
-    meta_twitter_creator = "@realeyes"
+    meta_twitter_site = "@realeyesmedia"
+    meta_twitter_creator = "@realeyesmedia"
 
 [[menu.main]]
 	name = "Who is RealEyes"

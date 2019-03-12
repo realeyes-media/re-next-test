@@ -130,7 +130,7 @@
 .spanDiv {
   display: flex;
   right: 11%;
-  bottom: 70%;
+  bottom: 58%;
 }
 
 .allRights {
@@ -139,17 +139,28 @@
 }
 
 .fa {
-  
-  font-size: 30px;
-  width: 30px;
+  padding: 20px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+}
 
+.fa-facebook {
+  color: #919191;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+  color: #919191;
+}
+
+.socialButtons {
+  display: flex;
+  right: 11%;
+  bottom: 58%;
+}
+
+.bottomColumns {
+  padding-right: 15%;
 }
 
