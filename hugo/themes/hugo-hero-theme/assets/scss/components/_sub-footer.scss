@@ -103,7 +103,13 @@
   position: relative;
   bottom: 31%;
   left: 10%;
-  display: inline-flex;
+  @include media-breakpoint-up(md) {
+    color: white;
+    position: relative;
+    bottom: 31%;
+    left: 10%;
+    display: inline-flex;
+   }
 }
 
 .mainTitle {
@@ -124,14 +130,19 @@
 // }
 
 .spanButtons {
-  padding: 22px;
+  padding: 28px;
   white-space: nowrap;
+}
+
+span {
+  float: left;
+  clear: left;
 }
 
 .spanDiv {
   display: flex;
   right: 11%;
-  bottom: 58%;
+  bottom: 68%;
   margin-left: 38%;
 }
 
@@ -139,6 +150,11 @@
   display: flex;
   bottom: 35%;
   white-space: nowrap;
+  @include media-breakpoint-up(md) {
+  display: flex;
+  bottom: 35%;
+  white-space: nowrap;
+   }
 }
 
 .fa {
