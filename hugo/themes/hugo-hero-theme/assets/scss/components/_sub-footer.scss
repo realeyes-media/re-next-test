@@ -134,29 +134,6 @@
   white-space: nowrap;
 }
 
-span {
-  float: left;
-  clear: left;
-}
-
-.spanDiv {
-  display: flex;
-  right: 11%;
-  bottom: 68%;
-  margin-left: 38%;
-}
-
-.allRights {
-  display: flex;
-  bottom: 35%;
-  white-space: nowrap;
-  @include media-breakpoint-up(md) {
-  display: flex;
-  bottom: 35%;
-  white-space: nowrap;
-   }
-}
-
 .fa {
   padding: 20px;
   width: 50px;
@@ -179,3 +156,25 @@ span {
   // bottom: 40%;
 }
 
+@include media-breakpoint-up(sm) {
+.flex-container {
+  display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap
+}
+.spanDiv {
+  order: 2;
+  display: flex;
+  right: 11%;
+  bottom: 68%;
+  margin-left: 38%;
+}
+
+.allRights {
+  order: 1;
+  display: flex;
+  bottom: 35%;
+  white-space: nowrap;
+}
+}
