@@ -125,17 +125,20 @@
 
 .spanButtons {
   padding: 22px;
+  white-space: nowrap;
 }
 
 .spanDiv {
   display: flex;
   right: 11%;
   bottom: 58%;
+  margin-left: 35%;
 }
 
 .allRights {
   display: flex;
   bottom: 35%;
+  white-space: nowrap;
 }
 
 .fa {
