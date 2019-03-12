@@ -64,3 +64,11 @@
 .hero-image-blend-overlay {
   background-blend-mode: overlay;
 }
+#video-background {
+  position: absolute;
+  width: 100%;
+  object-fit: fill;
+  right: 0%;
+  z-index: 10;
+  filter: opacity(30%) contrast(90%) brightness(80%);
+}
