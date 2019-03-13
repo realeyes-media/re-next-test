@@ -146,11 +146,12 @@
 
 .fa-twitter {
   color: #919191;
-  padding-left: 30%;
+  padding-left: 15%;
 }
 
 .socialButtons {
   display: flex;
+  left: 7.5%;
 }
 
 
@@ -222,10 +223,8 @@
     .spanDiv {
       order: 2;
       display: flex;
-      // right: 11%;
-      // bottom: 68%;
-      // margin-left: 32%;
-      color: green;
+      bottom: 1.6rem;
+      color: white;
     }
     
     .allRights {
