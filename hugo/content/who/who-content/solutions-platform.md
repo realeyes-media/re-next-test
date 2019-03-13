@@ -1,9 +1,10 @@
 ---
-title: 'Solutions'
+title: 'Solutions Platform'
 date: 2018-12-06T09:29:16+10:00
 button: ''
 weight: 1
 heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+class: platform solution
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -5,7 +5,7 @@
 {{ define "main" }}
 {{ partial "hero-solid-color.html" (dict "background" "#da6161" "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "heroContent" .Params.heroContent "content" .)}}
 {{ $headless := .Site.GetPage "/who/who-content" }}
-<div class="absolute-who-image"><img src="{{ .Site.BaseURL }}/img/camera.png" /></div>
+<div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/camera.png" /></div>
 <div class="container-fluid pt-4 pt-md-10 pb-4 pl-6 pb-md-10 text-left content">
     <div class="row">
         <div class="col-sm-12 col-md-6 pb-3">
@@ -15,22 +15,23 @@
     <br>
     <br>
     <div class="row">
-        <div class="col-sm-12 col-md-3">
-            <p>MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS</p>
-            <p>BESPOKE DEVELOPMENT</p>
-            <p>MEDIA WORKFLOW SOLUTIONS/AUGMENTATION</p>
-            <p>LIVE STREAMING PLATFORM SOLUTIONS</p>
-            <p>CONSULTING</p>
-            <p>PRODUCTS</p>
+        <div class="col-sm-12 col-md-3 ">
+            <p class="solutions" id="platform" style="font-weight: bold">MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS</p>
+            <p class="solutions" id="bespoke">BESPOKE DEVELOPMENT</p>
+            <p class="solutions" id="workflow">MEDIA WORKFLOW SOLUTIONS/AUGMENTATION</p>
+            <p class="solutions" id="streaming">LIVE STREAMING PLATFORM SOLUTIONS</p>
+            <p class="solutions" id="consulting">CONSULTING</p>
+            <p class="solutions" id="products">PRODUCTS</p>
         </div>
         {{ $page := $headless.Resources.Match "solutions*" }}
         {{ range $page }}
-        <div class="col-sm-12 col-md-8 pl-md-8">
+        <div class="col-sm-12 col-md-8 pl-md-8 {{ .Params.class }}">
             <h2 class="col-md-10 pl-0">{{ .Params.heading }}</h2>
             <div class="col-md-6 pl-0 pt-5">{{ .Content }}</div>
         </div>
         {{ end }}
     </div>
+    <div class="mobile accordian"></div>
 </div>
 
 {{ end }}
