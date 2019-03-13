@@ -6,6 +6,9 @@
   background-color: $primary;
   height: 400px;
   position: relative;
+  video {
+    height: 100%
+  }
   .container {
     padding-top: 60px;
     height: 100%;
