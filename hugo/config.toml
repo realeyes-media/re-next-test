@@ -1,8 +1,9 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Hugo Hero Theme"
+title = "RealEyes Media"
 themesDir = "themes"
 theme = "hugo-hero-theme"
+relativeURLs = true
 
 [params]
   google_analytics_id=""

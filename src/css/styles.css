@@ -5,11 +5,11 @@
 */
 @import "imports/reset.css";
 
-body {
-  font-family: sans-serif;
-  font-size: 1em;
+.hero-text-left {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
-.tag-head.main-header {
-  height: 80vh;
+.who-left {
+  width: 30%;
 }
