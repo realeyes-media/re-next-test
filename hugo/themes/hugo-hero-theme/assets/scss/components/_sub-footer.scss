@@ -165,7 +165,7 @@
 //   }
 // }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(xs) {
 .flex-container {
   display: flex;
     flex-direction: row;
@@ -185,9 +185,34 @@
   display: flex;
   // bottom: 35%;
   // margin-top: 50%;
+  color: red;
   white-space: nowrap;
 }
 }
+
+@include media-breakpoint-up(sm) {
+  .flex-container {
+    display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-wrap: wrap
+  }
+  .spanDiv {
+    order: 2;
+    display: flex;
+    // right: 11%;
+    // bottom: 68%;
+    // margin-left: 32%;
+  }
+  
+  .allRights {
+    order: 1;
+    display: flex;
+    // bottom: 35%;
+    // margin-top: 50%;
+    white-space: nowrap;
+  }
+  }
 
 // @include media-breakpoint-up(md) {
 //   .flex-container {
