@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 210px;
+    height: 190px;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -146,12 +146,12 @@
 
 .fa-twitter {
   color: #919191;
-  padding-left: 15%;
+  padding-left: 42%;
 }
 
 .socialButtons {
   display: flex;
-  left: 7.5%;
+  margin-left: 10%;
 }
 
 
