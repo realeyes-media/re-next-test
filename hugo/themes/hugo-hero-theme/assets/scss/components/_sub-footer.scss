@@ -1,7 +1,7 @@
 .sub-footer {
   background: darken(black, 10%);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10%;
+  padding-bottom: 60%;
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -61,6 +61,10 @@
   }
 }
 
+.container {
+  max-width: 100%;
+}
+
 .streamIt {
   margin: 0 auto;
   margin-top: 3%;
@@ -75,11 +79,10 @@
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
-  // margin-bottom: 60px;
-  margin-top: 11rem;
+  margin-top: 45%;
   width: 80%;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 7%;
   border: solid 2px white;
   @include media-breakpoint-up(md) {
     margin-before: 0.5em;
@@ -89,7 +92,6 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    // margin-bottom: 60px;
     margin-top: 8.3rem;
     width: 80%;
     position: absolute;
@@ -125,13 +127,10 @@
   }
 }
 
-// .option-buttons {
-//   display: inline-block;
-// }
-
 .spanButtons {
   padding: 28px;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .fa {
@@ -147,14 +146,23 @@
 
 .fa-twitter {
   color: #919191;
-  padding-left: 50%;
+  padding-left: 30%;
 }
 
 .socialButtons {
   display: flex;
-  // right: 11%;
-  // bottom: 40%;
 }
+
+
+// .allRights {
+//   order: 1;
+//   display: flex;
+//   white-space: nowrap;
+//   margin-top: 50%;
+//   @include media-breakpoint-up(lg) {
+//     margin-top: 0%;
+//   }
+// }
 
 @include media-breakpoint-up(sm) {
 .flex-container {
@@ -166,15 +174,67 @@
 .spanDiv {
   order: 2;
   display: flex;
-  right: 11%;
-  bottom: 68%;
-  margin-left: 38%;
+  // right: 11%;
+  // bottom: 68%;
+  // margin-left: 32%;
 }
 
 .allRights {
   order: 1;
   display: flex;
-  bottom: 35%;
+  // bottom: 35%;
+  // margin-top: 50%;
   white-space: nowrap;
 }
 }
+
+// @include media-breakpoint-up(md) {
+//   .flex-container {
+//     display: flex;
+//       flex-direction: row;
+//       flex-grow: 1;
+//       flex-wrap: wrap
+//   }
+//   .spanDiv {
+//     order: 2;
+//     display: flex;
+//     right: 11%;
+//     bottom: 68%;
+//     margin-left: 32%;
+//     color: red;
+//   }
+  
+//   .allRights {
+//     order: 1;
+//     display: flex;
+//     bottom: 35%;
+//     white-space: nowrap;
+//   }
+//   }
+
+  @include media-breakpoint-up(lg) {
+    .flex-container {
+      display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap
+    }
+    .spanDiv {
+      order: 2;
+      display: flex;
+      // right: 11%;
+      // bottom: 68%;
+      // margin-left: 32%;
+      color: green;
+    }
+    
+    .allRights {
+      order: 1;
+      display: flex;
+      // bottom: 35%;
+      // margin-top: 50%;
+      left: 10%;
+      color: white;
+      white-space: nowrap;
+    }
+    }
