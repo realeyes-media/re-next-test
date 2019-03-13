@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Jake the Dog",
+        "position": "hero",
+        "image": "img/jake_the_dog.png",
+        "bio": ""
+    },
+    {
+        "name": "Donald",
+        "position": "?",
+        "image": "img/trump_hands.jpg",
+        "bio": ""
+    },
+    {
+        "name": "Michael Jordan",
+        "position": "GOAT",
+        "image": "img/jordan.jpg",
+        "bio": ""
+    },
+    {
+        "name": "Dipsy",
+        "position": "Teletubby",
+        "image": "img/teletubby.jpg",
+        "bio": ""
+    },
+    {
+        "name": "Batman",
+        "position": "Dark Knight",
+        "image": "img/batman.jpg",
+        "bio": ""
+    },
+    {
+        "name": "Pikachu",
+        "position": "Cute Pokemon or Body Pillow",
+        "image": "img/pikachu.png",
+        "bio": ""
+    },
+    {
+        "name": "Ludwig Van Beethoven",
+        "position": "Other GOAT",
+        "image": "img/beethoven.jpg",
+        "bio": ""
+    }
+]
