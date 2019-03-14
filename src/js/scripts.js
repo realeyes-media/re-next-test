@@ -1,11 +1,24 @@
 
-$(".solutions").click(function () {
+$('.solutions').click(function () {
   const solutionId = this.id
   $('.solution').hide()
   $(`.${solutionId}`).fadeToggle()
   $('.solutions').css({ 'font-weight': '400' })
   $(this).css({ 'font-weight': 'bold' })
 })
+
+$('.accordion').click(function (e) {
+  if ($(this).next().css('display') === 'block') {
+    $('.panel').hide()
+    $('.accordion').css({ 'font-weight': '400' })
+  } else {
+    $('.panel').hide()
+    $(this).next().toggle()
+    $('.accordion').css({ 'font-weight': '400' })
+    $(this).css({ 'font-weight': 'bold' })
+  }
+})
+
 // Hide/Show NavBar
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {

@@ -64,3 +64,12 @@
     }
   }
 }
+
+.mobile-hide {
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

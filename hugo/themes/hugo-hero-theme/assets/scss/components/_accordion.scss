@@ -1,0 +1,30 @@
+.mobile-accordion {
+    .accordion {
+        background-color: $white;
+        cursor: pointer;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-family: $font-family-base;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #333333;
+
+        .active {
+            background-color: #ccc;
+        }
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
