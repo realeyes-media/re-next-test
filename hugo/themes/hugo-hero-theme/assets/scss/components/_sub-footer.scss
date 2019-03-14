@@ -68,6 +68,7 @@
 .streamIt {
   margin: 0 auto;
   margin-top: 3%;
+  white-space: nowrap;
 }
 
 // .hr { 
@@ -252,7 +253,7 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    margin-top: 10rem;
+    margin-top: 8rem;
     width: 80%;
     position: absolute;
     margin-left: 7%;
@@ -299,9 +300,18 @@
     padding-left: 42%;
   }
 
+  .mainTitle {
+    color: purple;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 73%;
+    margin-left: 0.8rem;
+  }
+  
+
   .type-writer {
     // width: 0rem;
-    margin-left: 29rem;
+    margin-left: 24.3rem;
     margin-bottom: 0rem;
     float: right;
     margin-top: 0.4rem;
@@ -312,13 +322,15 @@
     width: 11rem;
     // margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
     color: blue;
-    bottom: 2.38rem;  
+    bottom: 3.2rem;
+    margin-left: 0rem; 
+    margin-right: 5.9rem; 
 }
 }
 
@@ -380,7 +392,7 @@
 
   .type-writer {
     // width: 0rem;
-    margin-left: 21.9rem;
+    margin-left: 21.7rem;
     margin-bottom: 0rem;
     float: right;
     margin-top: 0.4rem;
@@ -398,7 +410,7 @@
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.26rem;  
+    bottom: 3.25rem;  
 }
 
 .mainTitle {
@@ -406,7 +418,7 @@
   font-size: 2.3rem;
   text-align: center;
   width: 22rem;
-  // margin-left: 2.8rem;
+  margin-left: 0rem;
 }
 }
 
@@ -475,7 +487,7 @@
       width: 11rem;
       // margin: 0 auto;
       border-right: 2px solid rgba(255,255,255,.75);
-      font-size: 2.8rem;
+      font-size: 2.9rem;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
