@@ -112,7 +112,10 @@
   text-decoration: none;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  cursor: pointer;
+  border-style: solid;
 }
+
 
 .bottom-button {
   white-space: nowrap;
@@ -127,4 +130,6 @@
   text-decoration: none;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  cursor: pointer;
+  border-style: solid;
 }
