@@ -1,7 +1,7 @@
 .sub-footer {
   background: darken(black, 10%);
   padding-top: 10%;
-  padding-bottom: 60%;
+  // padding-bottom: 60%;
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -127,12 +127,6 @@
   }
 }
 
-.spanButtons {
-  padding: 28px;
-  white-space: nowrap;
-  display: inline-block;
-}
-
 .fa {
   padding: 20px;
   width: 50px;
@@ -144,15 +138,7 @@
   color: #919191;
 }
 
-.fa-twitter {
-  color: #919191;
-  padding-left: 42%;
-}
 
-.socialButtons {
-  display: flex;
-  margin-left: 10%;
-}
 
 
 // .allRights {
@@ -166,36 +152,56 @@
 // }
 
 @include media-breakpoint-up(xs) {
-.flex-container {
-  display: flex;
+  .flex-container {
+    display: flex;
     flex-direction: row;
     flex-grow: 1;
-    flex-wrap: wrap
-}
-.spanDiv {
-  order: 2;
-  display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .spanDiv {
+  order: 1;
+  // display: flex;
   // right: 11%;
   // bottom: 68%;
   // margin-left: 32%;
-}
+  }
 
-.allRights {
-  order: 1;
-  display: flex;
-  // bottom: 35%;
-  // margin-top: 50%;
-  color: red;
-  white-space: nowrap;
-}
+  .allRights {
+    order: 2;
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    left: 9%;
+    margin-bottom: 2rem;
+  }
+
+  .spanButtons {
+    padding: 28px;
+   white-space: nowrap;
+    display: block;
+    color: white;
+  }
+
+  .socialButtons {
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: 5%;
+  }
+  .fa-twitter {
+    color: #919191;
+    padding-left: 14%;
+  }
 }
 
 @include media-breakpoint-up(sm) {
   .flex-container {
     display: flex;
-      flex-direction: row;
-      flex-grow: 1;
-      flex-wrap: wrap
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
   }
   .spanDiv {
     order: 2;
@@ -212,31 +218,63 @@
     // margin-top: 50%;
     white-space: nowrap;
   }
+  .spanButtons {
+    padding: 28px;
+    white-space: nowrap;
+    display: inline-block;
+    color: white;
   }
 
-// @include media-breakpoint-up(md) {
-//   .flex-container {
-//     display: flex;
-//       flex-direction: row;
-//       flex-grow: 1;
-//       flex-wrap: wrap
-//   }
-//   .spanDiv {
-//     order: 2;
-//     display: flex;
-//     right: 11%;
-//     bottom: 68%;
-//     margin-left: 32%;
-//     color: red;
-//   }
+  .socialButtons {
+    display: flex;
+    margin-left: 10%;
+  }
+
+  .fa-twitter {
+    color: #919191;
+    padding-left: 42%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+  }
+  .spanDiv {
+    order: 1;
+    display: flex;
+    margin-left: 5rem;
+    bottom: 2rem;
+  }
   
-//   .allRights {
-//     order: 1;
-//     display: flex;
-//     bottom: 35%;
-//     white-space: nowrap;
-//   }
-//   }
+  .allRights {
+    order: 2;
+    display: flex;
+    left: 28%;
+    white-space: nowrap;
+    bottom: 2rem;
+  }
+
+ .spanButtons {
+  padding: 28px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.socialButtons {
+  display: flex;
+  margin-left: 10%;
+}
+
+  .fa-twitter {
+    color: #919191;
+    padding-left: 42%;
+  }
+}
 
   @include media-breakpoint-up(lg) {
     .flex-container {
@@ -248,17 +286,31 @@
     .spanDiv {
       order: 2;
       display: flex;
-      bottom: 1.6rem;
-      color: white;
+      bottom: 1.7rem;
+      margin-left: 0rem;
     }
     
     .allRights {
       order: 1;
       display: flex;
-      // bottom: 35%;
-      // margin-top: 50%;
       left: 10%;
       color: white;
       white-space: nowrap;
+      bottom: 0rem;
     }
+    .spanButtons {
+      padding: 28px;
+      white-space: nowrap;
+      display: inline-block;
     }
+
+    .socialButtons {
+      display: flex;
+      margin-left: 10%;
+    }
+
+    .fa-twitter {
+      color: #919191;
+      padding-left: 42%;
+    }
+}
