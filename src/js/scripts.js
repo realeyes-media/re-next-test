@@ -8,13 +8,18 @@ $('.solutions').click(function () {
 })
 
 $('.accordion').click(function (e) {
+  console.log($(this).find('img'))
+  const image = $(this).find('img')
   if ($(this).next().css('display') === 'block') {
-    $('.panel').hide()
+    $('.panel').slideUp()
+    image.attr('src', '/img/minus.png')
     $('.accordion').css({ 'font-weight': '400' })
   } else {
-    $('.panel').hide()
-    $(this).next().toggle()
+    $('.panel').slideUp()
+    $(this).next().slideDown()
     $('.accordion').css({ 'font-weight': '400' })
+    $('.accordion').find('img').attr('src', '/img/minus.png')
+    image.attr('src', '/img/plus.png')
     $(this).css({ 'font-weight': 'bold' })
   }
 })

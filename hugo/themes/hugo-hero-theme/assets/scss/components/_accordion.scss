@@ -12,9 +12,14 @@
         line-height: 1.4;
         font-weight: 400;
         color: #333333;
-
-        .active {
-            background-color: #ccc;
+        img {
+            position: absolute;
+            right: 1rem;
+            top: 1.75rem;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 2rem;
+            height: auto;
         }
     }
 

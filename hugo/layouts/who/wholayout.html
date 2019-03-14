@@ -38,7 +38,10 @@
     </div>
     {{ $page := $headless.Resources.Match "solutions*" }}
     {{ range $page }}
-    <button class="accordion">{{ .Params.mobileHeading }}</button>
+    <button class="accordion col-12">
+        <div class="col-11 pl-0">{{ .Params.mobileHeading }}</div>
+        <img src="{{ .Site.BaseURL }}/img/minus.png" />
+    </button>
     <div class="panel">
         <p>{{ .Content }}</p>
     </div>
