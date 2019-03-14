@@ -17,7 +17,7 @@
         <h1 class="contactTitle">{{ .Title }}</h1>
       </div>
       <div class="col-6">
-          <form action="action_page.php">
+          <form action="myForm">
         
               <label for="help">I would like RealEyes to help with</label>
               <select id="help" name="help">
@@ -64,5 +64,41 @@
             </div>
     </div>
   </div>
+
+  <script>
+  window.addEventListener("load", function () {
+  function sendData() {
+    var XHR = new XMLHttpRequest();
+
+    // Bind the FormData object and the form element
+    var FD = new FormData(form);
+
+    // Define what happens on successful data submission
+    XHR.addEventListener("load", function(event) {
+      alert(event.target.responseText);
+    });
+
+    // Define what happens in case of error
+    XHR.addEventListener("error", function(event) {
+      alert('Oops! Something went wrong.');
+    });
+
+    // Set up our request
+    XHR.open("POST", "https://william@realeyes.com");
+
+    // The data sent is what the user provided in the form
+    XHR.send(FD);
+  }
+ 
+  // Access the form element...
+  var form = document.getElementById("myForm");
+
+  // ...and take over its submit event.
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    sendData();
+  });
+});</script>
 </div>
 {{ end }}
