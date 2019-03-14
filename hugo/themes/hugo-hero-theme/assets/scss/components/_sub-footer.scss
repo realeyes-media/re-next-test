@@ -70,35 +70,35 @@
   margin-top: 3%;
 }
 
-.hr { 
-  display: block;
-  margin-before: 0.5em;
-  margin-after: 0.5em;
-  margin-start: auto;
-  margin-end: auto;
-  overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
-  margin-top: 45%;
-  width: 80%;
-  position: absolute;
-  margin-left: 7%;
-  border: solid 2px white;
-  @include media-breakpoint-up(md) {
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-    margin-top: 8.3rem;
-    width: 80%;
-    position: absolute;
-    margin-left: 10%;
-    border: solid 2px white;
-   }
-}
+// .hr { 
+//   display: block;
+//   margin-before: 0.5em;
+//   margin-after: 0.5em;
+//   margin-start: auto;
+//   margin-end: auto;
+//   overflow: hidden;
+//   border-style: inset;
+//   border-width: 1px;
+//   margin-top: 22%;
+//   width: 80%;
+//   position: absolute;
+//   margin-left: 7%;
+//   border: solid 2px red;
+//   @include media-breakpoint-up(md) {
+//     margin-before: 0.5em;
+//     margin-after: 0.5em;
+//     margin-start: auto;
+//     margin-end: auto;
+//     overflow: hidden;
+//     border-style: inset;
+//     border-width: 1px;
+//     margin-top: 8.3rem;
+//     width: 80%;
+//     position: absolute;
+//     margin-left: 10%;
+//     border: solid 2px white;
+//    }
+// }
 
 .sub-footer-bottom {
   color: white;
@@ -140,18 +140,23 @@
 
 
 
-
-// .allRights {
-//   order: 1;
-//   display: flex;
-//   white-space: nowrap;
-//   margin-top: 50%;
-//   @include media-breakpoint-up(lg) {
-//     margin-top: 0%;
-//   }
-// }
-
 @include media-breakpoint-up(xs) {
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 10rem;
+    width: 80%;
+    position: absolute;
+    margin-left: 7%;
+    border: solid 2px purple;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -196,6 +201,23 @@
 }
 
 @include media-breakpoint-up(sm) {
+
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 10rem;
+    width: 80%;
+    position: absolute;
+    margin-left: 7%;
+    border: solid 2px blue;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -204,7 +226,7 @@
     margin-bottom: 0rem;
   }
   .spanDiv {
-    order: 2;
+    order: 1;
     display: flex;
     // right: 11%;
     // bottom: 68%;
@@ -212,10 +234,11 @@
   }
   
   .allRights {
-    order: 1;
+    order: 2;
     display: flex;
     // bottom: 35%;
     // margin-top: 50%;
+    left: 11rem;
     white-space: nowrap;
   }
   .spanButtons {
@@ -237,6 +260,23 @@
 }
 
 @include media-breakpoint-up(md) {
+
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 8rem;
+    width: 80%;
+    position: absolute;
+    margin-left: 7%;
+    border: solid 2px green;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -277,6 +317,21 @@
 }
 
   @include media-breakpoint-up(lg) {
+    .hr { 
+      display: block;
+      margin-before: 0.5em;
+      margin-after: 0.5em;
+      margin-start: auto;
+      margin-end: auto;
+      overflow: hidden;
+      border-style: inset;
+      border-width: 1px;
+      margin-top: 8rem;
+      width: 80%;
+      position: absolute;
+      margin-left: 7%;
+      border: solid 2px white;
+    }
     .flex-container {
       display: flex;
         flex-direction: row;
