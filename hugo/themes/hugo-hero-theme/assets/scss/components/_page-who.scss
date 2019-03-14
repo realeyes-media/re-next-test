@@ -49,19 +49,31 @@
     .blue-heading {
         font-family: 'Futura';
         color: #010164b2;
-        font-size: 1.75rem;
+        @include media-breakpoint-up(xs) {
+            font-size: 2rem;
+        }
+        @include media-breakpoint-up(md) {
+            font-size: 1.75rem;
+        }
     }
-    .solution-content {
+    .specialization-content {
         p {
+            font-size: 1.25rem;
             color: #8a8989;
         }
     }
     .block-quote {
         p {
+            @include media-breakpoint-up(xs) {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 1.75rem;
+                line-height: 1.75;
+            }
             font-family: 'Playfair Display';
             font-style: italic;
-            font-size: 1.75rem;
-            line-height: 1.75;
             color: #3a3a3acb;
         }
     }
