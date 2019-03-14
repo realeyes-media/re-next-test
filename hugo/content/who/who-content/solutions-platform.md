@@ -3,6 +3,7 @@ title: 'Solutions Platform'
 date: 2018-12-06T09:29:16+10:00
 button: ''
 weight: 1
+mobileHeading: MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS
 heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 class: platform solution
 ---

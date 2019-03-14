@@ -34,12 +34,12 @@
     margin: auto 0;
     z-index: 1;
     h1 {
-      padding-bottom: 5px;
-      font-size: 5rem;
+      padding-bottom: 1rem;
+      font-size: 2.5rem;
       font-family: Helvetica;
       font-weight: bold;
       @include media-breakpoint-up(md) {
-        font-size: 5rem;
+        font-size: 4.5rem;
       }
     }
     h2 {
@@ -69,7 +69,7 @@
     position: absolute;
     h1 {
       padding-bottom: 5px;
-      font-size: 5rem;
+      font-size: 3rem;
       font-family: Helvetica;
       font-weight: bold;
       @include media-breakpoint-up(md) {
