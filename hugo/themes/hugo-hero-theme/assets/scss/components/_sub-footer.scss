@@ -317,7 +317,7 @@
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    color: white;
+    color: blue;
     bottom: 2.38rem;  
 }
 }
@@ -370,7 +370,7 @@
 
 .socialButtons {
   display: flex;
-  margin-left: 10%;
+  margin-left: 15rem;
 }
 
   .fa-twitter {
@@ -398,7 +398,7 @@
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.2rem;  
+    bottom: 3.26rem;  
 }
 
 .mainTitle {
@@ -482,13 +482,20 @@
       transform: translateY(-50%);
       color: white;
       bottom: 3.8rem;
-      margin-left: 2.8rem;  
+      margin-left: 0rem;  
   }
 
   .mainTitle {
     color: white;
     font-size: 3rem;
     width: 100%;
+    margin-left: 0rem;
+  }
+
+  .streamIt {
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-right: 30rem;
   }
 
   @keyframes typewriter{
