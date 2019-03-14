@@ -8,7 +8,6 @@ $('.solutions').click(function () {
 })
 
 $('.accordion').click(function (e) {
-  console.log($(this).find('img'))
   const image = $(this).find('img')
   if ($(this).next().css('display') === 'block') {
     $('.panel').slideUp()
