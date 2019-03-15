@@ -134,9 +134,10 @@
 
   .spanButtons {
     padding: 28px;
-   white-space: nowrap;
+    white-space: nowrap;
     display: block;
     color: white;
+    z-index: 1;
   }
 
   .socialButtons {
