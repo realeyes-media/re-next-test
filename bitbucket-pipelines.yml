@@ -16,6 +16,8 @@ pipelines:
         caches:
           - node
         script:
+          # Add ya gurl Marcli to $PATH
+          - mv marcli /usr/bin/marcli
           # Build
           - unset NPM_CONFIG_USER
           - npm install
@@ -24,12 +26,13 @@ pipelines:
           - echo $GCLOUD_API_KEYFILE | base64 -d > ./gcloud-api-key.json
           - gcloud auth activate-service-account --key-file gcloud-api-key.json
           - gcloud config set project $GCLOUD_PROJECT
-          - chmod +x ci/deploy.sh
-          - ci/deploy.sh ${BITBUCKET_BRANCH}-web realeyes.dev
+          - marcli deploy -f dist -n ${BITBUCKET_BRANCH}-web -d realeyes.dev -v --dns --index index.html --error "404/index.html" 
   branches:
     dev:
+    - step: *marcliget
     - step: *GCS
     stage: 
+    - step: *marcliget
     - step: *GCS
     # master: 
     # - step: *GCS
