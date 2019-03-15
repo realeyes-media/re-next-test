@@ -120,16 +120,16 @@
   }
 
   .spanDiv {
-  order: 1;
+  
   }
 
   .allRights {
-    order: 2;
     display: flex;
     color: white;
     white-space: nowrap;
-    left: 1.4rem;
-    margin-bottom: 2rem;
+    top: 22rem;
+    left: 1.9rem;
+    // margin-bottom: 2rem;
   }
 
   .spanButtons {
@@ -210,12 +210,10 @@
     margin-bottom: 0rem;
   }
   .spanDiv {
-    order: 1;
     display: flex;
   }
   
   .allRights {
-    order: 2;
     display: flex;
     left: 11rem;
     white-space: nowrap;
@@ -295,14 +293,12 @@
     margin-bottom: 0rem;
   }
   .spanDiv {
-    order: 1;
     display: flex;
     margin-left: 6rem;
     bottom: 3rem;
   }
   
   .allRights {
-    order: 2;
     display: flex;
     left: 28%;
     white-space: nowrap;
@@ -380,19 +376,19 @@
         flex-wrap: wrap
     }
     .spanDiv {
-      order: 2;
       display: flex;
       bottom: 1.7rem;
-      margin-left: 0rem;
+      margin-left: 45rem;
+      bottom: 3.3rem;
     }
     
     .allRights {
-      order: 1;
       display: flex;
-      left: 6.3rem;
+      left: 7rem;
       color: white;
       white-space: nowrap;
       bottom: 0rem;
+      top: 0rem;
     }
     .spanButtons {
       padding: 28px;
@@ -413,7 +409,7 @@
 
     .type-writer {
       width: 5rem;
-      margin-left: 33rem;
+      margin-left: 26rem;
       margin-bottom: 3rem;
       float: right;
     }
@@ -447,7 +443,7 @@
 
   @keyframes typewriter{
   from{width: 0;}
-  to{width: 6.2rem;}
+  to{width: 35rem;}
 }
 }
 
