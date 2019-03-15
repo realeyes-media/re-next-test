@@ -32,11 +32,10 @@ $('.accordion').click(function (e) {
   }
 })
 
-// Hide/Show NavBar
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
-  let currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.pageYOffset;
   if (currentScrollPos === 0) {
     header.style.background = 'transparent';
   } else if (prevScrollpos > currentScrollPos) {
@@ -48,8 +47,6 @@ window.onscroll = () => {
   prevScrollpos = currentScrollPos;
 };
 
-// Replace Hero BG video with BG image
-// check initial window size and load in either video or jpg
 window.onload = () => {
   if (window.innerWidth < 768) {
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
@@ -70,20 +67,6 @@ window.onload = () => {
   }
 }
 
-
-
-//  <video autoplay loop id="video-background" muted plays-inline>
-//    <source src="{{ .Site.BaseURL}}/images/Sport Seq_v2_1.mp4" type="video/mp4" />
-//  </video>
-
-
-
-
-
-
-
-
-// after initial load, add and remove video element or backgound URL based on screen size
 window.onresize = () => {
   if (window.innerWidth < 768) {
     const videoElement = document.getElementById("video-background");
@@ -94,13 +77,10 @@ window.onresize = () => {
     backgroundElement.style.backgroundImage = `url("https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg")`
     backgroundElement.style.backgroundColor = "transparent"
   } else if (window.innerWidth >= 768) {
-    // Check if background image exists and remove
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
     if (backgroundElement.style.backgroundImage) {
       backgroundElement.removeAttribute("style")
     }
-
-    // check if video element already exists and return
     const videoElement = document.getElementById("video-background");
     if (videoElement) return;
     const video = document.createElement("video")
