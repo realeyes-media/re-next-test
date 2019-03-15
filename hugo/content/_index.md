@@ -3,5 +3,8 @@ title: 'Home'
 date: 2018-02-12T15:37:57+07:00
 heroHeading: Stream It
 heroSubheading: Like You Mean It.
-# heroBackground: 'images/Sport Seq_v2_1.mp4'
+heroServiceOne: Livestream at Scale
+heroServiceTwo: App Development
+heroServiceThree: Bespoke Platform Solutions
+heroBackground: 'src/img/jumping-football-dude.jpg'
 ---

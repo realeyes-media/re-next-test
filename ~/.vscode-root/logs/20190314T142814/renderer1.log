@@ -1,0 +1,146 @@
+[2019-03-14 14:28:18.150] [renderer1] [info] no standard startup: not just one text editor
+[2019-03-14 14:32:32.489] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-14 14:34:48.039] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-14 14:40:26.895] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:40:33.256] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:41:24.616] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:41:55.409] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:43:05.079] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:43:49.443] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:45:02.409] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:45:04.327] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:45:15.324] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:45:47.810] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+[2019-03-14 14:49:06.202] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
