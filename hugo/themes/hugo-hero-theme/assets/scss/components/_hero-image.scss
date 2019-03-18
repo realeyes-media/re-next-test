@@ -5,8 +5,21 @@
   background-position: top center;
   background-blend-mode: overlay;
   background-color: black;
-  height: 400px;
+  height: 100vh;
   position: relative;
+  background-image: linear-gradient(to bottom,transparent,black);
+  // &:After {
+  //   content: '';
+  //   position: absolute;
+  //   // top: 0;
+  //   // right: 0;
+  //   // bottom: 0;
+  //   // left: 0;
+  //   z-index: 99;
+  //   width:100%;
+  //   height:100%;
+  //   opacity: .6; 
+  // }
   video {
     height: auto;
     width: 100%
@@ -33,7 +46,7 @@
     flex: 0;
     color: #ffffff;
     margin: auto 0;
-    z-index: 1;
+    z-index: 2;
     h1 {
       padding-bottom: 1rem;
       font-size: 2.5rem;
