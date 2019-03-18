@@ -1,10 +1,15 @@
 .sub-footer {
   background: darken(black, 10%);
   padding-top: 10%;
+  @include media-breakpoint-up(xs) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: -11px;
+  }
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: -45px;
+    margin-right: -56px;
   }
 
   .sub-footer-inner-bottom {
@@ -15,16 +20,17 @@
     @include media-breakpoint-up(xs) {
       flex-direction: column;
       color: white;
-      margin-left: 0.6rem;
+      margin-left: 2rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
       color: white;
-      margin-left: 1rem;
+      margin-left: 7%;
     }
     @include media-breakpoint-up(md) {
       flex-direction: row;
       color: white;
+      margin-top: 10%;
     }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
@@ -131,7 +137,7 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    width: 80%;
+    width: 73%;
     position: absolute;
     margin-left: 2rem;
     border: solid 2px white;
@@ -159,7 +165,7 @@
     color: white;
     white-space: nowrap;
     margin-top: 31%;
-    margin-left: 21%;
+    margin-left: 28%;
     margin-right: 21%;
   }
 
@@ -190,7 +196,7 @@
     color: white;
     bottom: 0rem;
     top: 1rem;
-    margin-left: 8%;  
+    margin-left: 27%;  
 }
 
 .type-writer {
@@ -208,7 +214,7 @@
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 20rem;}
+  to{width: 10rem;}
 }
 }
 
@@ -223,7 +229,7 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    margin-top: 4rem;
+    margin-top: 6rem;
     width: 80%;
     position: absolute;
     margin-left: 7%;
@@ -304,12 +310,13 @@
     transform: translateY(-50%);
     color: white;
     bottom: 0rem;
-    margin-left: 42%; 
+    margin-left: 55%; 
+    margin-top: 2%;
 }
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 25.2rem;}
+  to{width: 15rem;}
 }
 }
 
@@ -325,7 +332,7 @@
     border-style: inset;
     border-width: 1px;
     margin-top: 5rem;
-    width: 82%;
+    width: 88%;
     position: absolute;
     border: solid 2px white;
   }
@@ -351,7 +358,7 @@
     left: 28%;
     white-space: nowrap;
     bottom: 2rem;
-    margin-top: 0%;
+    margin-top: 10%;
     margin-left: 0%;
   }
 
@@ -413,7 +420,7 @@
   font-size: 2.3rem;
   text-align: center;
   width: 22rem;
-  margin-left: 34%;
+  margin-left: 38%;
 }
 }
 
@@ -427,7 +434,7 @@
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 84%;
+      width: 88%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
@@ -468,7 +475,6 @@
 
     .fa-twitter {
       color: #919191;
-      padding-left: 5rem;
     }
     
     .bill {
