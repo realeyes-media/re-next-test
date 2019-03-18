@@ -21,6 +21,7 @@
       flex-direction: column;
       color: white;
       margin-left: 2rem;
+      margin-top: 2rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
@@ -164,8 +165,8 @@
     display: flex;
     color: white;
     white-space: nowrap;
-    margin-top: 31%;
-    margin-left: 28%;
+    margin-top: 17%;
+    margin-left: 35%;
     margin-right: 21%;
   }
 
