@@ -14,46 +14,69 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 83%;
+    // width: 83%;
     @include media-breakpoint-up(xs) {
       flex-direction: column;
       color: white;
-      margin-left: 2rem;
-      margin-top: 2rem;
+      // margin-left: 2rem;
+      // margin-top: 2rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
       color: white;
-      margin-left: 7%;
+      // margin-left: 7%;
     }
     @include media-breakpoint-up(md) {
       flex-direction: row;
       color: white;
       margin-top: 13%;
+      justify-content: space-between;
+      font-size: 13px;
     }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
-      margin-top: 6%;
+      margin-top: 34px;
+      font-size: 13px;
+      width: 100%;
     }
 
     a {
       @include media-breakpoint-up(xs) {
-        padding-bottom: 20px;
-        padding-right: 2rem;
+        // padding-bottom: 20px;
+        // padding-left: 2rem;
       }
       @include media-breakpoint-up(sm) {
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
       }
       @include media-breakpoint-up(md) {
-        padding-bottom: 20px;
-        padding-right: 1rem;
+        // padding-bottom: 20px;
       }
       color: white;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    .socialButtons a {
+      padding-left: 50px;
+        @include media-breakpoint-up(xs) {
+          // padding-bottom: 20px;
+          // padding-left: 2rem;
+        }
+        @include media-breakpoint-up(sm) {
+          // padding-bottom: 20px;
+          padding-left: 47px;
+        }
+        @include media-breakpoint-up(md) {
+          // padding-bottom: 20px;
+        }
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
     }
 
   }
@@ -177,7 +200,7 @@
   }
 
   .socialButtons {
-    display: flex;
+    // display: flex;
   }
   .fa-twitter {
     color: #919191;
@@ -233,7 +256,7 @@
     width: 80%;
     position: absolute;
     margin-left: 7%;
-    border: solid 2px white;
+    border: solid 2px red;
   }
 
   .fa {
@@ -276,12 +299,12 @@
   }
 
   .socialButtons {
-    display: flex;
+    // display: flex;
   }
 
   .fa-twitter {
     color: #919191;
-    padding-left: 3rem;
+    // padding-left: 3rem;
   }
 
   .mainTitle {
@@ -311,7 +334,6 @@
     color: white;
     bottom: 0rem;
     margin-left: 55%; 
-    margin-top: 2%;
 }
 
 @keyframes typewriter{
@@ -366,6 +388,7 @@ to{width: 38%;}
     bottom: 2rem;
     margin-top: 13%;
     margin-left: 0%;
+    font-size: 13px;
   }
 
   .fa-facebook {
@@ -382,12 +405,12 @@ to{width: 38%;}
 }
 
 .socialButtons {
-  display: flex;
+  // display: flex;
 }
 
   .fa-twitter {
     color: #919191;
-    padding-left: 3rem;
+    // padding-left: 3rem;
   }
 
   .mainTitle {
@@ -413,7 +436,6 @@ to{width: 38%;}
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.2rem;  
 }
 
 @keyframes typewriter{
@@ -445,7 +467,7 @@ to{width: 38%;}
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 88%;
+      width: 90%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
@@ -474,6 +496,7 @@ to{width: 38%;}
       bottom: 1.5rem;
       margin-top: 6%;
       margin-left: 15%;
+      font-size: 13px;
     }
     .spanButtons {
       white-space: nowrap;
@@ -481,7 +504,7 @@ to{width: 38%;}
     }
 
     .socialButtons {
-      display: flex;
+      // display: flex;
       color: #919191;
     }
 
