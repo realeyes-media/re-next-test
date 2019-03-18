@@ -1,7 +1,6 @@
 .sub-footer {
-  background: darken($secondary, 10%);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: darken(black, 10%);
+  padding-top: 10%;
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -10,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 190px;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -59,3 +59,404 @@
     }
   }
 }
+
+.container {
+  max-width: 100%;
+}
+
+.streamIt {
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.sub-footer-bottom {
+  color: white;
+  position: relative;
+  bottom: 31%;
+  left: 10%;
+  @include media-breakpoint-up(md) {
+    color: white;
+    position: relative;
+    bottom: 31%;
+    left: 10%;
+    display: inline-flex;
+   }
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #919191;
+}
+
+@include media-breakpoint-up(xs) {
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 10rem;
+    width: 18rem;
+    position: absolute;
+    margin-left: 3rem;
+    border: solid 2px white;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .spanDiv {
+  order: 1;
+  }
+
+  .allRights {
+    order: 2;
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    left: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .spanButtons {
+    padding: 28px;
+   white-space: nowrap;
+    display: block;
+    color: white;
+  }
+
+  .socialButtons {
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: 5%;
+  }
+  .fa-twitter {
+    color: #919191;
+    padding-left: 14%;
+  }
+
+  .type-writer {
+    margin-left: 12.1rem;
+  }
+
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 11rem;
+    // margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 2.2rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: white;
+    bottom: 2.8rem;
+    margin-left: 2.6rem;  
+}
+
+.mainTitle {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 73%;
+  margin-left: 2.8rem;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 4.8rem;}
+}
+}
+
+@include media-breakpoint-up(sm) {
+
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 8rem;
+    width: 80%;
+    position: absolute;
+    margin-left: 7%;
+    border: solid 2px white;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+  }
+  .spanDiv {
+    order: 1;
+    display: flex;
+  }
+  
+  .allRights {
+    order: 2;
+    display: flex;
+    left: 11rem;
+    white-space: nowrap;
+  }
+  .spanButtons {
+    padding: 28px;
+    white-space: nowrap;
+    display: inline-block;
+    color: white;
+  }
+
+  .socialButtons {
+    display: flex;
+    margin-left: 10%;
+  }
+
+  .fa-twitter {
+    color: #919191;
+    padding-left: 42%;
+  }
+
+  .mainTitle {
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 73%;
+    margin-left: 0.8rem;
+  }
+  
+
+  .type-writer {
+    margin-left: 24.3rem;
+    margin-bottom: 0rem;
+    float: right;
+    margin-top: 0.4rem;
+  }
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 11rem;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 2.2rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: white;
+    bottom: 3.2rem;
+    margin-left: 0rem; 
+    margin-right: 5.9rem; 
+}
+}
+
+@include media-breakpoint-up(md) {
+
+  .hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 8rem;
+    width: 73%;
+    position: absolute;
+    margin-left: 5rem;
+    border: solid 2px white;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+  }
+  .spanDiv {
+    order: 1;
+    display: flex;
+    margin-left: 6rem;
+    bottom: 3rem;
+  }
+  
+  .allRights {
+    order: 2;
+    display: flex;
+    left: 28%;
+    white-space: nowrap;
+    bottom: 2rem;
+  }
+
+ .spanButtons {
+  padding: 13px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.socialButtons {
+  display: flex;
+  margin-left: 14%;
+  position: relative;
+  bottom: 0.6rem;
+}
+
+  .fa-twitter {
+    color: #919191;
+    padding-left: 42%;
+  }
+
+  .type-writer {
+    margin-left: 26.7rem;
+    margin-bottom: 0rem;
+    float: right;
+    margin-top: 0.4rem;
+  }
+
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 11rem;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 2.1rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: white;
+    bottom: 3.2rem;  
+}
+
+.mainTitle {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 22rem;
+  margin-left: 5rem;
+}
+}
+
+  @include media-breakpoint-up(lg) {
+    .hr { 
+      display: block;
+      margin-before: 0.5em;
+      margin-after: 0.5em;
+      margin-start: auto;
+      margin-end: auto;
+      overflow: hidden;
+      border-style: inset;
+      border-width: 1px;
+      margin-top: 8rem;
+      width: 74.5rem;
+      position: absolute;
+      margin-left: 7%;
+      border: solid 2px white;
+    }
+    .flex-container {
+      display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap
+    }
+    .spanDiv {
+      order: 2;
+      display: flex;
+      bottom: 1.7rem;
+      margin-left: 0rem;
+    }
+    
+    .allRights {
+      order: 1;
+      display: flex;
+      left: 6.3rem;
+      color: white;
+      white-space: nowrap;
+      bottom: 0rem;
+    }
+    .spanButtons {
+      padding: 28px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    .socialButtons {
+      display: flex;
+      margin-left: 10%;
+      bottom: 0rem;
+    }
+
+    .fa-twitter {
+      color: #919191;
+      padding-left: 42%;
+    }
+
+    .type-writer {
+      width: 5rem;
+      margin-left: 33rem;
+      margin-bottom: 3rem;
+      float: right;
+    }
+    .line-1{
+      position: relative;
+      top: 50%;  
+      width: 11rem;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 2.9rem;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+      color: white;
+      bottom: 3.8rem;
+      margin-left: 0rem;  
+  }
+
+  .mainTitle {
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .streamIt {
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-right: 30rem;
+  }
+
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 6.2rem;}
+}
+}
+
+
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
