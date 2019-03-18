@@ -1,0 +1,76 @@
+Looking for git in: git
+Using git 2.7.4 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/mark/Realeyes/realeyes-website
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :src/js/scripts.js
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git show :hugo/content/_index.md
+> git show :hugo/layouts/index.html
+> git show :hugo/themes/hugo-hero-theme/layouts/index.html
+> git check-ignore -z --stdin
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/layouts/partials/case-study-image.html
+> git show :hugo/layouts/index.html
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse RNW-23
+> git rev-parse --symbolic-full-name RNW-23@{u}
+fatal: no upstream configured for branch 'RNW-23'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :hugo/layouts/index.html
+> git show :src/js/scripts.js
+> git show :hugo/layouts/index.html
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/themes/hugo-hero-theme/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/content/_index.md
+> git show :hugo/themes/hugo-hero-theme/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/themes/hugo-hero-theme/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/themes/hugo-hero-theme/layouts/partials/hero-image-fullscreen.html
+> git show :src/js/scripts.js

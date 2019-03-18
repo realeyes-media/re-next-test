@@ -1,0 +1,81 @@
+[2019-03-18 09:22:54.360] [renderer1] [info] no standard startup: not running latest version
+[2019-03-18 10:35:10.046] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-18 10:35:14.377] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-18 10:35:33.708] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-18 10:35:47.039] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at i.e.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1037:266)
+    at i.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:703)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:935
+    at Object.next (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:34:33)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:33:160
+    at new Promise (<anonymous>)
+    at i (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:32:952)
+    at i.e.expand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1034:342)
+    at Array.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5627:417)
+    at t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:105:891)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-03-18 10:38:46.591] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.getNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:628)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1018:286
+    at Array.map (<anonymous>)
+    at i.e.setSelection (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1018:255)
+    at t.onFocus (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:2410:277)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:2410:105
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:83:730
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:83:899
+    at Array.forEach (<anonymous>)
+    at e.bufferEvents (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:83:872)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1012:251
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at e.splice (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:90:602)
+    at e.setChildren (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:97:769)
+    at i.t.setChildren (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1024:345)
+    at t.refreshTree (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5690:264)
+    at t.refreshAndUpdateCount (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5690:105)
+    at t.onSearchResultsChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5689:743)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5685:766
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4246:341
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at t.clear (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4242:615)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4246:1003
+    at Array.forEach (<anonymous>)
+    at t.clear (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4246:974)
+    at t.search (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4250:779)
+    at t.doSearch (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5707:479)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5705:139
+[2019-03-18 10:39:55.141] [renderer1] [error] Inotify limit reached (ENOSPC)

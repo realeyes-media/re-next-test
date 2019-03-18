@@ -498,3 +498,5 @@ fatal: no upstream configured for branch 'RNW-23'
 > git show :src/js/scripts.js
 > git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
 > git show :src/js/scripts.js
+> git show :hugo/layouts/partials/hero-image-fullscreen.html
+> git show :hugo/themes/hugo-hero-theme/assets/scss/components/_hero-image.scss
