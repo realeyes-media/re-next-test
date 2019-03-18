@@ -4,6 +4,7 @@
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right: -45px;
   }
 
   .sub-footer-inner-bottom {
@@ -14,24 +15,20 @@
     @include media-breakpoint-up(xs) {
       flex-direction: column;
       color: white;
-      // padding: 0px 26px;
-      margin-left: 2rem;
+      margin-left: 0.6rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
       color: white;
-      // padding: 0px 26px;
-      margin-left: 3rem;
+      margin-left: 1rem;
     }
     @include media-breakpoint-up(md) {
       flex-direction: row;
       color: white;
-      // padding: 0px 26px;
     }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
-      // padding: 0px 23px;
     }
 
     a {
@@ -44,11 +41,10 @@
       }
       @include media-breakpoint-up(md) {
         padding-bottom: 20px;
-        padding-right: 0rem;
+        padding-right: 1rem;
       }
       color: white;
       text-decoration: none;
-      // padding: 6px 29px 0px 31px;
       &:hover {
         text-decoration: underline;
       }
@@ -59,7 +55,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // height: 8rem;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -116,30 +111,13 @@
   margin-top: 3%;
 }
 
-// .sub-footer-bottom {
-//   color: white;
-//   position: relative;
-//   bottom: 31%;
-//   left: 10%;
-//   @include media-breakpoint-up(md) {
-//     color: white;
-//     position: relative;
-//     bottom: 31%;
-//     left: 10%;
-//     display: inline-flex;
-//    }
-// }
-
 .fa {
-  // padding: 20px;
-  // width: 50%;
   text-align: center;
   text-decoration: none;
 }
 
 .fa-facebook {
   color: #919191;
-  // padding-right: 59%;
 
 }
 
@@ -153,11 +131,10 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    // margin-top: 10rem;
     width: 80%;
     position: absolute;
     margin-left: 2rem;
-    border: solid 2px orange;
+    border: solid 2px white;
   }
 
   .flex-container {
@@ -168,9 +145,6 @@
     margin-bottom: 2rem;
   }
 
-  .spanDiv {
-  
-  }
 
   .firstCol {
     order: 2;
@@ -185,13 +159,11 @@
     color: white;
     white-space: nowrap;
     margin-top: 31%;
-    margin-left: 36%;
-    left: 1.9rem;
-    // margin-bottom: 2rem;
+    margin-left: 21%;
+    margin-right: 21%;
   }
 
   .spanButtons {
-    // padding: 28px;
     white-space: nowrap;
     display: block;
     color: white;
@@ -200,39 +172,35 @@
 
   .socialButtons {
     display: flex;
-    // margin-left: 3%;
-    // margin-bottom: 5%;
   }
   .fa-twitter {
     color: #919191;
-    // padding-left: 14%;
   }
 
   .line-1{
     position: relative;
     top: 50%;  
     width: 11rem;
-    // margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
     bottom: 0rem;
-    margin-left: 2.6rem;  
+    top: 1rem;
+    margin-left: 8%;  
 }
 
 .type-writer {
-  // margin-left: 24.3rem;
   margin-bottom: 0rem;
   margin-top: 0.4rem;
 }
 
 .mainTitle {
   color: white;
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   text-align: center;
   width: 73%;
   right: 0rem;
@@ -240,7 +208,7 @@
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 25rem;}
+  to{width: 20rem;}
 }
 }
 
@@ -259,11 +227,10 @@
     width: 80%;
     position: absolute;
     margin-left: 7%;
-    border: solid 2px blue;
+    border: solid 2px white;
   }
 
   .fa {
-    // padding: 20px;
     width: 0%;
     text-align: center;
     text-decoration: none;
@@ -276,10 +243,7 @@
     flex-wrap: wrap;
     margin-bottom: 0rem;
   }
-  .spanDiv {
-    display: flex;
-  }
-
+ 
   .firstCol {
     order: 2;
   }
@@ -290,18 +254,16 @@
 
   .fa-facebook {
     color: #919191;
-    // padding-right: 17%;
   }
   
   .allRights {
     display: flex;
     left: 11rem;
     white-space: nowrap;
-    margin-left: 68%;
+    margin-left: 56%;
     margin-top: 7%;
   }
   .spanButtons {
-    // padding: 28px;
     white-space: nowrap;
     display: inline-block;
     color: white;
@@ -309,7 +271,6 @@
 
   .socialButtons {
     display: flex;
-    // margin-left: 10%;
   }
 
   .fa-twitter {
@@ -328,7 +289,6 @@
   
 
   .type-writer {
-    // margin-left: 24.3rem;
     margin-bottom: 0rem;
     margin-top: 0.4rem;
   }
@@ -345,7 +305,11 @@
     color: white;
     bottom: 0rem;
     margin-left: 42%; 
-    // margin-right: 5.9rem; 
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 25.2rem;}
 }
 }
 
@@ -363,8 +327,7 @@
     margin-top: 5rem;
     width: 82%;
     position: absolute;
-    // margin-left: 5rem;
-    border: solid 2px red;
+    border: solid 2px white;
   }
 
   .flex-container {
@@ -373,11 +336,6 @@
     flex-grow: 1;
     flex-wrap: wrap;
     margin-bottom: 0rem;
-  }
-  .spanDiv {
-    display: flex;
-    // margin-left: 6rem;
-    // bottom: 3rem;
   }
 
   .firstCol {
@@ -399,11 +357,9 @@
 
   .fa-facebook {
     color: #919191;
-    // padding-right: 45%;
   }
 
  .spanButtons {
-  // padding: 13px;
   white-space: nowrap;
   display: inline-block;
 }
@@ -414,9 +370,6 @@
 
 .socialButtons {
   display: flex;
-  // margin-left: 14%;
-  // position: relative;
-  // bottom: 0.6rem;
 }
 
   .fa-twitter {
@@ -433,9 +386,6 @@
   }
 
   .type-writer {
-    // margin-left: 26.7rem;
-    // margin-bottom: 0rem;
-    // margin-top: 0.4rem;
     margin: 0 auto;
   }
 
@@ -463,7 +413,7 @@
   font-size: 2.3rem;
   text-align: center;
   width: 22rem;
-  margin-left: 16rem;
+  margin-left: 34%;
 }
 }
 
@@ -489,27 +439,6 @@
         flex-grow: 1;
         flex-wrap: wrap
     }
-    .spanDiv {
-      // display: flex;
-      // bottom: 1.7rem;
-      // margin-left: 45rem;
-      // bottom: 3.3rem;
-      // position: relative;
-      // left: 23%;
-      // display: block;
-      // bottom: 27%;
-
-      // display: block;
-      // margin-before: 0.5em;
-      // margin-after: 0.5em;
-      // margin-start: auto;
-      // margin-end: auto;
-      // width: 89%;
-      // // margin-top: 8rem;
-      // position: relative;
-      // left: 45%;
-      // bottom: 24%;
-    }
 
     .firstCol {
       order: 1;
@@ -528,16 +457,12 @@
       margin-left: 15%;
     }
     .spanButtons {
-      // padding: 28px;
       white-space: nowrap;
       display: inline-block;
     }
 
     .socialButtons {
       display: flex;
-      // margin-left: 6%;
-      // bottom: 0rem;
-      // margin-right: 0%;
       color: #919191;
     }
 

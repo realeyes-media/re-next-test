@@ -1,4 +1,7 @@
 .footer {
+  @include media-breakpoint-up(md) {
+    margin-right: -45px;
+  }
   .footer-inner {
     display: flex;
     justify-content: space-between;
