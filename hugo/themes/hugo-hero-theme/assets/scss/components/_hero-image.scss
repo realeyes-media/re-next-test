@@ -1,28 +1,25 @@
 .hero-image {
   background-size: cover;
   background-repeat: no-repeat;
-  // background-image: url("https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg");
   background-position: top center;
   background-blend-mode: overlay;
   background-color: black;
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(to bottom,transparent,black);
-  // &:After {
+  // &::before {
   //   content: '';
-  //   position: absolute;
-  //   // top: 0;
-  //   // right: 0;
-  //   // bottom: 0;
-  //   // left: 0;
-  //   z-index: 99;
-  //   width:100%;
-  //   height:100%;
-  //   opacity: .6; 
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  // opacity: .6; 
   // }
   video {
     height: auto;
     width: 100%
+    
   }
   .container {
     padding-top: 60px;
@@ -46,7 +43,7 @@
     flex: 0;
     color: #ffffff;
     margin: auto 0;
-    z-index: 2;
+    z-index: 1;
     h1 {
       padding-bottom: 1rem;
       font-size: 2.5rem;
@@ -73,7 +70,6 @@
         font-size: 1.125rem;
       }
     }
-    
   }
   .hero-text-video {
     flex: 0;
@@ -159,5 +155,17 @@
 //   width: 100%;
 //   right: 0%;
   z-index: 0;
+  
 //   filter: opacity(30%) contrast(90%) brightness(80%);
+}
+.landing-page-wrapper {
+  // content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6;
 }
