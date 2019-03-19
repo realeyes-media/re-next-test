@@ -32,7 +32,7 @@
       margin-top: 13%;
       justify-content: space-between;
       font-size: 13px;
-      margin-left: 14%;
+      margin-left: 15%;
     }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
@@ -386,12 +386,14 @@ to{width: 38%;}
   
   .allRights {
     display: flex;
+    position: absolute;
     // left: 28%;
     white-space: nowrap;
     // bottom: 2rem;
-    margin-top: 13%;
+    margin-top: 70%;
     margin-left: 0%;
     font-size: 13px;
+    right: 39%;
   }
 
   .fa-facebook {
@@ -403,9 +405,9 @@ to{width: 38%;}
   display: inline-block;
 }
 
-.bill {
-  margin-left: 4rem;
-}
+// .bill {
+//   margin-left: 4rem;
+// }
 
 .socialButtons {
   // display: flex;
