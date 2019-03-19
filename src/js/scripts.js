@@ -1,10 +1,13 @@
-
 $('.solutions').click(function () {
   const solutionId = this.id
   $('.solution').hide()
   $(`.${solutionId}`).fadeToggle()
-  $('.solutions').css({ 'font-weight': '400' })
-  $(this).css({ 'font-weight': 'bold' })
+  $('.solutions').css({
+    'font-weight': '400'
+  })
+  $(this).css({
+    'font-weight': 'bold'
+  })
 })
 
 $('.accordion').click(function (e) {
@@ -12,22 +15,27 @@ $('.accordion').click(function (e) {
   if ($(this).next().css('display') === 'block') {
     $('.panel').slideUp()
     image.attr('src', '/img/minus.png')
-    $('.accordion').css({ 'font-weight': '400' })
+    $('.accordion').css({
+      'font-weight': '400'
+    })
   } else {
     $('.panel').slideUp()
     $(this).next().slideDown()
-    $('.accordion').css({ 'font-weight': '400' })
+    $('.accordion').css({
+      'font-weight': '400'
+    })
     $('.accordion').find('img').attr('src', '/img/minus.png')
     image.attr('src', '/img/plus.png')
-    $(this).css({ 'font-weight': 'bold' })
+    $(this).css({
+      'font-weight': 'bold'
+    })
   }
 })
 
-// Hide/Show NavBar
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
-  let header = document.getElementsByClassName('header header-absolute')[0];
-  let currentScrollPos = window.pageYOffset;
+  const header = document.getElementsByClassName('header header-absolute')[0];
+  const currentScrollPos = window.pageYOffset;
   if (currentScrollPos === 0) {
     header.style.background = 'transparent';
   } else if (prevScrollpos > currentScrollPos) {
@@ -38,3 +46,49 @@ window.onscroll = () => {
   }
   prevScrollpos = currentScrollPos;
 };
+
+window.onload = () => {
+  if (window.innerWidth < 768) {
+    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
+    backgroundElement.style.backgroundColor = "transparent"
+  } else {
+    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
+    const video = document.createElement("video")
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.id = "video-background";
+    const videoSource = document.createElement("source");
+    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.type = "video/mp4"
+    video.appendChild(videoSource)
+    backgroundElement.appendChild(video)
+  }
+}
+
+window.onresize = () => {
+  if (window.innerWidth < 768) {
+    const videoElement = document.getElementById("video-background");
+    if (videoElement) {
+      videoElement.parentNode.removeChild(videoElement);
+    }
+    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
+    backgroundElement.style.backgroundColor = "transparent"
+  } else if (window.innerWidth >= 768) {
+    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
+    const videoElement = document.getElementById("video-background");
+    if (videoElement) return;
+    const video = document.createElement("video")
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.id = "video-background";
+    const videoSource = document.createElement("source");
+    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.type = "video/mp4"
+    video.appendChild(videoSource)
+    backgroundElement.appendChild(video)
+  }
+}
+
+
