@@ -46,13 +46,9 @@
     a {
       @include media-breakpoint-up(xs) {
         padding-bottom: 12%;
-        // padding-left: 2rem;
       }
       @include media-breakpoint-up(sm) {
         padding-bottom: 12%;
-      }
-      @include media-breakpoint-up(md) {
-        // padding-bottom: 20px;
       }
       color: white;
       text-decoration: none;
@@ -64,16 +60,8 @@
     .socialButtons a {
       padding-left: 50px;
       color: #919191;
-        @include media-breakpoint-up(xs) {
-          // padding-bottom: 20px;
-          // padding-left: 2rem;
-        }
         @include media-breakpoint-up(sm) {
-          // padding-bottom: 20px;
           padding-left: 47px;
-        }
-        @include media-breakpoint-up(md) {
-          // padding-bottom: 20px;
         }
         color: white;
         text-decoration: none;
@@ -201,9 +189,6 @@
     z-index: 1;
   }
 
-  .socialButtons {
-    // display: flex;
-  }
   .fa-twitter {
     color: #919191;
   }
@@ -289,7 +274,6 @@
   
   .allRights {
     display: flex;
-    // left: 11rem;
     white-space: nowrap;
     margin-left: 59%;
     margin-top: 19%;
@@ -300,14 +284,8 @@
     color: white;
   }
 
-  .socialButtons {
-    // margin-left: 59%;
-    // width: 70%;
-  }
-
   .fa-twitter {
     color: #919191;
-    // padding-left: 3rem;
   }
 
   .mainTitle {
@@ -316,7 +294,6 @@
     text-align: center;
     width: 73%;
     margin-left: 0.8rem;
-    // right: 9rem;
   }
   
 
@@ -326,8 +303,6 @@
   }
   .line-1{
     position: relative;
-    // top: 50%;  
-    // width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.2rem;
     text-align: center;
@@ -387,13 +362,11 @@ to{width: 38%;}
   .allRights {
     display: flex;
     position: absolute;
-    // left: 28%;
     white-space: nowrap;
-    // bottom: 2rem;
     margin-top: 70%;
     margin-left: 0%;
     font-size: 13px;
-    right: 39%;
+    right: 45%;
   }
 
   .fa-facebook {
@@ -405,26 +378,11 @@ to{width: 38%;}
   display: inline-block;
 }
 
-// .bill {
-//   margin-left: 4rem;
-// }
-
-.socialButtons {
-  // display: flex;
-}
 
   .fa-twitter {
     color: #919191;
-    // padding-left: 3rem;
   }
 
-  // .mainTitle {
-  //   color: white;
-  //   font-size: 3rem;
-  //   width: 100%;
-  //   margin-left: 0rem;
-  //   // right: 9rem;
-  // }
 
   .type-writer {
     margin: 0 auto;
@@ -457,7 +415,6 @@ to{width: 38%;}
   color: white;
   font-size: 2.3rem;
   text-align: center;
-  // width: 22rem;
   margin-left: 4vw;
 }
 }
@@ -498,7 +455,6 @@ to{width: 38%;}
       left: 11%;
       color: white;
       white-space: nowrap;
-      // bottom: 1.5rem;
       margin-top: 4%;
       margin-left: 19%;
       font-size: 13px;
@@ -518,12 +474,8 @@ to{width: 38%;}
       color: #919191;
     }
     
-    .bill {
-      margin-left: 0rem;
-    }
 
     .type-writer {
-      // width: 5%;
       margin-bottom: 3rem;
       margin-left: 41%;
     }
