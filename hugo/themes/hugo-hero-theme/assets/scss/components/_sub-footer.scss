@@ -60,10 +60,6 @@
   }
 }
 
-.container {
-  max-width: 100%;
-}
-
 .streamIt {
   margin: 0 auto;
   margin-top: 3%;
@@ -95,7 +91,7 @@
 }
 
 @include media-breakpoint-up(xs) {
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -156,7 +152,7 @@
 
   .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 11rem;
     // margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -167,7 +163,7 @@
     transform: translateY(-50%);
     color: white;
     bottom: 2.8rem;
-    margin-left: 2.6rem;  
+    margin-left: 2.6rem;
 }
 
 .mainTitle {
@@ -186,7 +182,7 @@
 
 @include media-breakpoint-up(sm) {
 
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -213,7 +209,7 @@
     order: 1;
     display: flex;
   }
-  
+
   .allRights {
     order: 2;
     display: flex;
@@ -244,7 +240,7 @@
     width: 73%;
     margin-left: 0.8rem;
   }
-  
+
 
   .type-writer {
     margin-left: 24.3rem;
@@ -254,7 +250,7 @@
   }
   .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.2rem;
@@ -264,14 +260,14 @@
     transform: translateY(-50%);
     color: white;
     bottom: 3.2rem;
-    margin-left: 0rem; 
-    margin-right: 5.9rem; 
+    margin-left: 0rem;
+    margin-right: 5.9rem;
 }
 }
 
 @include media-breakpoint-up(md) {
 
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -300,7 +296,7 @@
     margin-left: 6rem;
     bottom: 3rem;
   }
-  
+
   .allRights {
     order: 2;
     display: flex;
@@ -336,7 +332,7 @@
 
   .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.1rem;
@@ -345,7 +341,7 @@
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.2rem;  
+    bottom: 3.2rem;
 }
 
 .mainTitle {
@@ -358,7 +354,7 @@
 }
 
   @include media-breakpoint-up(lg) {
-    .hr { 
+    .hr {
       display: block;
       margin-before: 0.5em;
       margin-after: 0.5em;
@@ -385,7 +381,7 @@
       bottom: 1.7rem;
       margin-left: 0rem;
     }
-    
+
     .allRights {
       order: 1;
       display: flex;
@@ -419,7 +415,7 @@
     }
     .line-1{
       position: relative;
-      top: 50%;  
+      top: 50%;
       width: 11rem;
       border-right: 2px solid rgba(255,255,255,.75);
       font-size: 2.9rem;
@@ -429,7 +425,7 @@
       transform: translateY(-50%);
       color: white;
       bottom: 3.8rem;
-      margin-left: 0rem;  
+      margin-left: 0rem;
   }
 
   .mainTitle {
