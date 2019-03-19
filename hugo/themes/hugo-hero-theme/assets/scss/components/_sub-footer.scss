@@ -138,6 +138,13 @@
   color: #919191;
 }
 
+// @media (max-width: 437px) { 
+//   .allRights{
+//   margin-left: 32%;
+//   }
+
+//  }
+
 @include media-breakpoint-up(xs) {
   .hr { 
     display: block;
@@ -176,8 +183,10 @@
     color: white;
     white-space: nowrap;
     margin-top: 17%;
-    margin-left: 25%;
-    margin-right: 21%;
+    // margin-left: 25%;
+    // margin-right: 21%;
+    position: relative;
+    left: 43%;
   }
 
   .spanButtons {
@@ -241,7 +250,7 @@
     width: 80%;
     position: absolute;
     margin-left: 7%;
-    border: solid 2px blue;
+    border: solid 2px white;
   }
 
   .fa {
@@ -281,6 +290,7 @@
     white-space: nowrap;
     margin-left: 59%;
     margin-top: 0%;
+    left: 0%;
   }
   .spanButtons {
     white-space: nowrap;
