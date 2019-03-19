@@ -14,12 +14,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 83%;
     @include media-breakpoint-up(xs) {
       flex-direction: column;
       color: white;
       margin-left: 15%;
-      // margin-top: 2rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
