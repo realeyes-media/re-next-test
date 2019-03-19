@@ -18,36 +18,38 @@
     @include media-breakpoint-up(xs) {
       flex-direction: column;
       color: white;
-      // margin-left: 2rem;
+      margin-left: 15%;
       // margin-top: 2rem;
     }
     @include media-breakpoint-up(sm) {
       flex-direction: column;
       color: white;
-      // margin-left: 7%;
+      margin-left: 15%;
     }
     @include media-breakpoint-up(md) {
-      flex-direction: row;
+      flex-direction: column;
       color: white;
       margin-top: 13%;
       justify-content: space-between;
       font-size: 13px;
+      margin-left: 14%;
     }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
-      margin-top: 3.7vh;
+      margin-top: 5%;
       font-size: 13px;
       width: 100%;
+      margin-left: 0%;
     }
 
     a {
       @include media-breakpoint-up(xs) {
-        // padding-bottom: 20px;
+        padding-bottom: 12%;
         // padding-left: 2rem;
       }
       @include media-breakpoint-up(sm) {
-        // padding-bottom: 20px;
+        padding-bottom: 12%;
       }
       @include media-breakpoint-up(md) {
         // padding-bottom: 20px;
@@ -61,6 +63,7 @@
 
     .socialButtons a {
       padding-left: 50px;
+      color: #919191;
         @include media-breakpoint-up(xs) {
           // padding-bottom: 20px;
           // padding-left: 2rem;
@@ -147,7 +150,6 @@
 
 .fa-facebook {
   color: #919191;
-
 }
 
 @include media-breakpoint-up(xs) {
@@ -287,10 +289,10 @@
   
   .allRights {
     display: flex;
-    left: 11rem;
+    // left: 11rem;
     white-space: nowrap;
-    margin-left: 56%;
-    margin-top: 7%;
+    margin-left: 59%;
+    margin-top: 19%;
   }
   .spanButtons {
     white-space: nowrap;
@@ -299,7 +301,8 @@
   }
 
   .socialButtons {
-    // display: flex;
+    // margin-left: 59%;
+    // width: 70%;
   }
 
   .fa-twitter {
@@ -374,18 +377,18 @@ to{width: 38%;}
   }
 
   .firstCol {
-    order: 1;
+    order: 2;
   }
 
   .secondCol {
-    order: 2;
+    order: 1;
   }
   
   .allRights {
     display: flex;
-    left: 28%;
+    // left: 28%;
     white-space: nowrap;
-    bottom: 2rem;
+    // bottom: 2rem;
     margin-top: 13%;
     margin-left: 0%;
     font-size: 13px;
@@ -493,7 +496,7 @@ to{width: 38%;}
       left: 11%;
       color: white;
       white-space: nowrap;
-      bottom: 1.5rem;
+      // bottom: 1.5rem;
       margin-top: 4%;
       margin-left: 19%;
       font-size: 13px;
@@ -504,7 +507,6 @@ to{width: 38%;}
     }
 
     .socialButtons {
-      // display: flex;
       color: #919191;
     }
 
