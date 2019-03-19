@@ -36,7 +36,7 @@
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
-      margin-top: 34px;
+      margin-top: 3.7vh;
       font-size: 13px;
       width: 100%;
     }
@@ -160,9 +160,9 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    width: 73%;
+    width: 79%;
     position: absolute;
-    margin-left: 2rem;
+    margin-left: 7vw;
     border: solid 2px white;
   }
 
@@ -313,7 +313,7 @@
     text-align: center;
     width: 73%;
     margin-left: 0.8rem;
-    right: 9rem;
+    // right: 9rem;
   }
   
 
@@ -323,8 +323,8 @@
   }
   .line-1{
     position: relative;
-    top: 50%;  
-    width: 11rem;
+    // top: 50%;  
+    // width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.2rem;
     text-align: center;
@@ -333,7 +333,7 @@
     transform: translateY(-50%);
     color: white;
     bottom: 0rem;
-    margin-left: 55%; 
+    margin-left: 26vw; 
 }
 
 @keyframes typewriter{
@@ -413,13 +413,13 @@ to{width: 38%;}
     // padding-left: 3rem;
   }
 
-  .mainTitle {
-    color: white;
-    font-size: 3rem;
-    width: 100%;
-    margin-left: 0rem;
-    right: 9rem;
-  }
+  // .mainTitle {
+  //   color: white;
+  //   font-size: 3rem;
+  //   width: 100%;
+  //   margin-left: 0rem;
+  //   // right: 9rem;
+  // }
 
   .type-writer {
     margin: 0 auto;
@@ -452,8 +452,8 @@ to{width: 38%;}
   color: white;
   font-size: 2.3rem;
   text-align: center;
-  width: 22rem;
-  margin-left: 38%;
+  // width: 22rem;
+  margin-left: 4vw;
 }
 }
 
@@ -467,11 +467,11 @@ to{width: 38%;}
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 90%;
+      width: 85%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
-      margin-left: 7%;
+      margin-left: 9%;
     }
     .flex-container {
       display: flex;
@@ -494,8 +494,8 @@ to{width: 38%;}
       color: white;
       white-space: nowrap;
       bottom: 1.5rem;
-      margin-top: 6%;
-      margin-left: 15%;
+      margin-top: 4%;
+      margin-left: 19%;
       font-size: 13px;
     }
     .spanButtons {
@@ -541,7 +541,7 @@ to{width: 38%;}
     font-size: 3rem;
     width: 100%;
     margin-left: 0rem;
-    right: 9rem;
+    right: 25%;
   }
 
   .streamIt {
@@ -557,7 +557,7 @@ to{width: 38%;}
 
   @-webkit-keyframes typewriter{
   from{width: 0;}
-  to{width: 550rem;}
+  to{width: 39vw;}
 }
 }
 
