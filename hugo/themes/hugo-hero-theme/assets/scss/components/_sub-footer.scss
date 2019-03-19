@@ -359,12 +359,12 @@ to{width: 38%;}
   
   .allRights {
     display: flex;
-    position: absolute;
+    position: relative;
     white-space: nowrap;
-    margin-top: 70%;
+    margin-top: 78%;
     margin-left: 0%;
     font-size: 13px;
-    right: 45%;
+    right: 22%;
   }
 
   .fa-facebook {
@@ -374,6 +374,12 @@ to{width: 38%;}
  .spanButtons {
   white-space: nowrap;
   display: inline-block;
+}
+
+.socialButtons {
+  position: relative;
+  left: 75%;
+  margin-top: 8%;
 }
 
 
@@ -515,6 +521,10 @@ to{width: 38%;}
   from{width: 0;}
   to{width: 45vw;}
 }
+}
+
+@include media-breakpoint-up(xl) {
+
 }
 
 
