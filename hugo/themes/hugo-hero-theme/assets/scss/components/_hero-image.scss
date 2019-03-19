@@ -30,8 +30,18 @@
       position: absolute;
       top: 0;
       left: 0;
-      @media ( min-width: 1920px ) {
+
+      @media (min-width: 1920px) {
         height: 70vh;
+      }
+
+      @media (min-width: 3250px) {
+        height: 1vh;
+        top: 15%;
+      }
+
+      @media (min-width: 4200px) {
+        top: 5%;
       }
     }
   }
@@ -107,6 +117,10 @@
     @media (min-width: 1920px) {
       top: 55%
     }
+
+      @media( min-width: 4200px ) {
+        top: 45%
+      }
 
     @include media-breakpoint-down(sm) {
       top: 70%;
