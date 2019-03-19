@@ -45,6 +45,7 @@
 // Components
 @import 'components/reset';
 @import 'components/page';
+@import 'components/page-who';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/sub-footer';
@@ -61,7 +62,10 @@
 @import 'components/whitebox';
 @import 'components/feature';
 @import 'components/hero-image';
+@import 'components/contact-form';
+@import 'components/case-study-image';
 @import 'components/bg';
+@import 'components/accordion';
 
 // Pages
 @import 'pages/services/page-services-list';
