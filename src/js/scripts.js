@@ -48,9 +48,8 @@ window.onscroll = () => {
 };
 
 window.onload = () => {
-  if (window.innerWidth < 992) {
+  if (window.innerWidth < 768) {
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
-    // backgroundElement.style.backgroundImage = `url("https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg")`
     backgroundElement.style.backgroundColor = "transparent"
   } else {
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
@@ -68,21 +67,15 @@ window.onload = () => {
 }
 
 window.onresize = () => {
-  if (window.innerWidth < 992) {
-    console.log("sanity check: video-background")
+  if (window.innerWidth < 768) {
     const videoElement = document.getElementById("video-background");
-    console.log(videoElement)
     if (videoElement) {
       videoElement.parentNode.removeChild(videoElement);
     }
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
-    // backgroundElement.style.backgroundImage = `url("https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg")`
     backgroundElement.style.backgroundColor = "transparent"
-  } else if (window.innerWidth >= 992) {
+  } else if (window.innerWidth >= 768) {
     const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
-    // if (backgroundElement.style.backgroundImage) {
-    //   backgroundElement.removeAttribute("style")
-    // }
     const videoElement = document.getElementById("video-background");
     if (videoElement) return;
     const video = document.createElement("video")
