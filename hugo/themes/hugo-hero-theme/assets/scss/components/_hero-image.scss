@@ -71,23 +71,20 @@
   .hero-text-video {
     flex: 0;
     color: #ffffff;
-    // margin: auto 0;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 65%;
     margin-left: 1rem;
-    @include media-breakpoint-down(xs) {
-      top: 75%;
+    @include media-breakpoint-down(sm) {
+      top: 70%;
       margin-right: 9rem;
     }
     h1 {
-      // padding-bottom: 5px;
       margin-bottom: 0;
-      // font-size: 3rem;
       font-family: Helvetica;
       font-weight: bold;
       font-size: 5.5vw;
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(sm) {
         font-size: 8vw;
         margin-right: 1rem;
       }
@@ -114,12 +111,6 @@
       @include media-breakpoint-down(xs) {
         font-size: 3vw;
       }
-      // @include media-breakpoint-up(md) {
-      //   font-size: 1.125rem;
-      // }
-      // @include media-breakpoint-up(lg) {
-      //   font-size: 2.5rem;
-      // }
     }
   }
   .hero-down {
@@ -149,9 +140,5 @@
 }
 #video-background {
   position: relative;
-//   width: 100%;
-//   right: 0%;
   z-index: 0;
-  
-//   filter: opacity(30%) contrast(90%) brightness(80%);
 }
