@@ -1,0 +1,30 @@
+#myCarousel {
+    height:90%; 
+    background: black;
+}
+
+.carousel-inner {
+  height: 101vh;
+}
+
+
+.carousel-content {
+    background: black; 
+    text-align: center; 
+    color: white;
+    height:100%;
+}
+
+.activeItem {
+ height:100%;
+}
+
+// .height-container {
+//     height: 99vh;
+//     width: 100%;
+// }
+
+.no-padding{
+    padding-left:0;
+    padding-right:0;
+  }
