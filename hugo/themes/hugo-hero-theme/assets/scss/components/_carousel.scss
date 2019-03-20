@@ -44,4 +44,11 @@
 
   .carousel-indicators li.active {
     background-color: #4A90E2;
+    width: 14px;
+    height: 14px;
+    bottom: 2px;
+  }
+
+  .carousel-indicators {
+    bottom: 20%;
   }
