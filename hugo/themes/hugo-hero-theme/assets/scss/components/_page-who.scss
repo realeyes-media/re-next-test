@@ -1,27 +1,37 @@
 .page-who {
+
+
     .absolute-who-image {
+        position: absolute;
+        // width: 40%;
+        // height: 100%;
+        // max-width:40%;
+        right: 0px;
+        padding: 0;
         @include media-breakpoint-up(xs) {
             position: relative;
             width: 100%;
             height: 100%;
             padding: 0;
+            top: 0;
         }
         @include media-breakpoint-up(sm) {
             position: relative;
             width: 100%;
             height: 100%;
             padding: 0;
+            top: 0;
         }
         @include media-breakpoint-up(md) {
             position: absolute;
-            top: 50rem;
+            top: 55%;
             right: 0px;
             max-width: 40%;
             height: 30rem;
         }
         @include media-breakpoint-up(lg) {
             position: absolute;
-            top: 25rem;
+            // top: 40%;
             right: 0px;
             width: 28rem;
             max-width: 40%;
@@ -29,7 +39,7 @@
         }
         @include media-breakpoint-up(xl) {
             position: absolute;
-            top: 20rem;
+            // top: 40%;
             right: 0px;
             width: 28rem;
             max-width: 40%;
