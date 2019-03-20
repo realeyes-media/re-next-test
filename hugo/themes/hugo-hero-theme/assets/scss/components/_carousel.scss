@@ -19,15 +19,6 @@
 }
 
 
-// .height-container {
-//     height: 99vh;
-//     width: 100%;
-// }
-
-.no-padding{
-    padding-left:0;
-    padding-right:0;
-  }
 
   .widthControl {
       width:49vw;
@@ -70,3 +61,42 @@
   .authorColor {
     color: #4A90E2;
   }
+
+  @include media-breakpoint-up(xs) {
+    .authorColor {
+        color: orange;
+      }
+  
+  }
+  
+  @include media-breakpoint-up(sm) {
+    .authorColor {
+        color: red;
+      }
+  
+  
+  }
+  
+  @include media-breakpoint-up(md) {
+    .authorColor {
+        color: purple;
+      }
+      .carousel-indicators {
+        bottom: 25%;
+        padding-top: 31px;
+      }
+      .author {
+        padding-top: 31px;
+    }
+ 
+  }
+  
+    @include media-breakpoint-up(lg) {
+        .authorColor {
+            color: #4A90E2;
+          }
+      
+  }
+  
+  
+  
