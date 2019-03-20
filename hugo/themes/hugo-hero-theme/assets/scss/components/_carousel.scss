@@ -32,3 +32,16 @@
   .widthControl {
       width:58vw;
   }
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #233F60;
+    cursor: pointer;
+  }
+
+  .carousel-indicators li.active {
+    background-color: #4A90E2;
+  }
