@@ -11,6 +11,7 @@
 .carousel-inner {
   height: 82vh;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .no-padding {
@@ -25,21 +26,22 @@
     height:100%;
     justify-content: center;
     margin-top: 30vh;
-    margin-left: 26vw;
+    margin-left: 17vw;
     position: absolute;
 }
 
 
 
+
   .widthControl {
-      width:49vw;
+      width:80%;
   }
 
   .carousel-indicators {
-    position: inherit;
+    position: relative;
     margin-bottom: 100px;
     padding-top: 50px;
-    bottom: 140px;
+    bottom: 120px;
   }
 
 
@@ -81,6 +83,12 @@
     .authorColor {
         color: orange;
       }
+
+      .carousel-inner {
+        height: 82vh;
+        position: relative;
+        margin-bottom: 80px;
+      }
   
   }
   
@@ -88,7 +96,21 @@
     .authorColor {
         color: red;
       }
-  
+      .widthControl {
+        width:81%;
+    }
+
+    .carousel-inner {
+        height: 82vh;
+        position: relative;
+        margin-bottom: 82px;
+      }
+      .carousel-indicators {
+        position: relative;
+        margin-bottom: 100px;
+        padding-top: 68px;
+        bottom: 120px;
+      }
   
   }
   
@@ -103,6 +125,22 @@
       .author {
         padding-top: 31px;
     }
+    .widthControl {
+        width:80%;
+    }
+
+    .carousel-inner {
+        height: 82vh;
+        position: relative;
+        margin-bottom: 88px;
+      }
+
+      .carousel-indicators {
+        position: relative;
+        margin-bottom: 100px;
+        padding-top: 50px;
+        bottom: 120px;
+      }
  
   }
   
@@ -110,7 +148,11 @@
         .authorColor {
             color: #4A90E2;
           }
-      
+          .carousel-inner {
+            height: 82vh;
+            position: relative;
+            margin-bottom: 16px;
+          }
   }
   
   
