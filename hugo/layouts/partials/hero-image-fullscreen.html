@@ -1,13 +1,16 @@
 <div class="landing-page-wrapper">
-  <div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .background | relURL }}');">
+  <div id="landing-page-hero" class="hero-image hero-image-fullscreen"
+    style="background-image: url('{{ .background | relURL }}');">
+    <div id="hero-video-container">
       <div class="container-fluid pl-md-6 pt-0">
-        <div class="hero-text-video hero-text-left">
+        <div class="hero-text-video">
           <span class="hero-section">{{ .section }}</span>
           <h1 class="hero-header-green">{{ .heading }}</h1>
           <h1>{{ .subheading }}</h1>
-            <p>{{ .serviceOne }} &nbsp; &bull; &nbsp; {{ .serviceTwo }} &nbsp; &bull; &nbsp; {{ .serviceThree }}</p>
+          <p>{{ .serviceOne }} &nbsp; &bull; &nbsp; {{ .serviceTwo }} &nbsp; &bull; &nbsp; {{ .serviceThree }}</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 {{ .Site.BaseURL }}
