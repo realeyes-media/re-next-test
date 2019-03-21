@@ -10,11 +10,11 @@ heroBackground: https://image.shutterstock.com/z/stock-photo-american-football-p
 ---
 
 <div>
-{{< content-strip-left "/pages/about" "content1" >}}
+{{< content-strip-right "/pages/about" "content1" >}}
 </div>
 <div>
-{{< content-strip-right "/pages/about" "content2" >}}
+{{< content-strip-left "/pages/about" "content2" >}}
 </div>
 <div>
-{{< content-strip-left "/pages/about" "content3" >}}
+{{< content-strip-right "/pages/about" "content3" >}}
 </div>

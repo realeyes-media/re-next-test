@@ -7,15 +7,18 @@
 <div class="strip">
   <div class="row">
 
-    <div class="bg-cover bg-position-center bg-overlay col-8 pt-15 pb-15"
+    <div class="serviceLeftGradient bg-cover bg-position-center bg-overlay col-8 pt-15 pb-15"
       style="background-image: url(' {{ .Params.background | relURL }} ');">
 
     </div>
-    <div class="serviceLeft col-4 pt-15 pb-15">
-      {{ .Content }}
-      {{ if .Params.button }}
-      <a class="button button-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button}}</a>
-      {{ end }}
+    <div class="col-4 pt-15 pb-15" style="background-color: black">
+      <div class="serviceLeftText">
+
+        {{ .Content }}
+        {{ if .Params.button }}
+        <a class="button button-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button}}</a>
+        {{ end }}
+      </div>
     </div>
   </div>
 </div>
