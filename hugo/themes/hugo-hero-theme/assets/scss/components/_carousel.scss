@@ -12,6 +12,7 @@
   height: 82vh;
   position: relative;
   margin-bottom: 50px;
+  overflow: visible;
 }
 
 .no-padding {
@@ -85,9 +86,22 @@
       }
 
       .carousel-inner {
-        height: 82vh;
+        height: 106vh;
         position: relative;
-        margin-bottom: 80px;
+        margin-bottom: 110px;
+        @media (max-width: 374px) { 
+            height: 130vh;
+          }
+          @media (max-width: 332px) { 
+            height: 140vh;
+          }
+      }
+
+      .carousel-indicators {
+        position: relative;
+        margin-bottom: 100px;
+        padding-top: 68px;
+        bottom: 102px;
       }
   
   }
@@ -97,7 +111,7 @@
         color: red;
       }
       .widthControl {
-        width:81%;
+        width:90%;
     }
 
     .carousel-inner {
@@ -109,8 +123,19 @@
         position: relative;
         margin-bottom: 100px;
         padding-top: 68px;
-        bottom: 120px;
+        bottom: 142px;
       }
+
+      .carousel-content {
+        background: black; 
+        text-align: center; 
+        color: white;
+        height:100%;
+        justify-content: center;
+        margin-top: 30vh;
+        margin-left: 9vw;
+        position: absolute;
+    }
   
   }
   
@@ -139,8 +164,19 @@
         position: relative;
         margin-bottom: 100px;
         padding-top: 50px;
-        bottom: 120px;
+        bottom: 160px;
       }
+
+      .carousel-content {
+        background: black; 
+        text-align: center; 
+        color: white;
+        height:100%;
+        justify-content: center;
+        margin-top: 30vh;
+        margin-left: 17vw;
+        position: absolute;
+    }
  
   }
   
@@ -152,6 +188,13 @@
             height: 82vh;
             position: relative;
             margin-bottom: 16px;
+          }
+
+          .carousel-indicators {
+            position: relative;
+            margin-bottom: 100px;
+            padding-top: 50px;
+            bottom: 122px;
           }
   }
   
