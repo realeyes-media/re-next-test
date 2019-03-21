@@ -37,6 +37,10 @@
 </div>
 {{ end }}
 
+<!-- Services Section -->
+{{ .Content }}
+<!-- End Service Section -->
+
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
 <div class="container pt-8 pb-8 pb-md-14 pt-md-14">
@@ -55,6 +59,7 @@
     </div>
 </div>
 {{end}}
+
 
 {{ range first 1 (after 1 $reusablePages) }}
 <div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay"
