@@ -49,7 +49,7 @@ window.onscroll = () => {
 
 window.onload = () => {
   if (window.innerWidth < 768) {
-    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
+    const backgroundElement = document.getElementById("landing-page-hero")
     backgroundElement.style.backgroundColor = "transparent"
   } else {
     const backgroundElement = document.getElementById("hero-video-container")
@@ -72,10 +72,11 @@ window.onresize = () => {
     if (videoElement) {
       videoElement.parentNode.removeChild(videoElement);
     }
-    const backgroundElement = document.getElementsByClassName("hero-image hero-image-fullscreen")[0]
-    backgroundElement.style.backgroundColor = "transparent"
-  } else if (window.innerWidth >= 768) {
     const backgroundElement = document.getElementById("hero-video-container")
+    backgroundElement.style.backgroundColor = "transparent"
+  } else if (window.innerWidth > 767.98) {
+    const backgroundElement = document.getElementById("hero-video-container")
+    backgroundElement.style.backgroundColor = "black"
     const videoElement = document.getElementById("video-background");
     if (videoElement) return;
     const video = document.createElement("video")
