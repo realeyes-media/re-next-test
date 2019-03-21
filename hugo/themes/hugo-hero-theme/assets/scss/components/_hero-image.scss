@@ -175,7 +175,7 @@
   position: relative;
   z-index: 0;
 }
-//**** Landing Page Styles ****
+//**** Landing Page Hero Styles ****
 .landing-page-wrapper {
   .hero-image {
     background-size: cover;
@@ -295,7 +295,7 @@
       }
 
       @include media-breakpoint-down(sm) {
-        top: 70%;
+        top: 50%;
         margin-right: 9rem;
       }
 
