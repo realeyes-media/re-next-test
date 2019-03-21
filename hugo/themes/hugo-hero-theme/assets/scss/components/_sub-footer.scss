@@ -1,15 +1,86 @@
 .sub-footer {
   background: darken(black, 10%);
   padding-top: 10%;
+  @include media-breakpoint-up(xs) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .sub-footer-inner-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-breakpoint-up(xs) {
+      flex-direction: column;
+      color: white;
+      margin-left: 15%;
+    }
+    @include media-breakpoint-up(sm) {
+      flex-direction: column;
+      color: white;
+      margin-left: 15%;
+    }
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+      color: white;
+      margin-top: 13%;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-left: 15%;
+    }
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      color: white;
+      margin-top: 5%;
+      font-size: 13px;
+      width: 100%;
+      margin-left: 0%;
+    }
+
+    a {
+      @include media-breakpoint-up(xs) {
+        padding-bottom: 12%;
+      }
+      @include media-breakpoint-up(sm) {
+        padding-bottom: 12%;
+        padding-right: 2%;
+      }
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .socialButtons a {
+      padding-left: 50px;
+      color: #919191;
+      @media (max-width: 320px) { 
+        padding-right: 2%;
+        padding-left: 0%;
+      }
+      @include media-breakpoint-up(xs) {
+        padding-left: 7%;
+      }
+        @include media-breakpoint-up(sm) {
+          padding-left: 47px;
+        }
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+
   }
   .sub-footer-inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 190px;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -60,32 +131,13 @@
   }
 }
 
-.container {
-  max-width: 100%;
-}
 
 .streamIt {
   margin: 0 auto;
   margin-top: 3%;
 }
 
-.sub-footer-bottom {
-  color: white;
-  position: relative;
-  bottom: 31%;
-  left: 10%;
-  @include media-breakpoint-up(md) {
-    color: white;
-    position: relative;
-    bottom: 31%;
-    left: 10%;
-    display: inline-flex;
-   }
-}
-
 .fa {
-  padding: 20px;
-  width: 50px;
   text-align: center;
   text-decoration: none;
 }
@@ -93,6 +145,7 @@
 .fa-facebook {
   color: #919191;
 }
+
 
 @include media-breakpoint-up(xs) {
   .hr { 
@@ -104,10 +157,9 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    margin-top: 10rem;
-    width: 18rem;
+    width: 79%;
     position: absolute;
-    margin-left: 3rem;
+    margin-left: 7vw;
     border: solid 2px white;
   }
 
@@ -119,67 +171,78 @@
     margin-bottom: 2rem;
   }
 
-  .spanDiv {
-  order: 1;
+
+  .firstCol {
+    order: 2;
+  }
+
+  .secondCol {
+    order: 1;
   }
 
   .allRights {
-    order: 2;
     display: flex;
     color: white;
     white-space: nowrap;
-    left: 1.4rem;
-    margin-bottom: 2rem;
+    position: relative;
+    left: 43%;
+    @media (max-width: 437px) { 
+      left: 20%;
+    }
   }
 
   .spanButtons {
-    padding: 28px;
-   white-space: nowrap;
+    white-space: nowrap;
     display: block;
     color: white;
+    z-index: 1;
   }
 
   .socialButtons {
-    display: flex;
-    margin-left: 3%;
-    margin-bottom: 5%;
-  }
-  .fa-twitter {
-    color: #919191;
-    padding-left: 14%;
+    position: relative;
+    left: 58%;
+    @media (max-width: 446px) { 
+      display: inline-flex;
+      padding-right: 2%;
+    }
   }
 
-  .type-writer {
-    margin-left: 12.1rem;
+  .fa-twitter {
+    color: #919191;
   }
 
   .line-1{
     position: relative;
     top: 50%;  
     width: 11rem;
-    // margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 2.8rem;
-    margin-left: 2.6rem;  
+    bottom: 0rem;
+    top: 1rem;
+    margin-left: 27%;  
+}
+
+.type-writer {
+  margin-bottom: 0rem;
+  margin-top: 0.4rem;
 }
 
 .mainTitle {
   color: white;
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   text-align: center;
   width: 73%;
-  margin-left: 2.8rem;
+  right: 0rem;
 }
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 4.8rem;}
+  to{width: 50%;}
 }
 }
 
@@ -194,11 +257,17 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    margin-top: 8rem;
+    margin-top: 6rem;
     width: 80%;
     position: absolute;
     margin-left: 7%;
     border: solid 2px white;
+  }
+
+  .fa {
+    width: 0%;
+    text-align: center;
+    text-decoration: none;
   }
 
   .flex-container {
@@ -208,32 +277,41 @@
     flex-wrap: wrap;
     margin-bottom: 0rem;
   }
-  .spanDiv {
+ 
+  .firstCol {
+    order: 2;
+  }
+
+  .secondCol {
     order: 1;
-    display: flex;
+  }
+
+  .fa-facebook {
+    color: #919191;
+  }
+
+  .socialButtons {
+    position: relative;
+    left: 53%;
+    margin-top: 15%;
+    display: inline-flex;
   }
   
   .allRights {
-    order: 2;
     display: flex;
-    left: 11rem;
     white-space: nowrap;
+    margin-left: 59%;
+    margin-top: 0%;
+    left: 1%;
   }
   .spanButtons {
-    padding: 28px;
     white-space: nowrap;
     display: inline-block;
     color: white;
   }
 
-  .socialButtons {
-    display: flex;
-    margin-left: 10%;
-  }
-
   .fa-twitter {
     color: #919191;
-    padding-left: 42%;
   }
 
   .mainTitle {
@@ -246,15 +324,11 @@
   
 
   .type-writer {
-    margin-left: 24.3rem;
     margin-bottom: 0rem;
-    float: right;
     margin-top: 0.4rem;
   }
   .line-1{
     position: relative;
-    top: 50%;  
-    width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.2rem;
     text-align: center;
@@ -262,10 +336,20 @@
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.2rem;
-    margin-left: 0rem; 
-    margin-right: 5.9rem; 
+    bottom: 0rem;
+    margin-left: 26vw; 
 }
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 40%;}
+}
+
+@-webkit-keyframes typewriter{
+from{width: 0;}
+to{width: 38%;}
+}
+
 }
 
 @include media-breakpoint-up(md) {
@@ -279,10 +363,9 @@
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    margin-top: 8rem;
-    width: 73%;
+    margin-top: 6rem;
+    width: 88%;
     position: absolute;
-    margin-left: 5rem;
     border: solid 2px white;
   }
 
@@ -293,44 +376,49 @@
     flex-wrap: wrap;
     margin-bottom: 0rem;
   }
-  .spanDiv {
+
+  .firstCol {
+    order: 2;
+  }
+
+  .secondCol {
     order: 1;
-    display: flex;
-    margin-left: 6rem;
-    bottom: 3rem;
   }
   
   .allRights {
-    order: 2;
     display: flex;
-    left: 28%;
+    position: relative;
     white-space: nowrap;
-    bottom: 2rem;
+    margin-top: 78%;
+    margin-left: 0%;
+    font-size: 13px;
+    right: 20%;
+    left: -21%;
+  }
+
+  .fa-facebook {
+    color: #919191;
   }
 
  .spanButtons {
-  padding: 13px;
   white-space: nowrap;
   display: inline-block;
 }
 
 .socialButtons {
-  display: flex;
-  margin-left: 14%;
   position: relative;
-  bottom: 0.6rem;
+  left: 72%;
+  margin-top: 8%;
 }
+
 
   .fa-twitter {
     color: #919191;
-    padding-left: 42%;
   }
 
+
   .type-writer {
-    margin-left: 26.7rem;
-    margin-bottom: 0rem;
-    float: right;
-    margin-top: 0.4rem;
+    margin: 0 auto;
   }
 
   .line-1{
@@ -344,15 +432,23 @@
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
-    bottom: 3.2rem;  
 }
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@-webkit-keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+  }
 
 .mainTitle {
   color: white;
   font-size: 2.3rem;
   text-align: center;
-  width: 22rem;
-  margin-left: 5rem;
+  margin-left: 4vw;
 }
 }
 
@@ -366,11 +462,11 @@
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      margin-top: 8rem;
-      width: 74.5rem;
+      width: 85%;
+      margin-top: 7rem;
       position: absolute;
-      margin-left: 7%;
       border: solid 2px white;
+      margin-left: 9%;
     }
     .flex-container {
       display: flex;
@@ -378,43 +474,45 @@
         flex-grow: 1;
         flex-wrap: wrap
     }
-    .spanDiv {
+
+    .firstCol {
+      order: 1;
+    }
+  
+    .secondCol {
       order: 2;
-      display: flex;
-      bottom: 1.7rem;
-      margin-left: 0rem;
     }
     
     .allRights {
-      order: 1;
       display: flex;
-      left: 6.3rem;
+      left: 11%;
       color: white;
       white-space: nowrap;
-      bottom: 0rem;
+      margin-top: 4%;
+      margin-left: 19%;
+      font-size: 13px;
+      position: unset;
+      right: 0;
     }
     .spanButtons {
-      padding: 28px;
       white-space: nowrap;
       display: inline-block;
     }
 
     .socialButtons {
-      display: flex;
-      margin-left: 10%;
-      bottom: 0rem;
+      color: #919191;
+        left: 0%;
+        margin-top: 0%;
     }
 
     .fa-twitter {
       color: #919191;
-      padding-left: 42%;
     }
+    
 
     .type-writer {
-      width: 5rem;
-      margin-left: 33rem;
       margin-bottom: 3rem;
-      float: right;
+      margin-left: 41%;
     }
     .line-1{
       position: relative;
@@ -436,6 +534,7 @@
     font-size: 3rem;
     width: 100%;
     margin-left: 0rem;
+    right: 25%;
   }
 
   .streamIt {
@@ -445,9 +544,18 @@
   }
 
   @keyframes typewriter{
+    from{width: 0;}
+    to{width: 35rem;}
+  }
+
+  @-webkit-keyframes typewriter{
   from{width: 0;}
-  to{width: 6.2rem;}
+  to{width: 50vw;}
 }
+}
+
+@include media-breakpoint-up(xl) {
+
 }
 
 
@@ -460,3 +568,32 @@
   to{border-right-color: transparent;}
 }
 
+.bottom-container {
+  width: 94%;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mobile-hide-footer {
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.desktop-hide-footer {
+  @include media-breakpoint-up(xs) {
+    display: block;
+  }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
