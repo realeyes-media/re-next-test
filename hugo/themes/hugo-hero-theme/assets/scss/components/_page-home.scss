@@ -1,3 +1,13 @@
 .page-home {
     background-color: black;
+    .empowered-clients {
+        text-align: center;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+        h2 {
+            font-family: 'Futura';
+            color: $white;
+            font-weight: 300;
+        }
+    }
 }

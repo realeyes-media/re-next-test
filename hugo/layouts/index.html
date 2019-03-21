@@ -19,9 +19,12 @@
 
 {{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "serviceOne" .Params.heroServiceOne "serviceTwo" .Params.heroServiceTwo "serviceThree" .Params.heroServiceThree "content" .)}}
 <!-- <div class="content"> -->
+<div class="empowered-clients">
+    <h2>Clients We've Empowered</h2>
+</div>
 {{ $caseStudies := where .Site.RegularPages "Type" "case-studies" }}
 {{if gt (len $caseStudies) 0}}
-<div class="container-fluid pl-6 pr-6 pb-6 pt-6 pb-md-10 pt-md-10">
+<div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
     <div class="row">
         {{ range first 6 (sort $caseStudies ".Params.weight") }}
         <div class="col-12 col-md-4 mr-0 ml-0 pr-0 pl-0">{{ .Render "cs-summary" }}</div>
