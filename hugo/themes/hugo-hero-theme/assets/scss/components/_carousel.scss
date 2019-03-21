@@ -1,12 +1,22 @@
 #myCarousel {
-    height:90%; 
+    height:100%; 
     background: black;
 }
 
-.carousel-inner {
-  height: 101vh;
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
+.carousel-inner {
+  height: 82vh;
+  position: relative;
+}
+
+.no-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
 .carousel-content {
     background: black; 
@@ -16,12 +26,20 @@
     justify-content: center;
     margin-top: 30vh;
     margin-left: 26vw;
+    position: absolute;
 }
 
 
 
   .widthControl {
       width:49vw;
+  }
+
+  .carousel-indicators {
+    position: inherit;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    bottom: 140px;
   }
 
 
@@ -40,9 +58,6 @@
     bottom: 2px;
   }
 
-  .carousel-indicators {
-    bottom: 25%;
-  }
   
   .slideTitle {
       padding-bottom: 20px;
@@ -81,10 +96,10 @@
     .authorColor {
         color: purple;
       }
-      .carousel-indicators {
-        bottom: 25%;
-        padding-top: 31px;
-      }
+    //   .carousel-indicators {
+    //     bottom: 25%;
+    //     padding-top: 31px;
+    //   }
       .author {
         padding-top: 31px;
     }
