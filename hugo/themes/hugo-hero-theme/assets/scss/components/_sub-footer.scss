@@ -47,6 +47,7 @@
       }
       @include media-breakpoint-up(sm) {
         padding-bottom: 12%;
+        padding-right: 2%;
       }
       color: white;
       text-decoration: none;
@@ -58,6 +59,13 @@
     .socialButtons a {
       padding-left: 50px;
       color: #919191;
+      @media (max-width: 320px) {
+        padding-right: 2%;
+        padding-left: 0%;
+      }
+      @include media-breakpoint-up(xs) {
+        padding-left: 7%;
+      }
         @include media-breakpoint-up(sm) {
           padding-left: 47px;
         }
@@ -137,6 +145,7 @@
   color: #919191;
 }
 
+
 @include media-breakpoint-up(xs) {
   .hr {
     display: block;
@@ -174,9 +183,11 @@
     display: flex;
     color: white;
     white-space: nowrap;
-    margin-top: 17%;
-    margin-left: 25%;
-    margin-right: 21%;
+    position: relative;
+    left: 43%;
+    @media (max-width: 437px) {
+      left: 20%;
+    }
   }
 
   .spanButtons {
@@ -184,6 +195,15 @@
     display: block;
     color: white;
     z-index: 1;
+  }
+
+  .socialButtons {
+    position: relative;
+    left: 58%;
+    @media (max-width: 446px) {
+      display: inline-flex;
+      padding-right: 2%;
+    }
   }
 
   .fa-twitter {
@@ -269,11 +289,19 @@
     color: #919191;
   }
 
+  .socialButtons {
+    position: relative;
+    left: 53%;
+    margin-top: 15%;
+    display: inline-flex;
+  }
+
   .allRights {
     display: flex;
     white-space: nowrap;
     margin-left: 59%;
-    margin-top: 19%;
+    margin-top: 0%;
+    left: 1%;
   }
   .spanButtons {
     white-space: nowrap;
@@ -358,12 +386,13 @@ to{width: 38%;}
 
   .allRights {
     display: flex;
-    position: absolute;
+    position: relative;
     white-space: nowrap;
-    margin-top: 70%;
+    margin-top: 78%;
     margin-left: 0%;
     font-size: 13px;
-    right: 45%;
+    right: 20%;
+    left: -21%;
   }
 
   .fa-facebook {
@@ -373,6 +402,12 @@ to{width: 38%;}
  .spanButtons {
   white-space: nowrap;
   display: inline-block;
+}
+
+.socialButtons {
+  position: relative;
+  left: 72%;
+  margin-top: 8%;
 }
 
 
@@ -466,6 +501,8 @@ to{width: 38%;}
 
     .socialButtons {
       color: #919191;
+        left: 0%;
+        margin-top: 0%;
     }
 
     .fa-twitter {
@@ -513,8 +550,12 @@ to{width: 38%;}
 
   @-webkit-keyframes typewriter{
   from{width: 0;}
-  to{width: 45vw;}
+  to{width: 50vw;}
 }
+}
+
+@include media-breakpoint-up(xl) {
+
 }
 
 
