@@ -9,57 +9,19 @@
     padding-left: 0px;
 }
 
-// .carousel-item {
-//     margin-bottom: 50px;
-//     background: black; 
-//     text-align: center; 
-//     color: white;
-//     // height:100%;
-//     justify-content: center;
-//     margin-top: 30vh;
-//     position: absolute;
-//     white-space: break-word;
-//     h3 {
-//         color: yellow;
-//         width: 50%;
-//         position: relative;
-//         left: 50%;
-//     }
-// }
 
 .carousel-inner {
-//   height: 82vh;
   position: unset;
   margin-bottom: 50px;
   overflow: hidden;
   color: white;
 }
 
-// .no-padding {
-//     padding-right: 0px;
-//     padding-left: 0px;
-// }
-
-// .carousel-content {
-//     background: black; 
-//     text-align: center; 
-//     color: white;
-//     // height:100%;
-//     justify-content: center;
-//     margin-top: 30vh;
-//     // margin-left: 17vw;
-//     position: absolute;
-//     white-space: break-word;
-// }
-
-
-
-
-//   .widthControl {
-//       width:80%;
-//       margin-bottom: 50px;
-//   }
-
+.carousel-item  {
+    margin-top: 50vh;
+    width: 70vw;
+    margin-left: 16vw;
+}
   .carousel-indicators {
     position: unset;
     margin-bottom: 100px;
@@ -82,164 +44,5 @@
     height: 14px;
     bottom: 2px;
   }
-
-  
-//   .slideTitle {
-//       padding-bottom: 20px;
-//   }
-
-// //   .author {
-// //       padding-top: 31px;
-// //   }
-
-//   .slideContent {
-//       font-size: 1.3rem;
-//       font-weight: 200;
-//       line-height: 32px;
-//   }
-
-// //   .authorColor {
-// //     color: #4A90E2;
-// //   }
-
-//   @include media-breakpoint-up(xs) {
-//     .authorColor {
-//         color: orange;
-//       }
-
-//       .carousel-inner {
-//         height: 106vh;
-//         position: unset;
-//         margin-bottom: 110px;
-//         @media (max-width: 374px) { 
-//             height: 130vh;
-//           }
-//           @media (max-width: 332px) { 
-//             height: 140vh;
-//           }
-//       }
-
-//       .carousel-indicators {
-//         position: unset;
-//         margin-bottom: 100px;
-//         padding-top: 68px;
-//         bottom: 102px;
-//       }
-  
-//   }
-  
-//   @include media-breakpoint-up(sm) {
-//     .authorColor {
-//         color: red;
-//       }
-//       .widthControl {
-//         width:90%;
-//     }
-
-//     .carousel-inner {
-//         height: 82vh;
-//         position: unset;
-//         margin-bottom: 82px;
-//       }
-//       .carousel-indicators {
-//         position: unset;
-//         margin-bottom: 100px;
-//         padding-top: 68px;
-//         bottom: 142px;
-//       }
-
-//       .carousel-content {
-//         background: black; 
-//         text-align: center; 
-//         color: white;
-//         // height:100%;
-//         justify-content: center;
-//         margin-top: 30vh;
-//         // margin-left: 9vw;
-//         position: absolute;
-//         white-space: break-word;
-//     }
-  
-//   }
-  
-//   @include media-breakpoint-up(md) {
-//     .authorColor {
-//         color: purple;
-//       }
-//     //   .carousel-indicators {
-//     //     bottom: 25%;
-//     //     padding-top: 31px;
-//     //   }
-//     //   .author {
-//     //     padding-top: 31px;
-//     // }
-//     .widthControl {
-//         width:80%;
-//     }
-
-//     .carousel-inner {
-//         height: 82vh;
-//         position: unset;
-//         margin-bottom: 88px;
-//         display: table;
-//       }
-
-//       .carousel-indicators {
-//         position: unset;
-//         margin-bottom: 100px;
-//         padding-top: 50px;
-//         bottom: 160px;
-//       }
-
-//       .carousel-content {
-//         background: black; 
-//         text-align: center; 
-//         color: white;
-//         // height:100%;
-//         justify-content: center;
-//         margin-top: 30vh;
-//         // margin-left: 17vw;
-//         position: absolute;
-//         white-space: break-word;
-//     }
- 
-//   }
-  
-//     @include media-breakpoint-up(lg) {
-//         .authorColor {
-//             color: #4A90E2;
-//           }
-//           .carousel-inner {
-//             height: 82vh;
-//             position: unset;
-//             margin-bottom: 16px;
-//           }
-
-//           .carousel-indicators {
-//             position: unset;
-//             margin-bottom: 100px;
-//             padding-top: 50px;
-//             bottom: 122px;
-//           }
-//   }
-
-// //   @include media-breakpoint-up(xl) {
-// //     .authorColor {
-// //         color: black;
-// //       }
-// //       .carousel-inner {
-// //         height: 82vh;
-// //         position: unset;
-// //         margin-bottom: 16px;
-// //       }
-
-// //       .carousel-indicators {
-// //         position: unset;
-// //         margin-bottom: 100px;
-// //         padding-top: 50px;
-// //         bottom: 252px;
-// //       }
-// // }
-  
   
   
