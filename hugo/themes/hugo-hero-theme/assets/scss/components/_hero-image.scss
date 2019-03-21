@@ -7,7 +7,7 @@
   height: 100vh;
   position: relative;
 
- 
+
 
   #hero-video-container {
     position: relative;
@@ -91,11 +91,11 @@
     color: #ffffff;
     z-index: 1;
     position: absolute;
-    top: 65%;
+    // bottom: 20%;
     margin-left: 1rem;
 
     @include media-breakpoint-down(sm) {
-      top: 70%;
+      // bottom: 20%;
       margin-right: 9rem;
     }
 
@@ -283,20 +283,19 @@
       color: #ffffff;
       z-index: 1;
       position: absolute;
-      top: 65%;
+      bottom: 10%;
       margin-left: 1rem;
 
+      @include media-breakpoint-down(sm) {
+        bottom: 10%;
+        margin-right: 9rem;
+      }
       @media (min-width: 1920px) {
-        top: 55%
+        bottom: 10%;
       }
 
       @media(min-width: 4200px) {
-        top: 45%
-      }
-
-      @include media-breakpoint-down(sm) {
-        top: 50%;
-        margin-right: 9rem;
+        bottom: 10%;
       }
 
       h1 {
