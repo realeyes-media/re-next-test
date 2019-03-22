@@ -1,16 +1,16 @@
 .page-home {
     background-color: black;
     .line2 {
-        width: 115vw;
+        width: 135vw;
         height: 47px;
         border-bottom: 445px solid #50E2C1;
         -webkit-transform:
             translateY(20px)
             translateX(50px)
-            rotate(-26deg);
+            rotate(-31deg);
         position: absolute;
-        top: 165vh;
-        left: -203px;
+        top: 155vh;
+        left: -265px;
         overflow: hidden;
         @include media-breakpoint-up(sm) {
             display: none; 
