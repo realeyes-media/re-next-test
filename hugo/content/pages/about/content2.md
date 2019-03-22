@@ -1,10 +1,14 @@
 ---
 title: 'About Content 2'
+service: 'Bespoke Application Development'
+header: 'Uniquely Branded Experiences'
 date: 2018-12-06T09:29:16+10:00
 background: 'https://source.unsplash.com/_v-EHHKKW3w/1600x700'
-button: ''
+button: 'Contact Us'
+buttonLink: 'contact'
+
 ---
 
-## Integrity & Performance
+<!-- Content -->
 
-Theres no limits, Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian.
+We Provide the platfore and expertise to empower our customers to differentiate their brand through the delivery of a truly uinque experience over desktop, mobile, and OTT set-top devices.

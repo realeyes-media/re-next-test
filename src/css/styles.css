@@ -49,3 +49,21 @@
   z-index: 1;
   background-image: linear-gradient(to right, transparent 0%, black 100%);
 }
+
+.serviceHeader {
+  font-weight: 700;
+  position:absolute;
+  top: 15%;
+    z-index: 2;
+}
+
+.serviceName {
+  font-size: .75rem;
+  position: absolute;
+  top: 5%;
+}
+
+.serviceContent {
+  position: absolute;
+  font-size: 1rem;
+}

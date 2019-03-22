@@ -1,11 +1,11 @@
 ---
 title: 'About Content 3'
+service: 'MEDIA WORKFLOW INTELLIGENCE'
+header: '(_____________________)'
 date: 2018-12-06T09:29:16+10:00
-background: 'https://www.supercars.net/blog/wp-content/uploads/2016/01/Andoniscars-Z32-pic-cropped-and-resized.jpg'
+background: 'https://source.unsplash.com/zglUlG8k47I/1600x500'
 button: 'Contact Us'
 buttonLink: 'contact'
+description: "We are the partner of choice for the largest live streaming events in the world. We enable and co-create exceptional interractive experiences tahtat are brought to life with our clients' most valuable data, media, and content."
 ---
 
-## Contact Us
-
-Theres no limits, Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur.

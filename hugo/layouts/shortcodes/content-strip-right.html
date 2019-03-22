@@ -7,21 +7,36 @@
 <div class="strip">
   <div class="row">
     <div class="col-4 pt-15 pb-15" style="background-color:black">
-      <div class="serviceRightText">
+        <p class="serviceName">{{ .Params.service }}</p>
+        <h2 class="serviceHeader">{{ .Params.header }}</h2>
+      <!-- <div class="serviceRightText"> -->
+        
+        <p class="serviceContent">{{ .Params.description }}</p>
 
-        {{ .Content }}
         {{ if .Params.button }}
-        <a class="button button-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button}}</a>
+        <a class="button button-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
         {{ end }}
-      </div>
+      <!-- </div> -->
     </div>
-
-      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-15 pb-15"
-        style="background-image: url(' {{ .Params.background | relURL }} ');">
-
-      
+    <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-15 pb-15"
+      style="background-image: url(' {{ .Params.background | relURL }} ');">
     </div>
   </div>
 </div>
+
+<!-- <div class="blackBG">
+  <div class="serviceName">
+    
+  </div>
+  <div class="title">
+
+  </div>
+  <div class="image">
+
+  </div>
+  <div class="description">
+
+  </div>
+</div> -->
 {{ end }}
 {{ end }}
