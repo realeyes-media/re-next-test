@@ -1,16 +1,23 @@
 .page-home {
     background-color: black;
     .line2 {
-        width: 296vh;
+        width: 115vw;
         height: 47px;
-        border-bottom: 485px solid #50E2C1;
+        border-bottom: 445px solid #50E2C1;
         -webkit-transform:
             translateY(20px)
-            translateX(5px)
+            translateX(50px)
             rotate(-26deg);
         position: absolute;
-        top: 150vh;
+        top: 165vh;
         left: -203px;
+        overflow: hidden;
+        @include media-breakpoint-up(sm) {
+            display: none; 
+        }
+        @include media-breakpoint-up(lg) {
+            display: block; 
+        }
     }
     .empowered-clients {
         text-align: center;
