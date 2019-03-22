@@ -18,8 +18,7 @@
 {{ define "main" }}
 
 {{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "serviceOne" .Params.heroServiceOne "serviceTwo" .Params.heroServiceTwo "serviceThree" .Params.heroServiceThree "content" .)}}
-<!-- <div class="content"> -->
- <div class="line2"></div>
+<div class="bg">
 <div class="empowered-clients">
     <h2>Clients We've Empowered</h2>
 </div>
@@ -41,6 +40,7 @@
 <div>{{ .Title }}</div>
 <div>{{ .Content }}</div>
 {{ end }}
+</div>
 
 {{partial "carousel.html" . }}
 {{ end }}
