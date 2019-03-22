@@ -32,6 +32,7 @@
     </div>
 </div>
 {{end}}
+
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $page := $headless.Resources.Match "livestream*" }}
 {{ range $page }}
@@ -40,8 +41,9 @@
 <div>{{ .Content }}</div>
 {{ end }}
 
-<!-- </div> -->
+{{partial "carousel.html" . }}
 {{ end }}
+
 
 {{ define "footer_js" }}
 {{ end }}
