@@ -2,12 +2,12 @@
 headerColorOne = "Docker on"
 headerColorTwo = "Raspberry Pi 3"
 subTitle = "Big Upgrades for Little Devices"
-author = "Marcy Nugent"
-date = "2018-07-24"
-title = "Docker On Raspberry Pi 3"
+author = "Phil Moss"
+date = "2019-03-22"
+title = "Test Blog"
 backgroundColor = ""
 accentTextColor = ""
-weight = 1
+weight = 2
 thumbnail = "img/camera.png"
 
 +++

@@ -1,0 +1,15 @@
+<div class="blog">
+    <div class="blog-summary">
+        {{ if .Params.thumbnail }}
+        <div class="blog-image" style="cursor: pointer;" onclick="window.location='{{ .Permalink }}'">
+            <img src="{{ .Site.BaseURL }}/{{ .Params.thumbnail }}" />
+        </div>
+        {{ end }}
+        <div class="blog-content pt-2">
+            <h3 class="blog-title">
+                {{ .Title }}
+            </h3>
+            <p>By {{ .Params.author }} <span class="pl-1">{{ .PublishDate.Format "January 2, 2006" }}</span></p>
+        </div>
+    </div>
+</div>
