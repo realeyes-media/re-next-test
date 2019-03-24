@@ -3,12 +3,7 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-<div class="container-fluid pt-6">
-    {{ range $name, $tax := .Site.Taxonomies.categories }}
-    <button class="{{ $name }}">{{ $name }}</button>
-
-    {{ end }}
-</div>
+{{ partial "blog-list-header.html" (dict "categories" .Site.Taxonomies.categories)}}
 <div class="container pb-6 pt-6 pb-md-10 pt-md-10">
     <div class="row">
         {{ range .Pages.ByWeight }}
