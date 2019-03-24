@@ -52,18 +52,71 @@
 
 .serviceHeader {
   font-weight: 700;
-  position:absolute;
+  position: absolute;
   top: 15%;
-    z-index: 2;
+  z-index: 2;
+  margin-left: 1rem;
 }
 
 .serviceName {
   font-size: .75rem;
   position: absolute;
   top: 5%;
+  margin-left: 1rem;
 }
 
 .serviceContent {
   position: absolute;
   font-size: 1rem;
+  margin-left: 1rem;
+  min-width: 30rem;;
+  z-index: 2;
 }
+
+.serviceButton {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 1rem;
+}
+
+.serviceIcon {
+  filter: grayscale(20%);
+  max-width: 1.5rem;
+  margin-left: 1rem;
+}
+
+.serviceHeaderLeft {
+  font-weight: 700;
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+.serviceNameLeft {
+  font-size: .75rem;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  /* margin-right: 1rem; */
+  text-align: right;
+}
+
+.serviceContentLeft {
+  position: absolute;
+    font-size: 1rem;
+    margin-left: -10rem;
+    margin-right: 1rem;
+    z-index: 2;
+    text-align: right;
+}
+
+.serviceButtonLeft {
+  position: absolute;
+  bottom: 5%;
+  margin-right: 1rem;
+  text-align: right;
+  width: 100%;
+}
+
