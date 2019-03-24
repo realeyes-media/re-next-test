@@ -32,6 +32,16 @@ $('.accordion').click(function (e) {
   }
 })
 
+$('.category1').click(function (e) {
+  $('.tax').hide()
+  $('.' + this.className + '-card').closest('.tax').show()
+})
+$('.category2').click(function (e) {
+  $('.tax').hide()
+  $('.' + this.className + '-card').closest('.tax').show()
+})
+
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
@@ -59,7 +69,7 @@ window.onload = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.src = "./images/Sport Seq_v2_1.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
@@ -85,7 +95,7 @@ window.onresize = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.src = "./images/Sport Seq_v2_1.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)

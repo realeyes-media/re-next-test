@@ -4,12 +4,12 @@ headerColorTwo = "Raspberry Pi 3"
 subTitle = "Big Upgrades for Little Devices"
 author = "Phil Moss"
 date = "2019-03-22"
-title = "Test Blog"
+title = "Blah Blog"
 backgroundColor = ""
 accentTextColor = ""
-weight = 2
+weight = 3
 tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss"]
-categories = ["category1", "category2"]
+categories = ["category2"]
 thumbnail = "img/camera.png"
 
 +++

@@ -8,6 +8,8 @@ title = "Docker On Raspberry Pi 3"
 backgroundColor = ""
 accentTextColor = ""
 weight = 1
+tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
+categories = ["category1"]
 thumbnail = "img/camera.png"
 
 +++

@@ -371,7 +371,6 @@ function indexSearch() {
     } catch (e) {
       log(e, e.message, gulpConfig.generator.label)
     }
-
     let href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(".md").s;
     // href for index.md files stops at the folder name
     if (filename === "index.md") {
@@ -382,6 +381,7 @@ function indexSearch() {
     pageIndex = {
       title: frontMatter.title,
       tags: frontMatter.tags,
+      categories: frontMatter.categories,
       href: href,
       content: S(content[2]).trim().stripTags().stripPunctuation().s
     };

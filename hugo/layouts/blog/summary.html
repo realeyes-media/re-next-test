@@ -1,5 +1,5 @@
 <div class="blog">
-    <div class="blog-summary">
+    <div class='{{ delimit .Params.categories "-card " }}-card'>
         {{ if .Params.thumbnail }}
         <div class="blog-image" style="cursor: pointer;" onclick="window.location='{{ .Permalink }}'">
             <img src="{{ .Site.BaseURL }}/{{ .Params.thumbnail }}" />
