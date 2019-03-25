@@ -61,6 +61,7 @@ public_path: "/static"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
+instant_preview: true
 build:
   preview_command: cd hugo && hugo -E -F -D -b $DEPLOY_URL -d dist
   publish_command: hugo -d public
@@ -72,4 +73,6 @@ build:
   - HUGO_VERSION=0.54.0
   preview_output_directory: dist
   output_directory: public
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
 version: 0.54.0
