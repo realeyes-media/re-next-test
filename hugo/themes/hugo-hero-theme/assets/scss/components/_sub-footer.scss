@@ -59,7 +59,7 @@
     .socialButtons a {
       padding-left: 50px;
       color: #919191;
-      @media (max-width: 320px) { 
+      @media (max-width: 320px) {
         padding-right: 2%;
         padding-left: 0%;
       }
@@ -131,7 +131,6 @@
   }
 }
 
-
 .streamIt {
   margin: 0 auto;
   margin-top: 3%;
@@ -148,7 +147,7 @@
 
 
 @include media-breakpoint-up(xs) {
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -186,7 +185,7 @@
     white-space: nowrap;
     position: relative;
     left: 43%;
-    @media (max-width: 437px) { 
+    @media (max-width: 437px) {
       left: 20%;
     }
   }
@@ -201,7 +200,7 @@
   .socialButtons {
     position: relative;
     left: 58%;
-    @media (max-width: 446px) { 
+    @media (max-width: 446px) {
       display: inline-flex;
       padding-right: 2%;
     }
@@ -213,7 +212,7 @@
 
   .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 1.8rem;
@@ -224,7 +223,7 @@
     color: white;
     bottom: 0rem;
     top: 1rem;
-    margin-left: 27%;  
+    margin-left: 27%;
 }
 
 .type-writer {
@@ -248,7 +247,7 @@
 
 @include media-breakpoint-up(sm) {
 
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -277,7 +276,7 @@
     flex-wrap: wrap;
     margin-bottom: 0rem;
   }
- 
+
   .firstCol {
     order: 2;
   }
@@ -296,7 +295,7 @@
     margin-top: 15%;
     display: inline-flex;
   }
-  
+
   .allRights {
     display: flex;
     white-space: nowrap;
@@ -321,7 +320,7 @@
     width: 73%;
     margin-left: 0.8rem;
   }
-  
+
 
   .type-writer {
     margin-bottom: 0rem;
@@ -337,7 +336,7 @@
     transform: translateY(-50%);
     color: white;
     bottom: 0rem;
-    margin-left: 26vw; 
+    margin-left: 26vw;
 }
 
 @keyframes typewriter{
@@ -354,7 +353,7 @@ to{width: 38%;}
 
 @include media-breakpoint-up(md) {
 
-  .hr { 
+  .hr {
     display: block;
     margin-before: 0.5em;
     margin-after: 0.5em;
@@ -384,7 +383,7 @@ to{width: 38%;}
   .secondCol {
     order: 1;
   }
-  
+
   .allRights {
     display: flex;
     position: relative;
@@ -423,7 +422,7 @@ to{width: 38%;}
 
   .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 11rem;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 2.1rem;
@@ -432,6 +431,7 @@ to{width: 38%;}
     overflow: hidden;
     transform: translateY(-50%);
     color: white;
+    bottom: 3.2rem;
 }
 
 @keyframes typewriter{
@@ -453,7 +453,7 @@ to{width: 38%;}
 }
 
   @include media-breakpoint-up(lg) {
-    .hr { 
+    .hr {
       display: block;
       margin-before: 0.5em;
       margin-after: 0.5em;
@@ -478,11 +478,11 @@ to{width: 38%;}
     .firstCol {
       order: 1;
     }
-  
+
     .secondCol {
       order: 2;
     }
-    
+
     .allRights {
       display: flex;
       left: 11%;
@@ -508,7 +508,7 @@ to{width: 38%;}
     .fa-twitter {
       color: #919191;
     }
-    
+
 
     .type-writer {
       margin-bottom: 3rem;
@@ -516,7 +516,7 @@ to{width: 38%;}
     }
     .line-1{
       position: relative;
-      top: 50%;  
+      top: 50%;
       width: 11rem;
       border-right: 2px solid rgba(255,255,255,.75);
       font-size: 2.9rem;
@@ -526,7 +526,7 @@ to{width: 38%;}
       transform: translateY(-50%);
       color: white;
       bottom: 3.8rem;
-      margin-left: 0rem;  
+      margin-left: 0rem;
   }
 
   .mainTitle {
