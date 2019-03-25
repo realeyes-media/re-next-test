@@ -9,7 +9,7 @@ backgroundColor = ""
 accentTextColor = ""
 weight = 3
 tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss", "Blah"]
-categories = ["category2"]
+categories = ["category2", "ethan"]
 thumbnail = "img/camera.png"
 
 +++

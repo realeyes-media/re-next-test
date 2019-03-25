@@ -17,93 +17,101 @@
             color: #50E3C2;
         }
     }
-    .search {
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        width:2rem;
-        height:2rem;
-        transition:width .5s;
-        overflow:hidden;
-    }
-    .search.active {
-        width:600px;
-    }
-    .search input {
-        position:absolute;
-        display: none;
-        top:10px;
-        left:10px;
-        width:calc(100% - 90px);
-        height:60px;
-        border:none;
-        outline:none;
-        font-size:36px;
-        padding:0 10px;
-        color:#666;
 
+    .search-bar {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        margin-right: 3rem;
     }
-    .search.active input {
-        margin: 0;
-        display: inline;
-    }
-    .search.active .icon {
-        background:#ff355a;
-        width:2rem;
-        height:2rem;
-        background-image: url('/img/close_icon_white.png');
-    }
-    .icon {
-        position:absolute;
-        width:2rem;
-        height:2rem;
-        cursor:pointer;
-        background-position: center;
-        background-size: cover;
-        background-image: url('/img/icon_search_white.png');
-        color: white;
-        transition:.5s;
-        border-radius:4px;
-    }
-    .search.active .icon:before {
-        content:'';
-        position:absolute;
-        background:transparent;
-        background-position: center;
-        background-size: cover;
-        background-image: url('/img/close_icon_white.png');
-        transition:.5%;
-        transform:rotate(45deg);
-    }
-    .search.active .icon:after {
-        content:'';
-        position:absolute;
-        background:transparent;
-        background-position: center;
-        background-size: cover;
-        background-image: url('/img/close_icon_white.png');
-        border:none;
-        transition:.5%;
-        transform:rotate(-45deg);
-    }
-    .icon:before {
-        content:'';
-        position:absolute;
-        background-position: center;
-        background-size: cover;
-        background:transparent;
-        transition:.5%;
-    }
-    .icon:after {
-        content:'';
-        position:absolute;
-        background:transparent;
-        background-position: center;
-        background-size: cover;
-        transform:rotate(-45deg);
-        transition:.5%;
-    }
+    // .search {
+    //     position:absolute;
+    //     top:50%;
+    //     left:50%;
+    //     transform:translate(-50%,-50%);
+    //     width:2rem;
+    //     height:2rem;
+    //     transition:width .5s;
+    //     overflow:hidden;
+    // }
+    // .search.active {
+    //     width:600px;
+    // }
+    // .search input {
+    //     position:absolute;
+    //     display: none;
+    //     top:10px;
+    //     left:10px;
+    //     width:calc(100% - 90px);
+    //     height:60px;
+    //     border:none;
+    //     outline:none;
+    //     font-size:36px;
+    //     padding:0 10px;
+    //     color:#666;
+
+    // }
+    // .search.active input {
+    //     margin: 0;
+    //     display: inline;
+    // }
+    // .search.active .icon {
+    //     background: black;
+    //     width:2rem;
+    //     height:2rem;
+    //     background-image: url('/img/close_icon_white.png');
+    //     color: white;
+    // }
+    // .icon {
+    //     position:absolute;
+    //     width:2rem;
+    //     height:2rem;
+    //     cursor:pointer;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/icon_search_white.png');
+    //     color: white;
+    //     transition:.5s;
+    //     border-radius:4px;
+    // }
+    // .search.active .icon:before {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/close_icon_white.png');
+    //     transition:.5%;
+    //     transform:rotate(45deg);
+    // }
+    // .search.active .icon:after {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/close_icon_white.png');
+    //     border:none;
+    //     transition:.5%;
+    //     transform:rotate(-45deg);
+    // }
+    // .icon:before {
+    //     content:'';
+    //     position:absolute;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background:transparent;
+    //     transition:.5%;
+    // }
+    // .icon:after {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     transform:rotate(-45deg);
+    //     transition:.5%;
+    // }
 }
 
 .blog-search {

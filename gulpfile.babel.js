@@ -376,7 +376,7 @@ function indexSearch() {
     if (filename === "index.md") {
       href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(filename).s;
     }
-
+    href = href.substring(1)
     // Build Lunr index for this page
     pageIndex = {
       title: frontMatter.title,
