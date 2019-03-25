@@ -7,16 +7,15 @@
 <div class="strip">
   <div class="row">
     <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
-        <p class="serviceName">{{ .Params.service }}</p>
+      <p class="serviceName">{{ .Params.service }}</p>
+      <div class="serviceRightText">
         <h2 class="serviceHeader">{{ .Params.header }}</h2>
-      <!-- <div class="serviceRightText"> -->
-        
         <p class="serviceContent">{{ .Params.description }}</p>
-
         {{ if .Params.button }}
-        <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
+        <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+            class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
         {{ end }}
-      <!-- </div> -->
+      </div>
     </div>
     <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-20 pb-20"
       style="background-image: url(' {{ .Params.background | relURL }} ');">

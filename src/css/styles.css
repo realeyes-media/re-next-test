@@ -14,19 +14,7 @@
   width: 30%;
 }
 
-.serviceLeftText {
-  /* background-color: black; */
-  color: white;
-  margin-right: 1rem;
 
-}
-
-.serviceRightText {
-  /* background-color: black; */
-  color: white;
-  margin-left: 1rem;
-
-}
 
 .serviceRightGradient::before {
   content: '';
@@ -50,13 +38,7 @@
   background-image: linear-gradient(to right, transparent 0%, black 100%);
 }
 
-.serviceHeader {
-  font-weight: 700;
-  position: absolute;
-  top: 15%;
-  z-index: 2;
-  margin-left: 1rem;
-}
+
 
 .serviceName {
   font-size: .75rem;
@@ -65,58 +47,66 @@
   margin-left: 1rem;
 }
 
-.serviceContent {
+.serviceRightText {
   position: absolute;
-  font-size: 1rem;
   margin-left: 1rem;
-  min-width: 30rem;;
+  top: 15%;
   z-index: 2;
+
+}
+.serviceHeader {
+  font-weight: 700;
+  position: relative;
+}
+
+.serviceContent {
+  position: relative;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .serviceButton {
-  position: absolute;
-  bottom: 5%;
-  margin-left: 1rem;
+  position: relative;
+  font-size: .8rem;
 }
 
 .serviceIcon {
   filter: grayscale(20%);
-  max-width: 1.5rem;
-  margin-left: 1rem;
-}
-
-.serviceHeaderLeft {
-  font-weight: 700;
-  position: absolute;
-  top: 15%;
-  z-index: 2;
-  margin-right: 1rem;
-  text-align: right;
+  max-width: 1rem;
+  margin-left: .65rem;
 }
 
 .serviceNameLeft {
   font-size: .75rem;
   position: absolute;
+  margin-left: -2rem;
   top: 5%;
   width: 100%;
-  /* margin-right: 1rem; */
   text-align: right;
+}
+
+.serviceLeftText {
+  position: absolute;
+  text-align: right;
+  margin-right: 1.5rem;
+  top: 15%;
+  z-index: 2;
+}
+
+.serviceHeaderLeft {
+  font-weight: 700;
+  position: relative;
 }
 
 .serviceContentLeft {
-  position: absolute;
-    font-size: 1rem;
-    margin-left: -10rem;
-    margin-right: 1rem;
-    z-index: 2;
-    text-align: right;
+  position: relative;
+  font-size: 1rem;
+  margin-left: -10rem;
+  margin-top: 2rem;
 }
 
 .serviceButtonLeft {
-  position: absolute;
-  bottom: 5%;
-  margin-right: 1rem;
-  text-align: right;
+  position: relative;
   width: 100%;
+  font-size: .8rem;
 }
-

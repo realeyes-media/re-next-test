@@ -11,14 +11,14 @@
     </div>
     <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
       <p class="serviceNameLeft">{{ .Params.service }}</p>
-      <h2 class="serviceHeaderLeft">{{ .Params.header }}</h2>
-      <!-- <div class="serviceRightText"> -->
-      <p class="serviceContentLeft">{{ .Params.description }}</p>
-      {{ if .Params.button }}
-      <a class="serviceButtonLeft text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
-          class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
-      {{ end }}
-      <!-- </div> -->
+      <div class="serviceLeftText">
+        <h2 class="serviceHeaderLeft">{{ .Params.header }}</h2>
+        <p class="serviceContentLeft">{{ .Params.description }}</p>
+        {{ if .Params.button }}
+        <a class="serviceButtonLeft text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+            class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
+        {{ end }}
+      </div>
     </div>
   </div>
   {{ end }}
