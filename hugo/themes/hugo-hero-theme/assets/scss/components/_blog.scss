@@ -50,12 +50,14 @@
     }
     .search.active .icon {
         background:#ff355a;
+        width:2rem;
+        height:2rem;
         background-image: url('/img/close_icon_white.png');
     }
     .icon {
         position:absolute;
-        width:100%;
-        height:100%;
+        width:2rem;
+        height:2rem;
         cursor:pointer;
         background-position: center;
         background-size: cover;

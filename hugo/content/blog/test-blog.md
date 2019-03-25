@@ -8,7 +8,7 @@ title = "Test Blog"
 backgroundColor = ""
 accentTextColor = ""
 weight = 2
-tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss"]
+tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss", "Test"]
 categories = ["category1", "category2"]
 thumbnail = "img/camera.png"
 
