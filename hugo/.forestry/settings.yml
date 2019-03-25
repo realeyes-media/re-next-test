@@ -61,7 +61,6 @@ public_path: "/static"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
-instant_preview: true
 build:
   preview_command: cd hugo && hugo -E -F -D -b $DEPLOY_URL -d dist
   publish_command: hugo -d public
