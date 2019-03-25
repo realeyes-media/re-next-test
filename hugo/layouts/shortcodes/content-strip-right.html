@@ -4,38 +4,52 @@
 {{ with $page }}
 {{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
 {{ with $resource }}
-<div class="strip">
-  <div class="row">
-    <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
-      <p class="serviceName">{{ .Params.service }}</p>
-      <div class="serviceRightText">
-        <h2 class="serviceHeader">{{ .Params.header }}</h2>
-        <p class="serviceContent">{{ .Params.description }}</p>
-        {{ if .Params.button }}
-        <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+
+<div class="servicesDestop">
+    <div class="strip">
+    <div class="row">
+      <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
+          <p class="serviceName">{{ .Params.service }}</p>
+          <div class="serviceRightText">
+            <h2 class="serviceHeader">{{ .Params.header }}</h2>
+          <p class="serviceContent">{{ .Params.description }}</p>
+          {{ if .Params.button }}
+          <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
             class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
-        {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-20 pb-20"
+        style="background-image: url(' {{ .Params.background | relURL }} ');">
       </div>
-    </div>
-    <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-20 pb-20"
-      style="background-image: url(' {{ .Params.background | relURL }} ');">
     </div>
   </div>
 </div>
 
-<!-- <div class="blackBG">
-  <div class="serviceName">
-    
-  </div>
-  <div class="title">
 
-  </div>
-  <div class="image">
 
+<div class="servicesMobile">
+    <div style="background-color: black">
+      <div class="">
+        <div class="text-white text-center">
+          <p class="">{{ .Params.service }}</p>
+          <div class="">
+            <h2 class="">{{ .Params.header }}</h2>
+            <img class= "serviceImage" src=" {{ .Params.background | relURL }}" alt="" srcset="">
+            <p class="">{{ .Params.description }}</p>
+            {{ if .Params.button }}
+            <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+              class="serviceIcon text-primary" src="/images/iconmonstr-arrow-right-thin-240-blue.png"></a>
+              {{ end }}
+            </div>
+          </div>
+          <div class=""
+          style="background-image: url(' {{ .Params.background | relURL }} ');">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="description">
 
-  </div>
-</div> -->
+
 {{ end }}
 {{ end }}

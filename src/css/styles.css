@@ -110,3 +110,8 @@
   width: 100%;
   font-size: .8rem;
 }
+
+/* Mobile Styles for Services Section */
+.serviceImage {
+  max-width: 100%;
+}
