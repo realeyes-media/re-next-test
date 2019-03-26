@@ -87,11 +87,11 @@ function renderResults(results) {
 
     // Only show the ten first results
     results.slice(0, 10).forEach(function (result) {
-        var $result = $("<li>");
-        $result.append($("<a>", {
-            href: result.href,
-            text: "» " + result.title
-        }));
+        var $result = $('<li>', {
+            class: 'list-group-item',
+            text: result.title,
+            onclick: `location.href='${result.href}';`
+        });
         $results.append($result);
     });
 }

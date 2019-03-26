@@ -4,6 +4,12 @@
 
 {{ define "main" }}
 {{ partial "blog-list-header.html" (dict "categories" .Site.Taxonomies.categories)}}
+<div class="search-bar">
+    <input id="search" autocomplete="off" type="text">
+    <ul class="list-group" id="results">
+
+    </ul>
+</div>
 <div class="container pb-6 pt-6 pb-md-10 pt-md-10">
     <div class="row">
         {{ range .Pages.ByWeight }}

@@ -63,6 +63,7 @@ $button-width: 35px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
   &.open {
     opacity: 0.9;
     visibility: visible;
