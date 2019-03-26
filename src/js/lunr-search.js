@@ -4,11 +4,9 @@ var lunrIndex,
 
 // Initialize lunrjs using our generated index file
 function initLunr() {
-    // First retrieve the index file
     $.getJSON("/js/lunr/PagesIndex.json")
         .done(function (index) {
             pagesIndex = index;
-            console.log("index:", pagesIndex);
 
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
@@ -24,7 +22,6 @@ function initLunr() {
                 });
                 this.field("content");
 
-                // ref is the result item identifier (I chose the page URL)
                 this.ref("href");
 
                 pagesIndex.forEach(function (page) {
@@ -38,7 +35,6 @@ function initLunr() {
         });
 }
 
-// Nothing crazy here, just hook up a listener on the input field
 function initUI() {
     $results = $("#results");
     $("#search").keyup(function () {
@@ -63,16 +59,20 @@ function initUI() {
  * @return {Array}  results
  */
 function search(query) {
-    // Find the item in our index corresponding to the lunr one to have more info
-    // Lunr result:
-    //  {ref: "/section/page1", score: 0.2725657778206127}
-    // Our result:
-    //  {title:"Page1", href:"/section/page1", ...}
-    return lunrIndex.search(query).map(function (result) {
+    return lunrIndex.query(function (q) {
+        // exact matches should have the highest boost
+        q.term(query, { boost: 100 })
+
+        // prefix matches should be boosted slightly
+        q.term(query, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
+
+        // finally, try a fuzzy search, without any boost
+        q.term(query, { boost: 1, usePipeline: false, editDistance: 1 })
+    }).map((result) => {
         return pagesIndex.filter(function (page) {
             return page.href === result.ref;
         })[0];
-    });
+    })
 }
 
 /**
@@ -85,7 +85,6 @@ function renderResults(results) {
         return;
     }
 
-    // Only show the ten first results
     results.slice(0, 10).forEach(function (result) {
         var $result = $('<li>', {
             class: 'list-group-item',
@@ -96,7 +95,6 @@ function renderResults(results) {
     });
 }
 
-// Let's get started
 initLunr();
 
 $(document).ready(function () {

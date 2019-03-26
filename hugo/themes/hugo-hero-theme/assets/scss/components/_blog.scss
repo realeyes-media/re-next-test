@@ -127,12 +127,10 @@
 }
 
 .search-bar {
-    position: absolute;
-    left: 0;
+    position: relative;
     width: 50%;
     margin-top: 3rem;
     margin-left: 3rem;
-    margin-bottom: 1rem;
     padding-bottom: 0;
     input#search {
         margin: 0;
