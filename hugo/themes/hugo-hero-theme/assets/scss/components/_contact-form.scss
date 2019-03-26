@@ -23,7 +23,7 @@
       flex: 0;
       color: #ffffff;
       margin-left: 30px;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
       flex: 0;
       color: #ffffff;
       margin-left: 80px;
@@ -82,7 +82,7 @@
   }
 
   .streamIt {
-      color: #25325D;
+      color: #24315E;
   }
 
   .contactInfo {
@@ -107,7 +107,7 @@
   .innerContainer {
     margin-top: 40%;
     margin-bottom: 54%;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       margin-top: 12%;
       margin-bottom: 5%;
       width: 100%;
@@ -180,7 +180,7 @@
   margin: 0 auto;
   padding-left: 4%;
   padding-right: 7%;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
   text-align: center;
   margin: 0 auto;
   }
@@ -188,7 +188,7 @@
 
 .joinTeam {
   margin-top: 20px;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     margin-top: 0px;
   }
 }
