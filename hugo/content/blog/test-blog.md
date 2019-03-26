@@ -2,14 +2,14 @@
 headerColorOne = "Docker on"
 headerColorTwo = "Raspberry Pi 3"
 subTitle = "Big Upgrades for Little Devices"
-author = "Marcy Nugent"
-date = "2018-07-24"
-title = "Docker On Raspberry Pi 3"
+author = "Phil Moss"
+date = "2019-03-22"
+title = "Test Blog"
 backgroundColor = ""
 accentTextColor = ""
-weight = 1
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+weight = 2
+tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss", "Test"]
+categories = ["category1", "category2"]
 thumbnail = "img/camera.png"
 
 +++
