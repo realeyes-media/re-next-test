@@ -14,8 +14,6 @@
   width: 30%;
 }
 
-
-
 .serviceRightGradient::before {
   content: '';
   position: absolute;
@@ -38,18 +36,18 @@
   background-image: linear-gradient(to right, transparent 0%, black 100%);
 }
 
-
+.servicesDesktop {
+  margin-bottom: 5rem;
+}
 
 .serviceName {
   font-size: .75rem;
   position: absolute;
   top: 5%;
-  margin-left: 1rem;
 }
 
 .serviceRightText {
   position: absolute;
-  margin-left: 1rem;
   top: 15%;
   z-index: 2;
 
@@ -63,6 +61,7 @@
   position: relative;
   font-size: 1rem;
   margin-top: 2rem;
+  min-width: 20rem;
 }
 
 .serviceButton {
@@ -79,7 +78,7 @@
 .serviceNameLeft {
   font-size: .75rem;
   position: absolute;
-  margin-left: -2rem;
+  margin-left: -.8rem;
   top: 5%;
   width: 100%;
   text-align: right;
@@ -88,7 +87,6 @@
 .serviceLeftText {
   position: absolute;
   text-align: right;
-  margin-right: 1.5rem;
   top: 15%;
   z-index: 2;
 }
@@ -121,4 +119,8 @@
 
 .servicesMobileText {
   margin-bottom: 15rem;
+}
+
+.fontFamily {
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 }

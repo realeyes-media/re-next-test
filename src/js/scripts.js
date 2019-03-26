@@ -111,7 +111,7 @@ const showServicesOnLoad = () => {
       elem.style.display = "none"
     }
   } else {
-    const servicesElems = document.getElementsByClassName("servicesDestop")
+    const servicesElems = document.getElementsByClassName("servicesDesktop")
     for (const elem of servicesElems) {
       elem.style.display = "none"
     }
@@ -119,7 +119,7 @@ const showServicesOnLoad = () => {
 }
 
 const showServicesOnResize = () => {
-  const servicesElemsDesktop = document.getElementsByClassName("servicesDestop")
+  const servicesElemsDesktop = document.getElementsByClassName("servicesDesktop")
   const servicesElemsMobile = document.getElementsByClassName("servicesMobile")
 
   if (window.innerWidth < 768) {

@@ -4,7 +4,7 @@
 {{ with $page }}
 {{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
 {{ with $resource }}
-<div class="servicesDestop">
+<div class="servicesDesktop fontFamily">
   <div class="strip">
     <div class="row">
       <div class="serviceLeftGradient bg-cover bg-position-center bg-overlay col-8 pt-18 pb-18"
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-  <div class="servicesMobile">
+  <div class="servicesMobile fontFamily">
       <div style="background-color: black">
           <div class="">
             <div class="text-white">
