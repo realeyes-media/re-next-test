@@ -4,7 +4,6 @@
 {{ with $page }}
 {{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
 {{ with $resource }}
-
 <div class="servicesDestop">
     <div class="strip">
     <div class="row">
@@ -31,11 +30,11 @@
 <div class="servicesMobile">
     <div style="background-color: black">
       <div class="">
-        <div class="text-white text-center">
+        <div class="text-white">
           <p class="">{{ .Params.service }}</p>
-          <div class="">
+          <div class="servicesMobileText">
             <h2 class="">{{ .Params.header }}</h2>
-            <img class= "serviceImage" src=" {{ .Params.background | relURL }}" alt="" srcset="">
+            <img class= "serviceImage text-center" src=" {{ .Params.background | relURL }}" alt="" srcset="">
             <p class="">{{ .Params.description }}</p>
             {{ if .Params.button }}
             <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img

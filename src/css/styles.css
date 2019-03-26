@@ -113,5 +113,12 @@
 
 /* Mobile Styles for Services Section */
 .serviceImage {
-  max-width: 100%;
+  width: 100vw;
+  right: 4rem;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.servicesMobileText {
+  margin-bottom: 15rem;
 }
