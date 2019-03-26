@@ -2,6 +2,7 @@ import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
 import del from "del"
 import fs from "fs"
+import path from 'path'
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
@@ -18,6 +19,8 @@ import through from "through2"
 import util from "gulp-util"
 import webpack from "webpack-stream"
 import webpackConfig from "./.webpackrc.js"
+import toml from "toml"
+import S from "string"
 
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
@@ -175,7 +178,7 @@ gulp.task("scripts:production", cb => {
     .pipe(
       rename(path => {
         if (path.extname === ".js") path.extname = ".min.js"
-
+        indexSearch()
         return path
       })
     )
@@ -209,7 +212,7 @@ gulp.task("scripts:development", cb => {
     .pipe(
       rename(path => {
         if (path.extname === ".js") path.extname = ".min.js"
-
+        indexSearch()
         return path
       })
     )
@@ -317,4 +320,75 @@ function log(err, log, name) {
       util.log(spacer, message)
     }
   })
+}
+
+function indexSearch() {
+  const CONTENT_PATH_PREFIX = `${__dirname}/hugo/content/blog`;
+  log(null, "Building search index", gulpConfig.generator.label)
+
+  const indexPages = function () {
+    const pagesIndex = [];
+    const filenames = fs.readdirSync(CONTENT_PATH_PREFIX);
+    filenames.forEach(filename => {
+      log(null, "Parsing file for indexing: " + filename, gulpConfig.generator.label)
+      pagesIndex.push(processFile(path.join(CONTENT_PATH_PREFIX, filename), filename))
+    })
+
+    return pagesIndex;
+  };
+
+  const processFile = function (abspath, filename) {
+    let pageIndex;
+    if (S(filename).endsWith(".html")) {
+      pageIndex = processHTMLFile(abspath, filename);
+    } else {
+      pageIndex = processMDFile(abspath, filename);
+    }
+
+    return pageIndex;
+  };
+
+  const processHTMLFile = function (abspath, filename) {
+    const content = fs.readFileSync(abspath);
+    const pageName = S(filename).chompRight(".html").s;
+    const href = S(abspath)
+      .chompLeft(CONTENT_PATH_PREFIX).s;
+    return {
+      title: pageName,
+      href: href,
+      content: S(content).trim().stripTags().stripPunctuation().s
+    };
+  };
+
+  const processMDFile = function (abspath, filename) {
+    let content = fs.readFileSync(abspath, 'utf-8');
+    let pageIndex;
+    // First separate the Front Matter from the content and parse it
+    content = content.split("+++");
+    let frontMatter;
+    try {
+      frontMatter = toml.parse(content[1].trim());
+    } catch (e) {
+      log(e, e.message, gulpConfig.generator.label)
+    }
+    let href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(".md").s;
+    // href for index.md files stops at the folder name
+    if (filename === "index.md") {
+      href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(filename).s;
+    }
+    href = href.substring(1)
+    // Build Lunr index for this page
+    pageIndex = {
+      title: frontMatter.title,
+      tags: frontMatter.tags,
+      categories: frontMatter.categories,
+      href: href,
+      content: S(content[2]).trim().stripTags().stripPunctuation().s
+    };
+
+    return pageIndex;
+  };
+
+  fs.writeFileSync("hugo/static/js/lunr/PagesIndex.json", JSON.stringify(indexPages()));
+  log(null, "Search index built", gulpConfig.generator.label)
 }
