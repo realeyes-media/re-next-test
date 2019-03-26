@@ -72,6 +72,18 @@ window.onscroll = () => {
 };
 
 window.onload = () => {
+  addRemoveHeroVideoOnLoad()
+  showServicesOnLoad()
+}
+
+window.onresize = () => {
+  addRemoveHeroVideoOnResize()
+  showServicesOnResize()
+}
+
+
+
+const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
     const backgroundElement = document.getElementById("landing-page-hero")
     backgroundElement.style.backgroundColor = "transparent"
@@ -90,7 +102,7 @@ window.onload = () => {
   }
 }
 
-window.onresize = () => {
+const addRemoveHeroVideoOnResize = () => {
   if (window.innerWidth < 768) {
     const videoElement = document.getElementById("video-background");
     if (videoElement) {
@@ -116,4 +128,37 @@ window.onresize = () => {
   }
 }
 
+const showServicesOnLoad = () => {
+  if (window.innerWidth > 768) {
+    const servicesElems = document.getElementsByClassName("servicesMobile")
+    for (const elem of servicesElems) {
+      elem.style.display = "none"
+    }
+  } else {
+    const servicesElems = document.getElementsByClassName("servicesDesktop")
+    for (const elem of servicesElems) {
+      elem.style.display = "none"
+    }
+  }
+}
 
+const showServicesOnResize = () => {
+  const servicesElemsDesktop = document.getElementsByClassName("servicesDesktop")
+  const servicesElemsMobile = document.getElementsByClassName("servicesMobile")
+
+  if (window.innerWidth < 768) {
+    for (const elem of servicesElemsDesktop) {
+      elem.style.display = "none"
+    }
+    for (const elem of servicesElemsMobile) {
+      elem.style.display = "block"
+    }
+  } else {
+    for (const elem of servicesElemsMobile) {
+      elem.style.display = "none"
+    }
+    for (const elem of servicesElemsDesktop) {
+      elem.style.display = "block"
+    }
+  }
+}
