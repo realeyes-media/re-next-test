@@ -32,6 +32,30 @@ $('.accordion').click(function (e) {
   }
 })
 
+$('.all-tax').click(function () {
+  $('.category').removeClass('active')
+  $('.all-tax').addClass('active')
+  $('.tax').show()
+})
+
+$('.blog-category').click(function () {
+  const list = $(this).prop('classList')
+  let e
+  for (const l of list) {
+    if (l !== 'list-inline-item' && l !== 'category' && l !== 'active' && l !== 'blog-category') {
+      e = l
+    }
+  }
+  $('.category').removeClass('active')
+  $('.' + e).addClass('active')
+  $('.tax').hide()
+  $('.' + e + '-card').closest('.tax').show()
+})
+
+$('.icon').click(function () {
+  $('.search').toggleClass('active')
+});
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
