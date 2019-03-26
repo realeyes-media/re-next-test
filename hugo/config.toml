@@ -42,3 +42,4 @@ relativeURLs = true
 [permalinks]
   post = "/:year/:month/:day/:slug/"
   pages = "/:filename/"
+#   caseStudies = "/case-studies/:filename/"
