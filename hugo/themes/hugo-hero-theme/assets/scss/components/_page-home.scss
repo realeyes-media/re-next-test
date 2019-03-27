@@ -1,0 +1,25 @@
+.page-home {
+    background-color: black;
+    .empowered-clients {
+        text-align: center;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+        h2 {
+            font-family: 'Futura';
+            color: $white;
+            font-weight: 300;
+        }
+    }
+}
+
+.home-content {
+    position: relative;
+    width: 100%;
+    padding: 4px;
+    background-image: url("/img/teal-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+    background-attachment: fixed;
+  }

@@ -1,0 +1,53 @@
+#myCarousel {
+    height:100%; 
+    margin-bottom: 33vh;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.carousel-inner {
+  margin-bottom: 50px;
+  overflow: hidden;
+  color: white;
+}
+
+.carousel-item  {
+    width: 70vw;
+    margin-left: 16vw;
+}
+
+  .carousel-indicators {
+    margin-bottom: 123px;
+    padding-top: 50px;
+    bottom: 120px;
+  }
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #233F60;
+    cursor: pointer;
+  }
+
+  .carousel-indicators li.active {
+    background-color: #4A90E2;
+    width: 14px;
+    height: 14px;
+    bottom: 2px;
+  }
+
+  .author {
+    padding-top: 20px;
+  }
+  
+
+  .authorColor {
+    color: #4A90E2;
+  }
+  

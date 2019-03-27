@@ -7,7 +7,7 @@
       margin-left: 30px;
       font-family: $font-family-base;
       font-size: 1.125rem;
-      color: rgb(78, 78, 78);
+      color: #4A4A4A;
       span {
         padding-left: 5px;
       }
@@ -25,7 +25,7 @@
     text-decoration: underline;
   }
   p {
-    color: rgb(78, 78, 78);
+    color: #4A4A4A;
     font-family: $font-family-base;
     font-size: 1.125rem;
     line-height: 1.2;
@@ -35,7 +35,7 @@
     font-size: 2rem;
     line-height: 1.2;
     font-weight: $font-weight-light;
-    color: #333333;
+    color: #4A4A4A;
     @include media-breakpoint-up(md) {
       line-height: 1.2;
       font-weight: $font-weight-light;
@@ -46,14 +46,14 @@
     font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 400;
-    color: #333333;
+    color: #4A4A4A;
     @include media-breakpoint-up(md) {
       line-height: 1.4;
     }
   }
   // Subheading
   h3 {
-    color: $primary;
+    color: #4A4A4A;
     line-height: 1.4;
     font-weight: $font-weight-thin;
     letter-spacing: 1px;

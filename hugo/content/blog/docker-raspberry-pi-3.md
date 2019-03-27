@@ -1,7 +1,16 @@
 +++
+headerColorOne = "Docker on"
+headerColorTwo = "Raspberry Pi 3"
+subTitle = "Big Upgrades for Little Devices"
 author = "Marcy Nugent"
-date = "2018-07-24T20:00:00+00:00"
-title = "Docker Raspberry Pi 3"
+date = "2018-07-24"
+title = "Docker On Raspberry Pi 3"
+backgroundColor = ""
+accentTextColor = ""
+weight = 1
+tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
+categories = ["category1", "marcy"]
+thumbnail = "img/camera.png"
 
 +++
 # Docker on Raspberry Pi 3
@@ -16,7 +25,7 @@ Developing for [Raspberry Pi](https://www.raspberrypi.org/) inspires a sense of 
 ## Docker to the Rescue!
 Enter [Docker](https://www.docker.com/).
 
-Now that Docker on ARM has matured into a usable product, it's [trivially easy to install the latest Docker CE engine on a Pi](https://withblue.ink/2017/12/31/yes-you-can-run-docker-on-raspbian.html). Once that's complete, we can really get rolling on the Pi and deliver applications with the same methods you would use on any other device. Using a Dockerfile, we can codify the heinously detailed work of compiling an app for ARM without utterly unmanageable Rasbian shell scripts, ancient apt-get versions, or typing "chmod +x" for every last install script. 
+Now that Docker on ARM has matured into a usable product, it's [trivially easy to install the latest Docker CE engine on a Pi](https://withblue.ink/2017/12/31/yes-you-can-run-docker-on-raspbian.html). Once that's complete, we can really get rolling on the Pi and deliver applications with the same methods you would use on any other device. Using a Dockerfile, we can codify the heinously detailed work of compiling an app for ARM without utterly unmanageable Rasbian shell scripts, ancient apt-get versions, or typing "chmod +x" for every last install script.
 
 ![](https://imgs.xkcd.com/comics/universal_install_script_2x.png)
 

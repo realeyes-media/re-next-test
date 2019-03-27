@@ -32,6 +32,30 @@ $('.accordion').click(function (e) {
   }
 })
 
+$('.all-tax').click(function () {
+  $('.category').removeClass('active')
+  $('.all-tax').addClass('active')
+  $('.tax').show()
+})
+
+$('.blog-category').click(function () {
+  const list = $(this).prop('classList')
+  let e
+  for (const l of list) {
+    if (l !== 'list-inline-item' && l !== 'category' && l !== 'active' && l !== 'blog-category') {
+      e = l
+    }
+  }
+  $('.category').removeClass('active')
+  $('.' + e).addClass('active')
+  $('.tax').hide()
+  $('.' + e + '-card').closest('.tax').show()
+})
+
+$('.icon').click(function () {
+  $('.search').toggleClass('active')
+});
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
@@ -48,6 +72,18 @@ window.onscroll = () => {
 };
 
 window.onload = () => {
+  addRemoveHeroVideoOnLoad()
+  showServicesOnLoad()
+}
+
+window.onresize = () => {
+  addRemoveHeroVideoOnResize()
+  showServicesOnResize()
+}
+
+
+
+const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
     const backgroundElement = document.getElementById("landing-page-hero")
     backgroundElement.style.backgroundColor = "transparent"
@@ -59,14 +95,14 @@ window.onload = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.src = "./images/Sport Seq_v2_1.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
   }
 }
 
-window.onresize = () => {
+const addRemoveHeroVideoOnResize = () => {
   if (window.innerWidth < 768) {
     const videoElement = document.getElementById("video-background");
     if (videoElement) {
@@ -85,11 +121,44 @@ window.onresize = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4" 
+    videoSource.src = "./images/Sport Seq_v2_1.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
   }
 }
 
+const showServicesOnLoad = () => {
+  if (window.innerWidth > 768) {
+    const servicesElems = document.getElementsByClassName("servicesMobile")
+    for (const elem of servicesElems) {
+      elem.style.display = "none"
+    }
+  } else {
+    const servicesElems = document.getElementsByClassName("servicesDesktop")
+    for (const elem of servicesElems) {
+      elem.style.display = "none"
+    }
+  }
+}
 
+const showServicesOnResize = () => {
+  const servicesElemsDesktop = document.getElementsByClassName("servicesDesktop")
+  const servicesElemsMobile = document.getElementsByClassName("servicesMobile")
+
+  if (window.innerWidth < 768) {
+    for (const elem of servicesElemsDesktop) {
+      elem.style.display = "none"
+    }
+    for (const elem of servicesElemsMobile) {
+      elem.style.display = "block"
+    }
+  } else {
+    for (const elem of servicesElemsMobile) {
+      elem.style.display = "none"
+    }
+    for (const elem of servicesElemsDesktop) {
+      elem.style.display = "block"
+    }
+  }
+}
