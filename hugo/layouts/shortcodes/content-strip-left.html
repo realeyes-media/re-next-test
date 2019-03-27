@@ -5,7 +5,7 @@
 {{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
 {{ with $resource }}
 <div class="servicesDesktop fontFamily">
-  <div id="bill" class="strip">
+  <div class="strip">
     <div class="row">
       <div class="serviceLeftGradient bg-cover bg-position-center bg-overlay col-8 pt-18 pb-18"
         style="background-image: url(' {{ .Params.background | relURL }} ');">
