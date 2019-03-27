@@ -4,13 +4,23 @@
 
 {{ define "main" }}
 {{ partial "case-study-image.html" (dict "background" .Params.heroBackground "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "subheading" .Params.heroSubHeading "description" .Params.description "quote" .Params.quote "quotee" .Params.quotee "quoteeInfo" .Params.quoteeInfo "content" .)}}
-{{ if .NextPage }}
 <div class="row bottom">
-        <a class="col-6 arrow-prev">&#8592 Previous</a>
-        <a href="{{ .NextPage.Permalink }}" class="col-6 arrow-next">Next &#8594</a>
+        {{ if .PrevInSection }}
+        <a href="{{.PrevInSection.Permalink}}" class="col-6 arrow-prev">&#8592 Previous</a>
+        {{ else }}
+        <div class="col-6"></div>
+        {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}" class="col-6 arrow-next">Next &#8594</a>
+        {{ end }}
     </div>
-    <p style="color:red"> {{.Pages}} </p>
-    {{ end }}
+    <img src='{{ .Site.BaseURL }}/img/placeholder-img1.png'/>
+    <div class="quote">
+        <h1>{{ .Params.quote }}</h1>
+        <p><span style="font-weight: bold;">{{ .Params.quotee }}</span>, {{ .Params.quoteeInfo }}</p>
+    </div>
+    <img src='{{ .Site.BaseURL }}/img/placeholder-img2.png'/>
+</div>
 <div class="container-fluid">
     <div style="padding: 3rem">
         <p>{{ .Content }}</p>
