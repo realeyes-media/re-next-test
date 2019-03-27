@@ -18,7 +18,7 @@
 {{ define "main" }}
 
 {{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "serviceOne" .Params.heroServiceOne "serviceTwo" .Params.heroServiceTwo "serviceThree" .Params.heroServiceThree "content" .)}}
-<!-- <div class="content"> -->
+<div class="home-content">
 <div class="empowered-clients">
     <h2>Clients We've Empowered</h2>
 </div>
@@ -33,11 +33,20 @@
 </div>
 {{end}}
 
+{{ $headless := .Site.GetPage "/homepage" }}
+{{ $page := $headless.Resources.Match "livestream*" }}
+{{ range $page }}
+<div>{{ .Params.subtitle }}</div>
+<div>{{ .Title }}</div>
+<div>{{ .Content }}</div>
+{{ end }}
 {{ .Content }}
 
 {{partial "carousel.html" . }}
-{{ end }}
 
+</div>
+
+{{ end }}
 
 {{ define "footer_js" }}
 {{ end }}
