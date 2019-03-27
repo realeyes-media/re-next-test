@@ -95,7 +95,7 @@ const addRemoveHeroVideoOnLoad = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4"
+    videoSource.src = "/vid/re-hero_v2-02.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
@@ -121,7 +121,7 @@ const addRemoveHeroVideoOnResize = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "./images/Sport Seq_v2_1.mp4"
+    videoSource.src = "/vid/re-hero_v2-02.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
