@@ -210,6 +210,8 @@
 .previous {
     color: white;
     display: inline-block;
+    padding-top: 5vh;
+    padding-left: 2vw;
 }
 
 .next {
@@ -217,6 +219,8 @@
     position: relative;
     float: right;
     display: inline-block;
+    padding-top: 5vh;
+    padding-right: 2vw;
 }
 
 .blog-content-center {
@@ -224,7 +228,88 @@
     margin-right: 20vw;
     p {
         img {
-            align-content: center;
+            // align-content: center;
+            display: block;
+             margin-left: auto;
+             margin-right: auto;
+            width: 100%;
         }
     }
 }
+
+
+@include media-breakpoint-up(xs) {
+    .previous {
+        color: red;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-left: 2vw;
+    }
+    
+    .next {
+        color: red;
+        position: relative;
+        float: right;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-right: 2vw;
+    }
+    
+  }
+  
+  @include media-breakpoint-up(sm) {
+    .previous {
+        color: orange;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-left: 2vw;
+    }
+    
+    .next {
+        color: orange;
+        position: relative;
+        float: right;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-right: 2vw;
+    }
+  
+  }
+  
+  @include media-breakpoint-up(md) {
+    .previous {
+        color: blue;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-left: 2vw;
+    }
+    
+    .next {
+        color: blue;
+        position: relative;
+        float: right;
+        display: inline-block;
+        padding-top: 5vh;
+        padding-right: 2vw;
+    }
+  
+  }
+  
+    @include media-breakpoint-up(lg) {
+        .previous {
+            color: white;
+            display: inline-block;
+            padding-top: 5vh;
+            padding-left: 2vw;
+        }
+        
+        .next {
+            color: white;
+            position: relative;
+            float: right;
+            display: inline-block;
+            padding-top: 5vh;
+            padding-right: 2vw;
+        }
+     
+  }

@@ -5,6 +5,7 @@ subTitle = "Big Upgrades for Little Devices"
 author = "Phil Moss"
 date = "2019-03-23"
 title = "Test Blog"
+backgroundImage = "img/camera.png"
 backgroundColor = ""
 accentTextColor = ""
 tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss", "Test"]
