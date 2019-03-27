@@ -6,7 +6,6 @@ author = "Phil Moss"
 date = "2019-03-22"
 title = "Blah Blog"
 backgroundImage = ""
-weight = 3
 tags = ["Docker", "Raspberry Pi", "Devices", "Phil", "Moss", "Blah"]
 categories = ["category2", "ethan"]
 thumbnail = "img/camera.png"

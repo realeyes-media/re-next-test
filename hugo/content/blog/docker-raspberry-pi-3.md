@@ -7,7 +7,6 @@ date = "2018-07-24"
 title = "Docker On Raspberry Pi 3"
 backgroundImage = "img/camera.png"
 accentTextColor = ""
-weight = 1
 tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
 categories = ["category1", "marcy"]
 thumbnail = "img/camera.png"

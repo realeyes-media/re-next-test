@@ -378,6 +378,7 @@ function indexSearch() {
     }
     href = href.substring(1)
     // Build Lunr index for this page
+    if (frontMatter) {
     pageIndex = {
       title: frontMatter.title,
       tags: frontMatter.tags,
@@ -386,7 +387,9 @@ function indexSearch() {
       content: S(content[2]).trim().stripTags().stripPunctuation().s
     };
 
-    return pageIndex;
+      return pageIndex;
+    }
+    return
   };
 
   fs.writeFileSync("hugo/static/js/lunr/PagesIndex.json", JSON.stringify(indexPages()));

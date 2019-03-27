@@ -11,15 +11,19 @@
     <div class="row">
         <div class="col-12 title-card">
         <div class="card-content">
-        <div class="blog-title">{{ .Params.headerColorOne}} <span class="headerColorTwo">{{.Params.headerColorTwo}}</span></div>
+        <h1 class="card-title">{{ .Params.headerColorOne}} <span class="headerColorTwo">{{.Params.headerColorTwo}}</span></h1>
         <div class="blog-subtitle">{{ .Params.subtitle}}</div>
         <div class="blog-author">by {{ .Params.author}}</div>
         </div>
-        <div class="previous">&larr; Previous</div>
-        <div class="next">&rarr; Next</div>
+        {{ if .PrevInSection }}
+        <a href="{{.PrevInSection.Permalink}}" class="previous">&larr; Previous</a>
+        {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink}}" class="next">Next &rarr;</a>
+        {{ end }}
         </div>
     </div>
-    <p class="">{{ .Content}}</p>
+    <div class="blog-content-center">{{ .Content}}</div>
 </div>
 </div>
 {{ end }}
