@@ -185,15 +185,36 @@
     bottom: 10vh;
 }
 
+.card-content {
+    padding: 20px;
+}
+
 .blog-title {
-    font-size: 30px;
+    font-size: 50px;
     color: white;
 }
 
-.blog-subtitle {
+.headerColorTwo {
     color: #A8D1E6;
+}
+
+.blog-subtitle {
+    color: white;
 }
 
 .blog-author {
     color: white;
+    padding-top: 10px;
+}
+
+.previous {
+    color: white;
+    display: inline-block;
+}
+
+.next {
+    color: white;
+    position: relative;
+    float: right;
+    display: inline-block;
 }
