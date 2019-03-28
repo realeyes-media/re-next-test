@@ -13,12 +13,12 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     video {
       object-fit: cover;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       position: absolute;
       top: 0;
@@ -197,6 +197,7 @@
 
       video {
         object-fit: cover;
+        box-sizing: border-box;
         width: 100vw;
         height: 100vh;
         position: absolute;
@@ -336,6 +337,7 @@
         line-height: 1.3;
         font-weight: 700;
         font-size: 2vw;
+        margin-left: 0;
 
         @media (min-width: 1920px) {
           font-size: 1.5vw;

@@ -1,7 +1,6 @@
 #myCarousel {
     height:100%; 
-    background: black;
-    margin-bottom: 35vh;
+    margin-bottom: 33vh;
 }
 
 .container-fluid {
@@ -11,20 +10,18 @@
 
 
 .carousel-inner {
-  position: unset;
   margin-bottom: 50px;
   overflow: hidden;
   color: white;
 }
 
 .carousel-item  {
-    margin-top: 50vh;
     width: 70vw;
     margin-left: 16vw;
 }
+
   .carousel-indicators {
-    position: unset;
-    margin-bottom: 100px;
+    margin-bottom: 123px;
     padding-top: 50px;
     bottom: 120px;
   }
