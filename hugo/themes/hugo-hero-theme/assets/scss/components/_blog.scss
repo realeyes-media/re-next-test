@@ -181,7 +181,7 @@
 
 .title-card {
     background-color: #24315E;
-    height: 40vh;
+    height: 290px;
     bottom: 10vh;
 }
 
@@ -210,7 +210,7 @@
 .previous {
     color: white;
     display: inline-block;
-    padding-top: 5vh;
+    padding-top: 15vh;
     padding-left: 2vw;
 }
 
@@ -219,7 +219,7 @@
     position: relative;
     float: right;
     display: inline-block;
-    padding-top: 5vh;
+    padding-top: 15vh;
     padding-right: 2vw;
 }
 
@@ -228,7 +228,6 @@
     margin-right: 20vw;
     p {
         img {
-            // align-content: center;
             display: block;
              margin-left: auto;
              margin-right: auto;
@@ -239,83 +238,79 @@
 
 
 @include media-breakpoint-up(xs) {
-    .previous {
-        color: red;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-left: 2vw;
-    }
-    
-    .next {
-        color: red;
-        position: relative;
-        float: right;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-right: 2vw;
-    }
 
     .title-card {
         background-color: #24315E;
-        height: 45vh;
+        height: 370px;
         bottom: 10vh;
+    }
+
+    .previous {
+        color: white;
+        padding-top: 50px;
+    }
+    
+    .next {
+        color: white;
+        padding-top: 50px;
     }
     
   }
   
   @include media-breakpoint-up(sm) {
+    .title-card {
+        background-color: #24315E;
+        height: 370px;
+        bottom: 10vh;
+    }
     .previous {
-        color: orange;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-left: 2vw;
+        color: white;
+        padding-top: 90px;
     }
     
     .next {
-        color: orange;
-        position: relative;
-        float: right;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-right: 2vw;
+        color: white;
+        padding-top: 90px;
     }
   
   }
   
   @include media-breakpoint-up(md) {
+
+    .title-card {
+        background-color: #24315E;
+        height: 318px;
+        bottom: 10vh;
+    }
+
     .previous {
-        color: blue;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-left: 2vw;
+        color: white;
+        padding-top: 100px;
     }
     
     .next {
-        color: blue;
-        position: relative;
-        float: right;
-        display: inline-block;
-        padding-top: 5vh;
-        padding-right: 2vw;
+        color: white;
+        padding-top: 100px;
     }
   
   }
   
     @include media-breakpoint-up(lg) {
+        .title-card {
+            background-color: #24315E;
+            height: 338px;
+            bottom: 10vh;
+        }
+
         .previous {
             color: white;
-            display: inline-block;
-            padding-top: 5vh;
-            padding-left: 2vw;
+            padding-top: 100px;
         }
         
         .next {
             color: white;
-            position: relative;
-            float: right;
-            display: inline-block;
-            padding-top: 5vh;
-            padding-right: 2vw;
+            padding-top: 100px;
         }
+    }
+
      
-  }
