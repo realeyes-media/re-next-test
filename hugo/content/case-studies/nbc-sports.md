@@ -6,12 +6,12 @@ date: 2018-02-10T11:52:18+07:00
 heroHeading1: 'A Pivotal Year'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'NBC SPORTS & REALEYES'
-heroBackground: '/images/jason-blackeye-1191801-unsplash.jpg'
+heroBackground: '/img/_homepage - cloe kim.jpg'
 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.'
-quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
-quotee: 'Rick Cordelia'
-quoteeInfo: 'executive vice president & general manager of digital media, NBC Sports Group'
+quote: '“To execute not just one but three major events of this size, scale, quality, and stability in such a short duration is unheard of in the digital video delivery landscape. With partners like RealEyes, we look forward to future opportunities to innovate and deliver world class solutions for both NBC Sports Group and our Playmaker Media partners.”'
+quotee: 'Eric Black'
+quoteeInfo: 'SVP and CTO, NBC Sports Digital and Playmaker Media'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget risus et est posuere posuere vel at enim. In nec quam at sapien ultrices tincidunt. Nulla a justo gravida, iaculis magna ut, tincidunt elit. Donec mauris est, finibus at est non, mattis varius sem. Nunc dictum libero sed semper porta. Phasellus tempus scelerisque urna, quis egestas magna congue sit amet. Nulla orci erat, accumsan ac ligula nec, maximus tempor lectus. Aenean sagittis massa id facilisis laoreet.
