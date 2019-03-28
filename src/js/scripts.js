@@ -72,12 +72,14 @@ window.onscroll = () => {
 };
 
 window.onload = () => {
-  addRemoveHeroVideoOnLoad()
+  const homepage = document.getElementById("landing-page-hero")
+  if (homepage) addRemoveHeroVideoOnLoad()
   showServicesOnLoad()
 }
 
 window.onresize = () => {
-  addRemoveHeroVideoOnResize()
+  const homepage = document.getElementById("landing-page-hero")
+  if (homepage) addRemoveHeroVideoOnResize() 
   showServicesOnResize()
 }
 
