@@ -81,7 +81,21 @@ window.onresize = () => {
   showServicesOnResize()
 }
 
-
+$("#myForm").submit(function() {
+    $.ajax({
+        url: 'https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail',
+        data: JSON.stringify($('#myForm').serialize()),
+        type: "POST", 
+        dataType: 'jsonp',
+        success: function (e) {
+            console.log(JSON.stringify(e));
+        },
+        error:function(e) {
+            console.log(JSON.stringify(e));
+        }
+    });
+    return false;
+  });
 
 const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
