@@ -13,3 +13,114 @@
 .who-left {
   width: 30%;
 }
+
+.serviceRightGradient::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to left, transparent 0%, black 100%);
+}
+
+.serviceLeftGradient::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to right, transparent 0%, black 100%);
+}
+
+.servicesDesktop {
+  margin-bottom: 5rem;
+}
+
+.serviceName {
+  font-size: .75rem;
+  position: absolute;
+  top: 5%;
+}
+
+.serviceRightText {
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+
+}
+.serviceHeader {
+  font-weight: 700;
+  position: relative;
+}
+
+.serviceContent {
+  position: relative;
+  font-size: 1rem;
+  margin-top: 2rem;
+  min-width: 20rem;
+}
+
+.serviceButton {
+  position: relative;
+  font-size: .8rem;
+}
+
+.serviceIcon {
+  filter: grayscale(20%);
+  max-width: 1rem;
+  margin-left: .65rem;
+}
+
+.serviceNameLeft {
+  font-size: .75rem;
+  position: absolute;
+  margin-left: -.8rem;
+  top: 5%;
+  width: 100%;
+  text-align: right;
+}
+
+.serviceLeftText {
+  position: absolute;
+  text-align: right;
+  top: 15%;
+  z-index: 2;
+}
+
+.serviceHeaderLeft {
+  font-weight: 700;
+  position: relative;
+}
+
+.serviceContentLeft {
+  position: relative;
+  font-size: 1rem;
+  margin-left: -10rem;
+  margin-top: 2rem;
+}
+
+.serviceButtonLeft {
+  position: relative;
+  width: 100%;
+  font-size: .8rem;
+}
+
+/* Mobile Styles for Services Section */
+.serviceImage {
+  width: 100vw;
+  right: 4rem;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.servicesMobileText {
+  margin-bottom: 15rem;
+}
+
+.fontFamily {
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
