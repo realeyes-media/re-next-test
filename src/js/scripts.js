@@ -72,16 +72,20 @@ window.onscroll = () => {
 };
 
 window.onload = () => {
-  addRemoveHeroVideoOnLoad()
-  showServicesOnLoad()
+  const homepage = document.getElementById("landing-page-hero")
+  if (homepage) {
+    addRemoveHeroVideoOnLoad()
+    showServicesOnLoad()
+  }
 }
 
 window.onresize = () => {
-  addRemoveHeroVideoOnResize()
-  showServicesOnResize()
+  const homepage = document.getElementById("landing-page-hero")
+  if (homepage) {
+    addRemoveHeroVideoOnResize()
+    showServicesOnResize()
+  }
 }
-
-
 
 const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
