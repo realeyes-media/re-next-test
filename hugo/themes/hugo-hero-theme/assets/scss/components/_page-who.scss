@@ -351,26 +351,30 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        // &:hover {
-        //     filter: grayscale(100%);
-        // }
+        transition: 1s ease;
+        &:hover .feature-bio {
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover {
+            filter: grayscale(100%)
+        }
         .feature-image {
             flex: 0 0 auto;
             width: 100%;
             height: 100%;
             display: flex;
         }
-
+        
         .feature-bio {
             visibility: hidden;
-            display: none;
             position: absolute;
             text-align: left;
             margin: 1rem;
             top: 0;
-            &:hover {
-                visibility: visible;
-            }
+            transition: 1s ease;
+            opacity: 0;
+            color: white;
         }
 
         img {
@@ -378,8 +382,6 @@
             height: 100%;
             object-fit: cover;
         }
-
-        img
 
         .feature-title {
             text-align: center;
