@@ -58,17 +58,7 @@ $('.icon').click(function () {
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
-  const header = document.getElementsByClassName('header header-absolute')[0];
-  const currentScrollPos = window.pageYOffset;
-  if (currentScrollPos === 0) {
-    header.style.background = 'transparent';
-  } else if (prevScrollpos > currentScrollPos) {
-    header.style.top = '0px';
-    header.style.backgroundColor = 'black';
-  } else {
-    header.style.top = '-60px';
-  }
-  prevScrollpos = currentScrollPos;
+  showHideNavbarOnScroll()
 };
 
 window.onload = () => {
@@ -85,6 +75,20 @@ window.onresize = () => {
     addRemoveHeroVideoOnResize()
     showServicesOnResize()
   }
+}
+
+const showHideNavbarOnScroll = () => {
+  const header = document.getElementsByClassName('header header-absolute')[0];
+  const currentScrollPos = window.pageYOffset;
+  if (currentScrollPos === 0) {
+    header.style.background = 'transparent';
+  } else if (prevScrollpos > currentScrollPos) {
+    header.style.top = '0px';
+    header.style.backgroundColor = 'black';
+  } else {
+    header.style.top = '-60px';
+  }
+  prevScrollpos = currentScrollPos;
 }
 
 const addRemoveHeroVideoOnLoad = () => {
