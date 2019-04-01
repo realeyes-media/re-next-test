@@ -10,13 +10,13 @@ heroBackground: https://image.shutterstock.com/z/stock-photo-american-football-p
 ---
 
 <div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
-    <div>
+    <div id="liveStream">
     {{< content-strip-right "/homepage" "livestream" >}}
     </div>
-    <div>
+    <div id="bespoke">
     {{< content-strip-left "/homepage" "bespoke" >}}
     </div>
-    <div>
+    <div id="workflow">
     {{< content-strip-right "/homepage" "workflow" >}}
     </div>
 </div>
