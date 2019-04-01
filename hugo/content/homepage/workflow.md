@@ -1,11 +1,12 @@
 ---
 title: 'Media Workflow'
 service: 'MEDIA WORKFLOW INTELLIGENCE'
-header: '(_________)'
+header: 'Optimized Delivery Workflows'
 date: 2018-12-06T09:29:16+10:00
-background: '/img/computerCode.jpg'
+background: '/img/Homepage - workflow .png'
 button: 'Learn More'
 buttonLink: 'workflowMedia'
-description: "We are the partner of choice for the largest live streaming events in the world. We enable and co-create exceptional interractive experiences tahtat are brought to life with our clients' most valuable data, media, and content."
+description: "We are the go-to experts in tackling hard and complex problems such as dynamic ad insertion, multi-CDN delivery, and complex failover strategies for mission critical video streaming. We can also help to optimize your workflow with advanced stream packaging, in-workflow automated quality control, and enhanced machine learning insights and transcripts. Our proprietary tools can optimize your existing workflow, enabling seamless end to end experience in media processing, management, and playback.
+"
 ---
 

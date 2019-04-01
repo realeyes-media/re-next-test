@@ -1,44 +1,116 @@
 [
     {
-        "name": "Jake the Dog",
+        "name": "Austin Christensen",
         "position": "hero",
-        "image": "img/jake_the_dog.png",
-        "bio": ""
+        "image": "img/Headshots RE Next/Austin Christensen - fullsizeoutput_171a.jpeg",
+        "bio": "Hello, my name is Austin from Houston. I like dunking basketballs and shaving my head."
     },
     {
-        "name": "Donald",
+        "name": "Billy McCormack",
         "position": "?",
-        "image": "img/trump_hands.jpg",
+        "image": "img/Headshots RE Next/Billy McCormack - fullsizeoutput_172a.jpeg",
         "bio": ""
     },
     {
-        "name": "Michael Jordan",
+        "name": "Buzz",
         "position": "GOAT",
-        "image": "img/jordan.jpg",
+        "image": "img/Headshots RE Next/Buzz - fullsizeoutput_1718.jpeg",
         "bio": ""
     },
     {
-        "name": "Dipsy",
+        "name": "Darragh Evarts",
         "position": "Teletubby",
-        "image": "img/teletubby.jpg",
-        "bio": ""
+        "image": "img/Headshots RE Next/Darragh Evarts - 19-03-2019-13-57-14.jpeg",
+        "bio": "Marketing and Account Manager at Realeyes Inc."
     },
     {
-        "name": "Batman",
+        "name": "David Hassoun",
         "position": "Dark Knight",
-        "image": "img/batman.jpg",
+        "image": "img/Headshots RE Next/David Hassoun - fullsizeoutput_1714.jpeg",
         "bio": ""
     },
     {
-        "name": "Pikachu",
+        "name": "Dozer",
         "position": "Cute Pokemon or Body Pillow",
-        "image": "img/pikachu.png",
+        "image": "img/Headshots RE Next/Dozer - 2019-03-19 .png",
         "bio": ""
     },
     {
-        "name": "Ludwig Van Beethoven",
+        "name": "Frances Janz",
         "position": "Other GOAT",
-        "image": "img/beethoven.jpg",
+        "image": "img/Headshots RE Next/Frances Janz - fullsizeoutput_171c.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Grant Curtis",
+        "position": "hero",
+        "image": "img/Headshots RE Next/Grant Curtis - fullsizeoutput_1724.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Greg Kolb",
+        "position": "?",
+        "image": "img/Headshots RE Next/Greg Kolb - fullsizeoutput_1720.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Image 0935",
+        "position": "GOAT",
+        "image": "img/Headshots RE Next/IMG_0935.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "John Gainfort",
+        "position": "Teletubby",
+        "image": "img/Headshots RE Next/John Gainfort - fullsizeoutput_1712.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Jun Heider",
+        "position": "Dark Knight",
+        "image": "img/Headshots RE Next/Jun Heider - fullsizeoutput_173a.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Marcy Nugent",
+        "position": "Cute Pokemon or Body Pillow",
+        "image": "img/Headshots RE Next/Marcy Nugent - fullsizeoutput_1745.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Mark Grant",
+        "position": "Other GOAT",
+        "image": "img/Headshots RE Next/Mark Grant - fullsizeoutput_1728.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Matthew Thompson",
+        "position": "hero",
+        "image": "img/Headshots RE Next/Matthew Thompson - fullsizeoutput_171e.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Meredith Guarco",
+        "position": "?",
+        "image": "img/Headshots RE Next/Meredith Guarco - fullsizeoutput_1726.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Nils Thingvall",
+        "position": "GOAT",
+        "image": "img/Headshots RE Next/Nils Thingvall - fullsizeoutput_1710.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Paula Gettman",
+        "position": "Teletubby",
+        "image": "img/Headshots RE Next/Paula Gettman - fullsizeoutput_172e.jpeg",
+        "bio": ""
+    },
+    {
+        "name": "Vicky Chen",
+        "position": "Dark Knight",
+        "image": "img/Headshots RE Next/Vicky Chen - fullsizeoutput_1716.jpeg",
         "bio": ""
     }
 ]

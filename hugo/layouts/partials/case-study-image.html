@@ -7,7 +7,7 @@
                     <h1>{{ .heading1 }}</h1>
                     <h2>{{ .heading2 }}</h2>
                     <p>{{ .subheading }}</p>
-                    <div>{{ .description }}</div>
+                    <div>{{ .Content }}</div>
                 </div> 
             </div>
             <div class="col-12 col-md-5">
@@ -23,5 +23,16 @@
                 </div>
             </div>          
         </div>
+        <div class="row bottom">
+            <div class="col-6 arrow-prev">&#8592 Previous</div>
+            <div class="col-6 arrow-next">Next &#8594</div>
+        </div>
     </div>
+    <img src='{{ .Site.BaseURL }}/img/Case Study - NBC Red Gerard.jpg'/>
+    <div class="quote">
+        <h1>{{ .quote }}</h1>
+        <p><span style="font-weight: bold;">{{ .quotee }}</span>, {{ .quoteeInfo }}</p>
+    </div>
+    <img src='{{ .Site.BaseURL }}/img/Case Study - NBC Red Gerard.jpg'/>
+</div>
 {{ .Site.BaseURL }}

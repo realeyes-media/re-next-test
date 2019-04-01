@@ -196,12 +196,14 @@
             height: 100%;
             padding: 0;
         }
+
         @include media-breakpoint-up(sm) {
             position: relative;
             width: 100%;
             height: 100%;
             padding: 0;
         }
+
         @include media-breakpoint-up(md) {
             position: absolute;
             top: 50rem;
@@ -209,6 +211,7 @@
             max-width: 40%;
             height: 30rem;
         }
+
         @include media-breakpoint-up(lg) {
             position: absolute;
             top: 30rem;
@@ -217,6 +220,7 @@
             max-width: 40%;
             height: 35rem;
         }
+
         @include media-breakpoint-up(xl) {
             position: absolute;
             top: 20rem;
@@ -225,48 +229,59 @@
             max-width: 40%;
             height: 35rem;
         }
+
         img {
             height: 100%;
             width: 100%;
         }
     }
+
     .hidden {
         display: none;
     }
+
     .solutions {
         cursor: pointer;
     }
+
     .blue-heading {
         font-family: 'Futura';
         color: #374685;
+
         @include media-breakpoint-up(xs) {
             font-size: 2rem;
         }
+
         @include media-breakpoint-up(md) {
             font-size: 1.75rem;
         }
     }
+
     .specialization-content {
         p {
             font-size: 1.25rem;
             color: #8a8989;
         }
     }
+
     .block-quote {
         p {
             @include media-breakpoint-up(xs) {
                 font-size: 1.5rem;
                 line-height: 1.5;
             }
+
             @include media-breakpoint-up(md) {
                 font-size: 1.75rem;
                 line-height: 1.75;
             }
+
             font-family: 'Playfair Display';
             font-style: italic;
             color: #4A4A4A;
         }
     }
+
     .col-2dot4,
     .col-sm-2dot4,
     .col-md-2dot4,
@@ -278,12 +293,14 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+
     .col-2dot4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
     }
+
     @media (min-width: 540px) {
         .col-sm-2dot4 {
             -webkit-box-flex: 0;
@@ -292,6 +309,7 @@
             max-width: 20%;
         }
     }
+
     @media (min-width: 720px) {
         .col-md-2dot4 {
             -webkit-box-flex: 0;
@@ -300,6 +318,7 @@
             max-width: 20%;
         }
     }
+
     @media (min-width: 960px) {
         .col-lg-2dot4 {
             -webkit-box-flex: 0;
@@ -308,6 +327,7 @@
             max-width: 20%;
         }
     }
+
     @media (min-width: 1140px) {
         .col-xl-2dot4 {
             -webkit-box-flex: 0;
@@ -316,6 +336,7 @@
             max-width: 20%;
         }
     }
+
     .feature {
         height: 16rem;
         width: 15rem;
@@ -330,39 +351,65 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
+        transition: 1s ease;
+        &:hover .feature-bio {
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover {
+            filter: grayscale(100%)
+        }
         .feature-image {
-          flex: 0 0 auto;
-          width: 100%;
-          height: 100%;
-          display: flex;
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
         }
+        
+        .feature-bio {
+            visibility: hidden;
+            position: absolute;
+            text-align: left;
+            margin: 1rem;
+            top: 0;
+            transition: 1s ease;
+            opacity: 0;
+            color: white;
+        }
+
         img {
-          width: 100%;
-          height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
+
         .feature-title {
-          text-align: center;
-          margin-bottom: 0;
-        }
-        .feature-content {
-          margin-bottom: 0;
-          margin-top: 0;
-          font-size: 1.125rem;
-          p {
-            margin: 0;
             text-align: center;
-            strong {
-              color: $secondary;
-              text-transform: uppercase;
-              font-size: 0.8rem;
-              font-weight: 700;
-            }
-            em {
-              color: $primary;
-              font-style: normal;
-            }
-          }
+            margin-bottom: 0;
         }
-      }
+
+        .feature-content {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 1.125rem;
+
+            p {
+                margin: 0;
+                text-align: center;
+
+                strong {
+                    color: $secondary;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                }
+
+                em {
+                    color: $primary;
+                    font-style: normal;
+                }
+            }
+        }
+    }
 
 }
