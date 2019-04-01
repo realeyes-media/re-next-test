@@ -166,6 +166,13 @@
   height: 225px;
 }
 
+.hero-image-setheight-lg {
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1vh;
+}
+
 .hero-image-blend-overlay {
   background-blend-mode: overlay;
 }
