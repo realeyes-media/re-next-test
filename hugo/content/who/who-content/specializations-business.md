@@ -6,4 +6,4 @@ weight: 2
 heading: Enterprise & Business
 ---
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+From enabling secure internal broadcasting at global scale to building bespoke applications, we create custom tailored software to solve business challenges.
