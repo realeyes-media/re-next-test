@@ -62,8 +62,6 @@
   position: relative;
   font-size: 1rem;
   margin-top: 2rem;
-  /* min-width: 20rem; */
-  /* margin-right: -20rem; */
 }
 
 .serviceButton {
@@ -102,7 +100,6 @@
 .serviceContentLeft {
   position: relative;
   font-size: 1rem;
-  /* margin-left: -20rem; */
   margin-top: 2rem;
 }
 
