@@ -162,12 +162,14 @@
         flex-direction: column;
         text-align: center;
         transition: 1s ease;
+        overflow: hidden;
         filter: grayscale(100%);
         &:hover .feature-bio {
             visibility: visible;
             transition-delay: 2s;
             opacity: 1;
-            background:pink;
+            margin-top: -300px; // Makes text scroll
+            background:pink; // Is only visible for first square
         }
         &:hover {
             filter: grayscale(0%);
