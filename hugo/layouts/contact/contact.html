@@ -27,23 +27,23 @@
               </select>
         
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname">
+            <input required type="text" id="fname" name="firstname">
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname">
+            <input required type="text" id="lname" name="lastname">
         
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input required type="text" id="email" name="email">
         
             <label for="email">Phone Number</label>
-            <input type="text" id="phone" name="phone">
+            <input required type="text" id="phone" name="phone">
         
             <label for="company">Company</label>
-            <input type="text" id="company" name="company">
+            <input required type="text" id="company" name="company">
         
         
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea required id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
             <input type="submit" value="Submit">
         
@@ -65,4 +65,13 @@
     </div>
   </div>
 </div>
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
 {{ end }}
