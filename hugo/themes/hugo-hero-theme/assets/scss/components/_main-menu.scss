@@ -18,15 +18,13 @@
         color: $white;
         &:hover {
           color: #ffffff;
-          text-decoration: $link-hover-decoration;
+          border-bottom: 2px solid;
         }
       }
       &.active {
         > a {
-          text-decoration: $link-hover-decoration;
           color: #ffffff;
           &:hover {
-            text-decoration: $link-hover-decoration;
             transition: all 225ms ease-in 0s;
             color: #ffffff;
           }
