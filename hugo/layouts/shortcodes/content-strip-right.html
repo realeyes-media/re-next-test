@@ -7,7 +7,7 @@
 <div class="servicesDesktop fontFamily">
   <div class="strip">
     <div class="row">
-      <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
+      <div class="col-5 text-white serviceMakeTaller">
         <p class="serviceName">{{ .Params.service }}</p>
         <div class="serviceRightText">
           <h2 class="serviceHeader">{{ .Params.header }}</h2>
@@ -18,7 +18,7 @@
           {{ end }}
         </div>
       </div>
-      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-20 pb-20"
+      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-7 pt-20 pb-20"
         style="background-image: url(' {{ .Params.background | relURL }} ');">
       </div>
     </div>
@@ -39,7 +39,6 @@
           {{ if .Params.button }}
           <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}
             <img class="serviceIcon text-primary" src="/img/svg/right-arrow.svg">
-
           </a>
           {{ end }}
         </div>

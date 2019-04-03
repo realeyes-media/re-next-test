@@ -55,13 +55,15 @@
 .serviceHeader {
   font-weight: 700;
   position: relative;
+  margin-right: -10rem;
 }
 
 .serviceContent {
   position: relative;
   font-size: 1rem;
   margin-top: 2rem;
-  min-width: 20rem;
+  /* min-width: 20rem; */
+  /* margin-right: -20rem; */
 }
 
 .serviceButton {
@@ -94,12 +96,13 @@
 .serviceHeaderLeft {
   font-weight: 700;
   position: relative;
+  margin-left: -10rem;
 }
 
 .serviceContentLeft {
   position: relative;
   font-size: 1rem;
-  margin-left: -10rem;
+  /* margin-left: -20rem; */
   margin-top: 2rem;
 }
 
@@ -109,10 +112,16 @@
   font-size: .8rem;
 }
 
+@media (max-width: 1200px) {
+.serviceMakeTaller {
+    padding-top: 275px;
+    padding-bottom: 275px;
+  }
+}
+
 /* Mobile Styles for Services Section */
 .serviceImage {
   width: 100vw;
-  right: 4rem;
   position: relative;
   margin: 2rem 0;
 }
@@ -124,3 +133,4 @@
 .fontFamily {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 }
+

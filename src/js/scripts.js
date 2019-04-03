@@ -58,17 +58,7 @@ $('.icon').click(function () {
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
-  const header = document.getElementsByClassName('header header-absolute')[0];
-  const currentScrollPos = window.pageYOffset;
-  if (currentScrollPos === 0) {
-    header.style.background = 'transparent';
-  } else if (prevScrollpos > currentScrollPos) {
-    header.style.top = '0px';
-    header.style.backgroundColor = 'black';
-  } else {
-    header.style.top = '-60px';
-  }
-  prevScrollpos = currentScrollPos;
+  showHideNavbarOnScroll()
 };
 
 window.onload = () => {
@@ -87,21 +77,30 @@ window.onresize = () => {
   }
 }
 
-$("#myForm").submit(function() {
-    $.ajax({
-        url: 'https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail',
-        data: JSON.stringify($('#myForm').serialize()),
-        type: "POST", 
-        dataType: 'jsonp',
-        success: function (e) {
-            console.log(JSON.stringify(e));
-        },
-        error:function(e) {
-            console.log(JSON.stringify(e));
-        }
-    });
-    return false;
-  });
+$("#myForm").submit(function(e) {
+  e.preventDefault();
+  var data = JSON.stringify($('#myForm').serialize())
+  var posting = $.post("https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail", {data: data});
+
+  posting.done(function(data) { 
+    alert(data);
+   })
+
+});
+
+const showHideNavbarOnScroll = () => {
+  const header = document.getElementsByClassName('header header-absolute')[0];
+  const currentScrollPos = window.pageYOffset;
+  if (currentScrollPos === 0) {
+    header.style.background = 'transparent';
+  } else if (prevScrollpos > currentScrollPos) {
+    header.style.top = '0px';
+    header.style.backgroundColor = 'black';
+  } else {
+    header.style.top = '-60px';
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {

@@ -3,8 +3,9 @@ title: 'bespoke'
 service: 'BESPOKE APPLICATION DEVELOPMENT'
 header: 'Uniquely Branded Experiences'
 date: 2018-12-06T09:29:16+10:00
-background: '/img/nascarCars.jpg'
+background: 'img/StockCars.png'
 button: 'Contact Us'
 buttonLink: 'contact'
-description: "We Provide the platfore and expertise to empower our customers to differentiate their brand through the delivery of a truly uinque experience over desktop, mobile, and OTT set-top devices."
+description: "Our proprietary platform and deep streaming expertise empowers our customers to differentiate their brand through the delivery of a truly unique experience over desktop, mobile, and OTT set-top devices.
+"
 ---
