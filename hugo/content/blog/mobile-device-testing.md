@@ -1,6 +1,6 @@
 +++
-headerColorOne = "Docker on"
-headerColorTwo = "Raspberry Pi 3"
+headerColorOne = "Mobile device testing is necessary,"
+headerColorTwo = "but presents many challenges"
 subTitle = "Big Upgrades for Little Devices"
 author = "Marcy Nugent"
 date = "2018-07-24"
@@ -26,31 +26,32 @@ Luckily, as of version 32, Google Chrome has added a rather impressive, and buil
 ## Enabling device emulation
 
 
-So, with that bit of Chrome DevTools fanboyism finished, here’s a quick introduction on how to enable and use the new mobile device emulation features.  They are a bit hidden, so here’s how to turn them on and get to them:
-Open DevTools (Menu>View>Developer>Developer Tools – OR – CMD(CTRL)+ALT+I)
-Open DevTools Settings (Click on the Gear icon near the right-hand side of the DevTools menu bar)
-Click on the “Overrides” tab
-If you’re using Chrome Canary, stay on the “General” tab and look under the heading “Appearance”
-Tick the checkbox for “Show ‘Emulation’ view in console drawer”
-Close the settings
+So, with that bit of Chrome DevTools fanboyism finished, here’s a quick introduction on how to enable and use the new mobile device emulation features.  They are a bit hidden, so here’s how to turn them on and get to them:  
+* Open DevTools (Menu>View>Developer>Developer Tools – OR – CMD(CTRL)+ALT+I)  
+* Open DevTools Settings (Click on the Gear icon near the right-hand side of the DevTools menu bar)  
+* Click on the “Overrides” tab  
+    * If you’re using Chrome Canary, stay on the “General” tab and look under the heading “Appearance”  
+* Tick the checkbox for “Show ‘Emulation’ view in console drawer”  
+* Close the settings  
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/DevTools-Settings.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Enable-Emulation-Tab1.png)
 
 That will enable the device emulation features, or at least enable the menu for them, now to get to them, all you have to do is open up the console drawer (hit ESC in any Dev Tools tab other than the Console Tab) and you’ll see a new tab available titled “Emulation”.
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Screenshot-2014-02-11-151915png.png)
 
 ## Emulating a device
 
-When you first open that tab “Device” in the list on the left-side should be selected by default, and will allow you to select from a fairly impressive list of devices, I’ll be using the Google Nexus 4 in this example. Selecting a device will display a few key data points specific to that device, which Chrome will then emulate.
-Viewport
-Pixel Dimensions (768×1280)
-Pixel Ratio (2)
-Font Scale Factor (1.083)
-User Agent
-Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 4 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
+When you first open that tab “Device” in the list on the left-side should be selected by default, and will allow you to select from a fairly impressive list of devices, I’ll be using the Google Nexus 4 in this example. Selecting a device will display a few key data points specific to that device, which Chrome will then emulate.  
+* Viewport  
+   * Pixel Dimensions (768×1280)  
+   *  Pixel Ratio (2)  
+   *   Font Scale Factor (1.083)  
+* User Agent  
+  * Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 4 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Available-Device-Presets.png)
 
 At that point, all you have to do is click the “Emulate” button, and Chrome will resize it’s view and reload the current page as though it were the device you selected.
 By default, emulating a device will turn on a standard set of options, though you can easily add or remove the available capabilities, as well as tweak and fine-tune the settings for almost all of them.
@@ -66,7 +67,7 @@ There is one other very important thing to call out as a use for all these custo
 
 The “Screen” section allows several options for fine-tuning the way Chrome emulates the selected device’s display. By default, the Resolution values will be set to match the chosen device’s real-world pixel resolution. In general, when emulating tablets, Chrome will set the initial Resolution values as though the tablet is in Landscape (horizontal) orientation. When emulating phones, they will initially be shown in Portrait (vertical) orientation. You can easily swap the two values by clicking the button between the two resolution text fields.
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Screen-Options.png)
 
 One thing to be aware of, is that swapping these values will make the device viewport appear as though it has rotated, though in terms of device behavior, it has really just resized. What this means for your debugging, is that any styling that uses breakpoints based on width should behave just fine. If, on the other hand, you happen to have JavaScript listening for an orientationchange event in iOS, it won’t fire because there isn’t any accelerometer activity being emulated when you swap those values. This is a prime example of why, as impressive as these tools are, it’s still important to test on actual devices whenever possible.
 
@@ -76,13 +77,13 @@ It is also important to note that if you enable the “Shrink to fit” option i
 
 Next in our list is the “User Agent” section, which is fairly  straightforward. It allows you to toggle between using Chrome’s default User Agent String, which will provide (relatively) accurate information about your browser and hardware set up to sites that you visit, with the thought that they may serve up different content and experiences, depending on your configuration. With that mind, it makes sense that when attempting to emulate the Nexus 4 from our examples earlier, you probably don’t want to provide a User Agent String that identifies your setup as a Mac Desktop with the latest version of OSX. Conveniently, if you’re using one of the default device presets available from the list in the “device” section, Chrome will have already selected and enabled the the corresponding User Agent from it’s list. If you would like to edit the string for some reason, simply make your change in the textbox and hit Enter. If you are emulating a custom device other than the provided presets, you can replace the entire User Agent String. I find that UserAgentString.com is usually a good resource for finding strings from any number of browser versions.
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/User-Agent-Options.png)
 
 ## Emulating sensor data
 
 Last in the list, is the “Sensors” section, which offers up some settings that are possibly a bit less commonly needed in day to day web development, but are extremely cool. Only the first option, “Emulate touch screen”, will get enabled by default. When it is active, your cursor will render as a semi-transparent circle that is just large enough to help you keep touch-targets in mind. Paul Irish has a nice demo available on his site for experimenting with the touch events.
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Sensors-Options.png)
 
 At this point in time, there are some limited capabilities for emulating multi-touch interactions. Currently only a simple implementation of the Pinch to Zoom action is available, though it seems likely to me that functionality for other common multi-touch gestures may be added in future updates. To use this action, hold down the SHIFT key, then either click and drag, or scroll.
 
@@ -90,12 +91,12 @@ As with most of the options available in the emulation panel, it is possible to 
 
 On the back end of things, touch events will be added in with some of your mouse events. Using this option will not disable mouse events, it simply adds in touch events.  As an example, while “Emulate touch screen” is active, when you click with your mouse, the page will receive a touchstart event in addition to the mousedown event. To see this illustrated, you can visit this Event Listener Testand turn touch screen emulation on and off.
 
-The sensors section also has Geolocation and Accelerometer properties. I think these properties would be best explained by pointing you to some cool little demos that have been created. I encourage you to experiment:
-Geolocation Demo
-Device Orientation Demo
+The sensors section also has Geolocation and Accelerometer properties. I think these properties would be best explained by pointing you to some cool little demos that have been created. I encourage you to experiment:  
+*  Geolocation Demo  
+*  Device Orientation Demo  
 Wrapping your head around the Accelerometer values can be a rather daunting task, especially when looking at text only values, which is what’s currently available in the mainstream version of Chrome (32.0.1700.107). If you are interested in working more with the accelerometer, I would highly recommend downloading Chrome Canary, as that version of the Device Emulation panel includes a small, 3D representation of your device, which rotates to illustrate the accelerometer values. The good news, is that since that’s currently available in Canary, it will probably show up in regular Chrome sometime relatively soon.
 
-![](http://realeyes.com/wp-content/uploads/Screenshot-2014-02-12-15.07.39.png)
+![](http://realeyes.com/wp-content/uploads/2014/02/Sensors-Options-Chrome-Canary.png)
 
 ## Getting your normal browser back
 
