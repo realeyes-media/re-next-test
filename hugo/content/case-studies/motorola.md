@@ -3,7 +3,7 @@ title: 'Motorola'
 subtitle: MEDIA AGGREGATION & INTEL
 weight: 6
 # date: 2018-02-10T11:52:18+07:00
-heroHeading1: 'A Pivotal Year'
+heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'Motorola & RealEyes: Helping Law Enforcement to be Transparent'
 heroBackground: 'img/Case Studies Thumbs - Small/Homepage - Motorola - small.jpg'

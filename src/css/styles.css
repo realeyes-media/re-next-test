@@ -138,6 +138,22 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+.company-logo-wrapper {
+  display: inline-flex;
+  max-height: 20rem;
+  filter: grayscale(100%);
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20rem;
+}
+
+.company-logo {
+  height: 5rem;
+  width: auto;
+}
+>>>>>>> dev
 
 /* Mobile Styles for Services Section */
 .serviceImage {
