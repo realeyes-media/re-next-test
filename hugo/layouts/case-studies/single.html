@@ -5,13 +5,13 @@
 {{ define "main" }}
 {{ partial "case-study-image.html" (dict "background" .Params.heroBackground "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "subheading" .Params.heroSubHeading "description" .Params.description "quote" .Params.quote "quotee" .Params.quotee "quoteeInfo" .Params.quoteeInfo "content" .)}}
 <div class="row bottom">
-        {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}" class="col-6 arrow-prev">&#8592 Previous</a>
+        {{ if .NextInSection }}
+        <a href="{{.NextInSection.Permalink}}" class="col-6 arrow-prev">&#8592 Previous</a>
         {{ else }}
         <div class="col-6"></div>
         {{ end }}
-        {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink }}" class="col-6 arrow-next">Next &#8594</a>
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}" class="col-6 arrow-next">Next &#8594</a>
         {{ end }}
     </div>
     <img src='{{ .Site.BaseURL }}/img/placeholder-img1.png'/>
