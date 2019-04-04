@@ -15,7 +15,8 @@
         <div class="serviceLeftText">
           <h2 class="serviceHeaderLeft">{{ .Params.header }}</h2>
           <p class="serviceContentLeft">{{ .Params.description }}</p>
-          {{ if .Params.button }}
+          <!-- BUTTONS ON SERVICES ARE NOT MVP -->
+          {{ if .Params.CHANGETObuttonWHENCONTENTAVAILABLE }}
           <a class="serviceButtonLeft text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
               class="serviceIcon text-primary" src="/img/svg/right-arrow.svg"></a>
           {{ end }}
