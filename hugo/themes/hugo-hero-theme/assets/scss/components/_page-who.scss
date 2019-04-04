@@ -24,7 +24,7 @@
 
         @include media-breakpoint-up(lg) {
             position: absolute;
-            bottom: 0rem;
+            top: 35rem;
             right: 0px;
             width: 28rem;
             max-width: 40%;
@@ -33,7 +33,7 @@
 
         @include media-breakpoint-up(xl) {
             position: absolute;
-            bottom: 0rem;
+            top: 25rem;
             right: 0px;
             width: 28rem;
             max-width: 40%;
