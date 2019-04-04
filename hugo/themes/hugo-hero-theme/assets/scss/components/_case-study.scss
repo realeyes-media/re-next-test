@@ -1,14 +1,17 @@
 .case-study {
     margin: 0;
+
     .case-study-card {
         @include media-breakpoint-up(xs) {
             margin-bottom: 2rem;
             height: 18rem;
         }
+
         @include media-breakpoint-up(md) {
             margin-bottom: 0px;
             height: 25.5rem;
         }
+
         color: $white;
         font-family: 'Futura';
         width: 100%;
@@ -16,11 +19,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 0;
+
         .align-bottom-left {
             bottom: 1rem;
             left: 2rem;
             position: absolute;
         }
+
         .case-study-content {
             color: $white;
             background-color: #2D3264;
@@ -31,11 +36,18 @@
             padding: 2rem;
         }
     }
-    .case-study-card:hover .case-study-content {
-        display:block;
-        z-index: 1;
+
+    .case-study-subtitle {
+        font-size: .9rem;
+        font-weight: 600;
     }
-    .case-study-card:hover .layer {
-        display:block;
+
+    .case-study-title {
+        font-weight: 600;
+    }
+
+    .case-study-card:hover .case-study-content {
+        display: block;
+        z-index: 1;
     }
 }
