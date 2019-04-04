@@ -67,7 +67,7 @@
         padding-left: 7%;
       }
         @include media-breakpoint-up(sm) {
-          padding-left: 47px;
+          padding-right: 37px;
         }
         color: white;
         text-decoration: none;
@@ -406,7 +406,7 @@ to{width: 38%;}
 
 .socialButtons {
   position: relative;
-  left: 72%;
+  left: 77%;
   margin-top: 8%;
 }
 
