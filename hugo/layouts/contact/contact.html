@@ -21,29 +21,30 @@
         
               <label for="help">I would like RealEyes to help with</label>
               <select id="help" name="help">
-                <option value="option1">Option1</option>
-                <option value="option2">Option2</option>
-                <option value="option3">Option3</option>
+                <option value="Development and/or Consulting">Development and/or Consulting</option>
+                <option value="Products">Products</option>
+                <option value="Training">Training</option>
+                <option value="I just have a question">I just have a question</option>
               </select>
         
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname">
+            <input required type="text" id="fname" name="firstname">
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname">
+            <input required type="text" id="lname" name="lastname">
         
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input required type="text" id="email" name="email">
         
             <label for="email">Phone Number</label>
-            <input type="text" id="phone" name="phone">
+            <input required type="text" id="phone" name="phone">
         
             <label for="company">Company</label>
-            <input type="text" id="company" name="company">
+            <input required type="text" id="company" name="company">
         
         
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea required id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
             <input type="submit" value="Submit">
         
@@ -52,7 +53,7 @@
         <div class="col-12">
           <hr>
         </div>
-        <div class="row centerText">
+        <div class="row">
         <div class="col-12 col-lg-6">
             <h4 class="bottomSubtitle">New Business Enquiries</h4>
             <span class="bottomSpan">We are a technology company with our own innovative products, and we are also a consultancy. Whatever it takes to ensure success, whether it’s with our own technology or someone else’s, we will work with you to develop the best solutions to meet your goals. Interested in learning how RealEyes can help? Let’s talk!</span>
@@ -65,4 +66,13 @@
     </div>
   </div>
 </div>
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
 {{ end }}

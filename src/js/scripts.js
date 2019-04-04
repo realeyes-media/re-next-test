@@ -77,6 +77,24 @@ window.onresize = () => {
   }
 }
 
+$("#myForm").submit(function(e) {
+  e.preventDefault();
+  var form_data = $(this).serializeArray();
+  const jsonData = {};
+  form_data.forEach(data => {
+   jsonData[data.name] = data.value
+});
+  console.log('FORMDATA', jsonData);
+    $.ajax({
+        url: 'https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail',
+        data: JSON.stringify(jsonData),
+        type: 'POST',
+        dataType: 'json',
+        contentType: 'application/json'
+    });
+    return false;
+  });
+
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
   const currentScrollPos = window.pageYOffset;
