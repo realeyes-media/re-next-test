@@ -1,7 +1,6 @@
 +++
 headerColorOne = "Sublime Text Tips"
 headerColorTwo = "Searching with Regular Expressions & Filtering Search Scope"
-subTitle = "Big Upgrades for Little Devices"
 author = "Marcy Nugent"
 date = "2018-07-24"
 title = "Sublime Text Tips"
