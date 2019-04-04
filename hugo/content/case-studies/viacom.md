@@ -3,7 +3,7 @@ title: 'Viacom'
 subtitle: OVER THE TOP
 weight: 2
 # date: 2018-02-10T11:52:18+07:00
-heroHeading1: 'A Pivotal Year'
+heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'Viacom & RealEyes: Customized Solution Content Storage'
 heroBackground: '/img/Case Studies Thumbs - Small/Homepage - Viacom - small.jpg'
