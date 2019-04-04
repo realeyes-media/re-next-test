@@ -8,6 +8,7 @@ export default function (env) {
   const tmp = ".tmp/"
   const build = "dist/"
   const isProduction = process.env.NODE_ENV === "production"
+  const branch = process.env.CI ? process.env.BITBUCKET_BRANCH : 'default'
 
   return {
     src: src,
@@ -18,7 +19,7 @@ export default function (env) {
       label: "Hugo",
       command: 'hugo',
       args: {
-        default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
+        default: ["-v", "--source", resolve(dest), '--environment', branch, "--destination", resolve(build)],
         development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
         preview: ["-b", "http://localhost:3000"],
         production: []
