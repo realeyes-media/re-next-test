@@ -138,8 +138,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 .company-logo-wrapper {
   display: inline-flex;
   max-height: 20rem;
@@ -153,7 +151,6 @@
   height: 5rem;
   width: auto;
 }
->>>>>>> dev
 
 /* Mobile Styles for Services Section */
 .serviceImage {
