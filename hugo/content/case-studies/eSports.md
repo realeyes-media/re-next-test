@@ -3,7 +3,7 @@ title: ------
 subtitle: AMEX
 weight: 3
 # date: 2018-02-10T11:52:18+07:00
-heroHeading1: 'A Pivotal Year'
+heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'AMEX & RealEyes: Results Lead to a Trusted Partnership'
 heroBackground: 'img/Case Studies Thumbs - Small/Homepage - AMEX - small.jpg'
