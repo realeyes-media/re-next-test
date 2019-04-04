@@ -22,7 +22,7 @@ export default function (env) {
         default: ["-v", "--source", resolve(dest), '--environment', branch, "--destination", resolve(build)],
         development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
         preview: ["-b", "http://localhost:3000"],
-        production: []
+        production: ['--environment', branch]
       }
     },
     styles: {
