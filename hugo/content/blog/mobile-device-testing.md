@@ -1,8 +1,6 @@
 +++
 headerColorOne = "Mobile device testing is necessary,"
 headerColorTwo = "but presents many challenges"
-subTitle = "Big Upgrades for Little Devices"
-author = "Marcy Nugent"
 date = "2018-07-24"
 title = "Mobile device testing is necessary, but presents many challenges"
 backgroundImage = "img/camera.png"

@@ -13,7 +13,9 @@
         <div class="card-content">
         <h1 class="card-title">{{ .Params.headerColorOne}} <span class="headerColorTwo">{{.Params.headerColorTwo}}</span></h1>
         <div class="blog-subtitle">{{ .Params.subtitle}}</div>
+        {{ if .Params.author }}
         <div class="blog-author">by {{ .Params.author}}</div>
+        {{ end }}
         </div>
         {{ if .PrevInSection }}
         <a href="{{.PrevInSection.Permalink}}" class="previous">&larr; Previous</a>
