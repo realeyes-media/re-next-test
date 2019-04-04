@@ -1,6 +1,7 @@
 +++
 headerColorOne = "Using the AngularJS $logProvider"
-date = "2018-07-24"
+author = "Realeyes Media"
+date = "2017-04-16"
 title = "Using the AngularJS $logProvider"
 backgroundImage = "img/camera.png"
 accentTextColor = ""

@@ -1,7 +1,8 @@
 +++
-headerColorOne = "Sublime Text Tips"
-headerColorTwo = "Searching with Regular Expressions & Filtering Search Scope"
-date = "2018-07-24"
+headerColorOne = "Sublime Text Tips Searching with Regular"
+headerColorTwo = "Expressions & Filtering Search Scope"
+author = "Realeyes Media"
+date = "2018-09-10"
 title = "Sublime Text Tips"
 backgroundImage = "img/camera.png"
 accentTextColor = ""

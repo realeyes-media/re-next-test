@@ -1,7 +1,8 @@
 +++
 headerColorOne = "Mobile device testing is necessary,"
 headerColorTwo = "but presents many challenges"
-date = "2018-07-24"
+author = "Realeyes Media"
+date = "2018-02-19"
 title = "Mobile device testing is necessary, but presents many challenges"
 backgroundImage = "img/camera.png"
 accentTextColor = ""

@@ -1,7 +1,8 @@
 +++
-headerColorOne = "Using JMeter to Load Test Live HLS Concurrency of Wowza Streaming Engine"
+headerColorOne = "Using JMeter to Load Test Live HLS"
+headerColorTwo = "Concurrency of Wowza Streaming Engine"
 author = "John G. Gainfort, Jr."
-date = "2018-07-24"
+date = "2018-08-26"
 title = "Using JMeter to Load Test Live HLS Concurrency of Wowza Streaming Engine"
 backgroundImage = "img/camera.png"
 accentTextColor = ""

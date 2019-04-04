@@ -2,7 +2,7 @@
 headerColorOne = "Apache mod_rewrite-"
 headerColorTwo = "Useful Tips for Testing"
 author = "Jun Heider"
-date = "2018-07-24"
+date = "2018-10-11"
 title = "Apache mod_rewrite"
 backgroundImage = "img/camera.png"
 accentTextColor = ""
