@@ -272,7 +272,6 @@ function build(cb) {
 
   process.env.NODE_ENV = env
   process.env[generatorEnvVar] = env
-  console.log(generatorEnvVar)
 
   const generator = spawn(gulpConfig.generator.command, args, { env: process.env, stdio: "pipe", encoding: "utf-8" })
 
@@ -379,13 +378,13 @@ function indexSearch() {
     href = href.substring(1)
     // Build Lunr index for this page
     if (frontMatter) {
-    pageIndex = {
-      title: frontMatter.title,
-      tags: frontMatter.tags,
-      categories: frontMatter.categories,
-      href: href,
-      content: S(content[2]).trim().stripTags().stripPunctuation().s
-    };
+      pageIndex = {
+        title: frontMatter.title,
+        tags: frontMatter.tags,
+        categories: frontMatter.categories,
+        href: href,
+        content: S(content[2]).trim().stripTags().stripPunctuation().s
+      };
 
       return pageIndex;
     }
