@@ -1,15 +1,6 @@
 .case-study {
     margin: 0;
     .case-study-card {
-        .layer {
-            background-color: rgba(96, 197, 255, 0.493);
-            position: absolute;
-            display: none;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
         @include media-breakpoint-up(xs) {
             margin-bottom: 2rem;
             height: 18rem;
@@ -32,6 +23,10 @@
         }
         .case-study-content {
             color: $white;
+            background-color: #2D3264;
+            height: 100%;
+            width: 100%;
+            opacity: .9;
             display: none;
             padding: 2rem;
         }
