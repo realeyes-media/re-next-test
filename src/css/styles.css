@@ -54,10 +54,20 @@
   padding-left: 1rem;
 
 }
+
 .serviceHeader {
   font-weight: 700;
   position: relative;
-  margin-right: -10rem;
+  margin-right: -12rem;
+  font-size: 5.5vw;
+}
+
+@media (min-width: 1200px) {
+  .serviceHeader {
+    font-size: 4vw;
+    margin-right: -58vw;
+  }
+  
 }
 
 .serviceContent {
@@ -88,9 +98,9 @@
 }
 
 .serviceLeftText {
-  position: absolute;
+  position: relative;
   text-align: right;
-  top: 15%;
+  margin-top: 2rem;
   z-index: 2;
   padding-right: 1rem;
 }
@@ -98,7 +108,15 @@
 .serviceHeaderLeft {
   font-weight: 700;
   position: relative;
-  margin-left: -10rem;
+  margin-left: -12rem;
+  font-size: 5.5vw;
+}
+
+@media (min-width: 1200px) {
+  .serviceHeaderLeft {
+    font-size: 4vw;
+    margin-left: -58vw;
+  }
 }
 
 .serviceContentLeft {
@@ -120,6 +138,8 @@
   }
 }
 
+<<<<<<< HEAD
+=======
 .company-logo-wrapper {
   display: inline-flex;
   max-height: 20rem;
@@ -133,6 +153,7 @@
   height: 5rem;
   width: auto;
 }
+>>>>>>> dev
 
 /* Mobile Styles for Services Section */
 .serviceImage {
