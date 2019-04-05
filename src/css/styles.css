@@ -67,7 +67,7 @@
     font-size: 4vw;
     margin-right: -58vw;
   }
-  
+
 }
 
 .serviceContent {
@@ -132,9 +132,13 @@
 }
 
 @media (max-width: 1200px) {
-.serviceMakeTaller {
+  .serviceMakeTaller {
     padding-top: 275px;
     padding-bottom: 275px;
+  }
+
+  .serviceMakeTallerLeft {
+    height: 550px;
   }
 }
 
@@ -165,6 +169,5 @@
 }
 
 .fontFamily {
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
-
