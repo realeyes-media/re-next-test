@@ -224,6 +224,9 @@
 .blog-content-center {
     margin-left: 20vw;
     margin-right: 20vw;
+    ul {
+        list-style: disc;
+    }
     p {
         img {
             display: block;
