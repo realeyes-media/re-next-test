@@ -152,8 +152,13 @@
 }
 
 .company-logo {
-  height: 5rem;
+  height: 4.5rem;
   width: auto;
+}
+@media (max-width: 767px) {
+  .company-logo {
+    height: 2.3rem;
+  }
 }
 
 /* Mobile Styles for Services Section */
