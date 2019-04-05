@@ -10,3 +10,5 @@ hugo/public/
 dist/
 .tmp/
 hugo/resources/_gen
+hugo/static/js
+hugo/static/css
