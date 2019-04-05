@@ -4,11 +4,11 @@ headerColorTwo = "Concurrency of Wowza Streaming Engine"
 author = "John G. Gainfort, Jr."
 date = "2018-08-26"
 title = "Using JMeter to Load Test Live HLS Concurrency of Wowza Streaming Engine"
-backgroundImage = "img/camera.png"
+backgroundImage = "img/jmeter.jpg"
 accentTextColor = ""
 tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
 categories = ["category1", "marcy"]
-thumbnail = "img/camera.png"
+thumbnail = "img/jmeter-thumbnail.jpg"
 
 +++
 

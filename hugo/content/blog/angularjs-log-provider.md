@@ -3,11 +3,11 @@ headerColorOne = "Using the AngularJS $logProvider"
 author = "Realeyes Media"
 date = "2017-04-16"
 title = "Using the AngularJS $logProvider"
-backgroundImage = "img/camera.png"
+backgroundImage = "img/angularjs.jpg"
 accentTextColor = ""
 tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
 categories = ["category1", "marcy"]
-thumbnail = "img/camera.png"
+thumbnail = "img/angularjs-thumbnail.jpg"
 
 +++
 Logging and debugging is a daily occurrence when developing JavaScript based applications. AngularJS provides a simple, effective way to enable logging in your applications – the $logProvider. $logProvider is used to enable logging and the $log object is used to log within your applications objects.

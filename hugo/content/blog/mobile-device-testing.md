@@ -4,11 +4,11 @@ headerColorTwo = "but presents many challenges"
 author = "Realeyes Media"
 date = "2018-02-19"
 title = "Mobile device testing is necessary, but presents many challenges"
-backgroundImage = "img/camera.png"
+backgroundImage = "img/mobile.jpg"
 accentTextColor = ""
 tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
 categories = ["category1", "marcy"]
-thumbnail = "img/camera.png"
+thumbnail = "img/mobile-thumbnail.jpg"
 
 +++
 # Mobile device testing is necessary, but presents many challenges
