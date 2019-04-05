@@ -124,5 +124,11 @@
         "position": "Android Developer",
         "image": "img/pikachu.png",
         "bio": "Having grown up in Northern Colorado, you can find Steven enjoying the mountains, whether on his bike in the summer or his snowboard in the winter. He competed in small air snowboarding while attending CSU, is an avid collector of vinyl records, and suffers from a moderate obsession with shoes (mostly Yeezy’s and Adidas). His favorite movie is Reddick and his least favorite drink is coffee, despite his Colombian roots."
+    },
+    {
+        "name": "Kobi Heider",
+        "position": "QA Engineer",
+        "image": "img/Headshots RE Next/Kobi Heider.jpeg",
+        "bio": "A Colorado native, Kobi is the youngest member of the RealEyes team (though you wouldn’t know it by looking at his work). He enjoys building PC’s and playing the latest and greatest video games. In the winter you can find him in the powder, snowboarding down some of Colorado’s best hills. In the warmer months he spends his time standup paddle boarding and camping whenever possible. He’s a fellow ramen feen (like many of us) and also frequents many of Denver’s best sushi spots. Along with contributing great work to our QA team, he also supplies his office with good music - including The Wombats, Spill Canvas, and Weezer."
     }
 ]
