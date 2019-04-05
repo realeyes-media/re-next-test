@@ -111,7 +111,7 @@ const showHideNavbarOnScroll = () => {
 
 const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
-    const backgroundElement = document.getElementById("landing-page-hero")
+    const backgroundElement = document.getElementById("hero-video-container")
     backgroundElement.style.backgroundColor = "transparent"
   } else {
     const backgroundElement = document.getElementById("hero-video-container")
