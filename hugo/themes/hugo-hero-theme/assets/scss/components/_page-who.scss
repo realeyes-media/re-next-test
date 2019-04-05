@@ -167,7 +167,9 @@
         &:hover .feature-bio {
             visibility: visible;
             transition-delay: 1s;
-            opacity: 1;
+            background-color: #2D3264;
+            // background-color: #D96261;
+            opacity: .9;
         }
         &:hover {
             filter: grayscale(0%);
