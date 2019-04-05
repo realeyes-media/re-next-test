@@ -4,11 +4,11 @@ headerColorTwo = "Useful Tips for Testing"
 author = "Jun Heider"
 date = "2018-10-11"
 title = "Apache mod_rewrite"
-backgroundImage = "img/camera.png"
+backgroundImage = "img/apache.jpg"
 accentTextColor = ""
 tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
 categories = ["category1", "marcy"]
-thumbnail = "img/camera.png"
+thumbnail = "img/apache-thumbnail.jpg"
 
 +++
 Lately, I’ve been dealing a lot with Apache web server’s mod_rewrite module to redirect users to alternate URLs. The mod_rewrite tool utilizes Regular Expressions (RegEx) and anyone who’s worked with them knows that they can be very cumbersome to create and test for validity. That being said, I’ve recently found several useful tools to help ease my suffering while working through to create regexs for mod_rewrite.

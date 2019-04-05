@@ -4,11 +4,11 @@ headerColorTwo = "Adobe Connect Licensing Again"
 author = "RealEyes Media"
 date = "2018-03-11"
 title = "Setting the Record Straight on Adobe Connect Licensing Again"
-backgroundImage = "img/camera.png"
+backgroundImage = "img/docker-server.jpg"
 accentTextColor = ""
 tags = ["blog", "Media Solutions", "Products", "Training"]
 categories = ["category1", "marcy"]
-thumbnail = "img/camera.png"
+thumbnail = "img/docker-thumbnail.jpg"
 
 +++
 
