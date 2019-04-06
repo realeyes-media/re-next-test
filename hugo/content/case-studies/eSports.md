@@ -7,19 +7,18 @@ heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'AMEX & RealEyes: Results Lead to a Trusted Partnership'
 heroBackground: 'img/Case Studies Thumbs - Small/Homepage - AMEX - small.jpg'
-description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.'
+description: AMEX came to RealEyes with technical problems they were encountering with the launch of a critical homepage application. Helping them to resolve this issue, they then requested assistance with advanced development as their current partners were not able to offer solutions. RealEyes provided rich Internet applications which spanned across their homepage, card center, and other business units. These were the most viewed applications on their site.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'
 quoteeInfo: 'executive vice president & general manager of digital media, NBC Sports Group'
 ---
 
-AMEX came to RealEyes with technical problems they were encountering with the launch of a critical homepage application. Helping them to resolve this issue, they then requested assistance with advanced development as their current partners were not able to offer solutions. RealEyes provided rich Internet applications which spanned across their homepage, card center, and other business units. These were the most viewed applications on their site. 
+AMEX came to RealEyes with technical problems they were encountering with the launch of a critical homepage application. Helping them to resolve this issue, they then requested assistance with advanced development as their current partners were not able to offer solutions. RealEyes provided rich Internet applications which spanned across their homepage, card center, and other business units. These were the most viewed applications on their site.
 
 **Customized Approach**
 
-Gaining the trust of AMEX through the work done on the original application launch, RealEyes went on to provide analysis on their development and architecture, including custom on-site training. We also developed critical solutions for customization-driven user experiences to meet critical business needs. This work spanned over three years and multiple key products. 
+Gaining the trust of AMEX through the work done on the original application launch, RealEyes went on to provide analysis on their development and architecture, including custom on-site training. We also developed critical solutions for customization-driven user experiences to meet critical business needs. This work spanned over three years and multiple key products.
 
 **Enhanced User Experience**
 
-Being able to launch the original homepage quickly and confidently helped RealEyes gain the trust of AMEX to develop a new homepage, which outperformed the previous one with greater capabilities and overall longevity. This was followed by the delivery of a highly enhanced and improved user experience and performance for other critical applications. 
+Being able to launch the original homepage quickly and confidently helped RealEyes gain the trust of AMEX to develop a new homepage, which outperformed the previous one with greater capabilities and overall longevity. This was followed by the delivery of a highly enhanced and improved user experience and performance for other critical applications.
