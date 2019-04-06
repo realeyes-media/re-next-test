@@ -67,7 +67,7 @@
     font-size: 4vw;
     margin-right: -58vw;
   }
-  
+
 }
 
 .serviceContent {
@@ -94,7 +94,7 @@
   top: 5%;
   width: 100%;
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 .serviceLeftText {
@@ -109,6 +109,7 @@
   font-weight: 700;
   position: relative;
   margin-left: -12rem;
+  margin-top: 5rem;
   font-size: 5.5vw;
 }
 
@@ -116,6 +117,8 @@
   .serviceHeaderLeft {
     font-size: 4vw;
     margin-left: -58vw;
+    margin-top: 3.5rem;
+
   }
 }
 
@@ -132,9 +135,13 @@
 }
 
 @media (max-width: 1200px) {
-.serviceMakeTaller {
+  .serviceMakeTaller {
     padding-top: 275px;
     padding-bottom: 275px;
+  }
+
+  .serviceMakeTallerLeft {
+    height: 550px;
   }
 }
 
@@ -170,6 +177,5 @@
 }
 
 .fontFamily {
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
-
