@@ -24,6 +24,7 @@
       &.active {
         > a {
           color: #ffffff;
+          border-bottom: 2px solid;
           &:hover {
             transition: all 225ms ease-in 0s;
             color: #ffffff;
