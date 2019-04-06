@@ -25,11 +25,23 @@
         > a {
           color: #ffffff;
           border-bottom: 2px solid;
+          &:before {
+            content : "";
+            position: absolute;
+            left    : 0;
+            bottom  : 0;
+            height  : 1px;
+            width   : 50%;  /* or 100px */
+            border-bottom:1px solid magenta;
+          }
           &:hover {
-            transition: all 225ms ease-in 0s;
+            transition: all 2s ease-in 0s;
             color: #ffffff;
           }
         }
+      }
+      &.active:after {
+        
       }
     }
   }
