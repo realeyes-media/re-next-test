@@ -77,6 +77,24 @@ window.onresize = () => {
   }
 }
 
+$("#myForm").submit(function(e) {
+  e.preventDefault();
+  var form_data = $(this).serializeArray();
+  const jsonData = {};
+  form_data.forEach(data => {
+   jsonData[data.name] = data.value
+});
+  console.log('FORMDATA', jsonData);
+    $.ajax({
+        url: 'https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail',
+        data: JSON.stringify(jsonData),
+        type: 'POST',
+        dataType: 'json',
+        contentType: 'application/json'
+    });
+    return false;
+  });
+
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
   const currentScrollPos = window.pageYOffset;
@@ -93,7 +111,7 @@ const showHideNavbarOnScroll = () => {
 
 const addRemoveHeroVideoOnLoad = () => {
   if (window.innerWidth < 768) {
-    const backgroundElement = document.getElementById("landing-page-hero")
+    const backgroundElement = document.getElementById("hero-video-container")
     backgroundElement.style.backgroundColor = "transparent"
   } else {
     const backgroundElement = document.getElementById("hero-video-container")
@@ -103,7 +121,7 @@ const addRemoveHeroVideoOnLoad = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "/vid/re-hero_v2-02.mp4"
+    videoSource.src = "/vid/Hero-v2-3-6mbps.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)
@@ -129,7 +147,7 @@ const addRemoveHeroVideoOnResize = () => {
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
-    videoSource.src = "/vid/re-hero_v2-02.mp4"
+    videoSource.src = "/vid/Hero-v2-3-6mbps.mp4"
     videoSource.type = "video/mp4"
     video.appendChild(videoSource)
     backgroundElement.appendChild(video)

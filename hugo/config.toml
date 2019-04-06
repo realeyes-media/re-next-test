@@ -1,0 +1,44 @@
+baseURL = ""
+languageCode = "en-us"
+title = "RealEyes Media"
+themesDir = "themes"
+theme = "hugo-hero-theme"
+relativeURLs = true
+
+[params]
+  google_analytics_id=""
+
+  [params.homepage_meta_tags]
+    meta_description = "RealEyes Media"
+    meta_og_title = "RealEyes"
+    meta_og_type = "website"
+    meta_og_url = "http://www.realeyes.com/"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
+    meta_og_description = "RealEyes Media"
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@realeyesmedia"
+    meta_twitter_creator = "@realeyesmedia"
+
+[[menu.main]]
+	name = "Who is RealEyes"
+	url = "/who/"
+    weight = 1
+
+# [[menu.main]]
+#     name = "Products"
+#     url = "/products/"
+#     weight = 2
+
+# [[menu.main]]
+#     name = "Blog"
+#     url = "/blog/"
+#     weight = 3
+
+[[menu.main]]
+    name = "Contact Us"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"

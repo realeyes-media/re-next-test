@@ -1,7 +1,6 @@
 <div class="case-study">
     <div class="case-study-card"
-        style="background-image: url('{{ .Params.heroBackground | relURL }}'); cursor: pointer;"
-        onclick="window.location='{{ .Permalink }}'">
+        style="background-image: url('{{ .Params.heroBackground | relURL }}'); cursor: pointer;">
         <div class="case-study-content">{{ .Content | truncate 240 "..." }}</div>
         <div class="align-bottom-left">
             <p class="case-study-subtitle mb-0">

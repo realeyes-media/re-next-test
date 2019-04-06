@@ -18,34 +18,30 @@
 {{ define "main" }}
 
 {{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "serviceOne" .Params.heroServiceOne "serviceTwo" .Params.heroServiceTwo "serviceThree" .Params.heroServiceThree "content" .)}}
-<div class="home-content">
-    <div class="empowered-clients">
-        <h2>Clients We've Empowered</h2>
-    </div>
-    {{ $caseStudies := where .Site.RegularPages "Type" "case-studies" }}
-    {{if gt (len $caseStudies) 0}}
-    <div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
-        <div class="row">
-            {{ range first 6 (sort $caseStudies ".Params.weight") }}
-            <div class="col-12 col-md-4 mr-0 ml-0 pr-0 pl-0">{{ .Render "cs-summary" }}</div>
-            {{ end }}
-        </div>
-    </div>
-    {{end}}
-
-    <div class="company-logo-wrapper">
-        <img class="company-logo" src="img/Company Logos/adobe.png" alt="" srcset="">
-        <img class="company-logo" src="img/Company Logos/carrier-logo-att-white.png" alt="" srcset="">
-        <img class="company-logo" src="img/Company Logos/AXP_BlueBoxLogo_EXTRALARGEscale_RGB_DIGITAL_1600x1600.png"
-            alt="" srcset="">
-        <img class="company-logo" src="img/Company Logos/SeekPng.com_sega-cd-logo-png_4661744.png" alt="" srcset="">
-    </div>
-
-    {{ .Content }}
-
-    {{partial "carousel.html" . }}
-
+<div class="empowered-clients">
+    <h2>Clients We've Empowered</h2>
 </div>
+{{ $caseStudies := where .Site.RegularPages "Type" "case-studies" }}
+{{if gt (len $caseStudies) 0}}
+<div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
+    <div class="row">
+        {{ range first 6 (sort $caseStudies ".Params.weight") }}
+        <div class="col-12 col-md-4 mr-0 ml-0 pr-0 pl-0">{{ .Render "cs-summary" }}</div>
+        {{ end }}
+    </div>
+</div>
+{{end}}
+
+<div class="company-logo-wrapper">
+    <img class="company-logo" src="img/Company Logos/adobe-logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/NBC Sports Group 11.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/Amex-Logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/EA_Games-Logo.png" alt="" srcset="">
+</div>
+
+{{ .Content }}
+
+<!-- {{partial "carousel.html" . }} -->
 
 {{ end }}
 
