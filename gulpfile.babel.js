@@ -330,7 +330,9 @@ function indexSearch() {
     const filenames = fs.readdirSync(CONTENT_PATH_PREFIX);
     filenames.forEach(filename => {
       log(null, "Parsing file for indexing: " + filename, gulpConfig.generator.label)
-      pagesIndex.push(processFile(path.join(CONTENT_PATH_PREFIX, filename), filename))
+      if (filename !== '_index.md') {
+        pagesIndex.push(processFile(path.join(CONTENT_PATH_PREFIX, filename), filename))
+      }
     })
 
     return pagesIndex;
