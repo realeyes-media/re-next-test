@@ -5,7 +5,7 @@
     <li class="menu-item menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
       <a href="{{.URL}}">
         {{ .Pre }}
-        <span class="main-menu-span">{{ .Name }}</span>
+        <span>{{ .Name }}</span>
       </a>
     </li>
     {{end}}
