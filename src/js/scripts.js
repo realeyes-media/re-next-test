@@ -99,6 +99,7 @@ $("#myForm").submit(function(e) {
   $(".submitButton").click(function() {
     $('#result').show();
     setTimeout(function() {
+      $('#myForm').trigger("reset");
       $("#result").hide()
   }, 3000);
   });
