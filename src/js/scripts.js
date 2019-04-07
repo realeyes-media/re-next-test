@@ -97,7 +97,11 @@ $("#myForm").submit(function(e) {
 
 
   $(".submitButton").click(function() {
-    console.log('YOOOOO', $('#myForm').valid());
+    var phoneNumber = document.forms["myForm"]["phone"].value;
+    if (phoneNumber.length < 10) {
+      alert("Please enter correct phone number format");
+      return false;
+    }
     if ($('#myForm').valid() === false) {
     console.log('ERROR');
 } else {
