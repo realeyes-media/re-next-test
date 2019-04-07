@@ -1,5 +1,6 @@
 .page-who {
     .absolute-who-image {
+        display: none;
         @include media-breakpoint-up(xs) {
             position: relative;
             width: 100%;
@@ -164,24 +165,24 @@
         transition: 1s ease;
         overflow: hidden;
         filter: grayscale(100%);
-        &:hover .feature-bio {
-            visibility: visible;
-            transition-delay: 1s;
-            background-color: #2D3264;
-            // background-color: #D96261;
-            opacity: .9;
-        }
-        &:hover {
-            filter: grayscale(0%);
-            
-        }
+        // &:hover .feature-bio {
+        //     visibility: visible;
+        //     transition-delay: 1s;
+        //     background-color: #2D3264;
+        //     // background-color: #D96261;
+        //     opacity: .9;
+        // }
+        // &:hover {
+        //     filter: grayscale(0%);
+
+        // }
         .feature-image {
             flex: 0 0 auto;
             width: 100%;
             height: 100%;
             display: flex;
         }
-        
+
         .feature-bio {
             visibility: hidden;
             position: absolute;

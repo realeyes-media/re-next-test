@@ -18,10 +18,10 @@
         <div class="col-sm-12 col-md-3 ">
             <p class="solutions" id="platform" style="font-weight: bold">MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS</p>
             <p class="solutions" id="bespoke">BESPOKE DEVELOPMENT</p>
-            <p class="solutions" id="workflow">MEDIA WORKFLOW SOLUTIONS/AUGMENTATION</p>
+            <p class="solutions" id="workflow">MEDIA WORKFLOW SOLUTIONS</p>
             <p class="solutions" id="streaming">LIVE STREAMING PLATFORM SOLUTIONS</p>
             <p class="solutions" id="consulting">CONSULTING</p>
-            <p class="solutions" id="products">PRODUCTS</p>
+            {{/*  <p class="solutions" id="products">PRODUCTS</p>  */}}
         </div>
         {{ $page := $headless.Resources.Match "solutions*" }}
         {{ range $page }}
@@ -61,7 +61,8 @@
 <div class="container-fluid content" style="background-color: #ebeaea">
     {{ $page := $headless.Resources.Match "real-people*" }}
     {{ range $page }}
-    <h2 class="pl-md-6 pr-md-6 pl-2 pr-2 pt-8 pt-md-12" style="font-weight: 600; font-size: 1.5rem"> {{ .Params.title }} </h2>
+    <h2 class="pl-md-6 pr-md-6 pl-2 pr-2 pt-8 pt-md-12" style="font-weight: 600; font-size: 1.5rem"> {{ .Params.title }}
+    </h2>
     <div class="block-quote pt-2 pt-md-6 pb-6 pl-md-6 pr-md-6 pl-2 pr-2">
         {{ .Content }}
     </div>
@@ -73,7 +74,7 @@
                 <div class="feature">
                     {{ if .image }}<div class="feature-image"><img alt="{{ .name }} logo"
                             src="{{ $.Site.BaseURL }}/{{ .image }}" />{{ if .bio }}
-                            <div class="feature-bio">{{ .bio }}</div>
+                        <div class="feature-bio">{{ .bio }}</div>
                         {{ end }}
                     </div> {{ end }}
                 </div>
