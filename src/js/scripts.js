@@ -117,7 +117,7 @@ const addRemoveHeroVideoOnLoad = () => {
     const backgroundElement = document.getElementById("hero-video-container")
     const video = document.createElement("video")
     video.autoplay = true;
-    video.loop = true;
+    video.loop = false;
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
@@ -143,7 +143,7 @@ const addRemoveHeroVideoOnResize = () => {
     if (videoElement) return;
     const video = document.createElement("video")
     video.autoplay = true;
-    video.loop = true;
+    video.loop = false;
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
