@@ -90,9 +90,16 @@ $("#myForm").submit(function(e) {
         data: JSON.stringify(jsonData),
         type: 'POST',
         dataType: 'json',
-        contentType: 'application/json'
-    });
+        contentType: 'application/json',
+        success: function () {
+          $("div.demo-container").text("This is a test.");
+        }
+    })
     return false;
+  });
+
+  $("myForm").submit(function(){
+    $("success").text("Hello world!");
   });
 
 const showHideNavbarOnScroll = () => {
