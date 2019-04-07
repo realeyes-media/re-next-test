@@ -97,14 +97,18 @@ $("#myForm").submit(function(e) {
 
 
   $(".submitButton").click(function() {
-    $('#result').show();
-    if ($('#myForm').valid()) {
-    setTimeout(function() {
-      $('#myForm').trigger("reset");
-      $("#result").hide()
-  }, 3000);
+    console.log('YOOOOO', $('#myForm').valid());
+    if ($('#myForm').valid() === false) {
+    console.log('ERROR');
+} else {
+  $('#result').show();
+  setTimeout(function() {
+    $('#myForm').trigger("reset");
+    $("#result").hide()
+}, 3000);
 }
   });
+  
 
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
