@@ -99,15 +99,17 @@ $("#myForm").submit(function(e) {
   $(".submitButton").click(function() {
     var phoneNumber = document.forms["myForm"]["phone"].value;
     if (phoneNumber.length < 10) {
-      alert("Please enter correct phone number format");
+      $('.phone-invalid').show();
       return false;
     }
+    $("#myForm").validate({ errorPlacement: function(error, element) {} });
     if ($('#myForm').valid() === false) {
     console.log('ERROR');
 } else {
   $('#result').show();
   setTimeout(function() {
     $('#myForm').trigger("reset");
+    console.log('HEY', $('#myForm').trigger("reset"));
     $("#result").hide()
 }, 3000);
 }

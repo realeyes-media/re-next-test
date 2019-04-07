@@ -14,24 +14,37 @@
             <hr>
           </div>
       <div class="col-6 offset-3">
-          <form id="myForm">
+          <form id="myForm" class="needs-validation" novalidate>
           <div class="form-group">
             <label for="help">I would like RealEyes to help with</label>
-            <select class="form-control" id="help" name="help">
+            <select class="custom-select browser-default" required>
                 <option value="Development and/or Consulting">Development and/or Consulting</option>
-                <option value="Products">Products</option>
-                <option value="Careers">Careers</option>
-                <option value="Training">Training</option>
-                <option value="I just have a question">I just have a question</option>
-            </select>
+                 <option value="Products">Products</option>
+                 <option value="Careers">Careers</option>
+                 <option value="Training">Training</option>
+                 <option value="I just have a question">I just have a question</option>
+              </select>
+              <div class="invalid-feedback">Example invalid custom select feedback</div>
           </div>
           <div class="form-group">
             <label for="fname">First Name</label>
             <input class="form-control" type="text" id="fname" name="firstname" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please fill out first name.
+                </div>
           </div>
           <div class="form-group">
             <label for="lname">Last Name</label>
             <input class="form-control" type="text" id="lname" name="lastname" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please fill out last name.
+                </div>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -40,19 +53,36 @@
           <div class="form-group">
             <label for="password">Phone Number</label>
             <input class="form-control" type="text" id="phone" name="phone" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please complete phone number.
+                </div>
           </div>
           <div class="form-group">
             <label for="company">Company</label>
             <input class="form-control" type="text" id="company" name="company" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please fill out company.
+                </div>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
             <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
               style="height:200px" required></textarea>
+              <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please fill out subject.
+                  </div>
             <input class="submitButton" type="submit" value="Submit">
           </div>
           <div id="result" style="display: none;">Email Sent!</div>
-
         </form>
       </div>
         <div class="col-12">
@@ -72,14 +102,22 @@
   </div>
 </div>
 <script>
-  function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    var password = document.forms["myForm"]["phone"].value;
-    var regex = pattern="^\d{3}-\d{3}-\d{4}$";
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+      }, false);
+      });
+      }, false);
+      })();
 </script>
 {{ end }}
