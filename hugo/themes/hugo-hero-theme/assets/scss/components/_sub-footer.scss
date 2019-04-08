@@ -59,11 +59,12 @@
       padding-left: 50px;
       color: #919191;
       @media (max-width: 320px) {
-        // padding-right: 2%;
-        // padding-left: 0%;
+        padding-right: 2%;
+        padding-left: 0%;
       }
-      @include media-breakpoint-up(xs) {
-        // padding-left: 7%;
+      @include media-breakpoint-down(xs) {
+        padding-left: 0%;
+        min-width: 40px;
       }
         @include media-breakpoint-up(sm) {
           // padding-right: 37px;
@@ -198,10 +199,10 @@
 
   .socialButtons {
     position: relative;
-    left: 58%;
+    left: 51%;
     @media (max-width: 446px) {
       display: inline-flex;
-      padding-right: 2%;
+      padding-left: 2%;
     }
   }
 
@@ -390,8 +391,8 @@ to{width: 38%;}
     margin-top: 48%;
     margin-left: 0%;
     font-size: 13px;
-    right: 20%;
-    left: -21%;
+    right: 27%;
+    left: -34%;
   }
 
   .fa-facebook {
@@ -405,7 +406,7 @@ to{width: 38%;}
 
 .socialButtons {
   position: relative;
-  left: 77%;
+  left: 59%;
   margin-top: 8%;
 }
 
