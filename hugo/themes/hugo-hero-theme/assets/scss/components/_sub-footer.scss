@@ -127,6 +127,15 @@
   color: #919191;
 }
 
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
 
 @include media-breakpoint-up(xs) {
   .hr {
@@ -511,6 +520,7 @@ to{width: 38%;}
       color: white;
       bottom: 3.8rem;
       margin-left: 0rem;
+      animation-iteration-count: infinite;
   }
 
   .mainTitle {
@@ -527,9 +537,22 @@ to{width: 38%;}
     margin-right: 30rem;
   }
 
+  .anim-typewriter{
+    animation: typewriter 2s steps(44) 1s 1 infinite both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+    animation-duration: 3s;
+  }
+
   @keyframes typewriter{
-    from{width: 0;}
-    to{width: 35rem;}
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 12em;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+    }
   }
 
   @-webkit-keyframes typewriter{
@@ -542,15 +565,6 @@ to{width: 38%;}
 
 }
 
-
-.anim-typewriter{
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
 
 .bottom-container {
   width: 94%;
