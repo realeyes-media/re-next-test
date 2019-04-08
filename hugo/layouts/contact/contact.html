@@ -59,7 +59,7 @@
           <div class="form-group">
             <label for="password">Phone Number</label>
             <input class="form-control" type="text" id="phone" name="phone" required>
-            <div class="valid-feedback">
+            <div id="phoneSuccess" class="valid-feedback">
                 Looks good!
               </div>
               <div id="phoneError" class="invalid-feedback">
@@ -111,9 +111,7 @@
     (function() {
       'use strict';
       window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
       var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
       if (form.checkValidity() === false) {
@@ -122,11 +120,12 @@
       }
       form.classList.add('was-validated');
       if ($('#myForm').valid() === false) {
-        console.log('HOLA');
+        console.log('not valid');
     } else {
       $('#result').show();
       setTimeout(function() {
-        console.log('RISAAAA', $('#myForm').trigger("reset"));
+        form.reset();
+        $('#phoneSuccess').hide();
         $("#result").hide()
         form.classList.remove('was-validated');
     }, 3000);
