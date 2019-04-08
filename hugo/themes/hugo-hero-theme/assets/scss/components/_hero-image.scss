@@ -134,10 +134,18 @@
       line-height: 30px;
       @include media-breakpoint-down(xs) {
         text-decoration: underline;
+        color: white;
       }
     }
+
     .header-links:hover {
-      color: #50E3C2;
+      @include media-breakpoint-up(xs) {
+        color: white;
+      }
+    
+      @include media-breakpoint-up(lg) {
+        color: #50E3C2;
+      }
     }
   
 
@@ -321,6 +329,23 @@
 
       @media(min-width: 4200px) {
         bottom: 10%;
+      }
+
+      .header-links {
+        line-height: 30px;
+        @include media-breakpoint-down(xs) {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+  
+      .header-links:hover {
+        @include media-breakpoint-up(xs) {
+          color: white;
+        }
+        @include media-breakpoint-up(lg) {
+          color: #50E3C2;
+        }
       }
 
       h1 {
