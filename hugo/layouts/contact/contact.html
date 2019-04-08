@@ -14,39 +14,64 @@
             <hr>
           </div>
       <div class="col-6 offset-3">
-          <form id="myForm">
-        
-              <label for="help">I would like RealEyes to help with</label>
-              <select id="help" name="help">
+          <form id="myForm" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="help">I would like RealEyes to help with</label>
+            <select class="custom-select form-control" required>
                 <option value="Development and/or Consulting">Development and/or Consulting</option>
-                <option value="Products">Products</option>
-                <option value="Careers">Careers</option>
-                <option value="Training">Training</option>
-                <option value="I just have a question">I just have a question</option>
+                 <option value="Products">Products</option>
+                 <option value="Careers">Careers</option>
+                 <option value="Training">Training</option>
+                 <option value="I just have a question">I just have a question</option>
               </select>
-        
+              <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+          <div class="form-group">
             <label for="fname">First Name</label>
-            <input required type="text" id="fname" name="firstname">
-        
+            <input class="form-control" type="text" id="fname" name="firstname" required>
+              <div class="invalid-feedback">
+                  Please fill out first name.
+                </div>
+          </div>
+          <div class="form-group">
             <label for="lname">Last Name</label>
-            <input required type="text" id="lname" name="lastname">
-        
+            <input class="form-control" type="text" id="lname" name="lastname" required>
+              <div class="invalid-feedback">
+                  Please fill out last name.
+                </div>
+          </div>
+          <div class="form-group">
             <label for="email">Email</label>
-            <input required type="text" id="email" name="email">
-        
-            <label for="email">Phone Number</label>
-            <input required type="text" id="phone" name="phone">
-        
+            <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" required>
+              <div class="invalid-feedback">
+                  Please enter valid email.
+                </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Phone Number</label>
+            <input class="form-control" type="text" id="phone" name="phone" required>
+              <div id="phoneError" class="invalid-feedback">
+                  Please complete phone number.
+                </div>
+          </div>
+          <div class="form-group">
             <label for="company">Company</label>
-            <input required type="text" id="company" name="company">
-        
-        
+            <input class="form-control" type="text" id="company" name="company" required>
+              <div class="invalid-feedback">
+                  Please fill out company.
+                </div>
+          </div>
+          <div class="form-group">
             <label for="subject">Subject</label>
-            <textarea required id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-          </form>
+            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
+              style="height:200px" required></textarea>
+                <div class="invalid-feedback">
+                    Please fill out subject.
+                  </div>
+            <input class="submitButton" type="submit" value="Submit">
+          </div>
+          <div id="result" style="display: none;">Email Sent!</div>
+        </form>
       </div>
         <div class="col-12">
           <hr>
@@ -65,12 +90,30 @@
   </div>
 </div>
 <script>
-  function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+      var forms = document.getElementsByClassName('needs-validation');
+      var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+      if ($('#myForm').valid() === false) {
+        console.log('not valid');
+    } else {
+      $('#result').show();
+      setTimeout(function() {
+        form.reset();
+        $("#result").hide()
+        form.classList.remove('was-validated');
+    }, 3000);
     }
-  }
+      }, false);
+      });
+      }, false);
+      })();
 </script>
 {{ end }}

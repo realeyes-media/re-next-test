@@ -95,6 +95,18 @@ $("#myForm").submit(function(e) {
     return false;
   });
 
+  $(".submitButton").click(function() {
+    var phoneNumber = document.forms["myForm"]["phone"].value;
+    if (phoneNumber.length < 10) {
+      $('#phoneError').show();
+      return false;
+    } else {
+      $('#phoneError').hide();
+    }
+    $("#myForm").validate({ errorPlacement: function(error, element) {} });
+  });
+  
+
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
   const currentScrollPos = window.pageYOffset;
@@ -117,7 +129,7 @@ const addRemoveHeroVideoOnLoad = () => {
     const backgroundElement = document.getElementById("hero-video-container")
     const video = document.createElement("video")
     video.autoplay = true;
-    video.loop = true;
+    video.loop = false;
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
@@ -143,7 +155,7 @@ const addRemoveHeroVideoOnResize = () => {
     if (videoElement) return;
     const video = document.createElement("video")
     video.autoplay = true;
-    video.loop = true;
+    video.loop = false;
     video.muted = true;
     video.id = "video-background";
     const videoSource = document.createElement("source");
