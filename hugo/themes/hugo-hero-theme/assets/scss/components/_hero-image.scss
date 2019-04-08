@@ -130,8 +130,14 @@
       padding-top: 20px;
     }
 
+    .header-links {
+      line-height: 30px;
+      @include media-breakpoint-down(xs) {
+        text-decoration: underline;
+      }
+    }
     .header-links:hover {
-      color: blue;
+      color: #50E3C2;
     }
   
 
@@ -143,7 +149,7 @@
     font-size: 2vw;
 
     @include media-breakpoint-down(xs) {
-      font-size: 3vw;
+      font-size: 5vw;
     }
   }
 }
@@ -190,6 +196,7 @@
   position: relative;
   z-index: 0;
 }
+
 //**** Landing Page Hero Styles ****
 .landing-page-wrapper {
   .hero-image {
@@ -302,11 +309,11 @@
       z-index: 1;
       position: absolute;
       bottom: 10%;
-      margin-left: 1rem;
+      margin-left: 0rem;
 
       @include media-breakpoint-down(sm) {
         bottom: 10%;
-        margin-right: 9rem;
+        margin-right: 5rem;
       }
       @media (min-width: 1920px) {
         bottom: 10%;
