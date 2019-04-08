@@ -95,6 +95,18 @@ $("#myForm").submit(function(e) {
     return false;
   });
 
+  $(".submitButton").click(function() {
+    var phoneNumber = document.forms["myForm"]["phone"].value;
+    if (phoneNumber.length < 10) {
+      $('#phoneError').show();
+      return false;
+    } else {
+      $('#phoneError').hide();
+    }
+    $("#myForm").validate({ errorPlacement: function(error, element) {} });
+  });
+  
+
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
   const currentScrollPos = window.pageYOffset;
