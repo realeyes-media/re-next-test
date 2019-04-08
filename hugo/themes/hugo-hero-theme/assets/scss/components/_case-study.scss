@@ -49,5 +49,13 @@
     .case-study-card:hover .case-study-content {
         display: block;
         z-index: 1;
+        white-space: normal;
+        overflow: overlay;
+    }
+    .case-study-card:hover .case-study-subtitle {
+        display: none
+    }
+    .case-study-card:hover .case-study-title {
+        display: none
     }
 }
