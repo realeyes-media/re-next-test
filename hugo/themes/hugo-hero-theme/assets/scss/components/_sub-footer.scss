@@ -424,17 +424,38 @@ to{width: 38%;}
     transform: translateY(-50%);
     color: white;
     bottom: 3.2rem;
+    animation-iteration-count: infinite;
+}
+
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 infinite both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+  animation-duration: 6s;
 }
 
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 12em;
+  }
+  100% {  /* 50% of this animation is now a pause */
+    width: 12em;
+  }
 }
 
 @-webkit-keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+  0% {
+    width: 0;
   }
+  50% {
+    width: 11.8em;
+  }
+  100% {  /* 50% of this animation is now a pause */
+    width: 11.8em;
+  }
+}
 
 .mainTitle {
   color: white;
@@ -556,8 +577,15 @@ to{width: 38%;}
   }
 
   @-webkit-keyframes typewriter{
-  from{width: 0;}
-  to{width: 50vw;}
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 12em;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+    }
 }
 }
 
