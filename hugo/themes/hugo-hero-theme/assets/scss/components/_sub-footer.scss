@@ -14,31 +14,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // @include media-breakpoint-up(xs) {
-    //   flex-direction: column;
-    //   color: white;
-    //   margin-left: 15%;
-    // }
-    // @include media-breakpoint-up(sm) {
-    //   flex-direction: column;
-    //   color: white;
-    //   margin-left: 15%;
-    // }
-    // @include media-breakpoint-up(md) {
-    //   flex-direction: column;
-    //   color: white;
-      margin-top: 13%;
-    //   justify-content: space-between;
-    //   font-size: 13px;
-      margin-left: 15%;
-    // }
+    margin-top: 13%;
+    margin-left: 15%;
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
       margin-top: 5%;
       font-size: 13px;
-      // width: 96%;
-      // margin-left: 0%;
     }
 
     a {
@@ -200,6 +182,7 @@
   .socialButtons {
     position: relative;
     left: 51%;
+    display: inline-flex;
     @media (max-width: 446px) {
       display: inline-flex;
       padding-left: 2%;
