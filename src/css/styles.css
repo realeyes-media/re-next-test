@@ -72,7 +72,7 @@
 
 .serviceContent {
   position: relative;
-  font-size: 1rem;
+  font-size: large;
   margin-top: 2rem;
 }
 
@@ -124,7 +124,7 @@
 
 .serviceContentLeft {
   position: relative;
-  font-size: 1rem;
+  font-size: large;
   margin-top: 2rem;
 }
 
@@ -136,12 +136,12 @@
 
 @media (max-width: 1200px) {
   .serviceMakeTaller {
-    padding-top: 275px;
-    padding-bottom: 275px;
+    padding-top: 300px;
+    padding-bottom: 300px;
   }
 
   .serviceMakeTallerLeft {
-    height: 550px;
+    height: 600px;
   }
 }
 
