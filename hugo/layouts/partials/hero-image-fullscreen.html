@@ -8,7 +8,7 @@
           <h1 class="hero-header-green">{{ .heading }}</h1>
           <h1>{{ .subheading }}</h1>
           <div class="section-tags">
-          <a class="header-links" id="liveStream" href="#liveStream">{{ .serviceOne }}</a> &nbsp; &bull; &nbsp; <a class="header-links" id="bespoke" href="#bespoke">{{ .serviceTwo }}</a> &nbsp; &bull; &nbsp; <a class="header-links" id="workflow" href="#workflow">{{ .serviceThree }}</a>
+          <a class="header-links" href="#liveStream">{{ .serviceOne }}</a> &nbsp; &bull; &nbsp; <a class="header-links" href="#bespoke">{{ .serviceTwo }}</a> &nbsp; &bull; &nbsp; <a class="header-links" href="#workflow">{{ .serviceThree }}</a>
         </div>
         </div>
       </div>
@@ -18,27 +18,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-      // Add smooth scrolling to all links
       $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
+
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
+
           event.preventDefault();
     
-          // Store hash
+
           var hash = this.hash;
     
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function(){
     
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } // End if
+        }
       });
     });
 </script>
