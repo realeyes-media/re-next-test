@@ -2,9 +2,8 @@
 title: 'Solutions Products'
 date: 2018-12-06T09:29:16+10:00
 button: ''
-weight: 6
 mobileHeading: PRODUCTS
-heading: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+heading: PRODUCTS
 class: products solution hidden
 ---
 
