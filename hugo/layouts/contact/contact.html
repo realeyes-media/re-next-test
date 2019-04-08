@@ -29,9 +29,6 @@
           <div class="form-group">
             <label for="fname">First Name</label>
             <input class="form-control" type="text" id="fname" name="firstname" required>
-            <div class="valid-feedback">
-                Looks good!
-              </div>
               <div class="invalid-feedback">
                   Please fill out first name.
                 </div>
@@ -39,9 +36,6 @@
           <div class="form-group">
             <label for="lname">Last Name</label>
             <input class="form-control" type="text" id="lname" name="lastname" required>
-            <div class="valid-feedback">
-                Looks good!
-              </div>
               <div class="invalid-feedback">
                   Please fill out last name.
                 </div>
@@ -49,9 +43,6 @@
           <div class="form-group">
             <label for="email">Email</label>
             <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" required>
-            <div class="valid-feedback">
-                Looks good!
-              </div>
               <div class="invalid-feedback">
                   Please enter valid email.
                 </div>
@@ -59,9 +50,6 @@
           <div class="form-group">
             <label for="password">Phone Number</label>
             <input class="form-control" type="text" id="phone" name="phone" required>
-            <div id="phoneSuccess" class="valid-feedback">
-                Looks good!
-              </div>
               <div id="phoneError" class="invalid-feedback">
                   Please complete phone number.
                 </div>
@@ -69,9 +57,6 @@
           <div class="form-group">
             <label for="company">Company</label>
             <input class="form-control" type="text" id="company" name="company" required>
-            <div class="valid-feedback">
-                Looks good!
-              </div>
               <div class="invalid-feedback">
                   Please fill out company.
                 </div>
@@ -80,9 +65,6 @@
             <label for="subject">Subject</label>
             <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
               style="height:200px" required></textarea>
-              <div class="valid-feedback">
-                  Looks good!
-                </div>
                 <div class="invalid-feedback">
                     Please fill out subject.
                   </div>
@@ -125,7 +107,6 @@
       $('#result').show();
       setTimeout(function() {
         form.reset();
-        $('#phoneSuccess').hide();
         $("#result").hide()
         form.classList.remove('was-validated');
     }, 3000);

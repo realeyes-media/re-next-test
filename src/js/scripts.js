@@ -99,11 +99,9 @@ $("#myForm").submit(function(e) {
     var phoneNumber = document.forms["myForm"]["phone"].value;
     if (phoneNumber.length < 10) {
       $('#phoneError').show();
-      $('#phoneSuccess').hide();
       return false;
     } else {
       $('#phoneError').hide();
-      $('#phoneSuccess').show();
     }
     $("#myForm").validate({ errorPlacement: function(error, element) {} });
   });
