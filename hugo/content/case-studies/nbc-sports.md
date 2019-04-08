@@ -6,7 +6,7 @@ weight: 1
 heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'NBC SPORTS & REALEYES'
-heroBackground: '/img/Case Studies Thumbs - Small/Homepage - NBC Sports - small.jpg'
+heroBackground: '/img/Case Studies Thumbs - Small/Homepage - NBC Sports 2 - small.png'
 description: 'The past year was a pivotal year for streaming video. Powered by its Playmaker Media operations, NBC Sports led the sports industry by delivering 4.37 billion live streaming minutes for the three biggest digital events of 2018: Super Bowl LII, the PyeongChang Winter Olympics, and Spanish-language coverage of the 2018 FIFA World Cup. 
 
 In order to execute three events of such scale and global visibility in a tight timeframe, NBC Sports leveraged RealEyes’ deep expertise in advanced video player development, large scale streaming delivery systems, and an ability to troubleshoot complex systems and global live events quicker than anyone else.
