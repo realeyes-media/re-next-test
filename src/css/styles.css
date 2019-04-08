@@ -72,7 +72,7 @@
 
 .serviceContent {
   position: relative;
-  font-size: 1rem;
+  font-size: large;
   margin-top: 2rem;
 }
 
@@ -124,7 +124,7 @@
 
 .serviceContentLeft {
   position: relative;
-  font-size: 1rem;
+  font-size: large;
   margin-top: 2rem;
 }
 
@@ -136,12 +136,12 @@
 
 @media (max-width: 1200px) {
   .serviceMakeTaller {
-    padding-top: 275px;
-    padding-bottom: 275px;
+    padding-top: 300px;
+    padding-bottom: 300px;
   }
 
   .serviceMakeTallerLeft {
-    height: 550px;
+    height: 600px;
   }
 }
 
@@ -158,6 +158,7 @@
   height: 4.5rem;
   width: auto;
 }
+
 @media (max-width: 767px) {
   .company-logo {
     height: 2.3rem;
@@ -169,11 +170,26 @@
   width: 100vw;
   position: relative;
   margin: 2rem 0;
-  right: 4px;
+}
+
+.servicesMobileName {
+  margin: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.servicesMobileHeader {
+  margin: 0 5.5rem 1rem 2rem;
+}
+
+.servicesMobileDescription {
+  margin: 0 2rem;
+  font-size: x-large;
+  line-height: 1.3;
 }
 
 .servicesMobileText {
   margin-bottom: 15rem;
+  font-size: x-large;
 }
 
 .fontFamily {
