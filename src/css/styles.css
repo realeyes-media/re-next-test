@@ -157,6 +157,7 @@
 .company-logo {
   height: 4.5rem;
   width: auto;
+  opacity: .75;
 }
 
 @media (max-width: 767px) {
