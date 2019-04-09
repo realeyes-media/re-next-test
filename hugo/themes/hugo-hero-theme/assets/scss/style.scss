@@ -1,4 +1,15 @@
 // Font
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=897566c7-124f-461b-bd83-7e69a4419cd7&fontids=1475810,1475822");
+@font-face{
+    font-family:"Futura LT W01 Medium";
+    src:url("Fonts/1475810/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix");
+    src:url("Fonts/1475810/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix") format("eot"),url("Fonts/1475810/e17c7943-8db2-4470-9e2a-74a8d01f6776.woff2") format("woff2"),url("Fonts/1475810/6c72b0cb-89a1-4da9-8574-9244967bd9d6.woff") format("woff"),url("Fonts/1475810/dd79c75a-b0c9-4d70-a5a7-bdde1d5449fd.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Futura LT W01 Bold";
+    src:url("Fonts/1475822/87f56fc1-ab05-4355-90af-9e83740663af.eot?#iefix");
+    src:url("Fonts/1475822/87f56fc1-ab05-4355-90af-9e83740663af.eot?#iefix") format("eot"),url("Fonts/1475822/3cf9e1e8-63a2-497f-86ed-6b63d6de1986.woff2") format("woff2"),url("Fonts/1475822/184895ac-545b-450b-9d3a-c0a0a7620977.woff") format("woff"),url("Fonts/1475822/bf8628d2-1ae0-4645-ba3f-3ce62d8d907c.ttf") format("truetype");
+}
 @import url('https://fonts.googleapis.com/css?family=Lato:400|Open+Sans:400,700');
 
 // Bootstrap
