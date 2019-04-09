@@ -56,8 +56,9 @@
     }
 
     .blue-heading {
-        font-family: 'Futura';
+        font-family: $font-family-futura;
         color: #374685;
+        font-weight: 600;
 
         @include media-breakpoint-up(xs) {
             font-size: 2rem;
