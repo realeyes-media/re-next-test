@@ -202,39 +202,67 @@
     color: #919191;
   }
 
-  .line-1{
-    position: relative;
-    top: 50%;
-    width: 11rem;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 1.8rem;
-    text-align: center;
+  .type-writer p {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
+    width: 0;
+    animation: type 4s steps(60, end) forwards;
+  }
+  .type-writer p:nth-child(2) {
+    animation-delay: 4s;
+  }
+  p a {
     color: white;
-    bottom: 0rem;
-    top: 1rem;
-    margin-left: 27%;
-}
+    text-decoration: none;
+  }
+  span {
+    animation: blink 1s infinite;
+  }
+  @keyframes type {
+    to {
+      width: 100%;
+    }
+  }
+  ::selection {
+    background: black;
+  }
 
-.type-writer {
-  margin-bottom: 0rem;
-  margin-top: 0.4rem;
-}
+//   .line-1{
+//     position: relative;
+//     top: 50%;
+//     width: 11rem;
+//     border-right: 2px solid rgba(255,255,255,.75);
+//     font-size: 1.8rem;
+//     text-align: center;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     transform: translateY(-50%);
+//     color: white;
+//     bottom: 0rem;
+//     top: 1rem;
+//     margin-left: 27%;
+// }
 
-.mainTitle {
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 73%;
-  right: 0rem;
-}
+// .type-writer {
+//   margin-bottom: 0rem;
+//   margin-top: 0.4rem;
+// }
 
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 50%;}
-}
+// .mainTitle {
+//   color: white;
+//   font-size: 1.6rem;
+//   text-align: center;
+//   width: 73%;
+//   right: 0rem;
+// }
+
+// @keyframes typewriter{
+//   from{width: 0;}
+//   to{width: 50%;}
+// }
 }
 
 @include media-breakpoint-up(sm) {
