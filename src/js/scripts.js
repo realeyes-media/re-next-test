@@ -84,7 +84,6 @@ $("#myForm").submit(function(e) {
   form_data.forEach(data => {
    jsonData[data.name] = data.value
 });
-  console.log('FORMDATA', jsonData);
     $.ajax({
         url: 'https://us-central1-jenkinsauthorization.cloudfunctions.net/send-mail',
         data: JSON.stringify(jsonData),
@@ -132,6 +131,11 @@ const addRemoveHeroVideoOnLoad = () => {
     video.loop = false;
     video.muted = true;
     video.id = "video-background";
+    if (Modernizr.objectfit) {
+      video.className = ".objectFitVideo"
+    } else {
+      video.className = ".noObjectFitVideo"
+    }
     const videoSource = document.createElement("source");
     videoSource.src = "/vid/Hero-v2-3-6mbps.mp4"
     videoSource.type = "video/mp4"
@@ -158,6 +162,11 @@ const addRemoveHeroVideoOnResize = () => {
     video.loop = false;
     video.muted = true;
     video.id = "video-background";
+    if (Modernizr.objectfit) {
+      video.className = ".objectFitVideo"
+    } else {
+      video.className = ".noObjectFitVideo"
+    }
     const videoSource = document.createElement("source");
     videoSource.src = "/vid/Hero-v2-3-6mbps.mp4"
     videoSource.type = "video/mp4"
