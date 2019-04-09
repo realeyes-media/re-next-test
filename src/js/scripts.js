@@ -67,6 +67,9 @@ window.onload = () => {
     addRemoveHeroVideoOnLoad()
     showServicesOnLoad()
   }
+  if(Modernizr) {
+    console.log("Modernizr present")
+  }
 }
 
 window.onresize = () => {

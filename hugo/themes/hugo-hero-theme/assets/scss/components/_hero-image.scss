@@ -239,13 +239,15 @@
       background-color: black;
 
       video {
-        object-fit: cover;
-        box-sizing: border-box;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
+        // object-fit: cover;
+        // box-sizing: border-box;
+        // width: 100vw;
+        // height: 100vh;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        background-size: cover;
+        background-position: center center;
 
         @media (min-width: 1920px) {
           height: 70vh;
