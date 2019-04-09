@@ -228,8 +228,6 @@
     overflow: hidden;
 
 
-
-
     #hero-video-container {
       position: relative;
       top: 0;
@@ -238,14 +236,29 @@
       height: 100vh;
       background-color: black;
 
-      video {
-        // object-fit: cover;
-        // box-sizing: border-box;
-        // width: 100vw;
-        // height: 100vh;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
+      .objectFitVideo {
+        object-fit: cover;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media (min-width: 1920px) {
+          height: 70vh;
+        }
+
+        @media (min-width: 3250px) {
+          height: 1vh;
+          top: 15%;
+        }
+
+        @media (min-width: 4200px) {
+          top: 5%;
+        }
+      }
+      .noObjectFitVideo {
         background-size: cover;
         background-position: center center;
 
