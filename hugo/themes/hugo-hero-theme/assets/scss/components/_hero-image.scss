@@ -49,7 +49,10 @@
     width: 8px;
     background-color: white;
     border-radius: 50%;
+    position: relative;
+    bottom: 2px;
     display: inline-block;
+    margin: 0 13px 0 13px;
   }
 
   .hero-text {
