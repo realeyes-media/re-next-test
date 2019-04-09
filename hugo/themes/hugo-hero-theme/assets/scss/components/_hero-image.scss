@@ -44,6 +44,17 @@
     height: inherit;
   }
 
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3px;
+    display: inline-block;
+    margin: 0 13px 0 13px;
+  }
+
   .hero-text {
     top: 0;
     flex: 0;
