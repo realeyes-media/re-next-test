@@ -136,6 +136,10 @@
   to{border-right-color: transparent;}
 }
 
+#typedtext {
+  color: white;
+}
+
 
 @include media-breakpoint-up(xs) {
   .hr {
@@ -205,25 +209,52 @@
   .type-writer p {
     color: white;
     font-size: 20px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 105px;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: type 4s steps(60, end) forwards;
+    animation: type 5s steps(100, end) forwards;
+    animation-iteration-count: infinite;
   }
   .type-writer p:nth-child(2) {
-    animation-delay: 4s;
+    animation: bill 5s steps(60, end) both;
+    animation-delay: 1.4s;
+    animation-iteration-count: infinite;
+    // visibility: hidden;
   }
-  p a {
-    color: white;
-    text-decoration: none;
-  }
-  span {
-    animation: blink 1s infinite;
-  }
+
   @keyframes type {
-    to {
-      width: 100%;
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 12em;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+    }
+  }
+  ::selection {
+    background: black;
+  }
+
+  @keyframes bill {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    50% {
+      width: 12em;
+      opacity: 1;
+      visibility: visible;
+    }
+    99% {  /* 50% of this animation is now a pause */
+      width: 12em;
+      visibility: visible;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+      visibility: hidden;
     }
   }
   ::selection {

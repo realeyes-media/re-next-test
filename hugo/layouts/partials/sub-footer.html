@@ -43,10 +43,11 @@
             <div class="row">
                 <div class="col-12">
                   <div class="sub-footer-inner">
-                    <div class="type-writer">
+                    <!-- <div class="type-writer">
                     <p>Stream it like</p>
-                    <p>you mean it.</p>
-                    </div>  
+                    <p id="showMe">you mean it.</p>
+                    </div>   -->
+                    <div id="typedtext"></div>
                   <hr class="hr">
                   </div>
                 </div>
@@ -73,4 +74,50 @@
        </div>
       </div>
 </div>
+<script>
+    var aText = new Array(
+    "Stream it like", 
+    "you mean it."
+    );
+    var iSpeed = 300; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+     
+    var charDelay = setTimeout("typewriter()", 500);
+    var afterDelay = setTimeout( console.log('wait'), 2000);
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+     
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+     
+     while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+     }
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+     if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout("typewriter()", 2000);
+      } else if (iIndex === aText.length) {
+        setTimeout(function() { 
+        destination.innerHTML = "";
+       iIndex = 0;
+       typewriter();
+        }, 5000);
+      }
+     } else {
+      setTimeout("typewriter()", iSpeed);
+     }
+}
+typewriter();
+    
+</script>
 </html>
