@@ -101,11 +101,9 @@
     color: #ffffff;
     z-index: 1;
     position: absolute;
-    // bottom: 20%;
     margin-left: 1rem;
 
     @include media-breakpoint-down(sm) {
-      // bottom: 20%;
       margin-right: 9rem;
     }
 
@@ -123,7 +121,6 @@
       &.hero-header-green {
         color: #50E3C2;
       }
-
     }
 
     h2 {
@@ -467,7 +464,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+      background-image: linear-gradient(to bottom, transparent 25%, black 100%);
     }
   }
 }
