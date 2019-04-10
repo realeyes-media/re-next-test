@@ -47,7 +47,9 @@
                     <p>Stream it like</p>
                     <p id="showMe">you mean it.</p>
                     </div>   -->
+                    <div class="typedtextContainer">
                     <div id="typedtext"></div>
+                  </div>
                   <hr class="hr">
                   </div>
                 </div>
@@ -79,7 +81,7 @@
     "Stream it like", 
     "you mean it."
     );
-    var iSpeed = 300; // time delay of print out
+    var iSpeed = 200; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
     var iScrollAt = 20; // start scrolling up at this many lines
@@ -99,17 +101,17 @@
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';
      }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-     if ( iTextPos++ == iArrLength ) {
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+     if ( iTextPos++ == 14 ) {
       iTextPos = 0;
       iIndex++;
       if ( iIndex != aText.length ) {
        iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 2000);
+       setTimeout("typewriter()", 500);
       } else if (iIndex === aText.length) {
         setTimeout(function() { 
+        iIndex = 0;
         destination.innerHTML = "";
-       iIndex = 0;
        typewriter();
         }, 5000);
       }

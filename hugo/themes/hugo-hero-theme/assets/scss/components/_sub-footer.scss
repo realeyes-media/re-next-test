@@ -136,8 +136,11 @@
   to{border-right-color: transparent;}
 }
 
-#typedtext {
+.typedtextContainer {
   color: white;
+  margin: 0 auto;
+  height: 132px;
+  font-size: 30px;
 }
 
 
@@ -155,6 +158,7 @@
     position: absolute;
     margin-left: 7vw;
     border: solid 2px white;
+    margin-top: 8rem;
   }
 
   .flex-container {
