@@ -65,7 +65,7 @@
     h1 {
       padding-bottom: 1rem;
       font-size: 2.5rem;
-      font-family: Helvetica;
+      font-family: $font-family-base;
       font-weight: bold;
 
       @include media-breakpoint-up(md) {
@@ -94,7 +94,7 @@
       }
     }
   }
-  
+
 
   .hero-text-video {
     flex: 0;
@@ -111,7 +111,7 @@
 
     h1 {
       margin-bottom: 0;
-      font-family: Helvetica;
+      font-family: $font-family-base;
       font-weight: bold;
       font-size: 5.5vw;
 
@@ -153,12 +153,12 @@
       @include media-breakpoint-up(xs) {
         color: white;
       }
-    
+
       @include media-breakpoint-up(lg) {
         color: #50E3C2;
       }
     }
-  
+
 
   a {
     color: white;
@@ -292,7 +292,7 @@
       h1 {
         padding-bottom: 1rem;
         font-size: 2.5rem;
-        font-family: Helvetica;
+        font-family: $font-family-base;
         font-weight: bold;
 
         @include media-breakpoint-up(md) {
@@ -349,7 +349,7 @@
           color: white;
         }
       }
-  
+
       .header-links:hover {
         @include media-breakpoint-up(xs) {
           color: white;
@@ -361,7 +361,7 @@
 
       h1 {
         margin-bottom: 0;
-        font-family: Helvetica;
+        font-family: $font-family-base;
         font-weight: bold;
         font-size: 5.5vw;
 

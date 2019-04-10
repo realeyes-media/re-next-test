@@ -7,7 +7,7 @@
         position: absolute;
         color: white;
         cursor: pointer;
-        font-family: 'Helvetica';
+        font-family: $font-family-base;
         font-size: 1.125rem;
         font-weight: 300;
         display: flex;
@@ -250,14 +250,14 @@
         color: white;
         padding-top: 50px;
     }
-    
+
     .next {
         color: white;
         padding-top: 50px;
     }
-    
+
   }
-  
+
   @include media-breakpoint-up(sm) {
     .title-card {
         background-color: #24315E;
@@ -268,14 +268,14 @@
         color: white;
         padding-top: 90px;
     }
-    
+
     .next {
         color: white;
         padding-top: 90px;
     }
-  
+
   }
-  
+
   @include media-breakpoint-up(md) {
 
     .title-card {
@@ -288,14 +288,14 @@
         color: white;
         padding-top: 100px;
     }
-    
+
     .next {
         color: white;
         padding-top: 100px;
     }
-  
+
   }
-  
+
     @include media-breakpoint-up(lg) {
         .title-card {
             background-color: #24315E;
@@ -307,11 +307,11 @@
             color: white;
             padding-top: 100px;
         }
-        
+
         .next {
             color: white;
             padding-top: 100px;
         }
     }
 
-     
+
