@@ -119,12 +119,12 @@
         "image": "img/Headshots RE Next - Small/jake_the_dog.png",
         "bio": "Phil graduated in the arctic north of Minnesota with a music performance degree, which fully qualifies him to serenade the furry creatures off of his deck. In reality, Phil has been playing music professionally for about 12 years and has had the honor of performing with some amazing talents over that time. He also enjoys getting into the ring, and competes in Muay Thai as an amateur kickboxer. When he isn't training or playing music, you might occasionally find him doing fun things outside, spending time with dogs, or even in the office, working! Phil has been writing software for about eight years, and has very much enjoyed being with the RE-crew for the last four."
     },
-    // {
-    //     "name": "Steven",
-    //     "position": "Android Developer",
-    //     "image": "img/Headshots RE Next - Small/pikachu.png",
-    //     "bio": "Having grown up in Northern Colorado, you can find Steven enjoying the mountains, whether on his bike in the summer or his snowboard in the winter. He competed in small air snowboarding while attending CSU, is an avid collector of vinyl records, and suffers from a moderate obsession with shoes (mostly Yeezy’s and Adidas). His favorite movie is Reddick and his least favorite drink is coffee, despite his Colombian roots."
-    // },
+    {
+        "name": "Steven",
+        "position": "Android Developer",
+        "image": "img/Headshots RE Next - Small/Steven Cisneros - small.jpeg",
+        "bio": "Having grown up in Northern Colorado, you can find Steven enjoying the mountains, whether on his bike in the summer or his snowboard in the winter. He competed in small air snowboarding while attending CSU, is an avid collector of vinyl records, and suffers from a moderate obsession with shoes (mostly Yeezy’s and Adidas). His favorite movie is Reddick and his least favorite drink is coffee, despite his Colombian roots."
+    },
     {
         "name": "Kobi Heider",
         "position": "QA Engineer",
