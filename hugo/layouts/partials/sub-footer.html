@@ -43,10 +43,6 @@
             <div class="row">
                 <div class="col-12">
                   <div class="sub-footer-inner">
-                    <!-- <div class="type-writer">
-                    <p>Stream it like</p>
-                    <p id="showMe">you mean it.</p>
-                    </div>   -->
                     <div class="typedtextContainer">
                     <div id="typedtext"></div>
                   </div>
@@ -81,16 +77,16 @@
     "Stream it like", 
     "you mean it."
     );
-    var iSpeed = 100; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
+    var iSpeed = 100; 
+    var iIndex = 0;
+    var iArrLength = aText[0].length;
+    var iScrollAt = 20;
      
     var charDelay = setTimeout("typewriter()", 500);
     var afterDelay = setTimeout( console.log('wait'), 2000);
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
+    var iTextPos = 0;
+    var sContents = '';
+    var iRow;
      
     function typewriter()
     {

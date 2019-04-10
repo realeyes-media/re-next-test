@@ -30,6 +30,11 @@
       }
       @include media-breakpoint-up(sm) {
         padding-bottom: 12%;
+        padding-top: 0;
+      }
+      @include media-breakpoint-up(md) {
+        padding-bottom: 12%;
+        padding-top: 0;
       }
       color: white;
       text-decoration: none;
@@ -211,94 +216,6 @@
     color: #919191;
   }
 
-  .type-writer p {
-    color: white;
-    font-size: 20px;
-    margin: 10px 0 0 105px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: type 5s steps(100, end) forwards;
-    animation-iteration-count: infinite;
-  }
-  .type-writer p:nth-child(2) {
-    animation: bill 5s steps(60, end) both;
-    animation-delay: 1.4s;
-    animation-iteration-count: infinite;
-    // visibility: hidden;
-  }
-
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 12em;
-    }
-    100% {  /* 50% of this animation is now a pause */
-      width: 12em;
-    }
-  }
-  ::selection {
-    background: black;
-  }
-
-  @keyframes bill {
-    0% {
-      width: 0;
-      opacity: 1;
-    }
-    50% {
-      width: 12em;
-      opacity: 1;
-      visibility: visible;
-    }
-    99% {  /* 50% of this animation is now a pause */
-      width: 12em;
-      visibility: visible;
-    }
-    100% {  /* 50% of this animation is now a pause */
-      width: 12em;
-      visibility: hidden;
-    }
-  }
-  ::selection {
-    background: black;
-  }
-
-//   .line-1{
-//     position: relative;
-//     top: 50%;
-//     width: 11rem;
-//     border-right: 2px solid rgba(255,255,255,.75);
-//     font-size: 1.8rem;
-//     text-align: center;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     transform: translateY(-50%);
-//     color: white;
-//     bottom: 0rem;
-//     top: 1rem;
-//     margin-left: 27%;
-// }
-
-// .type-writer {
-//   margin-bottom: 0rem;
-//   margin-top: 0.4rem;
-// }
-
-// .mainTitle {
-//   color: white;
-//   font-size: 1.6rem;
-//   text-align: center;
-//   width: 73%;
-//   right: 0rem;
-// }
-
-// @keyframes typewriter{
-//   from{width: 0;}
-//   to{width: 50%;}
-// }
 }
 
 @include media-breakpoint-up(sm) {
@@ -317,6 +234,7 @@
     position: absolute;
     margin-left: 7%;
     border: solid 2px white;
+    margin-top: 8rem;
   }
 
   .fa {
