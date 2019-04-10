@@ -109,7 +109,7 @@ $("#myForm").submit(function(e) {
 const showHideNavbarOnScroll = () => {
   const header = document.getElementsByClassName('header header-absolute')[0];
   const currentScrollPos = window.pageYOffset;
-  if (currentScrollPos === 0) {
+  if (currentScrollPos <= 0) {
     header.style.background = 'transparent';
   } else if (prevScrollpos > currentScrollPos) {
     header.style.top = '0px';
