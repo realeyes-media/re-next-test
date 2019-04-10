@@ -77,7 +77,7 @@
     "Stream it like", 
     "you mean it."
     );
-    var iSpeed = 100; 
+    var iSpeed = 55; 
     var iIndex = 0;
     var iArrLength = aText[0].length;
     var iScrollAt = 20;
@@ -91,6 +91,7 @@
      sContents =  ' ';
      iRow = Math.max(0, iIndex-iScrollAt);
      var destination = document.getElementById("typedtext");
+     var cursor = document.getElementById("cursor");
      
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';
@@ -103,7 +104,7 @@
       iIndex++;
       if ( iIndex < aText.length ) {
        iArrLength = aText[iIndex].length;
-       setTimeout(typewriter, 500);
+       setTimeout(typewriter, 80);
       } else if (iIndex === aText.length) {
         setTimeout(function() { 
         iIndex = 0;

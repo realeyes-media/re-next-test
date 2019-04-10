@@ -147,7 +147,9 @@
   margin: 0 auto;
   height: 132px;
   font-size: 30px;
+  animation: blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 
 
 @include media-breakpoint-up(xs) {
