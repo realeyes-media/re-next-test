@@ -82,8 +82,6 @@
     var iArrLength = aText[0].length;
     var iScrollAt = 20;
      
-    var charDelay = setTimeout("typewriter()", 500);
-    var afterDelay = setTimeout( console.log('wait'), 2000);
     var iTextPos = 0;
     var sContents = '';
     var iRow;
@@ -97,22 +95,24 @@
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';
      }
+     if (iIndex < aText.length) {
      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+     }
      if ( iTextPos++ == 14 ) {
       iTextPos = 0;
       iIndex++;
-      if ( iIndex != aText.length ) {
+      if ( iIndex < aText.length ) {
        iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
+       setTimeout(typewriter, 500);
       } else if (iIndex === aText.length) {
         setTimeout(function() { 
         iIndex = 0;
         destination.innerHTML = "";
        typewriter();
-        }, 5000);
+        }, 4000);
       }
      } else {
-      setTimeout("typewriter()", iSpeed);
+      setTimeout(typewriter, iSpeed);
      }
 }
 typewriter();
