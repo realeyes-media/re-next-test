@@ -44,17 +44,6 @@
     height: inherit;
   }
 
-  .dot {
-    height: 8px;
-    width: 8px;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    bottom: 3px;
-    display: inline-block;
-    margin: 0 13px 0 13px;
-  }
-
   .hero-text {
     top: 0;
     flex: 0;
@@ -137,6 +126,11 @@
     .section-tags {
       display: none;
       padding-top: 20px;
+      width: 100vw;
+      font-size: 2vw;
+      @include media-breakpoint-down(xs) {
+        font-size: 5vw;
+      }
     }
 
     .section-tags-mobile {
