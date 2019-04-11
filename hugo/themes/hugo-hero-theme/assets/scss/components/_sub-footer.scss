@@ -17,11 +17,6 @@
     margin-top: 13%;
     margin-left: 15%;
     @include media-breakpoint-up(xs) {
-      // flex-direction: row;
-      // color: white;
-      // margin-top: 5%;
-      // font-size: 13px;
-      // margin-left: 0;
       margin-top: 0;
       margin-left: 0;
       padding-top: 65px;
@@ -38,7 +33,6 @@
     a {
       @include media-breakpoint-up(xs) {
         padding-bottom: 12%;
-        // padding-top: 20%;
       }
       @include media-breakpoint-up(sm) {
         padding-bottom: 5%;
@@ -56,19 +50,16 @@
     }
 
     .socialButtons a {
-      padding-left: 50px;
+      margin-left: 50px;
       color: #919191;
       @media (max-width: 320px) {
         padding-right: 2%;
         padding-left: 0%;
       }
       @include media-breakpoint-down(xs) {
-        padding-left: 0%;
+        margin-left: 0%;
         min-width: 40px;
       }
-        @include media-breakpoint-up(sm) {
-          // padding-right: 37px;
-        }
         color: white;
         text-decoration: none;
         &:hover {
@@ -207,11 +198,6 @@
     color: white;
     white-space: nowrap;
     margin: 0 auto;
-    // position: relative;
-    // left: 43%;
-    // @media (max-width: 437px) {
-    //   left: 17%;
-    // }
   }
 
   .spanButtons {
@@ -513,8 +499,11 @@ to{width: 38%;}
 
     .socialButtons {
       color: #919191;
-        left: 5%;
+        left: 13%;
         margin-top: 0%;
+      @media (max-width: 1024px) {
+      left: 4%;
+    }
     }
 
     .fa-twitter {
