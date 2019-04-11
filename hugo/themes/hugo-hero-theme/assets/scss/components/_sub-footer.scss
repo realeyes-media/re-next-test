@@ -181,7 +181,7 @@
     width: 79%;
     position: absolute;
     margin-left: 7vw;
-    border: solid 2px red;
+    border: solid 2px white;
     margin-top: 8rem;
   }
 
@@ -249,7 +249,7 @@
     width: 80%;
     position: absolute;
     margin-left: 7%;
-    border: solid 2px blue;
+    border: solid 2px white;
     margin-top: 8rem;
   }
 
@@ -351,7 +351,7 @@ to{width: 38%;}
     margin-top: 6rem;
     width: 88%;
     position: absolute;
-    border: solid 2px orange;
+    border: solid 2px white;
   }
 
   .flex-container {
@@ -472,11 +472,11 @@ to{width: 38%;}
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 85%;
+      width: 87%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
-      margin-left: 9%;
+      margin-left: 6%;
     }
     .flex-container {
       display: flex;
@@ -499,7 +499,7 @@ to{width: 38%;}
       color: white;
       white-space: nowrap;
       margin-top: 4%;
-      margin-left: 19%;
+      margin-left: 12%;
       font-size: 13px;
       position: unset;
       right: 0;
@@ -513,9 +513,8 @@ to{width: 38%;}
 
     .socialButtons {
       color: #919191;
-        left: 15%;
+        left: 5%;
         margin-top: 0%;
-        right: 5%;
     }
 
     .fa-twitter {
@@ -589,6 +588,7 @@ to{width: 38%;}
 }
 
 @include media-breakpoint-up(xl) {
+  
 
 }
 
