@@ -7,7 +7,7 @@ heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'RealEyes & Oracle: Local Expertise, Global Reach.'
 heroBackground: 'img/Case Studies Thumbs - Small/Homepage - Oracle - small.jpg'
-description: Oracle wanted to securely connect their worldwide team to the training, strategic market material, and leadership communications delivered in the format that reaches people best—streaming video. They turned to RealEyes to develop and implement a solution to efficiently deliver videos worldwide without saturating Oracle’s network bandwidth, eCDN.
+description: Oracle needed to virtually connect their team. Their vision was to deliver training, marketing, and leadership communications through streaming video. They turned to RealEyes for a solution to efficiently deliver videos worldwide without saturating network bandwidth.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'
 quoteeInfo: 'executive vice president & general manager of digital media, NBC Sports Group'
