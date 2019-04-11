@@ -8,6 +8,19 @@ export default function (env) {
   const tmp = ".tmp/"
   const build = "dist/"
   const isProduction = process.env.NODE_ENV === "production"
+  const branch = process.env.CI ? process.env.BITBUCKET_BRANCH : 'default'
+  const override = process.env.REWEB_BASE
+
+  // Hacking in the BaseURL. REWEB_URL will always win if set in the env
+  let url = 'https://www.realeyes.com'
+  if (override !== '') {
+    url = override
+  } else if (branch === 'dev') {
+    url = 'https://dev-web.realeyes.dev'
+  } else if (branch === 'stage') {
+    url = 'https://stage-web.realeyes.dev'
+  }
+  console.log("BaseURL set to: " + url)
 
   return {
     src: src,
@@ -21,7 +34,7 @@ export default function (env) {
         default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
         development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
         preview: ["-b", "http://localhost:3000"],
-        production: []
+        production: ["--baseURL", url]
       }
     },
     styles: {

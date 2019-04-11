@@ -4,7 +4,7 @@
 </head>
 
 <div class="sub-footer">
-          <div class="bottom-container mobile-hide-footer">
+          <div class="container-fluid bottom-container mobile-hide-footer">
               <div class="row">
                   <div class="col-12">
                     <div class="sub-footer-inner">
@@ -25,27 +25,27 @@
             </div>
                 <div class="col-6 secondCol">
                 <div class="sub-footer-inner-bottom">
-                <a href="{{ .Site.BaseURL }}/who">TEAM</a>
-                <a href="{{ .Site.BaseURL }}/contact">CAREERS</a>
+                <!-- <a href="{{ .Site.BaseURL }}/who">TEAM</a>
+                <a href="{{ .Site.BaseURL }}/contact">CAREERS</a> -->
                 <a href="{{ .Site.BaseURL }}/contact">CONTACT US</a>
                 <div class="socialButtons">
-                    <a href="#" class="fa fa-facebook fa-2x"></a>
-                    <a href="#" class="fa fa-twitter fa-2x"></a>
-                    <a href="#" class="fa fa-instagram fa-2x"></a>
-                    <a href="#" class="fa fa-linkedin fa-2x"></a>
+                    <a href="https://www.facebook.com/realeyesmedia" class="fa fa-facebook fa-2x"></a>
+                    <a href="https://twitter.com/realeyesmedia" class="fa fa-twitter fa-2x"></a>
+                    <a href="https://www.instagram.com/realeyesmedia/?hl=en" class="fa fa-instagram fa-2x"></a>
+                    <a href="https://www.linkedin.com/company/realeyes-media" class="fa fa-linkedin fa-2x"></a>
                 </div>
                </div>
               </div>
             </div>
          </div>
 
-         <div class=" container-fluid bottom-container desktop-hide-footer">
+         <div class="container-fluid bottom-container desktop-hide-footer">
             <div class="row">
                 <div class="col-12">
                   <div class="sub-footer-inner">
-                    <div class="type-writer">
-                    <p class="line-1 anim-typewriter mainTitle">Stream it like </br> you mean it.</p>
-                    </div>  
+                    <div class="typedtextContainer">
+                    <div id="typedtext"></div>
+                  </div>
                   <hr class="hr">
                   </div>
                 </div>
@@ -53,14 +53,14 @@
           <div class="row">
           <div class="col-6 firstCol">
               <div class="sub-footer-inner-bottom">
-              <a href="{{ .Site.BaseURL }}/who">TEAM</a>
-              <a href="{{ .Site.BaseURL }}/contact">CAREERS</a>
+              <!-- <a href="{{ .Site.BaseURL }}/who">TEAM</a>
+              <a href="{{ .Site.BaseURL }}/contact">CAREERS</a> -->
               <a href="{{ .Site.BaseURL }}/contact">CONTACT US</a>
               <div class="socialButtons">
-                  <a href="#" class="fa fa-facebook fa-2x"></a>
-                  <a href="#" class="fa fa-twitter fa-2x"></a>
-                  <a href="#" class="fa fa-instagram fa-2x"></a>
-                  <a href="#" class="fa fa-linkedin fa-2x"></a>
+                  <a href="https://www.facebook.com/realeyesmedia" class="fa fa-facebook fa-2x"></a>
+                  <a href="https://twitter.com/realeyesmedia" class="fa fa-twitter fa-2x"></a>
+                  <a href="https://www.instagram.com/realeyesmedia/?hl=en" class="fa fa-instagram fa-2x"></a>
+                  <a href="https://www.linkedin.com/company/realeyes-media" class="fa fa-linkedin fa-2x"></a>
               </div>
              </div>
              <div class="sub-footer-inner">
@@ -72,4 +72,51 @@
        </div>
       </div>
 </div>
+<script>
+    var aText = new Array(
+    "Stream it like", 
+    "you mean it."
+    );
+    var iSpeed = 55; 
+    var iIndex = 0;
+    var iArrLength = aText[0].length;
+    var iScrollAt = 20;
+     
+    var iTextPos = 0;
+    var sContents = '';
+    var iRow;
+     
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+     var cursor = document.getElementById("cursor");
+     
+     while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+     }
+     if (iIndex < aText.length) {
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+     }
+     if ( iTextPos++ == 14 ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex < aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout(typewriter, 80);
+      } else if (iIndex === aText.length) {
+        setTimeout(function() { 
+        iIndex = 0;
+        destination.innerHTML = "";
+       typewriter();
+        }, 4000);
+      }
+     } else {
+      setTimeout(typewriter, iSpeed);
+     }
+}
+typewriter();
+    
+</script>
 </html>

@@ -9,12 +9,12 @@ relativeURLs = true
   google_analytics_id=""
 
   [params.homepage_meta_tags]
-    meta_description = "RealEyes Media"
+    meta_description = "RealEyes | Stream It Like You Mean It"
     meta_og_title = "RealEyes"
     meta_og_type = "website"
     meta_og_url = "http://www.realeyes.com/"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
-    meta_og_description = "RealEyes Media"
+    meta_og_image = "/img/Final Images/Hompage - optimized delivery workflows.jpg"
+    meta_og_description = "RealEyes | Stream It Like You Mean It"
     meta_twitter_card = "summary"
     meta_twitter_site = "@realeyesmedia"
     meta_twitter_creator = "@realeyesmedia"
@@ -24,15 +24,15 @@ relativeURLs = true
 	url = "/who/"
     weight = 1
 
-[[menu.main]]
-    name = "Products"
-    url = "/products/"
-    weight = 2
+# [[menu.main]]
+#     name = "Products"
+#     url = "/products/"
+#     weight = 2
 
-[[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
+# [[menu.main]]
+#     name = "Blog"
+#     url = "/blog/"
+#     weight = 3
 
 [[menu.main]]
     name = "Contact Us"

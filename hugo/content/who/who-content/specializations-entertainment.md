@@ -6,4 +6,4 @@ weight: 1
 heading: Media & Entertainment
 ---
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+From global sports broadcasting, to OTT and eSports, we help companies like NBC Sports, Viacom and Lionsgate optimize and scale complex media services.

@@ -163,7 +163,33 @@
     border-width: 1px;
     margin-bottom: 60px;
     margin-top: 5rem;
-    width: 90%;
+}
+
+#myForm {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+
+  @include media-breakpoint-up(xs) {
+    width: 180%;
+    right: 40%;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 100%;
+    right: 0px;
+   }
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    right: 0px;
+   }
+
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+    right: 0px;
+   }
+
 }
 
 .heading {
@@ -215,6 +241,13 @@
   font-weight: bold;
 }
 
+.submitButton {
+  margin-top: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
 
 
 

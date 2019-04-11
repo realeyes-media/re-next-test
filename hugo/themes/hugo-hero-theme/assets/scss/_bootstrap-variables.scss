@@ -27,9 +27,9 @@ $link-hover-color: lighten($primary, 20%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: 'Helvetica', 'Open Sans', 'Helvetica Neue', Arial, sans-serif,
-  -apple-system;
-$font-family-heading: 'Futura-Bold', '-apple-system';
+$font-family-base: 'Helvetica', 'Heebo', '-apple-system', 'Arial', 'sans-serif';
+$font-family-heading: 'Futura LT W01 Bold','-apple-system', 'Arial', 'sans-serif';
+$font-family-futura: 'Futura LT W01 Medium','-apple-system', 'Arial', 'sans-serif';
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-weight-thin: 200;
 $font-weight-light: 300;

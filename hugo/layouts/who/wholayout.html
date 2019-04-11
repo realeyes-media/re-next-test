@@ -3,7 +3,7 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ partial "hero-solid-color.html" (dict "background" "#da6161" "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "heading3" .Params.heroHeading3 "subheading" .Params.heroSubHeading "heroContent" .Params.heroContent "content" .)}}
+{{ partial "hero-solid-color.html" (dict "background" "#da6161" "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "heading3" .Params.heroHeading3 "subheading" .Params.heroSubHeading "heroContent1" .Params.heroContent1 "heroContent2" .Params.heroContent2 "heroContent3" .Params.heroContent3 "content" .)}}
 {{ $headless := .Site.GetPage "/who/who-content" }}
 <div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/camera.png" /></div>
 <div class="container-fluid pt-4 pt-md-10 pb-4 pb-md-8 pl-6 text-left content mobile-hide">
@@ -18,10 +18,10 @@
         <div class="col-sm-12 col-md-3 ">
             <p class="solutions" id="platform" style="font-weight: bold">MEDIA PLATFORM AUGMENTATION & ENHANCEMENTS</p>
             <p class="solutions" id="bespoke">BESPOKE DEVELOPMENT</p>
-            <p class="solutions" id="workflow">MEDIA WORKFLOW SOLUTIONS/AUGMENTATION</p>
+            <p class="solutions" id="workflow">MEDIA WORKFLOW SOLUTIONS</p>
             <p class="solutions" id="streaming">LIVE STREAMING PLATFORM SOLUTIONS</p>
             <p class="solutions" id="consulting">CONSULTING</p>
-            <p class="solutions" id="products">PRODUCTS</p>
+            {{/*  <p class="solutions" id="products">PRODUCTS</p>  */}}
         </div>
         {{ $page := $headless.Resources.Match "solutions*" }}
         {{ range $page }}
@@ -59,9 +59,10 @@
     </div>
 </div>
 <div class="container-fluid content" style="background-color: #ebeaea">
-    <h2 class="pl-md-6 pr-md-6 pl-2 pr-2 pt-8 pt-md-12" style="font-weight: 600; font-size: 1.5rem">Real People</h2>
     {{ $page := $headless.Resources.Match "real-people*" }}
     {{ range $page }}
+    <h2 class="pl-md-6 pr-md-6 pl-2 pr-2 pt-8 pt-md-12" style="font-weight: 600; font-size: 1.5rem"> {{ .Params.title }}
+    </h2>
     <div class="block-quote pt-2 pt-md-6 pb-6 pl-md-6 pr-md-6 pl-2 pr-2">
         {{ .Content }}
     </div>
@@ -72,7 +73,10 @@
             <div class="col-12 col-xl-2dot4 col-lg-3 col-md-4 pb-4">
                 <div class="feature">
                     {{ if .image }}<div class="feature-image"><img alt="{{ .name }} logo"
-                            src="{{ $.Site.BaseURL }}/{{ .image }}" /></div> {{ end }}
+                            src="{{ $.Site.BaseURL }}/{{ .image }}" />{{ if .bio }}
+                        <div class="feature-bio">{{ .bio }}</div>
+                        {{ end }}
+                    </div> {{ end }}
                 </div>
                 <h2 class="feature-title text-center pt-2 mb-0">{{ .name }}</h2>
                 <p class="feature-content text-center">{{ .position }}</p>

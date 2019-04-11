@@ -1,44 +1,128 @@
 [
     {
-        "name": "Jake the Dog",
-        "position": "hero",
-        "image": "img/jake_the_dog.png",
+        "name": "Austin Christensen",
+        "position": "Mobile Developer",
+        "image": "img/Headshots RE Next - Small/Austin Christensen - small.jpg",
+        "bio": " Born and raised in Oregon before moving to Colorado in 2017, Austin’s favorite hobbies include playing basketball, video games, and board games (and moderate amounts of off-roading during his teenage years). He enjoys watching basketball and football, where he cheers for the Portland Trail Blazers and Tampa Bay Buccaneers. As an animal lover he owns two cats named Felix and Gus. His favorite movies are The Shining and The Departed. Fun fact: he can dunk a basketball!"
+    },
+    {
+        "name": "Billy McCormack",
+        "position": "Web Developer",
+        "image": "img/Headshots RE Next - Small/Billy McCormack - small.jpeg",
+        "bio": "Billy is from Texas and moved to Colorado in 2015 with his  fiancé Risa. Billy started out as an Intern at RealEyes Media and earned a full-time position. He has a degree in History as well as going to coding school. He enjoys hiking in the mountains, sports, and snowboarding. Fun Facts: He played college baseball, played professional baseball (semi-pro), and competed in motocross (Motorcycles)."
+    },
+    {
+        "name": "Buzz",
+        "position": "Fixer",
+        "image": "img/Headshots RE Next - Small/Buzz - small.jpeg",
+        "bio": "Meat cutter by trade, served in the U.S. navy, avid fly fisherman, fly tier, fly rod builder, and owned his own fly fishing shop for 20 years. Also a licensed long haul truck driver, federally and state certified concrete and asphalt tester, and married to the most beautiful woman in the world."
+    },
+    {
+        "name": "Darragh Evarts",
+        "position": "Account Manager",
+        "image": "img/Headshots RE Next - Small/Darragh Evarts - small.jpeg",
+        "bio": " Darragh was born and raised in NY where she grew up riding horses, scrambling after litters of labrador puppies, playing piano, skiing, and trying to keep up with her older brother (most of the time, unsuccessfully). She earned a BA in Psychology and a MSc in Business Management from Durham University in the UK, where she coached and played for the University’s women’s lacrosse team. She continued to avoid the real world by backpacking through Europe and Asia, but eventually landed in Denver, CO. Some of her favorite things are drawing, cheering for the Rangers (because someone has to), traveling to new places, fly fishing, good coffee, horseback riding and music."
+    },
+    {
+        "name": "David Hassoun",
+        "position": "CEO",
+        "image": "img/Headshots RE Next - Small/David Hassoun - small.jpeg",
+        "bio": "David is a creative thinker who is passionate about many things - melding wood, stone, and metal for sculpture and furniture, photography, hiking, amazing food (whether eating or attempting to make it), and of course, technology. Having worked in the industry since he was 16 years old, his deep entrepreneurial roots led him to start RealEyes in 2002, where he has helped build a stellar team of consultants and technologists (all without drinking coffee…). This talented team helps power the world’s most anticipated and watched streaming events and programming, including the Olympics, World Cup, The Super Bowl, and the Masters."
+    },
+    {
+        "name": "Dozer",
+        "position": "Puppy Dog",
+        "image": "img/Headshots RE Next - Small/Dozer - small.jpg",
         "bio": ""
     },
     {
-        "name": "Donald",
-        "position": "?",
-        "image": "img/trump_hands.jpg",
-        "bio": ""
+        "name": "Frances Janz",
+        "position": "Quality Assurance Engineer",
+        "image": "img/Headshots RE Next - Small/Frances Janz - small.jpeg",
+        "bio": "Frances has the distinction of being a Colorado native. She has a degree in biology and enjoys reading, ballroom dancing, and hosting movie nights at her house with her husband. Fun Facts: As a kid she played the Magic Carpet from \"Aladdin\" for theater camp. In college, she sequenced a small, plant genome for one of her school projects."
     },
     {
-        "name": "Michael Jordan",
-        "position": "GOAT",
-        "image": "img/jordan.jpg",
-        "bio": ""
+        "name": "Grant Curtis",
+        "position": "Software Developer",
+        "image": "img/Headshots RE Next - Small/Grant Curtis - small.jpeg",
+        "bio": "Grant was hired from Craigslist to help keep Flash alive. Fun facts: Grant tap-dances, sings karaoke, and listens to classic literature in his car."
     },
     {
-        "name": "Dipsy",
-        "position": "Teletubby",
-        "image": "img/teletubby.jpg",
-        "bio": ""
+        "name": "Greg Kolb",
+        "position": "Web Developer",
+        "image": "img/Headshots RE Next - Small/Greg Kolb - small.jpeg",
+        "bio": "Greg has lived all over the country because his family was in the military. He has a degree in Mechanical Engineering and enjoys hiking, camping, snowboarding and biking. He is also an avid video game player and he loves animals. Fun Facts: He worked in a lab with a nuclear reactor and has been to chess nationals multiple times."
     },
     {
-        "name": "Batman",
-        "position": "Dark Knight",
-        "image": "img/batman.jpg",
-        "bio": ""
+        "name": "Roger Hannagan",
+        "position": "Android Developer",
+        "image": "img/Headshots RE Next - Small/Roger Hannagan - small.jpeg",
+        "bio": "Colorado Native. Went to CSU to achieve his degree in Computer Science with a minor in Mathematics. One of his favorite places in the world is Italy, home to his favorite historical figure Leonardo DaVinci. He also loves the restaurant Fat Shack from his college days and is great at unintentionally sparking fun debates on our team slack channel."
     },
     {
-        "name": "Pikachu",
-        "position": "Cute Pokemon or Body Pillow",
-        "image": "img/pikachu.png",
-        "bio": ""
+        "name": "John Gainfort",
+        "position": "Development Manager",
+        "image": "img/Headshots RE Next - Small/John Gainfort - small.jpeg",
+        "bio": "John grew up all over the east coast, spending most of his time in Florida, NJ and NY as a kid. He later attended University of South Florida where he majored in electrical engineering and taught martial arts. He also minored in keg parties and oversized greek letters. On the weekends, John can be found perusing local Denver breweries with his black and white corgi, Chalupa Batman and wife, Maral, in tow. John also enjoys good bourbon and video games (preferably together). "
     },
     {
-        "name": "Ludwig Van Beethoven",
-        "position": "Other GOAT",
-        "image": "img/beethoven.jpg",
-        "bio": ""
+        "name": "Jun Heider",
+        "position": "CTOO",
+        "image": "img/Headshots RE Next - Small/Jun Heider - small.jpeg",
+        "bio": "Born in northern Japan and has lived all over the US; has lived in CO since 97. Loves variety, resourcefulness, and creativity and was a silkscreen business owner and full time musician before becoming a tech in '99. Has been at RealEyes since 2006 and loves it. Has two teenage children and a beautiful wife he loves. Fun fact: You can find his audio and written creations on Spotify, iTunes, Amazon, and B&N."
+    },
+    {
+        "name": "Marcy Nugent",
+        "position": "DevOps Engineer",
+        "image": "img/Headshots RE Next - Small/Marcy Nugent - small.jpeg",
+        "bio": "Marcy collects hobbies! Outside of work, you can find her cosplaying, biking, gaming, roasting coffee, developing gluten-free recipes with her wife, and more. Professionally, she strives to reduce toil for everyone and keeps the server lights blinking green both locally and across clouds. A self-proclaimed Open Sourceress, she promotes and conjures open source software to reduce data center costs and increase productivity."
+    },
+    {
+        "name": "Mark Grant",
+        "position": "Developer",
+        "image": "img/Headshots RE Next - Small/Mark Grant - small.jpeg",
+        "bio": "Born and raised in southern Georgia, Mark attended Georgia State University where he earned a BA in Philosophy. He later started, but stopped to become a developer, a Masters in Classical Chinese at Colorado University in Boulder. A world traveler, he spent five years in China and Taiwan before turning his sites to to San Francisco, CA, where he worked in a Chinese tea shop. Also as an entrepreneur, Mark built and sold a corporate training center in Taipei, and custom performance cars for two years. On the weekend you might find him on a multi-night solo hike, mountain biking, or practicing Ninjuts or Capoeira. Fun facts: He’s a serious tea snob and an even greater pen snob. A former video game addict who is currently a reformed political junkie. He’s serviceable in Japanese and Brazilian Portuguese, while fluent in Mandarin! 我不騙你!"
+    },
+    {
+        "name": "Matthew Thompson",
+        "position": "Web Developer",
+        "image": "img/Headshots RE Next - Small/Matthew Thompson - small.jpeg",
+        "bio": "After joining RealEyes Media in June 2018, Matthew discovered his love of creating products that deliver high-quality video experiences to millions of users. A lover of video content from live events to his favorite music videos, Matthew develops RealEyes' HTML video player, learning the many intricacies of delivering video content at scale across a wide variety of web platforms. After a good day of coding, Matthew enjoys playing with emerging technologies (especially augmented reality), discovering new paths down which to cycle, showing the bluff in a game of Texas Hold 'Em, and discovering all that Denver has to offer with the friends he is so happy to share his life with."
+    },
+    {
+        "name": "Meredith Guarco",
+        "position": "Operations and Marketing/Office Dog Mom",
+        "image": "img/Headshots RE Next - Small/Meredith Guarco - small.jpeg",
+        "bio": "Meredith is originally from New York and moved to Denver with her husband three years ago. She is currently pursuing a Masters in Counseling at CU Denver, but loves working for such an amazing company that allows her the flexibility to attend classes and write endless amounts of papers. Fun Fact: She runs 50 and 100-mile races and hopes to make it into the Leadville 100 next year."
+    },
+    {
+        "name": "Nils Thingvall",
+        "position": "Sr. Developer",
+        "image": "img/Headshots RE Next - Small/Nils Thingvall - small.jpeg",
+        "bio": "Originally a mild-mannered Oregonian, Nils Thingvall has evolved into a senior developer at RealEyes. Nils had RealEyes chief David Hassoun as a professor at the University of Denver, laying the groundwork for joining forces later to make cool interactive video apps. Aside from coding, Nils is a boardgame geek, hiker, and likes to cook for his wife and two kids. Sometimes he brings the leftovers in to the office to ensure everyone maintains a good amount of body fat for braving the winter cold. (Also, he brings donuts to the office for all employee birthdays... and for that, we are forever grateful! 🍩 = ❤️)"
+    },
+    {
+        "name": "Paula Gettman",
+        "position": "Sr. Customer Success Manager",
+        "image": "img/Headshots RE Next - Small/Paula Gettman - small.jpeg",
+        "bio": "Paula grew up on a farm in North Eastern Colorado where the motto is \"No, it's not Kansas\". She continues to keep several sets of \"chore\" clothes on hand and still drives a stick-shift. An avid sports fan, Paula got especially attached to football at the tender age of 4. She thinks the season is too short and dreams of being a Tight End someday. She speaks and reads 3 Languages: English, Sarcasm, and Body. Away from work, she enjoys writing up SNL skits that are often inspired by her time spent with her family and loves ice cream because its builds strong bones. She loves working at RealEyes because she gets to work alongside bright and driven people everyday."
+    },
+    {
+        "name": "Vicky Chen",
+        "position": "Director of Account Management",
+        "image": "img/Headshots RE Next - Small/Vicky Chen - small.jpeg",
+        "bio": "Born in Taiwan, but has lived in Colorado most of her life, Vicky has known David since high school and was recruited by him while vacationing together in Taiwan & Japan! Vicky joined the RealEyes team in 2008 to lead Accounting & Finance efforts due to her background in Taxation. Since then, she moved on to tackle QA testing for RealEyes, and over the past year she has transitioned to Account Management. She enjoys gaming, binging tv shows, hanging out with friends and family, and has a sassy Shiba Inu dog named Yuuki."
+    },
+    {
+        "name": "Steven",
+        "position": "Android Developer",
+        "image": "img/Headshots RE Next - Small/Steven Cisneros - small.jpeg",
+        "bio": "Having grown up in Northern Colorado, you can find Steven enjoying the mountains, whether on his bike in the summer or his snowboard in the winter. He competed in small air snowboarding while attending CSU, is an avid collector of vinyl records, and suffers from a moderate obsession with shoes (mostly Yeezy’s and Adidas). His favorite movie is Reddick and his least favorite drink is coffee, despite his Colombian roots."
+    },
+    {
+        "name": "Kobi Heider",
+        "position": "QA Engineer",
+        "image": "img/Headshots RE Next - Small/Kobi Heider - small.jpeg",
+        "bio": "A Colorado native, Kobi is the youngest member of the RealEyes team (though you wouldn’t know it by looking at his work). He enjoys building PC’s and playing the latest and greatest video games. In the winter you can find him in the powder, snowboarding down some of Colorado’s best hills. In the warmer months he spends his time standup paddle boarding and camping whenever possible. He’s a fellow ramen feen (like many of us) and also frequents many of Denver’s best sushi spots. Along with contributing great work to our QA team, he also supplies his office with good music - including The Wombats, Spill Canvas, and Weezer."
     }
 ]

@@ -3,20 +3,21 @@ title: 'Home'
 date: 2018-02-12T15:37:57+07:00
 heroHeading: Stream It
 heroSubheading: Like You Mean It.
-heroServiceOne: Livestream at Scale
-heroServiceTwo: App Development
-heroServiceThree: Bespoke Platform Solutions
-heroBackground: https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg
+heroServiceOne: Livestream Solutions
+heroServiceTwo: Bespoke App Development 
+heroServiceThree: Media Workflow Intelligence
+# heroBackground: https://image.shutterstock.com/z/stock-photo-american-football-player-jumps-and-catches-the-ball-in-flight-in-professional-sport-stadium-1021023313.jpg
+heroBackground: /img/Final Images/Football Play (Mobile Hero 2) - small.jpg
 ---
 
-<div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
-    <div>
+<div>
+    <div id="liveStream">
     {{< content-strip-right "/homepage" "livestream" >}}
     </div>
-    <div>
+    <div id="bespoke">
     {{< content-strip-left "/homepage" "bespoke" >}}
     </div>
-    <div>
+    <div id="workflow">
     {{< content-strip-right "/homepage" "workflow" >}}
     </div>
 </div>

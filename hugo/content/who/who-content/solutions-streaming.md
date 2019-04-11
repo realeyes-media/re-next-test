@@ -3,20 +3,29 @@ title: 'Solutions Streaming'
 date: 2018-12-06T09:29:16+10:00
 button: ''
 weight: 4
-mobileHeading: LIVE STREAMING PLATFORM SOLUTIONS
-heading: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+mobileHeading: LIVE STREAMING SOLUTIONS
+heading: ADVANCED INTERACTIVE LIVE STREAMING SOLUTIONS
 class: streaming solution hidden
 ---
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+Our customers trust us to build solutions for the largest live streaming events in the world. For over 10 years, we have proven our ability to overcome the most complex challenges in live streaming at scale. We innovate and co-create solutions with our customers to be on the forefront of live streaming technology.
 <br><br>
 
-**We specialize in:**
+**Key Features:**
 
-  * <span>blah bloo blee</span>
-  * <span>blah?!</span>
-  * <span>jake the dog</span>
-  * <span>and finn the human</span>
-  * <span>We'll have fun that will never end</span>
+  * Ultra low latency, complex data management, and functionality for recording
+  * Multi user interactions
+  * 2nd screen connectivity
+  * Post processing
+  * Complex api integrations
+  * Full application systems for scheduling and management requiring challenging solutions
+  * Multi-channel live video recording, In-browser clipping, and annotation of video
+  * CMS user interface
+
+**Clients:**
+
+  * EA Games
+  * Meeting One
+  * Adobe
+  * US Government
+  * Vevo

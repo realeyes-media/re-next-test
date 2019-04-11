@@ -14,40 +14,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include media-breakpoint-up(xs) {
-      flex-direction: column;
-      color: white;
-      margin-left: 15%;
-    }
-    @include media-breakpoint-up(sm) {
-      flex-direction: column;
-      color: white;
-      margin-left: 15%;
-    }
-    @include media-breakpoint-up(md) {
-      flex-direction: column;
-      color: white;
-      margin-top: 13%;
-      justify-content: space-between;
-      font-size: 13px;
-      margin-left: 15%;
-    }
+    margin-top: 13%;
+    margin-left: 15%;
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
       margin-top: 5%;
       font-size: 13px;
-      width: 100%;
-      margin-left: 0%;
     }
 
     a {
       @include media-breakpoint-up(xs) {
         padding-bottom: 12%;
+        padding-top: 20%;
       }
       @include media-breakpoint-up(sm) {
         padding-bottom: 12%;
-        padding-right: 2%;
+        padding-top: 0;
+      }
+      @include media-breakpoint-up(md) {
+        padding-bottom: 12%;
+        padding-top: 0;
       }
       color: white;
       text-decoration: none;
@@ -63,11 +50,12 @@
         padding-right: 2%;
         padding-left: 0%;
       }
-      @include media-breakpoint-up(xs) {
-        padding-left: 7%;
+      @include media-breakpoint-down(xs) {
+        padding-left: 0%;
+        min-width: 40px;
       }
         @include media-breakpoint-up(sm) {
-          padding-left: 47px;
+          // padding-right: 37px;
         }
         color: white;
         text-decoration: none;
@@ -145,6 +133,24 @@
   color: #919191;
 }
 
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.typedtextContainer {
+  color: white;
+  margin: 0 auto;
+  height: 132px;
+  font-size: 30px;
+  animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
 
 @include media-breakpoint-up(xs) {
   .hr {
@@ -160,6 +166,7 @@
     position: absolute;
     margin-left: 7vw;
     border: solid 2px white;
+    margin-top: 8rem;
   }
 
   .flex-container {
@@ -199,10 +206,11 @@
 
   .socialButtons {
     position: relative;
-    left: 58%;
+    left: 51%;
+    display: inline-flex;
     @media (max-width: 446px) {
       display: inline-flex;
-      padding-right: 2%;
+      padding-left: 2%;
     }
   }
 
@@ -210,39 +218,6 @@
     color: #919191;
   }
 
-  .line-1{
-    position: relative;
-    top: 50%;
-    width: 11rem;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 1.8rem;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    color: white;
-    bottom: 0rem;
-    top: 1rem;
-    margin-left: 27%;
-}
-
-.type-writer {
-  margin-bottom: 0rem;
-  margin-top: 0.4rem;
-}
-
-.mainTitle {
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 73%;
-  right: 0rem;
-}
-
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 50%;}
-}
 }
 
 @include media-breakpoint-up(sm) {
@@ -261,6 +236,7 @@
     position: absolute;
     margin-left: 7%;
     border: solid 2px white;
+    margin-top: 8rem;
   }
 
   .fa {
@@ -388,11 +364,11 @@ to{width: 38%;}
     display: flex;
     position: relative;
     white-space: nowrap;
-    margin-top: 78%;
+    margin-top: 48%;
     margin-left: 0%;
     font-size: 13px;
-    right: 20%;
-    left: -21%;
+    right: 27%;
+    left: -34%;
   }
 
   .fa-facebook {
@@ -406,7 +382,7 @@ to{width: 38%;}
 
 .socialButtons {
   position: relative;
-  left: 72%;
+  left: 59%;
   margin-top: 8%;
 }
 
@@ -432,17 +408,38 @@ to{width: 38%;}
     transform: translateY(-50%);
     color: white;
     bottom: 3.2rem;
+    animation-iteration-count: infinite;
+}
+
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 infinite both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+  animation-duration: 6s;
 }
 
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 12em;
+  }
+  100% {  /* 50% of this animation is now a pause */
+    width: 12em;
+  }
 }
 
 @-webkit-keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+  0% {
+    width: 0;
   }
+  50% {
+    width: 11.8em;
+  }
+  100% {  /* 50% of this animation is now a pause */
+    width: 11.8em;
+  }
+}
 
 .mainTitle {
   color: white;
@@ -503,6 +500,7 @@ to{width: 38%;}
       color: #919191;
         left: 0%;
         margin-top: 0%;
+        right: 5%;
     }
 
     .fa-twitter {
@@ -527,6 +525,7 @@ to{width: 38%;}
       color: white;
       bottom: 3.8rem;
       margin-left: 0rem;
+      animation-iteration-count: infinite;
   }
 
   .mainTitle {
@@ -543,14 +542,34 @@ to{width: 38%;}
     margin-right: 30rem;
   }
 
+  .anim-typewriter{
+    animation: typewriter 2s steps(44) 1s 1 infinite both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+    animation-duration: 6s;
+  }
+
   @keyframes typewriter{
-    from{width: 0;}
-    to{width: 35rem;}
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 12em;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+    }
   }
 
   @-webkit-keyframes typewriter{
-  from{width: 0;}
-  to{width: 50vw;}
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 12em;
+    }
+    100% {  /* 50% of this animation is now a pause */
+      width: 12em;
+    }
 }
 }
 
@@ -558,15 +577,6 @@ to{width: 38%;}
 
 }
 
-
-.anim-typewriter{
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
 
 .bottom-container {
   width: 94%;

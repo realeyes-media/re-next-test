@@ -3,8 +3,6 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-blend-mode: overlay;
-  background-color: black;
-  height: 100vh;
   position: relative;
 
 
@@ -46,6 +44,17 @@
     height: inherit;
   }
 
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3px;
+    display: inline-block;
+    margin: 0 13px 0 13px;
+  }
+
   .hero-text {
     top: 0;
     flex: 0;
@@ -56,7 +65,7 @@
     h1 {
       padding-bottom: 1rem;
       font-size: 2.5rem;
-      font-family: Helvetica;
+      font-family: $font-family-base;
       font-weight: bold;
 
       @include media-breakpoint-up(md) {
@@ -86,22 +95,21 @@
     }
   }
 
+
   .hero-text-video {
     flex: 0;
     color: #ffffff;
     z-index: 1;
     position: absolute;
-    // bottom: 20%;
     margin-left: 1rem;
 
     @include media-breakpoint-down(sm) {
-      // bottom: 20%;
       margin-right: 9rem;
     }
 
     h1 {
       margin-bottom: 0;
-      font-family: Helvetica;
+      font-family: $font-family-base;
       font-weight: bold;
       font-size: 5.5vw;
 
@@ -113,7 +121,6 @@
       &.hero-header-green {
         color: #50E3C2;
       }
-
     }
 
     h2 {
@@ -127,18 +134,41 @@
       }
     }
 
-    p {
+    .section-tags {
       padding-top: 20px;
-      font-size: 1.125rem;
-      line-height: 1.3;
-      font-weight: 700;
-      font-size: 2vw;
+    }
 
+    .header-links {
+      line-height: 30px;
       @include media-breakpoint-down(xs) {
-        font-size: 3vw;
+        text-decoration: underline;
+        color: white;
       }
     }
+
+    .header-links:hover {
+      @include media-breakpoint-up(xs) {
+        color: white;
+      }
+
+      @include media-breakpoint-up(lg) {
+        color: #50E3C2;
+      }
+    }
+
+
+  a {
+    color: white;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 2vw;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 5vw;
+    }
   }
+}
 
   .hero-down {
     flex: 0;
@@ -167,6 +197,13 @@
   height: 225px;
 }
 
+.hero-image-setheight-lg {
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1vh;
+}
+
 .hero-image-blend-overlay {
   background-blend-mode: overlay;
 }
@@ -175,6 +212,7 @@
   position: relative;
   z-index: 0;
 }
+
 //**** Landing Page Hero Styles ****
 .landing-page-wrapper {
   .hero-image {
@@ -182,10 +220,9 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-blend-mode: overlay;
-    background-color: black;
     height: 100vh;
     position: relative;
-
+    overflow: hidden;
 
 
     #hero-video-container {
@@ -194,8 +231,9 @@
       left: 0;
       width: 100vw;
       height: 100vh;
+      background-color: black;
 
-      video {
+      .objectFitVideo {
         object-fit: cover;
         box-sizing: border-box;
         width: 100vw;
@@ -203,6 +241,23 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @media (min-width: 1920px) {
+          height: 70vh;
+        }
+
+        @media (min-width: 3250px) {
+          height: 1vh;
+          top: 15%;
+        }
+
+        @media (min-width: 4200px) {
+          top: 5%;
+        }
+      }
+      .noObjectFitVideo {
+        background-size: cover;
+        background-position: center center;
 
         @media (min-width: 1920px) {
           height: 70vh;
@@ -249,7 +304,7 @@
       h1 {
         padding-bottom: 1rem;
         font-size: 2.5rem;
-        font-family: Helvetica;
+        font-family: $font-family-base;
         font-weight: bold;
 
         @include media-breakpoint-up(md) {
@@ -285,11 +340,11 @@
       z-index: 1;
       position: absolute;
       bottom: 10%;
-      margin-left: 1rem;
+      margin-left: 0rem;
 
       @include media-breakpoint-down(sm) {
         bottom: 10%;
-        margin-right: 9rem;
+        margin-right: 5rem;
       }
       @media (min-width: 1920px) {
         bottom: 10%;
@@ -299,9 +354,26 @@
         bottom: 10%;
       }
 
+      .header-links {
+        line-height: 30px;
+        @include media-breakpoint-down(xs) {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+
+      .header-links:hover {
+        @include media-breakpoint-up(xs) {
+          color: white;
+        }
+        @include media-breakpoint-up(lg) {
+          color: #50E3C2;
+        }
+      }
+
       h1 {
         margin-bottom: 0;
-        font-family: Helvetica;
+        font-family: $font-family-base;
         font-weight: bold;
         font-size: 5.5vw;
 
@@ -392,7 +464,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+      background-image: linear-gradient(to bottom, transparent 25%, black 100%);
     }
   }
 }

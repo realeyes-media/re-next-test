@@ -7,18 +7,19 @@
 <div class="servicesDesktop fontFamily">
   <div class="strip">
     <div class="row">
-      <div class="col-4 pt-20 pb-20 text-white" style="background-color: black">
+      <div class="col-5 text-white serviceMakeTaller">
         <p class="serviceName">{{ .Params.service }}</p>
         <div class="serviceRightText">
           <h2 class="serviceHeader">{{ .Params.header }}</h2>
           <p class="serviceContent">{{ .Params.description }}</p>
-          {{ if .Params.button }}
+           <!-- BUTTONS ON SERVICES ARE NOT MVP -->
+           {{ if .Params.CHANGETObuttonWHENCONTENTAVAILABLE }}
           <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
               class="serviceIcon text-primary" src="/img/svg/right-arrow.svg"></a>
           {{ end }}
         </div>
       </div>
-      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-8 pt-20 pb-20"
+      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-7 pt-20 pb-20"
         style="background-image: url(' {{ .Params.background | relURL }} ');">
       </div>
     </div>
@@ -28,27 +29,26 @@
 
 
 <div class="servicesMobile fontFamily">
-  <div style="background-color: black">
-    <div class="">
-      <div class="text-white">
-        <p class="">{{ .Params.service }}</p>
-        <div class="servicesMobileText">
-          <h2 class="">{{ .Params.header }}</h2>
-          <img class="serviceImage text-center" src=" {{ .Params.background | relURL }}" alt="" srcset="">
-          <p class="">{{ .Params.description }}</p>
-          {{ if .Params.button }}
-          <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}
-            <img class="serviceIcon text-primary" src="/img/svg/right-arrow.svg">
-
-          </a>
-          {{ end }}
+  <div>
+      <div class="">
+        <div class="text-white">
+          <p class="servicesMobileName">{{ .Params.service }}</p>
+          <div class="servicesMobileText">
+            <h2 class="servicesMobileHeader">{{ .Params.header }}</h2>
+            <img class= "serviceImage text-center" src=" {{ .Params.background | relURL }}" alt="" srcset="">
+            <p class="servicesMobileDescription">{{ .Params.description }}</p>
+            {{ if .Params.CHANGETObuttonWHENCONTENTAVAILABLE }}
+            <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+              class="serviceIcon text-primary" src="/img/svg/right-arrow.svg"></a>
+              {{ end }}
+            </div>
+          </div>
+          <div class=""
+          style="background-image: url(' {{ .Params.background | relURL }} ');">
         </div>
-      </div>
-      <div class="" style="background-image: url(' {{ .Params.background | relURL }} ');">
       </div>
     </div>
   </div>
-</div>
 
 
 {{ end }}

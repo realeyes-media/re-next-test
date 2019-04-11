@@ -2,24 +2,46 @@
 title: 'EA Games'
 subtitle: PLATFORMS / APPLICATIONS
 weight: 5
-date: 2018-02-10T11:52:18+07:00
-heroHeading1: 'A Pivotal Year'
+# date: 2018-02-10T11:52:18+07:00
+heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'EA & REALEYES'
-heroBackground: 'images/jason-blackeye-1191801-unsplash.jpg'
-description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.'
+heroBackground: 'img/Case Studies Thumbs - Small/Homepage - EAGames - small.jpg'
+description: Around-the-clock game testing at EA Games generates enormous amounts of video data. Lacking a unified system or the in-house expertise, EA was unable to capture and analyze their essential game-testing streams. EA chose RealEyes to develop an innovative solution to this tough challenge.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'
 quoteeInfo: 'executive vice president & general manager of digital media, NBC Sports Group'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget risus et est posuere posuere vel at enim. In nec quam at sapien ultrices tincidunt. Nulla a justo gravida, iaculis magna ut, tincidunt elit. Donec mauris est, finibus at est non, mattis varius sem. Nunc dictum libero sed semper porta. Phasellus tempus scelerisque urna, quis egestas magna congue sit amet. Nulla orci erat, accumsan ac ligula nec, maximus tempor lectus. Aenean sagittis massa id facilisis laoreet.
+**Executive summary:**
+In an industry constantly racing to release the latest, hottest new game, streamlining the game-testing process is critical. When a company operates multiple labs across the globe, each with dozens of users and 24/7 game-testing operations, it generates massive amounts of data and video that can be challenging to manage through a single system.
 
-Aliquam porttitor erat id leo tristique, fringilla vehicula nisi suscipit. Quisque gravida interdum semper. Pellentesque aliquet risus non arcu dictum, ut malesuada nisl sollicitudin. In tristique eget enim at tempus. Nam mi nisi, mollis fringilla ante non, aliquet egestas tortor. Donec non neque gravida, pretium dolor id, aliquam lectus. Phasellus fermentum purus a mauris tincidunt, sit amet porttitor ante sollicitudin. Mauris quis aliquet nunc, vitae tempor leo. In hac habitasse platea dictumst. Praesent ut tempor leo. Integer mattis nisi nec luctus ultrices. Cras in nibh in libero euismod posuere a vel lectus. Curabitur vitae ligula efficitur, sagittis nibh vitae, sagittis metus. Nullam lacinia, orci at cursus volutpat, tellus metus suscipit urna, a sollicitudin tellus orci eget nunc. Proin quis diam congue, placerat orci vitae, euismod augue.
+That was the case for EA Games, whose previous solutions involved a time-consuming manual process of managing and recording video tests without any special features for users or administrators. Their goal was to improve efficiency, streamline their abundant data, and scale as many locations as necessary.
 
-Cras iaculis rhoncus nisi id commodo. Nunc sed finibus erat. Donec pellentesque, nibh vestibulum eleifend tempor, risus nibh mattis tortor, a efficitur magna mauris a nulla. Proin congue tincidunt urna a hendrerit. Fusce leo dolor, feugiat in finibus sed, fermentum et eros. Mauris fringilla auctor odio, vulputate efficitur neque tempus sed. Nam non auctor erat, sed sollicitudin nisl. Integer vulputate imperdiet porta.
+**To help EA Games achieve their goals, RealEyes designed and executed the following:**
 
-Mauris ac ornare eros. Integer in tellus vel nisi laoreet mollis. Suspendisse potenti. Nullam congue dapibus tortor viverra porta. Donec mollis ligula vitae nisi lobortis sollicitudin. Praesent congue turpis id quam convallis, eget tempus mauris molestie. Integer lectus mauris, mattis quis massa nec, bibendum pellentesque elit. Nullam hendrerit fringilla aliquet. Nunc aliquam lobortis lorem et tristique. Nunc nisl mi, aliquet a mattis sit amet, faucibus at metus. Sed at dolor vitae enim lobortis commodo ac nec nunc. Donec rutrum semper odio, ac lobortis tellus dictum ut. Quisque varius rhoncus urna pulvinar dictum.
+* Built a complete application intended to streamline and manage the client’s online game-testing data
+* Developed seven brand-new components designed to streamline and ease the user and administrator experience
+* Scaled the new application across five global offices with 30 user stations each
 
-Ut fringilla lorem sollicitudin luctus vehicula. Fusce viverra lorem ac consequat cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus eu augue a libero eleifend viverra. Morbi eu mauris malesuada, pretium erat sed, mattis urna. Quisque tempor, libero vitae venenatis tristique, mi ex varius ipsum, non ornare lorem turpis eu purus. In in odio malesuada libero porttitor tincidunt. Mauris vestibulum sed velit vel fermentum. Nam felis urna, pretium et tincidunt et, cursus et felis. Vivamus ac sem erat. Morbi placerat odio non sagittis ullamcorper.
+------------------------------------------------------------------------
+
+EA required a solution to view and manage live and on-demand video recordings of their game-testing sessions, which are created by game-testers using software in a lab environment. EA needed a way to record what their game testers were doing and subsequently manage the data from those recordings.
+
+The biggest challenge was that their existing system—which was a disjointed combination of free and paid services—was extremely limited in both volume and capabilities. Their operational flow had been a largely manual process that was hindered by a lack of the right tools that would handle the complexities of meeting live with real time monitoring and on-demand video recording.
+
+In order for EA Games to remain industry leaders, they knew they needed to test and improve their product faster than the competition. Around-the-clock game testing at labs worldwide generates enormous amounts of video data, and without a unified system or the in-house expertise, they were unable to capture and analyze their essential game-testing streams.
+
+EA needed to partner with a company that would help them create a solution to address their challenges for streamlining their workflow scale, managing their products, content and users, and enhancing users’ and product owners’ capabilities.
+
+**How RealEyes Helped:**
+
+After analyzing EA’s goals and challenges, RealEyes tapped their extensive streaming video experience and application development experience to devise a comprehensive solution. First, we developed a set of wireframes for a new interface to show the design of the application so EA could approve the plan. RealEyes also developed wireframes for the new interface to manage the game-testing workflow, much like a CMS for the content that was produced for recording videos, and created a diagram to help manage aspects of the workflow.
+
+Next, RealEyes began to implement an entirely new solution for EA Games that allowed them to record their game-testing videos and then stream the videos to a newly created application. This included separate components for users who would browse products as well as administrators who needed the ability to edit key areas of the interface, including managing labs, scheduling, products and users.
+
+The application RealEyes created recorded all the live video streams for EA Games with the ability to monitor them live or to view them later on-demand. Once the content was recorded, managers could perform basic editing and clipping of the recordings and annotate these recordings with notes viewable by authorized users collaborating on those recordings.
+
+RealEyes then took it a step further. Instead of manually setting up what happens during a game, RealEyes created an automatic scheduler for testing rooms and users. Once EA Games set up the room for the first time, all they had to do was begin testing. It automatically categorized everything, and users could just jump in and start testing. RealEyes implemented smart logic to help buffer the schedule if users went over their allotted time. Content was always associated in an intelligent manner, and everything was kept organized.
+
+On top of that, RealEyes added in the ability for users to communicate in the system via chat (integrated), added advanced user controls for clipping and gave EA Games more insight to go further with their data. Product owners could now schedule sessions and add users with greater transparency. Game developers could watch users and chat through the app, and create a clip of up to 10 seconds to isolate whatever they wanted to see.

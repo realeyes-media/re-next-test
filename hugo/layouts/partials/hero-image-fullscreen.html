@@ -7,10 +7,34 @@
           <span class="hero-section">{{ .section }}</span>
           <h1 class="hero-header-green">{{ .heading }}</h1>
           <h1>{{ .subheading }}</h1>
-          <p>{{ .serviceOne }} &nbsp; &bull; &nbsp; {{ .serviceTwo }} &nbsp; &bull; &nbsp; {{ .serviceThree }}</p>
+          <div class="section-tags">
+          <a class="header-links" href="#liveStream">{{ .serviceOne }}</a> <span class="dot"></span> <a class="header-links" href="#bespoke">{{ .serviceTwo }}</a> <span class="dot"></span> <a class="header-links" href="#workflow">{{ .serviceThree }}</a>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+          event.preventDefault();
+    
+
+          var hash = this.hash;
+    
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+</script>
 {{ .Site.BaseURL }}

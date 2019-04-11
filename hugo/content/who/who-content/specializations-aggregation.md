@@ -6,4 +6,4 @@ weight: 3
 heading: Media Aggregation
 ---
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Working across local, state and federal governments, as well as law enforcement, and enterprise we help agencies aggregate and draw insights from large video archives.
