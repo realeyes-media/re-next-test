@@ -215,7 +215,7 @@ const showServicesOnResize = () => {
 const showHideTaglinesOnLoad = () => {
   if (window.innerWidth >= 576) {
     const elem = document.getElementById("section-tags")
-    elem.style.display = "block";
+    elem.style.display = "flex";
   } else {
     const elem = document.getElementById("section-tags-mobile");
     elem.style.display = "flex"
@@ -229,7 +229,7 @@ const showHideTaglinesOnResize = () => {
     elemDesktop.style.display = "none";
     elemMobile.style.display = "flex";
   } else {
-    elemDesktop.style.display = "block";
+    elemDesktop.style.display = "flex";
     elemMobile.style.display = "none";
   }
 }

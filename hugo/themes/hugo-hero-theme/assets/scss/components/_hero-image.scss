@@ -128,8 +128,12 @@
       padding-top: 20px;
       width: 100vw;
       font-size: 2vw;
+      align-items: center;
       @include media-breakpoint-down(xs) {
         font-size: 5vw;
+      }
+      .bullet {
+        font-size: 2.5vw;
       }
     }
 
