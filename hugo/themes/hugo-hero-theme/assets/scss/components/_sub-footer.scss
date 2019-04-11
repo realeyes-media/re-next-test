@@ -334,6 +334,7 @@ to{width: 38%;}
     border-width: 1px;
     margin-top: 6rem;
     width: 88%;
+    left: 5%;
     position: absolute;
     border: solid 2px white;
   }
@@ -455,7 +456,8 @@ to{width: 38%;}
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 87%;
+      width: 89%;
+      left: 5%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
@@ -482,7 +484,7 @@ to{width: 38%;}
       color: white;
       white-space: nowrap;
       margin-top: 4%;
-      margin-left: 12%;
+      margin-left: 9%;
       font-size: 13px;
       position: unset;
       right: 0;
@@ -498,8 +500,47 @@ to{width: 38%;}
       color: #919191;
         left: 13%;
         margin-top: 0%;
-      @media (max-width: 1024px) {
+        @media (max-width: 1013px) {
+          left: 4%;
+        }
+      @media (min-width: 1016px) {
       left: 4%;
+    }
+      @media (min-width: 1024px) {
+      left: 4%;
+    }
+    @media (max-width: 1110px) {
+      left: 6%;
+    }
+    // @media (min-width: 1110px) {
+    //   left: 6%;
+    // }
+    @media (min-width: 1120px) {
+      left: 6%;
+    }
+    @media (min-width: 1130px) {
+      left: 6%;
+    }
+    @media (min-width: 1140px) {
+      left: 6%;
+    }
+    @media (min-width: 1150px) {
+      left: 6%;
+    }
+    @media (min-width: 1156px) {
+      left: 6%;
+    }
+    @media (min-width: 1160px) {
+      left: 8%;
+    }
+    @media (min-width: 1268px) {
+      left: 10%;
+    }
+    @media (min-width: 1281px) {
+      left: 10%;
+    }
+    @media (min-width: 1289px) {
+      left: 11%;
     }
     }
 
