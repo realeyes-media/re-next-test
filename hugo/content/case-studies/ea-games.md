@@ -7,7 +7,7 @@ heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'EA & REALEYES'
 heroBackground: 'img/Case Studies Thumbs - Small/Homepage - EAGames - small.jpg'
-description: In an industry constantly racing to release the latest, hottest new game, streamlining the game-testing process is critical. When a company operates multiple labs across the globe, each with dozens of users and 24/7 game-testing operations, it generates massive amounts of data and video that can be challenging to manage through a single system.
+description: Around-the-clock game testing at EA Games generates enormous amounts of video data. Lacking a unified system or the in-house expertise, EA was unable to capture and analyze their essential game-testing streams. EA chose RealEyes to develop an innovative solution to this tough challenge.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'
 quoteeInfo: 'executive vice president & general manager of digital media, NBC Sports Group'
