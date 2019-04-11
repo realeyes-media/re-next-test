@@ -350,15 +350,7 @@
       margin-left: 0rem;
 
       @include media-breakpoint-down(sm) {
-        bottom: 10%;
         margin-right: 5rem;
-      }
-      @media (min-width: 1920px) {
-        bottom: 10%;
-      }
-
-      @media(min-width: 4200px) {
-        bottom: 10%;
       }
 
       .header-links {
