@@ -1,4 +1,10 @@
 .page-who {
+    ul {
+        @include media-breakpoint-down(sm) {
+            padding-left: 1.125rem;
+        }
+        list-style-type:disc;
+    }
     .absolute-who-image {
         display: none;
         @include media-breakpoint-up(xs) {

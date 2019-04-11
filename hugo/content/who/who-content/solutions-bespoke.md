@@ -20,6 +20,7 @@ With skill sets ranging from user experience design to full stack development, o
   * Collaboration/sharing features
   * Robust searchability and discovery of related content
 
+<br><br>
 **Clients:**
 
   * EA Games
