@@ -135,11 +135,18 @@
     }
 
     .section-tags {
+      display: none;
+      padding-top: 20px;
+    }
+
+    .section-tags-mobile {
+      display: none;
+      flex-direction: column;
       padding-top: 20px;
     }
 
     .header-links {
-      line-height: 30px;
+      // line-height: 30px;
       @include media-breakpoint-down(xs) {
         text-decoration: underline;
         color: white;
@@ -355,7 +362,7 @@
       }
 
       .header-links {
-        line-height: 30px;
+        line-height: .75rem;
         @include media-breakpoint-down(xs) {
           text-decoration: underline;
           color: white;

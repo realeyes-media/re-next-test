@@ -7,9 +7,14 @@
           <span class="hero-section">{{ .section }}</span>
           <h1 class="hero-header-green">{{ .heading }}</h1>
           <h1>{{ .subheading }}</h1>
-          <div class="section-tags">
+          <div id="section-tags" class="section-tags">
           <a class="header-links" href="#liveStream">{{ .serviceOne }}</a> <span class="dot"></span> <a class="header-links" href="#bespoke">{{ .serviceTwo }}</a> <span class="dot"></span> <a class="header-links" href="#workflow">{{ .serviceThree }}</a>
         </div>
+        <div id="section-tags-mobile" class="section-tags-mobile">
+          <a class="header-links" href="#liveStream">{{ .serviceOne }}</a><br><a class="header-links" href="#bespoke">{{ .serviceTwo }}</a><br><a class="header-links" href="#workflow">{{ .serviceThree }}</a>
+        </div>
+
+
         </div>
       </div>
     </div>
