@@ -208,8 +208,6 @@
   }
 
   .socialButtons {
-    // position: relative;
-    // left: 51%;
     display: inline-flex;
     margin: 0 auto;
   }
@@ -360,7 +358,6 @@ to{width: 38%;}
     display: flex;
     position: relative;
     white-space: nowrap;
-    // margin-top: 53%;
     margin-left: 0%;
     font-size: 13px;
     right: 27%;
@@ -423,7 +420,7 @@ to{width: 38%;}
   50% {
     width: 12em;
   }
-  100% {  /* 50% of this animation is now a pause */
+  100% { 
     width: 12em;
   }
 }
@@ -435,7 +432,7 @@ to{width: 38%;}
   50% {
     width: 11.8em;
   }
-  100% {  /* 50% of this animation is now a pause */
+  100% {  
     width: 11.8em;
   }
 }
