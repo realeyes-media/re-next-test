@@ -66,6 +66,7 @@ window.onload = () => {
   if (homepage) {
     addRemoveHeroVideoOnLoad()
     showServicesOnLoad()
+    showHideTaglinesOnLoad()
   }
 }
 
@@ -74,6 +75,7 @@ window.onresize = () => {
   if (homepage) {
     addRemoveHeroVideoOnResize()
     showServicesOnResize()
+    showHideTaglinesOnResize()
   }
 }
 
@@ -207,5 +209,27 @@ const showServicesOnResize = () => {
     for (const elem of servicesElemsDesktop) {
       elem.style.display = "block"
     }
+  }
+}
+
+const showHideTaglinesOnLoad = () => {
+  if (window.innerWidth >= 576) {
+    const elem = document.getElementById("section-tags")
+    elem.style.display = "flex";
+  } else {
+    const elem = document.getElementById("section-tags-mobile");
+    elem.style.display = "flex"
+  }
+}
+
+const showHideTaglinesOnResize = () => {
+  const elemDesktop = document.getElementById("section-tags");
+  const elemMobile = document.getElementById("section-tags-mobile");
+  if (window.innerWidth < 576) {
+    elemDesktop.style.display = "none";
+    elemMobile.style.display = "flex";
+  } else {
+    elemDesktop.style.display = "flex";
+    elemMobile.style.display = "none";
   }
 }

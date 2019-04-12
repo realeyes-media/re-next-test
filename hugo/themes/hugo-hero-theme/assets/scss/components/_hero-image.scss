@@ -44,17 +44,6 @@
     height: inherit;
   }
 
-  .dot {
-    height: 8px;
-    width: 8px;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    bottom: 3px;
-    display: inline-block;
-    margin: 0 13px 0 13px;
-  }
-
   .hero-text {
     top: 0;
     flex: 0;
@@ -135,11 +124,27 @@
     }
 
     .section-tags {
+      display: none;
+      padding-top: 20px;
+      width: 100vw;
+      font-size: 2vw;
+      align-items: center;
+      @include media-breakpoint-down(xs) {
+        font-size: 5vw;
+      }
+      .bullet {
+        font-size: 2.5vw;
+      }
+    }
+
+    .section-tags-mobile {
+      display: none;
+      flex-direction: column;
       padding-top: 20px;
     }
 
     .header-links {
-      line-height: 30px;
+      // line-height: 30px;
       @include media-breakpoint-down(xs) {
         text-decoration: underline;
         color: white;
@@ -343,19 +348,11 @@
       margin-left: 0rem;
 
       @include media-breakpoint-down(sm) {
-        bottom: 10%;
         margin-right: 5rem;
-      }
-      @media (min-width: 1920px) {
-        bottom: 10%;
-      }
-
-      @media(min-width: 4200px) {
-        bottom: 10%;
       }
 
       .header-links {
-        line-height: 30px;
+        line-height: .5rem;
         @include media-breakpoint-down(xs) {
           text-decoration: underline;
           color: white;
