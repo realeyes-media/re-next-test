@@ -42,7 +42,7 @@
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" required>
+            <input class="form-control" type="email" id="email" name="email" required>
               <div class="invalid-feedback">
                   Please enter valid email.
                 </div>
@@ -62,8 +62,8 @@
                 </div>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
+            <label for="subject">Details</label>
+            <textarea class="form-control" id="subject" name="subject"
               style="height:200px" required></textarea>
                 <div class="invalid-feedback">
                     Please fill out subject.
@@ -96,11 +96,24 @@
       var forms = document.getElementsByClassName('needs-validation');
       var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
+      var boolean = false;
+    var phoneNumber = document.forms["myForm"]["phone"].value;
+    if (phoneNumber.length < 10) {
+      boolean = true;
+    } else {
+      boolean = false;
+    }
       if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
       }
+      if (boolean === true) {
+      $('#phoneError').show();
+      } else {
+      $('#phoneError').hide();
+      }
       form.classList.add('was-validated');
+      if (boolean === false) {
       if ($('#myForm').valid() === false) {
         console.log('not valid');
     } else {
@@ -111,6 +124,7 @@
         form.classList.remove('was-validated');
     }, 3000);
     }
+  }
       }, false);
       });
       }, false);

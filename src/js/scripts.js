@@ -97,13 +97,6 @@ $("#myForm").submit(function(e) {
   });
 
   $(".submitButton").click(function() {
-    var phoneNumber = document.forms["myForm"]["phone"].value;
-    if (phoneNumber.length < 10) {
-      $('#phoneError').show();
-      return false;
-    } else {
-      $('#phoneError').hide();
-    }
     $("#myForm").validate({ errorPlacement: function(error, element) {} });
   });
   
