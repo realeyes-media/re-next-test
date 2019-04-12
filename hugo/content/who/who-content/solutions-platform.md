@@ -8,7 +8,7 @@ heading: MEDIA PLATFORM AUGMENTATION & ENHANCEMENT - CUSTOMIZABLE, SCALABLE, REL
 class: platform solution
 ---
 
-We are the go-to experts in tackling hard and complex problems such as ultra low latency at scale. dynamic Ad insertion, multi-CDN delivery, and complex failover strategies for mission critical video streaming.
+We are the go-to experts in tackling hard and complex problems such as ultra low latency at scale, dynamic ad insertion, multi-CDN delivery, and complex failover strategies for mission critical video streaming.
 <br><br>
 
 **Key Features:**
