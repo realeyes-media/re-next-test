@@ -45,13 +45,15 @@
   color: #50e3c2;
   font-weight: 700;
   position: absolute;
-  top: 5%;
+  top: 0%;
   padding-left: 3.5rem;
+  margin-right: -10rem;
+  z-index: 2;
 }
 
 .serviceRightText {
   position: absolute;
-  top: 15%;
+  top: 12%;
   z-index: 2;
   padding-left: 3.5rem;
 
@@ -94,15 +96,16 @@
   color: #50e3c2;
   font-weight: 700;
   position: absolute;
-  margin-left: -.8rem;
-  top: 5%;
-  width: 100%;
+  top: 0%;
+  right: 3.5rem;
+  margin-left: -10rem;
+  z-index: 2;
   text-align: right;
-  padding-right: 3.5rem;
 }
 
 .serviceLeftText {
-  position: relative;
+  position: absolute;
+  top: 5%;
   text-align: right;
   margin-top: 2rem;
   z-index: 2;
@@ -113,16 +116,14 @@
   font-weight: 700;
   position: relative;
   margin-left: -12rem;
-  margin-top: 5rem;
   font-size: 5.5vw;
+  margin-top: 0rem;
 }
 
 @media (min-width: 1200px) {
   .serviceHeaderLeft {
     font-size: 4vw;
     margin-left: -58vw;
-    margin-top: 3.5rem;
-
   }
 }
 
@@ -140,12 +141,12 @@
 
 @media (max-width: 1200px) {
   .serviceMakeTaller {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 325px;
+    padding-bottom: 325px;
   }
 
   .serviceMakeTallerLeft {
-    height: 600px;
+    height: 650px;
   }
 }
 
