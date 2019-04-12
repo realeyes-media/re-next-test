@@ -41,7 +41,6 @@
 }
 
 .serviceName {
-  /* font-size: .75rem; */
   font-size: 1.5rem;
   color: #50e3c2;
   font-weight: 700;
@@ -91,7 +90,6 @@
 }
 
 .serviceNameLeft {
-  /* font-size: .75rem;*/
   font-size: 1.5rem;
   color: #50e3c2;
   font-weight: 700;
