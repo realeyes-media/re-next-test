@@ -172,14 +172,15 @@ const addRemoveHeroVideoOnResize = () => {
 
 const showServicesOnLoad = () => {
   if (window.innerWidth > 768) {
-    const servicesElems = document.getElementsByClassName("servicesMobile")
-    for (const elem of servicesElems) {
-      elem.style.display = "none"
-    }
-  } else {
     const servicesElems = document.getElementsByClassName("servicesDesktop")
     for (const elem of servicesElems) {
-      elem.style.display = "none"
+      elem.style.display = "block"
+    }
+  } else {
+    console.log("sanity check")
+    const servicesElems = document.getElementsByClassName("servicesMobile")
+    for (const elem of servicesElems) {
+      elem.style.display = "block"
     }
   }
 }
@@ -190,17 +191,17 @@ const showServicesOnResize = () => {
 
   if (window.innerWidth < 768) {
     for (const elem of servicesElemsDesktop) {
-      elem.style.display = "none"
+     if (elem.style.display != "none") elem.style.display = "none"
     }
     for (const elem of servicesElemsMobile) {
-      elem.style.display = "block"
+      if (elem.style.display != "block") elem.style.display = "block"
     }
   } else {
     for (const elem of servicesElemsMobile) {
-      elem.style.display = "none"
+      if (elem.style.display != "none") elem.style.display = "none"
     }
     for (const elem of servicesElemsDesktop) {
-      elem.style.display = "block"
+      if (elem.style.display != "block") elem.style.display = "block"
     }
   }
 }
