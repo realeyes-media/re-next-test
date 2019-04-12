@@ -17,7 +17,7 @@
           <form id="myForm" class="needs-validation" novalidate>
           <div class="form-group">
             <label for="help">I would like RealEyes to help with</label>
-            <select class="custom-select form-control" required>
+            <select class="custom-select form-control">
                 <option value="Development and/or Consulting">Development and/or Consulting</option>
                  <option value="Products">Products</option>
                  <option value="Careers">Careers</option>
@@ -49,14 +49,14 @@
           </div>
           <div class="form-group">
             <label for="password">Phone Number</label>
-            <input class="form-control" type="number" id="phone" name="phone" onchange="checkPhone()" onblur="hideMessage()" required>
+            <input class="form-control" type="number" id="phone" name="phone">
               <div id="phoneError" class="invalid-feedback">
                   Please complete phone number.
                 </div>
           </div>
           <div class="form-group">
             <label for="company">Company</label>
-            <input class="form-control" type="text" id="company" name="company" required>
+            <input class="form-control" type="text" id="company" name="company">
               <div class="invalid-feedback">
                   Please fill out company.
                 </div>
@@ -64,7 +64,7 @@
           <div class="form-group">
             <label for="subject">Details</label>
             <textarea class="form-control" id="subject" name="subject"
-              style="height:200px" required></textarea>
+              style="height:200px"></textarea>
                 <div class="invalid-feedback">
                     Please fill out subject.
                   </div>
@@ -89,7 +89,7 @@
     </div>
   </div>
 </div>
-<script>
+<!-- <script>
   function checkPhone() {
     var phoneNumber = document.forms["myForm"]["phone"].value;
     console.log("YOOOOO", phoneNumber);
@@ -100,7 +100,7 @@
     }
   }
 
-</script>
+</script> -->
 <script>
     (function() {
       'use strict';
@@ -108,24 +108,11 @@
       var forms = document.getElementsByClassName('needs-validation');
       var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
-      var boolean = false;
-    var phoneNumber = document.forms["myForm"]["phone"].value;
-    if (phoneNumber.length < 10) {
-      boolean = true;
-    } else {
-      boolean = false;
-    }
       if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
       }
-      if (boolean === true) {
-      $('#phoneError').show();
-      } else {
-      $('#phoneError').hide();
-      }
       form.classList.add('was-validated');
-      if (boolean === false) {
       if ($('#myForm').valid() === false) {
         console.log('not valid');
     } else {
@@ -136,7 +123,6 @@
         form.classList.remove('was-validated');
     }, 3000);
     }
-  }
       }, false);
       });
       }, false);
