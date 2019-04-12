@@ -241,12 +241,26 @@
   font-weight: bold;
 }
 
-.submitButton {
+#submitButton {
   margin-top: 20px;
+  background-color: #2A2F64;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .form-group {
   text-align: left;
+}
+
+.form-label {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+#contactTitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: helvetica;
 }
 
 
