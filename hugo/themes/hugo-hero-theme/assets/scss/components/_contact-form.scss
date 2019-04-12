@@ -265,6 +265,13 @@
   position: relative;
   left: 25.3%;
   padding-bottom: 30px;
+  white-space: nowrap;
+  @media (max-width: 414px) {
+    left: 7%;
+  }
+  @include media-breakpoint-up(md) {
+    left: 25%;
+  }
 }
 
 
