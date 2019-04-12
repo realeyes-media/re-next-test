@@ -17,7 +17,7 @@
           <form id="myForm" class="needs-validation" novalidate>
           <div class="form-group">
             <label for="help">I would like RealEyes to help with</label>
-            <select class="custom-select form-control" required>
+            <select class="custom-select form-control">
                 <option value="Development and/or Consulting">Development and/or Consulting</option>
                  <option value="Products">Products</option>
                  <option value="Careers">Careers</option>
@@ -42,29 +42,29 @@
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" required>
+            <input class="form-control" type="email" id="email" name="email" required>
               <div class="invalid-feedback">
                   Please enter valid email.
                 </div>
           </div>
           <div class="form-group">
             <label for="password">Phone Number</label>
-            <input class="form-control" type="number" id="phone" name="phone" required>
+            <input class="form-control" type="number" id="phone" name="phone">
               <div id="phoneError" class="invalid-feedback">
                   Please complete phone number.
                 </div>
           </div>
           <div class="form-group">
             <label for="company">Company</label>
-            <input class="form-control" type="text" id="company" name="company" required>
+            <input class="form-control" type="text" id="company" name="company">
               <div class="invalid-feedback">
                   Please fill out company.
                 </div>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
-              style="height:200px" required></textarea>
+            <label for="subject">Details</label>
+            <textarea class="form-control" id="subject" name="subject"
+              style="height:200px"></textarea>
                 <div class="invalid-feedback">
                     Please fill out subject.
                   </div>
@@ -89,6 +89,18 @@
     </div>
   </div>
 </div>
+<!-- <script>
+  function checkPhone() {
+    var phoneNumber = document.forms["myForm"]["phone"].value;
+    console.log("YOOOOO", phoneNumber);
+    if (phoneNumber.length < 10) {
+      $('#phoneError').show();
+    } else {
+      $('#phoneError').hide();
+    }
+  }
+
+</script> -->
 <script>
     (function() {
       'use strict';
