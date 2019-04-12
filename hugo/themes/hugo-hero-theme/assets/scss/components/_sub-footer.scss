@@ -16,24 +16,30 @@
     justify-content: space-between;
     margin-top: 13%;
     margin-left: 15%;
+    @include media-breakpoint-up(xs) {
+      margin-top: 0;
+      margin-left: 0;
+      padding-top: 65px;
+    }
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       color: white;
-      margin-top: 5%;
+      margin-top: 4%;
       font-size: 13px;
+      margin-left: 0;
+      padding-top: 0px;
     }
 
     a {
       @include media-breakpoint-up(xs) {
         padding-bottom: 12%;
-        padding-top: 20%;
       }
       @include media-breakpoint-up(sm) {
-        padding-bottom: 12%;
+        padding-bottom: 5%;
         padding-top: 0;
       }
       @include media-breakpoint-up(md) {
-        padding-bottom: 12%;
+        padding-bottom: 0%;
         padding-top: 0;
       }
       color: white;
@@ -44,19 +50,16 @@
     }
 
     .socialButtons a {
-      padding-left: 50px;
+      margin-left: 50px;
       color: #919191;
       @media (max-width: 320px) {
         padding-right: 2%;
         padding-left: 0%;
       }
       @include media-breakpoint-down(xs) {
-        padding-left: 0%;
+        margin-left: 0%;
         min-width: 40px;
       }
-        @include media-breakpoint-up(sm) {
-          // padding-right: 37px;
-        }
         color: white;
         text-decoration: none;
         &:hover {
@@ -117,6 +120,10 @@
       }
     }
   }
+}
+
+.pageLinks {
+  visibility: hidden;
 }
 
 .streamIt {
@@ -190,11 +197,7 @@
     display: flex;
     color: white;
     white-space: nowrap;
-    position: relative;
-    left: 43%;
-    @media (max-width: 437px) {
-      left: 20%;
-    }
+    margin: 0 auto;
   }
 
   .spanButtons {
@@ -205,13 +208,8 @@
   }
 
   .socialButtons {
-    position: relative;
-    left: 51%;
     display: inline-flex;
-    @media (max-width: 446px) {
-      display: inline-flex;
-      padding-left: 2%;
-    }
+    margin: 0 auto;
   }
 
   .fa-twitter {
@@ -267,17 +265,13 @@
 
   .socialButtons {
     position: relative;
-    left: 53%;
-    margin-top: 15%;
+    margin: 0 auto;
     display: inline-flex;
   }
 
   .allRights {
     display: flex;
     white-space: nowrap;
-    margin-left: 59%;
-    margin-top: 0%;
-    left: 1%;
   }
   .spanButtons {
     white-space: nowrap;
@@ -340,6 +334,7 @@ to{width: 38%;}
     border-width: 1px;
     margin-top: 6rem;
     width: 88%;
+    left: 5%;
     position: absolute;
     border: solid 2px white;
   }
@@ -364,11 +359,12 @@ to{width: 38%;}
     display: flex;
     position: relative;
     white-space: nowrap;
-    margin-top: 48%;
     margin-left: 0%;
     font-size: 13px;
     right: 27%;
-    left: -34%;
+    left: -50%;
+    margin: 0 auto;
+    padding-top: 180px;
   }
 
   .fa-facebook {
@@ -383,7 +379,8 @@ to{width: 38%;}
 .socialButtons {
   position: relative;
   left: 59%;
-  margin-top: 8%;
+  margin: 0 auto;
+  color: #919191;
 }
 
 
@@ -424,7 +421,7 @@ to{width: 38%;}
   50% {
     width: 12em;
   }
-  100% {  /* 50% of this animation is now a pause */
+  100% { 
     width: 12em;
   }
 }
@@ -436,7 +433,7 @@ to{width: 38%;}
   50% {
     width: 11.8em;
   }
-  100% {  /* 50% of this animation is now a pause */
+  100% {  
     width: 11.8em;
   }
 }
@@ -459,11 +456,12 @@ to{width: 38%;}
       overflow: hidden;
       border-style: inset;
       border-width: 1px;
-      width: 85%;
+      width: 89%;
+      left: 5%;
       margin-top: 7rem;
       position: absolute;
       border: solid 2px white;
-      margin-left: 9%;
+      margin-left: 6%;
     }
     .flex-container {
       display: flex;
@@ -486,10 +484,12 @@ to{width: 38%;}
       color: white;
       white-space: nowrap;
       margin-top: 4%;
-      margin-left: 19%;
+      margin-left: 9%;
       font-size: 13px;
       position: unset;
       right: 0;
+      padding-top: 0;
+
     }
     .spanButtons {
       white-space: nowrap;
@@ -498,9 +498,47 @@ to{width: 38%;}
 
     .socialButtons {
       color: #919191;
-        left: 0%;
+        left: 13%;
         margin-top: 0%;
-        right: 5%;
+        @media (max-width: 1013px) {
+          left: 4%;
+        }
+      @media (min-width: 1016px) {
+      left: 4%;
+    }
+      @media (min-width: 1024px) {
+      left: 4%;
+    }
+    @media (max-width: 1110px) {
+      left: 6%;
+    }
+    @media (min-width: 1120px) {
+      left: 6%;
+    }
+    @media (min-width: 1130px) {
+      left: 6%;
+    }
+    @media (min-width: 1140px) {
+      left: 6%;
+    }
+    @media (min-width: 1150px) {
+      left: 6%;
+    }
+    @media (min-width: 1156px) {
+      left: 6%;
+    }
+    @media (min-width: 1160px) {
+      left: 8%;
+    }
+    @media (min-width: 1268px) {
+      left: 10%;
+    }
+    @media (min-width: 1281px) {
+      left: 10%;
+    }
+    @media (min-width: 1289px) {
+      left: 11%;
+    }
     }
 
     .fa-twitter {
@@ -574,6 +612,7 @@ to{width: 38%;}
 }
 
 @include media-breakpoint-up(xl) {
+  
 
 }
 

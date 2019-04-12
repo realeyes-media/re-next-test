@@ -2,10 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  background-blend-mode: overlay;
   position: relative;
-
-
 
   #hero-video-container {
     position: relative;
@@ -42,17 +39,6 @@
 
   .row {
     height: inherit;
-  }
-
-  .dot {
-    height: 8px;
-    width: 8px;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    bottom: 3px;
-    display: inline-block;
-    margin: 0 13px 0 13px;
   }
 
   .hero-text {
@@ -135,27 +121,31 @@
     }
 
     .section-tags {
+      display: none;
+      padding-top: 20px;
+      width: 100vw;
+      font-size: 2vw;
+      align-items: center;
+      @include media-breakpoint-down(xs) {
+        font-size: 5vw;
+      }
+      .bullet {
+        font-size: 2.5vw;
+      }
+    }
+
+    .section-tags-mobile {
+      display: none;
+      flex-direction: column;
       padding-top: 20px;
     }
 
     .header-links {
-      line-height: 30px;
       @include media-breakpoint-down(xs) {
         text-decoration: underline;
         color: white;
       }
     }
-
-    .header-links:hover {
-      @include media-breakpoint-up(xs) {
-        color: white;
-      }
-
-      @include media-breakpoint-up(lg) {
-        color: #50E3C2;
-      }
-    }
-
 
   a {
     color: white;
@@ -204,10 +194,6 @@
   margin-top: -1vh;
 }
 
-.hero-image-blend-overlay {
-  background-blend-mode: overlay;
-}
-
 #video-background {
   position: relative;
   z-index: 0;
@@ -219,7 +205,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    background-blend-mode: overlay;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -343,19 +328,11 @@
       margin-left: 0rem;
 
       @include media-breakpoint-down(sm) {
-        bottom: 10%;
         margin-right: 5rem;
-      }
-      @media (min-width: 1920px) {
-        bottom: 10%;
-      }
-
-      @media(min-width: 4200px) {
-        bottom: 10%;
       }
 
       .header-links {
-        line-height: 30px;
+        line-height: .5rem;
         @include media-breakpoint-down(xs) {
           text-decoration: underline;
           color: white;
@@ -366,7 +343,7 @@
         @include media-breakpoint-up(xs) {
           color: white;
         }
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(sm) {
           color: #50E3C2;
         }
       }
@@ -446,10 +423,6 @@
 
   .hero-image-setheight {
     height: 460px;
-  }
-
-  .hero-image-blend-overlay {
-    background-blend-mode: overlay;
   }
 
   #video-background {

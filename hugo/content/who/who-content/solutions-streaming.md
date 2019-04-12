@@ -14,14 +14,15 @@ Our customers trust us to build solutions for the largest live streaming events 
 **Key Features:**
 
   * Ultra low latency, complex data management, and functionality for recording
-  * Multi user interactions
+  * Multi-user interactions
   * 2nd screen connectivity
   * Post processing
-  * Complex api integrations
-  * Full application systems for scheduling and management requiring challenging solutions
+  * Complex API integrations
+  * Advanced scheduling solutions
   * Multi-channel live video recording, In-browser clipping, and annotation of video
   * CMS user interface
 
+<br><br>
 **Clients:**
 
   * EA Games

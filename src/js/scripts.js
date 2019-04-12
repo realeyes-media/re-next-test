@@ -66,6 +66,7 @@ window.onload = () => {
   if (homepage) {
     addRemoveHeroVideoOnLoad()
     showServicesOnLoad()
+    showHideTaglinesOnLoad()
   }
 }
 
@@ -74,6 +75,7 @@ window.onresize = () => {
   if (homepage) {
     addRemoveHeroVideoOnResize()
     showServicesOnResize()
+    showHideTaglinesOnResize()
   }
 }
 
@@ -95,13 +97,6 @@ $("#myForm").submit(function(e) {
   });
 
   $(".submitButton").click(function() {
-    var phoneNumber = document.forms["myForm"]["phone"].value;
-    if (phoneNumber.length < 10) {
-      $('#phoneError').show();
-      return false;
-    } else {
-      $('#phoneError').hide();
-    }
     $("#myForm").validate({ errorPlacement: function(error, element) {} });
   });
   
@@ -177,14 +172,15 @@ const addRemoveHeroVideoOnResize = () => {
 
 const showServicesOnLoad = () => {
   if (window.innerWidth > 768) {
-    const servicesElems = document.getElementsByClassName("servicesMobile")
-    for (const elem of servicesElems) {
-      elem.style.display = "none"
-    }
-  } else {
     const servicesElems = document.getElementsByClassName("servicesDesktop")
     for (const elem of servicesElems) {
-      elem.style.display = "none"
+      elem.style.display = "block"
+    }
+  } else {
+    console.log("sanity check")
+    const servicesElems = document.getElementsByClassName("servicesMobile")
+    for (const elem of servicesElems) {
+      elem.style.display = "block"
     }
   }
 }
@@ -195,17 +191,39 @@ const showServicesOnResize = () => {
 
   if (window.innerWidth < 768) {
     for (const elem of servicesElemsDesktop) {
-      elem.style.display = "none"
+     if (elem.style.display != "none") elem.style.display = "none"
     }
     for (const elem of servicesElemsMobile) {
-      elem.style.display = "block"
+      if (elem.style.display != "block") elem.style.display = "block"
     }
   } else {
     for (const elem of servicesElemsMobile) {
-      elem.style.display = "none"
+      if (elem.style.display != "none") elem.style.display = "none"
     }
     for (const elem of servicesElemsDesktop) {
-      elem.style.display = "block"
+      if (elem.style.display != "block") elem.style.display = "block"
     }
+  }
+}
+
+const showHideTaglinesOnLoad = () => {
+  if (window.innerWidth >= 576) {
+    const elem = document.getElementById("section-tags")
+    elem.style.display = "flex";
+  } else {
+    const elem = document.getElementById("section-tags-mobile");
+    elem.style.display = "flex"
+  }
+}
+
+const showHideTaglinesOnResize = () => {
+  const elemDesktop = document.getElementById("section-tags");
+  const elemMobile = document.getElementById("section-tags-mobile");
+  if (window.innerWidth < 576) {
+    elemDesktop.style.display = "none";
+    elemMobile.style.display = "flex";
+  } else {
+    elemDesktop.style.display = "flex";
+    elemMobile.style.display = "none";
   }
 }

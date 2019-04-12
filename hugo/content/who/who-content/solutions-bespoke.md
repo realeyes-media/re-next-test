@@ -8,9 +8,9 @@ heading: BESPOKE APPLICATION DEVELOPMENT
 class: bespoke solution hidden
 ---
 
-When a standard application development shop or off the shelf OTT experience is not going to meet your needs, don’t settle for less than what you require.
+When a standard application development shop or off-the-shelf OTT experience is not going to meet your needs, don’t settle for less than what you require.
 
-With skill sets ranging from user experience design to full stack development, our team can help from ideation through implementation—building highly configurable, personalization driven applications for web mobile and set top—and the backend management and insights to empower scale and enable effective business decisions.
+With skill sets ranging from user experience design to full stack development, our team can help from ideation through implementation. We build highly configurable, personalization-driven applications for web, mobile, and set top devices. Our team provides the back end management and insights to empower scale and enable effective business decisions.
 <br><br>
 
 **Key Features:**
@@ -20,6 +20,7 @@ With skill sets ranging from user experience design to full stack development, o
   * Collaboration/sharing features
   * Robust searchability and discovery of related content
 
+<br><br>
 **Clients:**
 
   * EA Games
