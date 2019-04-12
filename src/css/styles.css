@@ -178,6 +178,9 @@
 }
 
 .servicesMobileName {
+  font-size: 1rem;
+  color: #50e3c2;
+  font-weight: 700;
   margin: 0 2rem;
   margin-bottom: 1rem;
 }
