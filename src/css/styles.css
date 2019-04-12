@@ -37,6 +37,7 @@
 }
 
 .servicesDesktop {
+  display: none;
   margin-bottom: 5rem;
 }
 
@@ -172,6 +173,10 @@
 }
 
 /* Mobile Styles for Services Section */
+.servicesMobile {
+  display: none;
+}
+
 .serviceImage {
   width: 100vw;
   position: relative;
