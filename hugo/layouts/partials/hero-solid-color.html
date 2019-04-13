@@ -1,0 +1,19 @@
+<div class="hero-image hero-image-fullscreen" style="background-color: {{ .background }}" ;>
+    <div class="container-fluid pl-md-6 pl-3 pr-3">
+        <div class="hero-text hero-text-left">
+            <span class="hero-section">{{ .section }}</span>
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <h1>{{ .heading1 }} <span style="color: #F6EAA0;">{{ .heading2 }}</span>
+                        {{ .heading3 }}
+                    </h1>
+                    <h2>{{ .subheading }}</h2>
+                    <p>{{ .heroContent1 }}</p>
+                    <p>{{ .heroContent2 }}</p>
+                    <p>{{ .heroContent3 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ .Site.BaseURL }}

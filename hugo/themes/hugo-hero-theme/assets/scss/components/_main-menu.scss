@@ -1,0 +1,44 @@
+.main-menu {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  >ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    >li {
+      list-style: none;
+      font-size: 1rem;
+
+      >a {
+        padding: 10px 14px 10px 14px;
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: none;
+        color: $white;
+
+        &:hover:after {
+          content: "";
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          border-bottom: 2px solid white;
+        }
+      }
+
+      &.active {
+        >a:after {
+          content: "";
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{{ $bundle := .Get 0 }}
+{{ $match := .Get 1 }}
+{{ $page := .Page.Site.GetPage $bundle }}
+{{ with $page }}
+{{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
+{{ with $resource }}
+<div class="servicesDesktop fontFamily">
+  <div class="strip">
+    <div class="row">
+      <div class="col-5 text-white serviceMakeTaller">
+        <p class="serviceName">{{ .Params.service }}</p>
+        <div class="serviceRightText">
+          <h2 class="serviceHeader">{{ .Params.header }}</h2>
+          <p class="serviceContent">{{ .Params.description }}</p>
+           <!-- BUTTONS ON SERVICES ARE NOT MVP -->
+           {{ if .Params.CHANGETObuttonWHENCONTENTAVAILABLE }}
+          <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+              class="serviceIcon text-primary" src="/img/svg/right-arrow.svg"></a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="serviceRightGradient bg-cover bg-position-center bg-overlay col-7 pt-20 pb-20"
+        style="background-image: url(' {{ .Params.background | relURL }} ');">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="servicesMobile fontFamily">
+  <div>
+      <div class="">
+        <div class="text-white">
+          <p class="servicesMobileName">{{ .Params.service }}</p>
+          <div class="servicesMobileText">
+            <h2 class="servicesMobileHeader">{{ .Params.header }}</h2>
+            <img class= "serviceImage text-center" src=" {{ .Params.background | relURL }}" alt="" srcset="">
+            <p class="servicesMobileDescription">{{ .Params.description }}</p>
+            {{ if .Params.CHANGETObuttonWHENCONTENTAVAILABLE }}
+            <a class="serviceButton text-primary" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}<img
+              class="serviceIcon text-primary" src="/img/svg/right-arrow.svg"></a>
+              {{ end }}
+            </div>
+          </div>
+          <div class=""
+          style="background-image: url(' {{ .Params.background | relURL }} ');">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{{ end }}
+{{ end }}

@@ -1,0 +1,46 @@
+<div class="landing-page-wrapper">
+  <div id="landing-page-hero" class="hero-image hero-image-fullscreen"
+    style="background-image: url('{{ .background | relURL }}');">
+    <div id="hero-video-container">
+      <div class="container-fluid pl-md-6 pt-0">
+        <div class="hero-text-video">
+          <span class="hero-section">{{ .section }}</span>
+          <h1 class="hero-header-green">{{ .heading }}</h1>
+          <h1>{{ .subheading }}</h1>
+          <div id="section-tags" class="section-tags">
+            <a class="header-links" href="#liveStream">{{ .serviceOne }}</a> &nbsp;<span class="bullet">&bull;</span>&nbsp; <a class="header-links"
+              href="#bespoke">{{ .serviceTwo }}</a> &nbsp;<span class="bullet">&bull;</span>&nbsp; <a class="header-links"
+              href="#workflow">{{ .serviceThree }}</a>
+          </div>
+          <div id="section-tags-mobile" class="section-tags-mobile">
+            <a class="header-links" href="#liveStream">{{ .serviceOne }}</a><br><a class="header-links"
+              href="#bespoke">{{ .serviceTwo }}</a><br><a class="header-links" href="#workflow">{{ .serviceThree }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a").on('click', function (event) {
+
+      if (this.hash !== "") {
+
+        event.preventDefault();
+
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+{{ .Site.BaseURL }}

@@ -1,0 +1,157 @@
+.case-study-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: top center;
+    background-blend-mode: overlay;
+    background-color: #25325A;
+    height: 400px;
+    position: relative;
+    .quote {
+      background-color: #F6E8A8;
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+        padding-top: 4rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-bottom: 0;
+        @include media-breakpoint-up(md) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        color: #616058;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 40%;
+        padding-right: 6rem;
+        text-align: right;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        @include media-breakpoint-up(md) {
+          font-size: 1rem;
+          padding-left: 60%;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto
+    }
+    .container-fluid {
+      height: inherit;
+      margin: 0px;
+      height: 100%;
+      justify-content: center;
+    }
+    .bottom {
+      height: 5%;
+      background-color: #292f64;
+    }
+    .top {
+      height: 95%;
+    }
+    .case-text {
+      flex: 0;
+      color: #ffffff;
+      margin: 1.2rem;
+      padding: 1.2rem;
+      margin-top: 7rem;
+
+      h1 {
+        font-size: 2.75rem;
+        font-family: $font-family-base;
+        font-weight: bold;
+        @include media-breakpoint-up(md) {
+          font-size: 4rem;
+        }
+      }
+      h2 {
+        font-size: 2.75rem;
+        font-family: $font-family-base;
+        font-weight: bold;
+        color: #AFD0E2;
+        margin-bottom: 0;
+        @include media-breakpoint-up(md) {
+          font-size: 4rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-top: 0.5rem;
+        font-family: $font-family-base;
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 1.3rem;
+        }
+      }
+      div {
+        font-size: 0.5rem;
+        margin-top: 3rem;
+        width: 90%;
+        @include media-breakpoint-up(md) {
+          font-size: 0.85rem;
+          width: 90%;
+        }
+      }
+    }
+    .study-info {
+      flex: 0;
+      color: #ffffff;
+      padding-left: 2.4rem;
+      @include media-breakpoint-up(md) {
+        margin-top: 20rem;
+        margin-left: 20%;
+      }
+      h1 {
+        font-family: $font-family-base;
+        margin-bottom: 0;
+        font-size: 1rem;
+        padding-top: 0.8rem;
+        @include media-breakpoint-up(md) {
+          font-size: 1rem;
+        }
+      }
+      div {
+        font-family: $font-family-base;
+        font-size: 0.5rem;
+        @include media-breakpoint-up(md) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .arrow-next {
+      color:#ffffff;
+      text-align: right;
+      padding: 2.4rem;
+      padding-left: 0;
+    }
+    .arrow-prev {
+      padding: 2.4rem;
+      padding-right: 0;
+      color:#ffffff;
+    }
+    .case-down {
+      flex: 0;
+      text-align: center;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .case-section {
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+  .case-image-fullscreen {
+    height: 100%;
+  }
+  .case-image-setheight {
+    height: 460px;
+  }
+  // .case-image-blend-overlay {
+  //   background-blend-mode: overlay;
+  // }

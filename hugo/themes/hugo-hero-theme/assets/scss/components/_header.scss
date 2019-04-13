@@ -1,0 +1,39 @@
+.header {
+  color: $primary;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-family-heading;
+  height: 60px;
+  .logo {
+    font-size: 1.75rem;
+  }
+  .logo-mobile {
+    font-size: 1.75rem;
+  }
+  .menu-item {
+    font-size: 1.1rem;
+  }
+  .container {
+    display: flex;
+    margin: 0 1rem;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  &.header-absolute {
+    position: fixed;
+    top: 0;
+    transition: all 0.4s;
+    z-index: 3;
+    width: 100%;
+  }
+}
+.lock-scroll {
+  .header {
+    &.header-absolute {
+      position: static;
+    }
+  }
+}

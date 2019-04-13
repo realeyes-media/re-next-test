@@ -1,0 +1,317 @@
+.blog-header {
+    display: flex;
+    box-sizing: border-box;
+    .blog-categories {
+        box-sizing: border-box;
+        bottom: 1.25rem;
+        position: absolute;
+        color: white;
+        cursor: pointer;
+        font-family: $font-family-base;
+        font-size: 1.125rem;
+        font-weight: 300;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .list-inline-item {
+            flex: 0 0 auto;
+            margin-right: 4rem;
+        }
+        .active {
+            color: #50E3C2;
+        }
+        li:hover {
+            color: #50E3C2;
+        }
+    }
+    // .search {
+    //     position:absolute;
+    //     top:50%;
+    //     left:50%;
+    //     transform:translate(-50%,-50%);
+    //     width:2rem;
+    //     height:2rem;
+    //     transition:width .5s;
+    //     overflow:hidden;
+    // }
+    // .search.active {
+    //     width:600px;
+    // }
+    // .search input {
+    //     position:absolute;
+    //     display: none;
+    //     top:10px;
+    //     left:10px;
+    //     width:calc(100% - 90px);
+    //     height:60px;
+    //     border:none;
+    //     outline:none;
+    //     font-size:36px;
+    //     padding:0 10px;
+    //     color:#666;
+
+    // }
+    // .search.active input {
+    //     margin: 0;
+    //     display: inline;
+    // }
+    // .search.active .icon {
+    //     background: black;
+    //     width:2rem;
+    //     height:2rem;
+    //     background-image: url('/img/close_icon_white.png');
+    //     color: white;
+    // }
+    // .icon {
+    //     position:absolute;
+    //     width:2rem;
+    //     height:2rem;
+    //     cursor:pointer;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/icon_search_white.png');
+    //     color: white;
+    //     transition:.5s;
+    //     border-radius:4px;
+    // }
+    // .search.active .icon:before {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/close_icon_white.png');
+    //     transition:.5%;
+    //     transform:rotate(45deg);
+    // }
+    // .search.active .icon:after {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-image: url('/img/close_icon_white.png');
+    //     border:none;
+    //     transition:.5%;
+    //     transform:rotate(-45deg);
+    // }
+    // .icon:before {
+    //     content:'';
+    //     position:absolute;
+    //     background-position: center;
+    //     background-size: cover;
+    //     background:transparent;
+    //     transition:.5%;
+    // }
+    // .icon:after {
+    //     content:'';
+    //     position:absolute;
+    //     background:transparent;
+    //     background-position: center;
+    //     background-size: cover;
+    //     transform:rotate(-45deg);
+    //     transition:.5%;
+    // }
+}
+
+.blog-search {
+    width: 2.375rem;
+    height: 2.375rem;
+    bottom: 1.25rem;
+    color: white;
+}
+
+.search-bar {
+    position: relative;
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding-bottom: 0;
+    input#search {
+        margin: 0;
+    }
+    #results {
+        margin-top: 0;
+        padding-top: 0;
+        background-color: white;
+        z-index: 100;
+        position: absolute;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        li {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #cccccc;
+        }
+    }
+}
+
+.blog {
+    padding: 1rem;
+    .blog-image {
+        img {
+            display: inherit;
+            width: 100%;
+            height: 100%;
+            max-height: 15rem;
+            background-size: cover;
+        }
+    }
+    .blog-content {
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: .75rem;
+            color: gray;
+        }
+    }
+
+}
+
+.title-card {
+    background-color: #24315E;
+    height: 290px;
+    bottom: 10vh;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 50px;
+    color: white;
+}
+
+.headerColorTwo {
+    color: #A8D1E6;
+}
+
+.blog-subtitle {
+    color: white;
+}
+
+.blog-author {
+    color: white;
+    padding-top: 10px;
+}
+
+.previous {
+    color: white;
+    display: inline-block;
+    padding-left: 2vw;
+}
+
+.next {
+    color: white;
+    position: relative;
+    float: right;
+    display: inline-block;
+    padding-right: 2vw;
+}
+
+.blog-content-center {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    ul {
+        list-style: disc;
+    }
+    p {
+        img {
+            display: block;
+             margin-left: auto;
+             margin-right: auto;
+            width: 100%;
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xs) {
+
+    .title-card {
+        background-color: #24315E;
+        height: 370px;
+        bottom: 10vh;
+    }
+
+    .previous {
+        color: white;
+        padding-top: 50px;
+    }
+
+    .next {
+        color: white;
+        padding-top: 50px;
+    }
+
+  }
+
+  @include media-breakpoint-up(sm) {
+    .title-card {
+        background-color: #24315E;
+        height: 370px;
+        bottom: 10vh;
+    }
+    .previous {
+        color: white;
+        padding-top: 90px;
+    }
+
+    .next {
+        color: white;
+        padding-top: 90px;
+    }
+
+  }
+
+  @include media-breakpoint-up(md) {
+
+    .title-card {
+        background-color: #24315E;
+        height: 318px;
+        bottom: 10vh;
+    }
+
+    .previous {
+        color: white;
+        padding-top: 100px;
+    }
+
+    .next {
+        color: white;
+        padding-top: 100px;
+    }
+
+  }
+
+    @include media-breakpoint-up(lg) {
+        .title-card {
+            background-color: #24315E;
+            height: 338px;
+            bottom: 10vh;
+        }
+
+        .previous {
+            color: white;
+            padding-top: 100px;
+        }
+
+        .next {
+            color: white;
+            padding-top: 100px;
+        }
+    }
+
+

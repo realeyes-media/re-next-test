@@ -1,0 +1,49 @@
+{{ define "title" }}RealEyes Media{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+<meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+<meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+<meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
+{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "serviceOne" .Params.heroServiceOne "serviceTwo" .Params.heroServiceTwo "serviceThree" .Params.heroServiceThree "content" .)}}
+<div class="empowered-clients">
+    <h2>CLIENTS WE'VE EMPOWERED</h2>
+</div>
+{{ $caseStudies := where .Site.RegularPages "Type" "case-studies" }}
+{{if gt (len $caseStudies) 0}}
+<div class="container-fluid pl-6 pr-6 pl-md-10 pr-md-10 pb-6 pb-md-10 pt-0">
+    <div class="row">
+        {{ range first 6 (sort $caseStudies ".Params.weight") }}
+        <div class="col-12 col-md-4 mr-0 ml-0 pr-0 pl-0">{{ .Render "cs-summary" }}</div>
+        {{ end }}
+    </div>
+</div>
+{{end}}
+
+<div class="company-logo-wrapper">
+    <img class="company-logo" src="img/Company Logos/adobe-logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/NBC Sports Group 11.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/Amex-Logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company Logos/EA_Games-Logo.png" alt="" srcset="">
+</div>
+
+{{ .Content }}
+
+<!-- {{partial "carousel.html" . }} -->
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

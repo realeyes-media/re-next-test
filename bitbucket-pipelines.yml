@@ -1,0 +1,63 @@
+image: quay.io/realeyes/alpine-node-git-ci:latest
+pipelines:
+  custom:
+    defined-steps:
+    - step: &marcliget
+        name: Download and save MarCLI
+        script:
+          # Install wget if it's missing, and grab MarCLI
+          - apk update && apk add ca-certificates curl && update-ca-certificates
+          - curl -u "${MARCLI_DL_USER}:${MARCLI_DL_PASS}" -o marcli -L ${MARCLI_DL_URL}/${MARCLI_PLATFORM}/${MARCLI_VERSION}
+          - chmod +x marcli
+        artifacts:
+          - marcli
+    - step: &buildDev
+        name: Build and Deliver to Google Cloud Storage
+        caches:
+          - node
+        script:
+          # Add ya gurl Marcli to $PATH
+          - mv marcli /usr/bin/marcli
+          # Configure
+          - REWEB_BASE="https://${BITBUCKET_BRANCH}-web.realeyes.dev"
+          - export REWEB_BASE
+          # Build
+          - unset NPM_CONFIG_USER
+          - npm install
+          - npm run build
+          # Deliver to GCS
+          - echo $GCLOUD_API_KEYFILE | base64 -d > ./gcloud-api-key.json
+          - gcloud auth activate-service-account --key-file gcloud-api-key.json
+          - export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/gcloud-api-key.json"
+          - gcloud config set project $GCLOUD_PROJECT
+          - marcli deploy -f dist -n ${BITBUCKET_BRANCH}-web -d realeyes.dev -v --dns --index index.html --error "404/index.html" 
+    - step: &buildProd
+        name: Build and Deliver to Google Cloud Storage
+        caches:
+          - node
+        script:
+          # Add ya gurl Marcli to $PATH
+          - mv marcli /usr/bin/marcli
+          # Configure
+          - REWEB_BASE="https://www.realeyes.com"
+          - export REWEB_BASE
+          # Build
+          - unset NPM_CONFIG_USER
+          - npm install
+          - npm run build
+          # Deliver to GCS
+          - echo $GCLOUD_API_KEYFILE | base64 -d > ./gcloud-api-key.json
+          - gcloud auth activate-service-account --key-file gcloud-api-key.json
+          - export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/gcloud-api-key.json"
+          - gcloud config set project $GCLOUD_PROJECT
+          - marcli deploy -f dist -n www -d realeyes.com -v --index index.html --error "404/index.html" 
+  branches:
+    dev:
+    - step: *marcliget
+    - step: *buildDev
+    stage: 
+    - step: *marcliget
+    - step: *buildDev
+    master: 
+    - step: *marcliget
+    - step: *buildProd
