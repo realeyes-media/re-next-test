@@ -25,8 +25,32 @@
     </script>
   {{ else }}
     {{ if .Site.Params.google_analytics_prod }}
+    <script>
+        function loadScript(container, url, callback){
+
+          var script = document.createElement("script")
+          script.type = "text/javascript";
+  
+          if (script.readyState){  //IE
+              script.onreadystatechange = function(){
+                  if (script.readyState == "loaded" ||
+                          script.readyState == "complete"){
+                      script.onreadystatechange = null;
+                      callback();
+                  }
+              };
+          } else {  //Others
+              script.onload = function(){
+                  callback();
+              };
+          }
+  
+          script.src = url;
+          container.appendChild(script);
+      }
+    </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Params.google_analytics_prod -}}"></script>
+      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Params.google_analytics_prod -}}"></script> -->
       <script>
               var gaId;
               if (window.location.href === "https://www.realeyes.com/") {
@@ -40,11 +64,21 @@
               }
               console.log('HEYYYYYYYYYY', gaId);
         window.dataLayer = window.dataLayer || [];
+        loadjs(gaId);
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', gaId);
           var page = document.location.pathname;
           gtag('send', 'pageview', page);
+          function loadjs(gaId) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://www.googletagmanager.com/gtag/js?id=" + gaId;
+            script.onload = function(){
+                console.log(script.src);
+            };
+            document.body.appendChild(script);
+         }
       </script>
     {{ end }}
   {{ end}}
