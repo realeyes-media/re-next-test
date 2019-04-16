@@ -6,7 +6,9 @@ theme = "hugo-hero-theme"
 relativeURLs = true
 
 [params]
-  google_analytics_id="UA-67705314-1"
+  google_analytics_prod="UA-67705314-1"
+  google_analytics_stage="UA-67705314-4"
+  google_analytics_dev="UA-67705314-3"
 
   [params.homepage_meta_tags]
     meta_description = "RealEyes | Stream It Like You Mean It"
