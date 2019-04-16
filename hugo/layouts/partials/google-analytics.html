@@ -10,16 +10,14 @@
 </script>
 {{ end }}
 <script>
-  var gaId;
-  if (window.location.href === "https://www.realeyes.com/") {
-    gaId = "UA-67705314-1";
-  } else if (window.location.href === "https://stage-web.realeyes.dev/") {
-    gaId = "UA-67705314-4";
-  } else if (window.location.href === "https://dev-web.realeyes.dev/") {
-    gaId = "UA-67705314-3";
-  } else {
-    gaId = "UA-67705314-5"
+  var domainObj = {
+   "https://www.realeyes.com": "UA-67705314-1",
+   "https://stage-web.realeyes.dev": "UA-67705314-4",
+   "https://dev-web.realeyes.dev": "UA-67705314-3",
+   "http://localhost.realeyes.com:3000": "UA-67705314-5"
   }
+  var gaId;
+  gaId = domainObj[window.location.origin];
   window.dataLayer = window.dataLayer || [];
   loadjs(gaId);
   function gtag() { dataLayer.push(arguments); }
