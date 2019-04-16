@@ -1,3 +1,15 @@
+<script>
+  var gaId;
+  if (window.location.href === "https://www.realeyes.com/") {
+    gaId = "UA-67705314-1";
+  } else if (window.location.href === "https://stage-web.realeyes.dev/") {
+    gaId = "UA-67705314-4";
+  } else {
+    gaId = "UA-67705314-3";
+  }
+  console.log('HEYYYYYYYYYY', gaId);
+</script>
+
 {{- if .Site.IsServer -}}
   <!-- Dont add Google analytics to localhost -->
 {{ else }}
@@ -12,14 +24,25 @@
       gtag('config', '{{- $gid -}}');
     </script>
   {{ else }}
-    {{ if .Site.Params.google_analytics_id }}
+    {{ if .Site.Params.google_analytics_prod }}
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Params.google_analytics_id -}}"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Params.google_analytics_prod -}}"></script>
       <script>
+              var gaId;
+              if (window.location.href === "https://www.realeyes.com/") {
+                gaId = "UA-67705314-1";
+              } else if (window.location.href === "https://stage-web.realeyes.dev/") {
+                gaId = "UA-67705314-4";
+              } else if (window.location.href === "https://dev-web.realeyes.dev/") {
+                gaId = "UA-67705314-3";
+              } else {
+                gaId = "UA-67705314-5"
+              }
+              console.log('HEYYYYYYYYYY', gaId);
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '{{- .Site.Params.google_analytics_id -}}');
+        gtag('config', gaId);
           var page = document.location.pathname;
           gtag('send', 'pageview', page);
       </script>
