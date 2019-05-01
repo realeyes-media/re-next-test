@@ -85,7 +85,7 @@ Some other tunings we performed on both the JMeter instance and the Wowza instan
 
 We did this by adding the following to  
 
-#### /etc/security/limits.d/custom.conf
+<span style="font-weight:bold; font-size:16px;">/etc/security/limits.d/custom.conf</span>
 <pre id="crayon-55d20ae6793fd291098330-1" class="crayon-line"><span class="crayon-e">root </span><span class="crayon-e">soft </span><span class="crayon-i">nofile</span> <span class="crayon-cn">1000000
 </span><span class="crayon-e">root </span><span class="crayon-e">hard </span><span class="crayon-i">nofile</span> <span class="crayon-cn">1000000
 </span><span class="crayon-o">*</span> <span class="crayon-e">soft </span><span class="crayon-i">nofile</span> <span class="crayon-cn">1000000

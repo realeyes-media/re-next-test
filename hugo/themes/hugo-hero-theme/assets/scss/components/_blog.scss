@@ -260,7 +260,7 @@
     }
 
     .card-title {
-        font-size: 34px;
+        font-size: 32px;
         color: white;
     }
 
@@ -280,6 +280,11 @@
     .next {
         color: white;
         padding-top: 90px;
+    }
+
+    .card-title {
+        font-size: 40px;
+        color: white;
     }
 
   }
@@ -302,6 +307,11 @@
         padding-top: 100px;
     }
 
+    .card-title {
+        font-size: 40px;
+        color: white;
+    }
+
   }
 
     @include media-breakpoint-up(lg) {
@@ -319,6 +329,11 @@
         .next {
             color: white;
             padding-top: 100px;
+        }
+
+        .card-title {
+            font-size: 50px;
+            color: white;
         }
     }
 
