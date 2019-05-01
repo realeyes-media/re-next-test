@@ -1,0 +1,118 @@
+.career-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: top center;
+    background-blend-mode: overlay;
+    background-color: #A3C281;
+    height: 400px;
+    position: relative;
+    padding-top: 60px;
+    // padding-bottom: 8rem;
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .row {
+      height: inherit;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .career-text {
+      flex: 0;
+      color: #ffffff;
+      @include media-breakpoint-up(md) {
+      flex: 0;
+      color: #ffffff;
+      margin-left: 80px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        @include media-breakpoint-up(md) {
+          font-size: 5rem;
+          font-weight: bold;
+          width: 100%;
+        }
+      }
+      h2 {
+        font-size: 2.2rem;
+        @include media-breakpoint-up(md) {
+          font-size: 2.4rem;
+        }
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 4.4rem;
+        line-height: 1.3;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+          width: 100%;
+        }
+      }
+    }
+    .career-down {
+      flex: 0;
+      text-align: center;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .career-section {
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+  .career-image-fullscreen {
+    height: 100%;
+  }
+  .career-image-setheight {
+    height: 460px;
+  }
+  .career-image-blend-overlay {
+    background-blend-mode: overlay;
+  }
+
+  .contact-image .row {
+      color: white;
+      position: relative;
+  }
+
+  .subHeading {
+      color: #24315E;
+  }
+
+  .contactInfo {
+      float: right;
+  }
+
+  .secondInfo{
+    float: right;
+    position: absolute;
+    top: 49%;
+    right: 10%;
+    text-align: right;
+  }
+  
+
+  .address{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .innerContainer {
+    margin-top: 40%;
+    margin-bottom: 54%;
+    @include media-breakpoint-up(md) {
+      margin-top: 12%;
+      margin-bottom: 5%;
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
