@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 {{ partial "career-hero-header.html" (dict "background" .Params.careerBackground "heading" .Params.careerHeading "subheading" .Params.careerSubHeading "subheading1"  .Params.careerContent "content" .)}}
-
+<div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/camera.png" /></div>
 
 
 {{ end }}
