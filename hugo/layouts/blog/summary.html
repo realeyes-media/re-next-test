@@ -6,7 +6,7 @@
         </div>
         {{ end }}
         <div class="blog-content pt-2">
-            <h3 class="blog-title">
+            <h3 onclick="window.location='{{ .Permalink }}'" class="blog-title">
                 {{ .Title }}
             </h3>
             <p>By {{ .Params.author }} <span class="pl-1">{{ .PublishDate.Format "January 2, 2006" }}</span></p>
