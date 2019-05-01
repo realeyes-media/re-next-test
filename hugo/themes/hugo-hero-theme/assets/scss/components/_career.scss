@@ -164,3 +164,35 @@
         width: 100%;
     }
 }
+
+.position-content{
+  margin-top: 180px;
+}
+
+.underline { 
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 140px;
+}
+
+.careerTitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: helvetica;
+  color: #4A4A4a;
+  position: relative;
+  left: 25.3%;
+  white-space: nowrap;
+  @media (max-width: 414px) {
+    left: 7%;
+  }
+  @include media-breakpoint-up(md) {
+    left: 7%;
+  }
+}
