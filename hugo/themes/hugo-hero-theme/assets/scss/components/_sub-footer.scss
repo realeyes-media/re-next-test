@@ -51,7 +51,8 @@
       @include media-breakpoint-up(md) {
         padding-bottom: 0%;
         padding-top: 0;
-        padding-left: 11px;
+        padding-left: 0px;
+        margin-left: 20%;
       }
       color: white;
       text-decoration: none;
@@ -133,9 +134,26 @@
   }
 }
 
-// .pageLinks {
-//   visibility: hidden;
-// }
+.pageLinks {
+  position: relative;
+  left: 20%;
+  font-size: 16px;
+  @include media-breakpoint-up(xs) {
+    left: 0%;
+  }
+  @include media-breakpoint-up(sm) {
+    left: 0%;
+  }
+  @include media-breakpoint-up(md) {
+    left: -16%;
+  }
+  @include media-breakpoint-up(lg) {
+    left: 3%;
+  }
+  @include media-breakpoint-up(xl) {
+    left: 16%;
+  }
+}
 
 .streamIt {
   margin: 0 auto;
