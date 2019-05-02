@@ -178,15 +178,19 @@
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
-  width: 140px;
+  width: 80px;
+  right: 39%;
+  position: relative;
+  margin-top: 36px;
+  margin-bottom: 40px;
 }
 
 .careerTitle {
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-family: helvetica;
+  font-size: 1.8rem;
+  font-family: $font-family-futura;
   color: #4A4A4a;
   position: relative;
+  opacity: 0.6;
   left: 25.3%;
   white-space: nowrap;
   @media (max-width: 414px) {
@@ -195,4 +199,16 @@
   @include media-breakpoint-up(md) {
     left: 7%;
   }
+}
+
+.feature-career {
+  position: relative;
+  bottom: 310%;
+  right: 100%;
+}
+
+.feature-position {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 21px;
 }

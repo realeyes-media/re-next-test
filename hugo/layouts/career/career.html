@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 {{ partial "career-hero-header.html" (dict "background" .Params.careerBackground "heading" .Params.careerHeading "subheading" .Params.careerSubHeading "subheading1"  .Params.careerContent "content" .)}}
-<div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/camera.png" /></div>
+<div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/team-shot.jpeg" /></div>
 
 
 <div class="position-content">
@@ -12,20 +12,24 @@
       <div class="row">
             <div class="col-12">
               <h1 class="careerTitle">{{ .Title }}</h1>
+              <hr class="underline">
               </div>
-          <div class="col-12">
-            <hr class="underline">
-          </div>
-          <!-- <div class="row">
-          <div class="col-12 col-lg-6">
-              <h4 class="bottomSubtitle">New Business Inquiries</h4>
-              <span class="bottomSpan">We are a technology company with our own innovative products, and we are also a consultancy. Whatever it takes to ensure success, whether it’s with our own technology or someone else’s, we will work with you to develop the best solutions to meet your goals. Interested in learning how RealEyes can help? Let’s talk!</span>
+              <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6">
+                <div class="row justify-content-center">
+                    {{ range .Site.Data.careers }}
+                    <div class="col-12 col-xl-2dot4 col-lg-3 col-md-4 pb-4">
+                        <div class="feature-career">
+                           {{ if .position }}
+                                <div class="feature-position">{{ .position }}</div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <h2 class="feature-title text-center pt-2 mb-0">{{ .location }}</h2>
+                        <p class="feature-content text-center">{{ .term }}</p>
+                    </div>
+                    {{end}}
+                </div>
             </div>
-            <div class="col-12 col-lg-6 joinTeam">
-                <h4 class="bottomSubtitle">Join Our Team</h4>
-                <span class="bottomSpan">We’re growing, are you ready to grow with us? If you are an innovative, creative thinker who is passionate about technology and how it can change the way people experience media, we would love to hear from you. Email us at careers [at] realeyes.com and let us know how you would be a good fit for our team!</span>
-              </div>
-              </div> -->
       </div>
     </div>
   </div>
