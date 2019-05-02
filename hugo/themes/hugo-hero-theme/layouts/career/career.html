@@ -1,0 +1,8 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-career{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "career-hero-header.html" (dict "background" .Params.careerBackground "heading" .Params.careerHeading "subheading" .Params.careerSubHeading "subheading1"  .Params.careerContent "content" .)}}
+
+{{ end }}
