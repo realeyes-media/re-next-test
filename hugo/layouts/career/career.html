@@ -37,6 +37,37 @@
             </div>
       </div>
     </div>
+
+    <div class="marketing-position-content">
+            <div class="container">
+              <div class="row">
+                    <div class="col-12">
+                      <h1 class="careerTitle">Marketing</h1>
+                      <hr class="underline">
+                      </div>
+                      <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6 career-container">
+                        <div class="row career-row">
+                            {{ range .Site.Data.careers }}
+                            <div class="col-12">
+                                <div class="feature-career">
+                                   {{ if .position }}
+                                        <div class="feature-position">{{ .position }}</div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                                 <div class="col-12 bottom-content">
+                                <h2 class="feature-location text-center">{{ .location }}</h2>
+                                <p class="feature-term text-center">{{ .term }}</p>  */}}
+                                 <div class="apply">
+                                    <button class="apply-button">Apply</button>
+                                </div>  
+                             </div> 
+                            </div>
+                            {{end}}
+                        </div>
+                    </div>
+              </div>
+            </div>
   </div>
 
 {{ end }}
