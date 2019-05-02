@@ -4,5 +4,6 @@ title2: 'SALES'
 date: 2018-02-22T17:01:34+07:00
 careerHeading: "Join the"
 careerSubHeading: 'Stream Team'
-careerContent: 'You have the vision - we will partner with you to understand, define and make that vision a reality. With RealEyes you will get an unmatched level of commitment, responsiveness and partnership when more is required than off the shelf solutions. We’ve done it for some of the biggest brands in the world, contact us to see how we can do it for you.'
+careerContent: 'We’re growing, are you ready to grow with us? If you are an innovative, creative thinker who is passionate about technology and how it can change the way people experience media, we would love to hear from you. Email us at careers [at] realeyes.com and let us know how you would be a good fit for our team! 
+'
 ---

@@ -26,7 +26,7 @@
                         </div>
                          <div class="col-12 bottom-content">
                         <h2 class="feature-location text-center">{{ .location }}</h2>
-                        <p class="feature-term text-center">{{ .term }}</p>  */}}
+                        <p class="feature-term text-center">{{ .term }}</p>
                          <div class="apply">
                             <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
                         </div>  
@@ -42,7 +42,7 @@
             <div class="container">
               <div class="row">
                     <div class="col-12">
-                      <h1 class="careerTitle">SALES</h1>
+                      <h1 class="careerTitle sales-div">SALES</h1>
                       <hr class="underline">
                       </div>
                       <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6 career-container">
@@ -57,7 +57,7 @@
                                 </div>
                                  <div class="col-12 bottom-content">
                                 <h2 class="feature-location text-center">{{ .location }}</h2>
-                                <p class="feature-term text-center">{{ .term }}</p>  */}}
+                                <p class="feature-term text-center">{{ .term }}</p>
                                  <div class="apply">
                                     <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
                                 </div>  
@@ -69,5 +69,28 @@
               </div>
             </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a").on('click', function (event) {
+
+      if (this.hash !== "") {
+
+        event.preventDefault();
+
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
 
 {{ end }}
