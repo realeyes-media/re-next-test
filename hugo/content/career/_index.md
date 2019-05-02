@@ -1,6 +1,6 @@
 ---
 title: 'ENGINEERING'
-title2: 'MARKETING'
+title2: 'SALES'
 date: 2018-02-22T17:01:34+07:00
 careerHeading: "Join the"
 careerSubHeading: 'Stream Team'
