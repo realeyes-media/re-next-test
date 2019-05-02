@@ -203,12 +203,30 @@
 
 .feature-career {
   position: relative;
-  bottom: 310%;
-  right: 100%;
+  bottom: 138%;
+  right: 103%;
 }
 
 .feature-position {
   font-weight: bold;
   white-space: nowrap;
   font-size: 21px;
+}
+
+.feature-location {
+  font-size: 12px;
+}
+
+.feature-term {
+  position: relative;
+  left: 50%;
+  bottom: 16px;
+  font-size: 12px;
+}
+
+.bottom-content {
+  position: relative;
+  right: 55%;
+  bottom: 76px;
+  color: #AAAAAA;
 }
