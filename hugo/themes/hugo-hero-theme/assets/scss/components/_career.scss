@@ -203,8 +203,8 @@
 
 .feature-career {
   position: relative;
-  bottom: 138%;
-  right: 103%;
+  bottom: 88%;
+  right: 96%;
 }
 
 .feature-position {
@@ -229,4 +229,20 @@
   right: 55%;
   bottom: 76px;
   color: #AAAAAA;
+}
+
+.apply {
+  position: relative;
+  left: 372%;
+  bottom: 77%;
+}
+
+.apply-button {
+  background-color: #4A4A4A;
+  color: white;
+  width: 100px;
+  height: 33px;
+  border-radius: 5px;
+  font-family: $font-family-heading;
+  font-size: 14px;
 }
