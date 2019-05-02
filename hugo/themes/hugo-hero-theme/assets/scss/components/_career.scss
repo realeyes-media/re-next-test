@@ -276,6 +276,9 @@
   position: relative;
   bottom: 100px;
   left: 2%;
+  @include media-breakpoint-up(xs) {
+    left: 0%;
+  }
   @include media-breakpoint-up(sm) {
     left: 14%;
   }
