@@ -14,23 +14,23 @@
               <h1 class="careerTitle">{{ .Title }}</h1>
               <hr class="underline">
               </div>
-              <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6">
-                <div class="row justify-content-center">
+              <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6 career-container">
+                <div class="row career-row">
                     {{ range .Site.Data.careers }}
-                    <div class="col-12 col-xl-2dot4 col-lg-3 col-md-4 pb-4">
+                    <div class="col-12">
                         <div class="feature-career">
                            {{ if .position }}
                                 <div class="feature-position">{{ .position }}</div>
                                 {{ end }}
                             </div>
                         </div>
-                        <div class="col-12 col-xl-2dot4 col-lg-3 col-md-4 pb-4 bottom-content">
-                        <h2 class="feature-location text-center pt-2 mb-0">{{ .location }}</h2>
-                        <p class="feature-term text-center">{{ .term }}</p>
-                        <div class="apply">
+                         <div class="col-12 bottom-content">
+                        <h2 class="feature-location text-center">{{ .location }}</h2>
+                        <p class="feature-term text-center">{{ .term }}</p>  */}}
+                         <div class="apply">
                             <button class="apply-button">Apply</button>
-                        </div>
-                    </div>
+                        </div>  
+                     </div> 
                     </div>
                     {{end}}
                 </div>

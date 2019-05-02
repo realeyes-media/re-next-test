@@ -201,11 +201,11 @@
   }
 }
 
-.feature-career {
-  position: relative;
-  bottom: 88%;
-  right: 96%;
-}
+// .feature-career {
+//   position: relative;
+//   bottom: 88%;
+//   right: 96%;
+// }
 
 .feature-position {
   font-weight: bold;
@@ -219,22 +219,20 @@
 
 .feature-term {
   position: relative;
-  left: 50%;
-  bottom: 16px;
+  left: 9%;
+  bottom: 24px;
   font-size: 12px;
 }
 
 .bottom-content {
-  position: relative;
-  right: 55%;
-  bottom: 76px;
+  right: 45%;
   color: #AAAAAA;
 }
 
 .apply {
-  position: relative;
-  left: 372%;
-  bottom: 77%;
+  position: absolute;
+  left: 122%;
+  bottom: 80%;
 }
 
 .apply-button {
@@ -245,4 +243,15 @@
   border-radius: 5px;
   font-family: $font-family-heading;
   font-size: 14px;
+}
+
+.career-container {
+  position: relative;
+  bottom: 100px;
+  left: 2%;
+}
+
+.career-row {
+  margin-left: 0;
+  margin-right: 0;
 }
