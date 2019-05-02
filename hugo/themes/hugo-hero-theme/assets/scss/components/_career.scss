@@ -203,15 +203,13 @@
   font-size: 1.8rem;
   font-family: $font-family-futura;
   color: #4A4A4a;
-  position: relative;
   opacity: 0.6;
-  left: 25.3%;
   white-space: nowrap;
-  @media (max-width: 414px) {
-    left: 7%;
+  @include media-breakpoint-up(sm) {
+    padding-left: 50px;
   }
-  @include media-breakpoint-up(md) {
-    left: 7%;
+  @include media-breakpoint-up(lg) {
+    padding-left: 70px;
   }
 }
 
@@ -305,12 +303,4 @@
 
 .sales-div {
   left: 0;
-  @include media-breakpoint-down(sm) {
-    position: relative;
-    left: 33%;
-  }
-  @include media-breakpoint-down(xl) {
-    position: relative;
-    left: 7%;
-  }
 }
