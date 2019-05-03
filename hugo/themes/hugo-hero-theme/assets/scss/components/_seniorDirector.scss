@@ -1,0 +1,49 @@
+.title {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 145px;
+    font-family: $font-family-futura;
+    color: #484848;
+    font-size: 2em;
+}
+
+.location {
+    margin-left: 146px;
+    margin-top: 10px;
+    color: #9C9C9C
+}
+
+.term {
+    margin-left: 282px;
+    position: relative;
+    bottom: 25px;
+    color: #9C9C9C;
+}
+
+.content {
+    padding-bottom: 20px;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.position {
+    margin-bottom: 60px;
+}
+
+.out-of-state {
+    font-weight: bold;
+}
+
+.back-button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.bottom-apply {
+    margin-top: 70px;
+}
+
+.apply-button {
+    cursor: pointer;
+}
