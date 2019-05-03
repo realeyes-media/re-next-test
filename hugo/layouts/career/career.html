@@ -20,7 +20,7 @@
                     <div class="col-12">
                         <div class="feature-career">
                            {{ if .position }}
-                                <div class="feature-position">{{ .position }}</div>
+                                <a href="{{ .Site.BaseURL }}/mobile-dev" class="feature-position">{{ .position }}</a>
                                 {{ end }}
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                             <div class="col-12">
                                 <div class="feature-career">
                                    {{ if .position }}
-                                        <div class="feature-position">{{ .position }}</div>
+                                        <a class="feature-position">{{ .position }}</a>
                                         {{ end }}
                                     </div>
                                 </div>
