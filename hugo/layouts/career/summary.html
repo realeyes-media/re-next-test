@@ -1,26 +1,27 @@
-{{/*  <div class="blog">
-    <div class='{{ delimit .Params.categories "-card " }}-card'>
-        <div class="blog-content pt-2">
-            <h3 class="blog-title">
-                {{ .Title }}
-            </h3>
-            <p>By {{ .Params.author }} <span class="pl-1">{{ .PublishDate.Format "January 2, 2006" }}</span></p>
+    <div class="position-content">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="careerTitle">{{.Title}}</h1>
+            <hr class="underline">
         </div>
-    </div>
-</div>  */}}
+        <div class="container-fluid pt-8 pb-8 pt-md-10 pb-md-10 pl-6 pr-6 career-container">
+                <div class="row career-row">
+                    <div class="col-12">
+                        <div class="feature-career">
+                            <a class="feature-position">{{.Params.position}}</a>
+                        </div>
+                    </div>
+                    <div class="col-12  bottom-content">
+                        <h2 class="feature-location text-center">{{.Params.location}}</h2>
+                        <p class="feature-term text-center">{{.Params.term}}</p>
+                        <div class="apply">
+                                <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
+                            </div>  
+                    </div>
+                </div>
+        </div>
+    </div>  
+</div> 
+</div>
 
-<div class="blog">
-        <div class='{{ delimit .Params.categories "-card " }}-card'>
-            {{ if .Params.thumbnail }}
-            <div class="blog-image" style="cursor: pointer;" onclick="window.location='{{ .Permalink }}'">
-                <img src="{{ .Site.BaseURL }}/{{ .Params.thumbnail }}" />
-            </div>
-            {{ end }}
-            <div class="blog-content pt-2">
-                <h3 class="blog-title">
-                    {{ .Title }}
-                </h3>
-                <p>By {{ .Params.author }} <span class="pl-1">{{ .PublishDate.Format "January 2, 2006" }}</span></p>
-            </div>
-        </div>
-    </div>

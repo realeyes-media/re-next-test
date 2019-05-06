@@ -1,10 +1,10 @@
 +++
-date = "2018-03-11"
-categories = ["category1", "marcy"]
+date = "2018-02-11"
 title = 'Engineering'
-careerHeading = "Join the"
-careerSubHeading = 'Stream Team'
-careerContent = "We’re growing, are you ready to grow with us? If you are an innovative, creative thinker who is passionate about technology and how it can change the way people experience media, we would love to hear from you. Email us at careers @ realeyes.com and let us know how you would be a good fit for our team! "
+position = "Mobile Development"
+location = "DENVER, CO"
+term = "FULL-TIME"
+
 +++
 
 Three years ago we decided it was necessary to put a plain-English description of Adobe Connect licensing together. As of March 9th, 2015, Adobe has released Connect 9.4 and with it a whole new licensing model. So, while our old post about licensing has been a great staple for us and the Connect Community, it seems that it is time to put a new version out, rather than just updating the old post.
