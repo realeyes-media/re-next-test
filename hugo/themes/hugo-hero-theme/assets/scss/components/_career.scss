@@ -255,7 +255,11 @@
 //   bottom: 88%;
 //   right: 96%;
 // }
-
+.page-career {
+  .header {
+    display: none;
+  }
+}
 .feature-position {
   font-weight: bold;
   white-space: nowrap;
@@ -371,10 +375,17 @@
   margin-right: 0;
 }
 
-.marketing-position-content {
-  margin-top: -170px;
-}
-
 .sales-div {
   left: 0;
+}
+
+.content {
+  padding-bottom: 20px;
+  width: 71%;
+  margin: 0 auto;
+  p {
+    margin-top: 30px;
+    color: #4A4A4A;
+    margin-bottom: 33px;
+  }
 }
