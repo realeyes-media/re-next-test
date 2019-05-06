@@ -1,6 +1,6 @@
 +++
 date = "2018-02-11"
-title = 'Engineering'
+title = 'ENGINEERING'
 position = "Mobile Developer"
 location = "DENVER, CO"
 term = "FULL-TIME"

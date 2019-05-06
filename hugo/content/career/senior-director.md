@@ -1,7 +1,7 @@
 +++
 date = "2018-03-11"
 title = 'SALES'
-position = "Senior Director of Sales"
+position = "Sr. Director of Sales"
 location = "DENVER, CO"
 term = "FULL-TIME"
 
