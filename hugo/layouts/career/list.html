@@ -5,10 +5,10 @@
 {{ define "main" }}
 {{ partial "career-list-header.html" (dict "background" .Params.careerBackground "heading" .Params.careerHeading "subheading" .Params.careerSubHeading "subheading1"  .Params.careerContent "content" .)}}
 <div class="absolute-who-image col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/team-shot3.jpeg" /></div>
-<div class="container pb-6 pt-4 pb-md-10">
+<div class="container">
     <div class="row">
         {{ range .Pages.ByDate }}
-        <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax">{{ .Render "summary" }}</div>
+        <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax career-column">{{ .Render "summary" }}</div>
         {{ end }}
     </div>
 </div>

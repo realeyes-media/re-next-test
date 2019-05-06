@@ -1,29 +1,25 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-work-single{{ end }}
+{{ define "body_classes" }}page-career{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-<div class="hero-image-setheight-lg" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.backgroundImage }}')"
-    ;>
-
-</div>
 <div class="container pl-3 pr-3">
     <div class="row">
-        <div class="col-12 title-card">
-        <div class="card-content">
-        <h1 class="card-title">{{ .Params.headerColorOne}} <span class="headerColorTwo">{{.Params.headerColorTwo}}</span></h1>
-        <div class="blog-subtitle">{{ .Params.subtitle}}</div>
-        <div class="blog-author">by {{ .Params.author}}</div>
-        </div>
-        {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}" class="previous">&larr; Previous</a>
-        {{ end }}
-        {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink}}" class="next">Next &rarr;</a>
-        {{ end }}
+        <div class="col-12">
+                <div class="button-container">
+                        <button onclick="window.location='{{ .Site.BaseURL }}/career'" class="back-button"> &larr; Back</button>
+                        <hr class="header-underline">
+                <div class="content">
+                        <div class="title">{{.Params.position}}</div>
+                        <div class="location">{{.Params.location}}</div>
+                        <div class="term">{{.Params.term}}</div>
+                    </div>
         </div>
     </div>
-    <div class="blog-content-center">{{ .Content}}</div>
+    <div class="content">{{ .Content}}</div>
+    <div class="content bottom-apply">
+            <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
+        </div> 
 </div>
 </div>
 {{ end }}

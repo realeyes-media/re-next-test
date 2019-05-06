@@ -9,14 +9,14 @@
                 <div class="row career-row">
                     <div class="col-12">
                         <div class="feature-career">
-                            <a class="feature-position">{{.Params.position}}</a>
+                            <a href="{{ .Permalink }}" class="feature-position">{{.Params.position}}</a>
                         </div>
                     </div>
                     <div class="col-12  bottom-content">
                         <h2 class="feature-location text-center">{{.Params.location}}</h2>
                         <p class="feature-term text-center">{{.Params.term}}</p>
                         <div class="apply">
-                                <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
+                             <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
                             </div>  
                     </div>
                 </div>

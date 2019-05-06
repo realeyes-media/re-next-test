@@ -198,7 +198,11 @@
     }
 }
 
-.position-content{
+.position-content:first-child{
+  // margin-top: 180px;
+}
+
+.career-column:first-child {
   margin-top: 180px;
 }
 
