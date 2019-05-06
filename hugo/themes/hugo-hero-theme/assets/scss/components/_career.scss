@@ -198,10 +198,6 @@
     }
 }
 
-.position-content:first-child{
-  // margin-top: 180px;
-}
-
 .career-column:first-child {
   margin-top: 180px;
 }
@@ -381,7 +377,7 @@
 
 .content {
   padding-bottom: 20px;
-  width: 71%;
+  width: 51%;
   margin: 0 auto;
   p {
     margin-top: 30px;
@@ -389,3 +385,12 @@
     margin-bottom: 33px;
   }
 }
+
+.back-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 23xpx;
+  margin-left: 18px;
+ }
