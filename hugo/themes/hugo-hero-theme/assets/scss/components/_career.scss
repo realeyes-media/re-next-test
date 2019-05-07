@@ -383,7 +383,7 @@
   left: 0;
 }
 
-.content {
+.content-position {
   padding-bottom: 20px;
   width: 51%;
   margin: 0 auto;
@@ -391,6 +391,11 @@
     margin-top: 30px;
     color: #4A4A4A;
     margin-bottom: 33px;
+  }
+  ul {
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 20px
   }
 }
 

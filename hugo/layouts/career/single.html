@@ -9,15 +9,15 @@
                 <div class="button-container">
                         <button onclick="window.location='{{ .Site.BaseURL }}/career'" class="back-button"> &larr; BACK</button>
                         <hr class="header-underline">
-                <div class="content">
+                <div class="content-position">
                         <div class="title">{{.Params.position}}</div>
                         <div class="location">{{.Params.location}}</div>
                         <div class="term">{{.Params.term}}</div>
                     </div>
         </div>
     </div>
-    <div class="content">{{ .Content}}</div>
-    <div class="content bottom-apply">
+    <div class="content-position">{{ .Content}}</div>
+    <div class="content-position bottom-apply">
             <button onclick="window.location='{{ .Site.BaseURL }}/contact#myForm'" class="apply-button">Apply</button>
         </div> 
 </div>
