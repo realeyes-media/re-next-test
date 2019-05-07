@@ -391,6 +391,42 @@
   border: none;
   background: none;
   cursor: pointer;
-  margin-top: 23xpx;
+  margin-top: 23px;
   margin-left: 18px;
  }
+
+ .bottom-apply {
+  margin-top: 18px;
+  margin-bottom: 70px;
+}
+
+.term {
+  position: relative;
+  bottom: 25px;
+  color: #9C9C9C;
+  font-weight: bold;
+}
+
+.location {
+  margin-left: 126px;
+  margin-top: 10px;
+  color: #9C9C9C;
+  font-weight: bold;
+  @include media-breakpoint-down(sm) {
+      position: relative;
+      margin-bottom: 40px;
+      margin-left: 0px;
+      margin-top: 0px;
+  }
+}
+
+.header-underline {
+  margin-top: 17px;
+}
+
+.title {
+  font-weight: bold;
+  font-family: $font-family-futura;
+  color: #484848;
+  font-size: 2em;
+}
