@@ -1,13 +1,10 @@
 .career-image {
     background-size: cover;
     background-repeat: no-repeat;
-    // background-position: top center;
     background-blend-mode: overlay;
     background-color: #A3C281;
-    // height: 400px;
     position: relative;
     padding-top: 60px;
-    // padding-bottom: 8rem;
     .container {
       height: 100%;
       display: flex;
@@ -72,9 +69,6 @@
       font-weight: normal;
     }
   }
-  .career-image-fullscreen {
-    // height: 105vh;
-  }
   .career-image-setheight {
     height: 460px;
   }
@@ -118,7 +112,6 @@
   }
   
   .absolute-career-image {
-    // display: none;
     @include media-breakpoint-up(xs) {
         position: relative;
         width: 100%;
@@ -128,7 +121,6 @@
     @include media-breakpoint-up(sm) {
         position: relative;
         width: 100%;
-        // height: 100%;
         padding: 0;
     }
 
@@ -244,11 +236,6 @@
   }
 }
 
-// .feature-career {
-//   position: relative;
-//   bottom: 88%;
-//   right: 96%;
-// }
 .page-career {
   .header {
     display: none;
