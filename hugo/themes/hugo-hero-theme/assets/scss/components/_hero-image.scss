@@ -177,11 +177,11 @@
   }
 }
 
-.hero-image-fullscreen {
-  @include media-breakpoint-up(md) {
-    height: 100%;
-  }
-}
+// .hero-image-fullscreen {
+//   @include media-breakpoint-up(md) {
+//     height: 100%;
+//   }
+// }
 
 .hero-image-setheight {
   height: 225px;
@@ -415,11 +415,11 @@
     }
   }
 
-  .hero-image-fullscreen {
-    @include media-breakpoint-up(md) {
-      height: 100%;
-    }
-  }
+  // .hero-image-fullscreen {
+  //   @include media-breakpoint-up(md) {
+  //     height: 100%;
+  //   }
+  // }
 
   .hero-image-setheight {
     height: 460px;
