@@ -73,7 +73,7 @@
     }
   }
   .career-image-fullscreen {
-    height: 105vh;
+    // height: 105vh;
   }
   .career-image-setheight {
     height: 460px;
@@ -104,13 +104,14 @@
 
   .career-inner-container {
     margin-top: 20%;
-    margin-bottom: 54%;
+    margin-bottom: 0%;
     @include media-breakpoint-up(md) {
       margin-top: 12%;
       margin-bottom: 5%;
       width: 100%;
       padding-right: 10px;
       padding-left: 10px;
+      padding-bottom: 5%;
       margin-right: auto;
       margin-left: auto;
     }
