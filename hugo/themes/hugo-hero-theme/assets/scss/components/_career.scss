@@ -297,7 +297,10 @@
   @include media-breakpoint-up(xs) {
     right: 31%;
     @media (min-width: 360px) {
-      right: 30%;
+      right: 29.6%;
+    }
+    @media (min-width: 370px) {
+      right: 30.4%;
     }
     @media (min-width: 411px) {
       right: 33%;
@@ -310,10 +313,10 @@
     right: 42%;
   }
   @include media-breakpoint-up(lg) {
-    right: 44%;
+    right: 44.2%;
   }
   @include media-breakpoint-up(xl) {
-    right: 45%;
+    right: 45.2%;
   }
 }
 
