@@ -1,13 +1,10 @@
 .contact-image {
+    padding-top: 60px;
     background-size: cover;
     background-repeat: no-repeat;
-    // background-position: top center;
-    background-blend-mode: overlay;
-    background-color: #84AFC4;
-    height: 400px;
+    background-position: top center;
     position: relative;
-    padding-top: 60px;
-    // padding-bottom: 8rem;
+    background-color: #84AFC4;
     .container {
       height: 100%;
       display: flex;
@@ -65,9 +62,9 @@
       font-weight: normal;
     }
   }
-  .contact-image-fullscreen {
-    height: 100%;
-  }
+  // .contact-image-fullscreen {
+  //   height: 105vh;
+  // }
   .contact-image-setheight {
     height: 460px;
   }
@@ -88,12 +85,18 @@
       float: right;
   }
 
-  .secondInfo{
-    float: right;
-    position: absolute;
+  .secondInfo {
     top: 49%;
     right: 10%;
     text-align: right;
+    @include media-breakpoint-up(md) {
+      float: right;
+      position: absolute;
+    }
+    // @include media-breakpoint-up(lg) {
+    //   float: right;
+    //   position: absolute;
+    // }
   }
   
 
@@ -105,15 +108,16 @@
 
   .innerContainer {
     margin-top: 40%;
-    margin-bottom: 54%;
+    margin-bottom: 0%;
     @include media-breakpoint-up(md) {
       margin-top: 12%;
-      margin-bottom: 5%;
+      margin-bottom: 0%;
       width: 100%;
       padding-right: 10px;
       padding-left: 10px;
       margin-right: auto;
       margin-left: auto;
+      padding-bottom: 45px;
     }
   }
 

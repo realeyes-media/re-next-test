@@ -4,7 +4,7 @@
     // background-position: top center;
     background-blend-mode: overlay;
     background-color: #A3C281;
-    height: 400px;
+    // height: 400px;
     position: relative;
     padding-top: 60px;
     // padding-bottom: 8rem;
@@ -73,7 +73,7 @@
     }
   }
   .career-image-fullscreen {
-    height: 100%;
+    height: 105vh;
   }
   .career-image-setheight {
     height: 460px;
@@ -93,14 +93,6 @@
 
   .contactInfo {
       float: right;
-  }
-
-  .secondInfo{
-    float: right;
-    position: absolute;
-    top: 49%;
-    right: 10%;
-    text-align: right;
   }
   
 
