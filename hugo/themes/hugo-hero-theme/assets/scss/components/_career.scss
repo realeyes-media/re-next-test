@@ -191,46 +191,29 @@
 
 .underline { 
   display: block;
-  margin-before: 0.5em;
-  margin-after: 0.5em;
-  margin-start: auto;
-  margin-end: auto;
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
   width: 80px;
   right: 39%;
-  position: relative;
   margin-top: 36px;
   margin-bottom: 40px;
+  border: 0;
+  height: 2px;
+  background-color: rgba(0,0,0,.1);
+  margin-left: 7.5%;
   @include media-breakpoint-up(xs) {
-    right: 37%;
-    @media (min-width: 414px) {
-      right: 39%;
-    }
-    @media (min-width: 411px) {
-      right: 39%;
-    }
-    @media (min-width: 375px) {
-      right: 39%;
-    }
-    @media (max-width: 360px) {
-      right: 37%;
-    }
+    margin-left: 0.5%;
   }
   @include media-breakpoint-up(sm) {
-    right: 32%;
+    margin-left: 9.8%;
   }
   @include media-breakpoint-up(md) {
-    right: 37%;
-  }
-
-  @include media-breakpoint-up(lg) {
-    right: 38%;
+    margin-left: 7.5%;
   }
 
   @include media-breakpoint-up(xl) {
-    right: 40%;
+    margin-left: 6.5%;
   }
 }
 
@@ -361,7 +344,7 @@
     left: -2%;
   }
   @include media-breakpoint-up(md) {
-    left: -2%;
+    left: -1.5%;
   }
 
   @include media-breakpoint-up(lg) {
