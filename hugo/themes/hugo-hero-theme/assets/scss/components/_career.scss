@@ -183,12 +183,9 @@
     }
 }
 
-.career-column:first-child {
-  margin-top: 180px;
-}
 
-.career-column:last-child {
-  margin-bottom: 115px;
+
+.career-column {
   margin-top: -50px;
 }
 
@@ -234,6 +231,10 @@
   @include media-breakpoint-up(lg) {
     padding-left: 70px;
   }
+}
+
+.category-container{
+  margin-top: 150px;
 }
 
 .page-career {
@@ -327,7 +328,7 @@
 
 .career-container {
   position: relative;
-  bottom: 80px;
+  bottom: 40px;
   left: 2%;
   @include media-breakpoint-up(xs) {
     left: -17%;
@@ -342,15 +343,15 @@
     left: -2%;
   }
   @include media-breakpoint-up(md) {
-    left: -1%;
+    left: -3%;
   }
 
   @include media-breakpoint-up(lg) {
-    left: 1%;
+    left: 0%;
   }
 
   @include media-breakpoint-up(xl) {
-    left: 1%;
+    left: 0%;
   }
 }
 
@@ -426,4 +427,8 @@
   font-family: $font-family-futura;
   color: #484848;
   font-size: 2em;
+}
+
+.category-row {
+  margin-bottom: 100px;
 }
