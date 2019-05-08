@@ -7,25 +7,16 @@
 <div class="absolute-career-image  col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/team-shot3.jpeg" /></div>
 <div class="container">
     <div class="row">
-            {{ range where .Site.Data.jobTypes ".jobType" "ENGINEERING"}}
+            {{ range .Site.Data.jobTypes}}
             <div class="col-12">
-                    <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax career-column careerTitle">{{ .jobType }}</div>
+                    <div class="col-12 tax careerTitle">{{ .jobType }}</div>
                     <hr class="underline">
-                    {{end}}
-                    {{ range where .Pages.ByDate "Params.title" "ENGINEERING" }}
+              
+                    {{ range where $.Pages.ByDate "Params.title" .jobType }}
                     <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax career-column">{{ .Render "summary" }}</div>
                     {{ end }}
             </div>
-
-            {{ range where .Site.Data.jobTypes ".jobType" "SALES"}}
-            <div class="col-12">
-                    <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax career-column careerTitle">{{ .jobType }}</div>
-                    <hr class="underline">
-                    {{end}}
-                    {{ range where .Pages.ByDate "Params.title" "SALES" }}
-                    <div class="col-12 mr-0 ml-0 pr-0 pl-0 tax career-column">{{ .Render "summary" }}</div>
-                    {{ end }}
-            </div>
+    {{ end }}
     </div>
 </div>
 {{ end }}

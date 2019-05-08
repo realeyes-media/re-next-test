@@ -1,4 +1,4 @@
-+++
+<!-- +++
 date = "2018-03-11"
 title = 'SALES'
 position = "Poop"
@@ -35,4 +35,4 @@ In this position, you will be working closely with the CEO, CTO/COO and marketin
 * Strong analytical, critical thinking and problem solving skills. 
 * Exceptional communication skills, written and verbal 
 * Passion for technology and aptitude to learn new technologies 
-* Knowledge of technologies and applications such as Salesforce, Github, etc.
+* Knowledge of technologies and applications such as Salesforce, Github, etc. -->
