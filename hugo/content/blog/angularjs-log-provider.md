@@ -27,7 +27,7 @@ You can disable logging (AngularJS 1.1.2+) by calling
 $logProvider.debugEnabled(false);
 
 Example:
-<iframe src="http://jsfiddle.net/jccrosby/N2B6R/embedded/js,html,result" height="300" width="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/304jm612/2/embedded/js,html,result" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Extending
 
