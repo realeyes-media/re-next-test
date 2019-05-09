@@ -188,10 +188,26 @@
 }
 
 .hero-image-setheight-lg {
-  height: 57vh;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -1vh;
+  @include media-breakpoint-down(xs) {
+    height: 53vh;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 80vh;
+  }
+
+  @media (width: 768px) {
+    height: 53vh;
+  }
+  @media (width: 800px) {
+    height: 40vh;
+  }
+  @media (width: 1024px) {
+    height: 53vh;
+  }
 }
 
 #video-background {
