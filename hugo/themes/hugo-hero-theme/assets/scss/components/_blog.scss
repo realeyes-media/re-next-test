@@ -338,3 +338,19 @@
     }
 
 
+    .blog-container {
+        @include media-breakpoint-up(md) {
+            max-width: 1150px; 
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 1150px; 
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 1140px;
+        }
+        
+    }
+
+
