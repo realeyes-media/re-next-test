@@ -17,7 +17,7 @@ Logging and debugging is a daily occurrence when developing JavaScript based app
 Enabling the $logProvider is as simple as injecting the $log object into your object and then calling $log.debug(); to send logs to the console.
 
 Example:
-<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/qabwzs2h/2/embedded/js,html,css,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/qabwzs2h/2/embedded/js,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 ## Turning off logging
