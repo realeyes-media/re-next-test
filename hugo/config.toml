@@ -37,6 +37,11 @@ relativeURLs = true
 #     weight = 3
 
 [[menu.main]]
+    name = "Careers"
+    url = "/career/"
+    weight = 3
+
+[[menu.main]]
     name = "Contact Us"
     url = "/contact/"
     weight = 4
