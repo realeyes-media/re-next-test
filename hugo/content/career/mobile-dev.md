@@ -13,7 +13,7 @@ We are a fun, thriving, internationally-recognized streaming media development f
 
 
 
-## **Developer candidates MUST have:**
+#### **Developer candidates MUST have:**
 * Ability to work onsite, full time at RealEyes Media in Denver, CO
 * Solid knowledge of OOP principles and code architecture
 * Solid knowledge of at least one native mobile development language (Java/Kotlin/Obj-C/Swift)
@@ -26,7 +26,7 @@ We are a fun, thriving, internationally-recognized streaming media development f
 * 3+ years experience working as a developer on a team
 * Must be able to pass a state & federal background check
 
-## **The following are bonus:**
+#### **The following are bonus:**
 * Real world experience with both iOS development and Android development
 * Familiar with Google Chromecast library
 * Experience with in app purchasing logic and requirements
@@ -40,15 +40,15 @@ We are a fun, thriving, internationally-recognized streaming media development f
 * Experience with Angular JS & full stack development
 * Experience with Node.JS
 
-## **If you are an Android dev, this is what we’re looking for:**
+#### **If you are an Android dev, this is what we’re looking for:**
 * 2+ years of real world Android mobile development skills (Java or Kotlin)
 * Knowledge of application submission & distribution through the store
 
-## **If you are an iOS/TVOS dev, this is what we’re looking for:**
+#### **If you are an iOS/TVOS dev, this is what we’re looking for:**
 * 3+ years of real world Objective C/Swift skills (Swift preferred)
 * Knowledge of application submission distribution through the store
 
-## **Potential Responsibilities**
+#### **Potential Responsibilities**
 * Code native mobile and set-top device applications
 * Work in a variety of development frameworks
 * Potentially provide development support to the Java or JavaScript teams during spare cycles

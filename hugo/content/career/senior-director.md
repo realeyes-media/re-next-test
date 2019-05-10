@@ -13,7 +13,7 @@ RealEyes is looking for a motivated sales and business development executive wit
 
 In this position, you will be working closely with the CEO, CTO/COO and marketing to develop targeted strategies and messaging in order to drive opportunities for new business and to get new leads. The position offers great opportunities to help grow and lead the market facing effort and team. We want to partner with someone who loves to win and is willing go above and beyond, both for RealEyes as well as our customers. 
 
-## **Your Responsibilities:**
+#### **Your Responsibilities:**
 * Drive new business, through proactive development and management of RE’s inbound leads, partnerships, and personal outreach to prospects.
 *  Deliver winning pitches to prospective clients and drive RFP/Contracting processes.
 * Drive strategy/approach to developing sales collateral. 
@@ -26,7 +26,7 @@ In this position, you will be working closely with the CEO, CTO/COO and marketin
 * Travel as needed for conferences and customer meetings (material travel anticipated). 
 * Partner with CEO / finance to manage client engagement arcs and billing cycles, and drive repeatable revenue for pipeline consistency. 
 
-## **Our Requirements:**
+#### **Our Requirements:**
 * 5+ years of B2B/B2D and/or SaaS sales experience in a top performing, revenue closing executive role. 
 * Experience of selling streaming media and/or video infrastructure solutions a huge plus; or experience and relationships from selling other solutions to the same target client base 
 * Demonstrated ability to grow and lead a team of sales and matrixed professionals. 
