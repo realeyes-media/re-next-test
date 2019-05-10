@@ -380,7 +380,7 @@
 
 .content-position {
   padding-bottom: 20px;
-  width: 51%;
+  width: 71%;
   margin: 0 auto;
   p {
     margin-top: 30px;
@@ -433,7 +433,17 @@
 }
 
 .header-underline {
-  margin-top: 17px;
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 101%;
+  margin-top: 36px;
+  margin-bottom: 40px;
+  border: 0;
+  height: 2px;
+  background-color: rgba(0,0,0,.1);
+  margin-left: -0.5%;
 }
 
 .title {
