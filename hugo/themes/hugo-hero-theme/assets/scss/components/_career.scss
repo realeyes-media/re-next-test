@@ -243,6 +243,12 @@
     display: none;
   }
 }
+
+.feature-career {
+  @media (min-width: 320px) {
+    margin-left: -12px;
+  }
+}
 .feature-position {
   font-weight: bold;
   white-space: nowrap;
@@ -325,6 +331,10 @@
   border-radius: 5px;
   font-family: $font-family-heading;
   font-size: 14px;
+  @media (min-width: 320px) {
+    margin-left: 8px;
+  }
+
 }
 
 .career-container {
