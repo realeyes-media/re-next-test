@@ -9,7 +9,7 @@ term = "FULL-TIME"
 
 RealEyes Media seeks a whip-smart, organized, talented, detailed, even-keeled, and über-dedicated native mobile application developer to join our team.  Candidates must be proactive and naturally at home in an organic, team-centered environment.
 
-We are a fun, thriving, internationally-recognized streaming media development firm specializing in interactive application development using emerging technologies. Our work ranges from powerful administrative interfaces to major sports/entertainment & enterprise applications that support millions of users. Our clients include NBC Sports, Oracle, EA Games, Viacom,IBM and many others. Our applications focus on video-centric experiences, so if you like streaming video this is a good place for you.
+We are a fun, thriving, internationally-recognized streaming media development firm specializing in interactive application development using emerging technologies. Our work ranges from powerful administrative interfaces to major sports/entertainment & enterprise applications that support millions of users. Our clients include NBC Sports, Oracle, EA Games, Viacom, IBM and many others. Our applications focus on video-centric experiences, so if you like streaming video this is a good place for you.
 
 
 
