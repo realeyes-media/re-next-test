@@ -2,7 +2,7 @@
 title: 'Home'
 date: 2018-02-12T15:37:57+07:00
 heroHeading: Stream It
-heroSubheading: Like the world is watching.
+heroSubheading: Like The World Is Watching.
 heroServiceOne: Livestream Solutions
 heroServiceTwo: Bespoke App Development
 heroServiceThree: Media Workflow Intelligence
