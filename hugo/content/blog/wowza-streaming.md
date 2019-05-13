@@ -34,20 +34,20 @@ The third option that I found and ultimately followed through with was to create
 
 The first step is to make a standard HTTP Request for the contents playlist manifest.
 
-![](http://realeyes.com/wp-content/uploads/playlist_request.png)
+![](/img/blog-content/playlist-request.png)
 
 Once the playlist is requested I created a Gaussian Random Timer with a deviation of 3000 ms and a constant delay of 1000 ms. This creates a delay between subsequent requests with a minimum delay of 0 seconds and maximum delay of 4 seconds with a Gaussian curve distribution (similar to a symmetric bell curve).
 
-![](http://realeyes.com/wp-content/uploads/Screen-Shot-2015-08-14-at-10.43.24-AM.png)
+![](/img/blog-content/random-timer.png)
 
 The next step is to parse the response of the playlist request for a list of chunk-lists using a Regular Expression Extractor.
 
-![](http://realeyes.com/wp-content/uploads/Screen-Shot-2015-08-14-at-10.43.27-AM.png)
+![](/img/blog-content/regex-extractor.png)
 
 Then using a ForeachController that will loop through each chunk provided by the chunk-list and make another HTTP Request to the chunklist manifest.
 
 ![](http://realeyes.com/wp-content/uploads/chunk_loop.png)
-![](http://realeyes.com/wp-content/uploads/chunk_request.png)
+![](/img/blog-content/chunk-request.png)
 
 Now we perform the same process to extract the stream fragments from the chunk manifests.
 
