@@ -600,7 +600,7 @@ to{width: 38%;}
     font-size: 3rem;
     width: 100%;
     margin-left: 0rem;
-    right: 25%;
+    right: 35%;
   }
 
   .streamIt {
@@ -620,10 +620,10 @@ to{width: 38%;}
       width: 0;
     }
     50% {
-      width: 12em;
+      width: 16.5em;
     }
     100% {  /* 50% of this animation is now a pause */
-      width: 12em;
+      width: 16.5em;
     }
   }
 
