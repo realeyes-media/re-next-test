@@ -14,14 +14,14 @@ We are a fun, thriving, internationally-recognized streaming media development f
 
 
 #### **Developer candidates MUST have:**
-* Ability to work onsite, full time at RealEyes Media in Denver, CO
+* Ability to work onsite, full-time at RealEyes Media in Denver, CO
 * Solid knowledge of OOP principles and code architecture
 * Solid knowledge of at least one native mobile development language (Java/Kotlin/Obj-C/Swift)
 * Exceptional written and verbal communication skills
 * Experience with Agile development processes
-* Ability to generate requirements, estimates and plans for projects
-* Ability to work with teams or as an individual
-* Strong analytical and creative problem solving skills to resolve highly complex software design issues and create new software for one or more products
+* Ability to generate requirements, estimates, and plans for projects
+* Ability to work with teams or individually
+* Strong analytical and creative problem-solving skills to resolve highly complex software design issues and create new software for one or more products
 * Capable of dealing effectively with change
 * 3+ years experience working as a developer on a team
 * Must be able to pass a state & federal background check
@@ -53,7 +53,7 @@ We are a fun, thriving, internationally-recognized streaming media development f
 * Work in a variety of development frameworks
 * Potentially provide development support to the Java or JavaScript teams during spare cycles
 * Work with data models sourced from JSON, XML, and DB queries
-* Work in a DevOps and Agile software development environment with CI and CD.
+* Work in a DevOps and Agile software development environment with CI and CD
 * Analyze, review and modify web systems by designing, maintaining, documenting, testing, developing and monitoring
 
 If you are interested and qualified, please contact us.
