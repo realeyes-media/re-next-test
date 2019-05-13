@@ -448,10 +448,10 @@ to{width: 38%;}
     width: 0;
   }
   50% {
-    width: 12em;
+    width: 16em;
   }
   100% { 
-    width: 12em;
+    width: 16em;
   }
 }
 
@@ -460,10 +460,10 @@ to{width: 38%;}
     width: 0;
   }
   50% {
-    width: 11.8em;
+    width: 16em;
   }
   100% {  
-    width: 11.8em;
+    width: 16em;
   }
 }
 
@@ -471,7 +471,7 @@ to{width: 38%;}
   color: white;
   font-size: 2.3rem;
   text-align: center;
-  margin-left: 4vw;
+  right: 17%;
 }
 }
 
@@ -577,7 +577,7 @@ to{width: 38%;}
 
     .type-writer {
       margin-bottom: 3rem;
-      margin-left: 41%;
+      // margin-left: 41%;
     }
     .line-1{
       position: relative;
@@ -600,7 +600,7 @@ to{width: 38%;}
     font-size: 3rem;
     width: 100%;
     margin-left: 0rem;
-    right: 35%;
+    right: 0%;
   }
 
   .streamIt {
@@ -632,16 +632,22 @@ to{width: 38%;}
       width: 0;
     }
     50% {
-      width: 12em;
+      width: 16.5em;
     }
     100% {  /* 50% of this animation is now a pause */
-      width: 12em;
+      width: 16.5em;
     }
 }
 }
 
 @include media-breakpoint-up(xl) {
-  
+  .mainTitle {
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    margin-left: 0rem;
+    right: 0%;
+  }
 
 }
 
