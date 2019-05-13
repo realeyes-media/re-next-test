@@ -37,3 +37,27 @@
     }
   }
 }
+
+.realeyesLogo {
+  cursor: pointer;
+  font-weight:600;
+}
+
+.trademark {
+  font-size:16px;
+  font-weight:600;
+  position:relative;
+  left:110%;
+  bottom:33px;
+  text-rendering: optimizeLegibility;
+}
+
+.trademarkMobile {
+  font-size:16px;
+  font-weight:600;
+  padding-left: 2px;
+  // position:relative;
+  // left:8.5em;
+  // bottom:33px;
+  // text-rendering: optimizeLegibility;
+}
