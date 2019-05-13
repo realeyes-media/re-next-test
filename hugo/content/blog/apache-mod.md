@@ -31,7 +31,7 @@ Sometimes coming up with the right regex is not enough, especially if you’re u
 
 ### Screenshot
 
-![](http://realeyes.com/wp-content/uploads/2013/10/Screen-Shot-2013-10-11-at-12.12.39-PM.png)
+![](/img/blog-content/htaccess.png)
 
 Here’s what the mod_rewrite rules ended up looking like after it was successfully debugged:
 
