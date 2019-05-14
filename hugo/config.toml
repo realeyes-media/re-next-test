@@ -4,6 +4,7 @@ title = "RealEyes Media"
 themesDir = "themes"
 theme = "hugo-hero-theme"
 relativeURLs = true
+preserveTaxonomyNames=true
 
 [params]
   google_analytics_prod="UA-67705314-1"
