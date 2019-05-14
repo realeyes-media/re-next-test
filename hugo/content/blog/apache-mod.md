@@ -19,7 +19,7 @@ The first tool is RegEx 101. It’s a very fancy tool that not only allows you t
 
 ### Screenshot
 
-![](http://realeyes.com/wp-content/uploads/2013/10/Screen-Shot-2013-10-11-at-12.13.05-PM.png)
+![](/img/blog-content/regex101.png)
 
 Also, regex 101 has some cool sharing features too. For instance, here’s a permalink to a regex that I was playing around with recently for HLS streaming. One note, Apache uses PHP (PCRE) style regex syntax so make sure that’s selected for “Your Regular Expression In:” otherwise you might end up creating a useless regex.
 
@@ -31,7 +31,7 @@ Sometimes coming up with the right regex is not enough, especially if you’re u
 
 ### Screenshot
 
-![](http://realeyes.com/wp-content/uploads/2013/10/Screen-Shot-2013-10-11-at-12.12.39-PM.png)
+![](/img/blog-content/htaccess.png)
 
 Here’s what the mod_rewrite rules ended up looking like after it was successfully debugged:
 
