@@ -110,13 +110,9 @@ Although we really just scratched the surface of what Sublime Text and Regular E
 
 ### Tangents and non sequiturs
 
-1
+1. I’m sure it affects overall search performance, and in general, adding more possibilities to match against will result in more matches being returned – which is good, I suppose, if you’ve run a more limited search already and the code you’re hoping for is not showing up – but if you get back a huge list of questionable relevance then that defeats the entire purpose of searching in the first place.
 
-I’m sure it affects overall search performance, and in general, adding more possibilities to match against will result in more matches being returned – which is good, I suppose, if you’ve run a more limited search already and the code you’re hoping for is not showing up – but if you get back a huge list of questionable relevance then that defeats the entire purpose of searching in the first place.
-
-2
-
-So, actually, I bet you could probably write a search with enough parameters, and a large enough range of proximity that (depending on your system specs and the size of your code base) it would in fact hang or crash Sublime Text – but I think you’d have to be trying fairly deliberately to do that.
+2. So, actually, I bet you could probably write a search with enough parameters, and a large enough range of proximity that (depending on your system specs and the size of your code base) it would in fact hang or crash Sublime Text – but I think you’d have to be trying fairly deliberately to do that.
 
 
 
