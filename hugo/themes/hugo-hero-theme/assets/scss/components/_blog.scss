@@ -28,6 +28,9 @@
         li:hover {
             color: #50E3C2;
         }
+        li::first-letter {
+            text-transform: capitalize;
+        }
     }
     // .search {
     //     position:absolute;

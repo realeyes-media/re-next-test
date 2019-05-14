@@ -6,8 +6,8 @@ date = "2018-10-11"
 title = "Apache mod_rewrite"
 backgroundImage = "img/apache.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Apache", "testing", "rewrite", "regex", "regular expressions", "htaccess", "logging"]
+categories = ["How To"]
 thumbnail = "img/apache-thumbnail.jpg"
 
 +++
