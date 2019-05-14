@@ -46,7 +46,6 @@ The next step is to parse the response of the playlist request for a list of chu
 
 Then using a ForeachController that will loop through each chunk provided by the chunk-list and make another HTTP Request to the chunklist manifest.
 
-![](http://realeyes.com/wp-content/uploads/chunk_loop.png)
 ![](/img/blog-content/chunk-request.png)
 
 Now we perform the same process to extract the stream fragments from the chunk manifests.
