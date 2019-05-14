@@ -7,7 +7,7 @@ title = "Setting the Record Straight on Adobe Connect Licensing Again"
 backgroundImage = "img/docker-server.jpg"
 accentTextColor = ""
 tags = ["blog", "Media Solutions", "Products", "Training"]
-categories = ["category1", "marcy"]
+categories = ["Industry News"]
 thumbnail = "img/docker-thumbnail.jpg"
 
 +++

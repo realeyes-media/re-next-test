@@ -6,8 +6,8 @@ date = "2018-02-19"
 title = "Mobile device testing is necessary, but presents many challenges"
 backgroundImage = "img/mobile.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Mobile device testing", "Mobile Device Emulation", "Emulation", "Chrome’s Dev Tools", "DevTools"]
+categories = ["How To"]
 thumbnail = "img/mobile-thumbnail.jpg"
 
 +++

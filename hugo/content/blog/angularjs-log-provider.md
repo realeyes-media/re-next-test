@@ -5,8 +5,8 @@ date = "2017-04-16"
 title = "Using the AngularJS $logProvider"
 backgroundImage = "img/angularjs.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Angular", "AngularJS", "$logProvider", "JavaScript based applications", "Logging and debugging"]
+categories = ["How To"]
 thumbnail = "img/angularjs-thumbnail.jpg"
 
 +++
