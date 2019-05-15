@@ -35,56 +35,25 @@ function initLunr() {
         });
 }
 
-function initUI() {
-    $results = $("#results");
-    $("#search").keyup(function () {
-        $results.empty();
-
-        // Only trigger a search when 2 chars. at least have been provided
-        var query = $(this).val();
-        if (query.length < 2) {
-            return;
-        }
-
-        var results = search(query);
-
-        renderResults(results);
-    });
-}
-
-/**
- * Trigger a search in lunr and transform the result
- *
- * @param  {String} query
- * @return {Array}  results
- */
 function search(query) {
-    return lunrIndex.query(function (q) {
-        // exact matches should have the highest boost
-        q.term(query, { boost: 100 })
-
-        // prefix matches should be boosted slightly
-        q.term(query, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
-
-        // finally, try a fuzzy search, without any boost
-        q.term(query, { boost: 1, usePipeline: false, editDistance: 1 })
-    }).map((result) => {
-        return pagesIndex.filter(function (page) {
-            return page.href === result.ref;
-        })[0];
-    })
-}
-
-/**
- * Display the 10 first results
- *
- * @param  {Array} results to display
- */
-function renderResults(results) {
+    return lunrIndex.search(query).map(function(result) {
+      return pagesIndex.filter(function(page) {
+        try {
+          console.log(page)
+          return page.href === result.ref;
+        } catch (e) {
+          console.log('whoops')
+        }
+      })[0];
+    });
+  }
+  
+  function renderResults(results) {
     if (!results.length) {
-        return;
+      return;
     }
-
+  
+    // show first ten results
     results.slice(0, 10).forEach(function (result) {
         var $result = $('<li>', {
             class: 'list-group-item',
@@ -93,10 +62,29 @@ function renderResults(results) {
         });
         $results.append($result);
     });
-}
-
-initLunr();
-
-$(document).ready(function () {
+  }
+  
+  function initUI() {
+    $results = $("#results");
+  
+    $("#search").keyup(function(){
+      // empty previous results
+      $results.empty();
+  
+      // trigger search when at least two chars provided.
+      var query = $(this).val();
+      if (query.length < 2) {
+        return;
+      }
+  
+      var results = search(query);
+  
+      renderResults(results);
+    });
+  }
+  
+  initLunr();
+  
+  $(document).ready(function(){
     initUI();
-});
+  });
