@@ -74,7 +74,7 @@ function search(query) {
         q.term(lower, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
 
         // finally, try a fuzzy search, without any boost
-        q.term(lower, { boost: 1, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, editDistance: 3 })
+        q.term(lower, { boost: 1, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, editDistance: 2 })
     }).map((result) => {
         return pagesIndex.filter(function (page) {
             return page.href === result.ref;
