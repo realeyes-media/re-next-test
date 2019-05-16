@@ -384,8 +384,7 @@ function indexSearch() {
         title: frontMatter.title,
         tags: frontMatter.tags,
         categories: frontMatter.categories,
-        href: href,
-        content: S(content[2]).trim().stripTags().stripPunctuation().s
+        href: href
       };
 
       return pageIndex;

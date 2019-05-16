@@ -20,9 +20,6 @@ function initLunr() {
                 this.field("categories", {
                     boost: 30
                 });
-                this.field("content", {
-                    boost: 0
-                });
 
                 this.ref("href");
 
