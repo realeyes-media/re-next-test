@@ -12,7 +12,7 @@ function initLunr() {
             // Also provide their boost level for the ranking
             lunrIndex = lunr(function () {
                 this.field("title", {
-                    boost: 10
+                    boost: 100
                 });
                 this.field("tags", {
                     boost: 5
@@ -60,15 +60,16 @@ function initUI() {
  */
 
 function search(query) {
+    var lower = query.toLowerCase();
     return lunrIndex.query(function (q) {
         // exact matches should have the highest boost
-        q.term(query, {usePipeline: true, boost: 100 })
+        q.term(lower, {usePipeline: true, boost: 150 })
 
         // prefix matches should be boosted slightly
-        q.term(query, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
+        q.term(lower, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
 
         // finally, try a fuzzy search, without any boost
-        q.term(query, { boost: 1, usePipeline: false, editDistance: 3 })
+        q.term(lower, { boost: 10, usePipeline: false, editDistance: 3 })
     }).map((result) => {
         return pagesIndex.filter(function (page) {
             return page.href === result.ref;
