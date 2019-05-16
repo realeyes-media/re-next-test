@@ -11,6 +11,8 @@ function initLunr() {
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
             lunrIndex = lunr(function () {
+                this.pipeline.remove(lunr.stemmer);
+                this.pipeline.remove(lunr.stopWordFilter);
                 this.field("title", {
                     boost: 100
                 });
@@ -21,7 +23,7 @@ function initLunr() {
                     boost: 30
                 });
                 // this.field("content", {
-                //     boost: 1
+                //     boost: 0
                 // });
 
                 this.ref("href");
@@ -65,13 +67,13 @@ function search(query) {
     var lower = query.toLowerCase();
     return lunrIndex.query(function (q) {
         // exact matches should have the highest boost
-        q.term(lower, {usePipeline: true, boost: 150 })
+        q.term(lower, {usePipeline: true, boost: 150, wildcard: lunr.Query.wildcard.TRAILING, editDistance: 3 })
 
         // prefix matches should be boosted slightly
         q.term(lower, { boost: 10, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING })
 
         // finally, try a fuzzy search, without any boost
-        q.term(lower, { boost: 10, usePipeline: false, editDistance: 3 })
+        q.term(lower, { boost: 1, usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, editDistance: 3 })
     }).map((result) => {
         return pagesIndex.filter(function (page) {
             return page.href === result.ref;
