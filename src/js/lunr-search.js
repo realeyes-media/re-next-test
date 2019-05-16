@@ -15,12 +15,14 @@ function initLunr() {
                     boost: 100
                 });
                 this.field("tags", {
-                    boost: 5
+                    boost: 50
                 });
                 this.field("categories", {
-                    boost: 3
+                    boost: 30
                 });
-                this.field("content");
+                // this.field("content", {
+                //     boost: 1
+                // });
 
                 this.ref("href");
 
