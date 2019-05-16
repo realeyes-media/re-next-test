@@ -6,7 +6,7 @@ date = "2018-03-11"
 title = "Setting the Record Straight on Adobe Connect Licensing Again"
 backgroundImage = "img/docker-server.jpg"
 accentTextColor = ""
-tags = ["blog", "Media Solutions", "Products", "Training"]
+tags = ["blog", "Setting the Record Straight on Adobe Connect Licensing Again", "Media Solutions", "Products", "Training"]
 categories = ["Industry News"]
 thumbnail = "img/docker-thumbnail.jpg"
 
