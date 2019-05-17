@@ -6,7 +6,7 @@ weight: 3
 heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'AMEX & RealEyes: Results Lead to a Trusted Partnership'
-heroBackground: 'img/Case Studies Thumbs - Small/Homepage - AMEX - small.jpg'
+heroBackground: 'img/Case-Studies-Thumbs-Small/Homepage-AMEX-small.jpg'
 description: American Express needed help (and fast!) to overcome blockers to launch a major web redesign on time. RealEyes diagnosed and resolved the issues quickly and AMEX hit their launch milestones. A partnership began..
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'
