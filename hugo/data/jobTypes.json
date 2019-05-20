@@ -4,5 +4,8 @@
     },
     {
         "jobType": "SALES"
+    },
+    {
+        "jobType": "OPERATIONS"
     }
 ]

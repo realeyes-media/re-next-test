@@ -1,7 +1,7 @@
 +++
 date = "2018-02-11"
-title = 'SALES'
-position = "Accounting & Operations Assistant"
+title = 'OPERATIONS'
+position = "Accountant/Operations Assistant"
 location = "DENVER, CO"
 term = "FULL-TIME"
 
