@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-services-list{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 {{ partial "blog-list-header.html" (dict "categories" .Site.Taxonomies.categories)}}
 <div class="search-bar pl-2 ml-0 pl-md-5">
