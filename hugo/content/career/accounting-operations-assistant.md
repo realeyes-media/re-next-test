@@ -1,5 +1,5 @@
 +++
-date = "2018-02-11"
+date = "2019-05-20"
 title = 'OPERATIONS'
 position = "Accountant/Operations Assistant"
 location = "DENVER, CO"
