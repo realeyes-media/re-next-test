@@ -6,7 +6,7 @@ date = "2018-02-19"
 title = "Mobile device testing is necessary, but presents many challenges"
 backgroundImage = "img/mobile.jpg"
 accentTextColor = ""
-tags = ["Mobile device testing", "Mobile Device Emulation", "Emulation", "Chrome’s Dev Tools", "DevTools"]
+tags = ["Mobile device testing", "Mobile device testing is necessary, but presents many challenges", "Mobile Device Emulation", "Emulation", "Chrome’s Dev Tools", "DevTools"]
 categories = ["How To"]
 thumbnail = "img/mobile-thumbnail.jpg"
 
@@ -88,7 +88,7 @@ At this point in time, there are some limited capabilities for emulating multi-t
 
 As with most of the options available in the emulation panel, it is possible to turn on or off the touch screen option independent of any other settings.
 
-On the back end of things, touch events will be added in with some of your mouse events. Using this option will not disable mouse events, it simply adds in touch events.  As an example, while “Emulate touch screen” is active, when you click with your mouse, the page will receive a touchstart event in addition to the mousedown event. To see this illustrated, you can visit this Event Listener Testand turn touch screen emulation on and off.
+On the back end of things, touch events will be added in with some of your mouse events. Using this option will not disable mouse events, it simply adds in touch events.  As an example, while “Emulate touch screen” is active, when you click with your mouse, the page will receive a touchstart event in addition to the mousedown event. To see this illustrated, you can visit this Event Listener Test and turn touch screen emulation on and off.
 
 The sensors section also has Geolocation and Accelerometer properties. I think these properties would be best explained by pointing you to some cool little demos that have been created. I encourage you to experiment:  
 *  Geolocation Demo  
