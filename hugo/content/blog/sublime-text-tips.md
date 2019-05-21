@@ -6,7 +6,7 @@ date = "2018-09-10"
 title = "Sublime Text Tips"
 backgroundImage = "img/sublime-text.jpg"
 accentTextColor = ""
-tags = ["Sublime", "regex, text", "regular expressions", "search", "filters", "minify"]
+tags = ["Sublime", "Sublime Text Tips", "regex, text", "regular expressions", "search", "filters", "minify"]
 categories = ["How To"]
 thumbnail = "img/sublime-thumbnail.jpg"
 

@@ -6,7 +6,7 @@ date = "2018-08-26"
 title = "Using JMeter to Load Test Live HLS Concurrency of Wowza Streaming Engine"
 backgroundImage = "img/jmeter.jpg"
 accentTextColor = ""
-tags = ["Jmeter", "load testing", "wowza", "streaming", "hls", "concurrency", "test", "regex", "regular expressions", "optimization", "server", "Gaussian"]
+tags = ["Jmeter", "Using JMeter to Load Test Live HLS Concurrency of Wowza Streaming Engine", "load testing", "wowza", "streaming", "hls", "concurrency", "test", "regex", "regular expressions", "optimization", "server", "Gaussian"]
 categories = ["How To"]
 thumbnail = "img/jmeter-thumbnail.jpg"
 
