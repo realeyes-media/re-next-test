@@ -12,3 +12,4 @@ dist/
 hugo/resources/_gen
 hugo/static/js
 hugo/static/css
+hugo/static/js/lunr/PagesIndex.json
