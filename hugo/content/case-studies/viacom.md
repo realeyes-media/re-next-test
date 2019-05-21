@@ -6,7 +6,7 @@ weight: 2
 heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'Viacom & RealEyes: Customized Solution Content Storage'
-heroBackground: '/img/Case Studies Thumbs - Small/Homepage - Viacom - small.jpg'
+heroBackground: '/img/Case-Studies-Thumbs-Small/Homepage-Viacom-small.jpg'
 description: Viacom set out to move from an HLS dynamic packager to a static packager system. Viacom engaged  RealEyes to develop a custom solution to support their desired media workflows and to develop technology and tools they could easily manage in the future.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'

@@ -9,6 +9,8 @@
 <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
 <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
 <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta property="og:image:secure_url" content="{{.Site.Params.homepage_meta_tags.meta_og_image}}" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
 <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
 <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
@@ -33,11 +35,11 @@
 {{end}}
 
 <div class="company-logo-wrapper">
-    <img class="company-logo" src="img/Company Logos/NBC Sports Group 11.png" alt="" srcset="">
-    <img class="company-logo" src="img/Company Logos/Amex-Logo.png" alt="" srcset="">
-    <img class="company-logo" src="img/Company Logos/EA_Games-Logo.png" alt="" srcset="">
-    <img class="company-logo" src="img/Company Logos/adobe-logo.png" alt="" srcset="">
-    <img class="company-logo" src="img/Company Logos/viacomwhite.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company-Logos/NBC-Sports-Group-11.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company-Logos/Amex-Logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company-Logos/EA_Games-Logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company-Logos/adobe-logo.png" alt="" srcset="">
+    <img class="company-logo" src="img/Company-Logos/viacomwhite.png" alt="" srcset="">
 </div>
 
 {{ .Content }}
