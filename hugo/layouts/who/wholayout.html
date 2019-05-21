@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-who{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 {{ partial "hero-solid-color.html" (dict "background" "#da6161" "heading1" .Params.heroHeading1 "heading2" .Params.heroHeading2 "heading3" .Params.heroHeading3 "subheading" .Params.heroSubHeading "heroContent1" .Params.heroContent1 "heroContent2" .Params.heroContent2 "heroContent3" .Params.heroContent3 "content" .)}}
 {{ $headless := .Site.GetPage "/who/who-content" }}
