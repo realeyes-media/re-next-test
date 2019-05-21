@@ -2,6 +2,11 @@
 {{ define "body_classes" }}page-work-single{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+
+{{ define "meta_tags" }}
+<meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Params.thumbnail }}" />
+{{ end }}
+
 {{ define "main" }}
 <div class="hero-image-setheight-lg" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.backgroundImage }}')"
     ;>

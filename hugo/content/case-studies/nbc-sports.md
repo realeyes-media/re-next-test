@@ -6,7 +6,7 @@ weight: 1
 heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'NBC SPORTS & REALEYES'
-heroBackground: '/img/Case Studies Thumbs - Small/Homepage - NBC Sports 2 - small.png'
+heroBackground: '/img/Case-Studies-Thumbs-Small/Homepage-NBC-Sports-2-small.png'
 description: NBC Sports and RealEyes are longstanding partners. RealEyes’ deep expertise in advanced video player development, large scale streaming delivery systems, and an ability to troubleshoot complex systems and global live events quicker than anyone else has been a great asset to NBC Sports.
 quote: '“To execute not just one but three major events of this size, scale, quality, and stability in such a short duration is unheard of in the digital video delivery landscape. With partners like RealEyes, we look forward to future opportunities to innovate and deliver world class solutions for both NBC Sports Group and our Playmaker Media partners.”'
 quotee: 'Eric Black'

@@ -6,15 +6,15 @@ date = "2018-09-10"
 title = "Sublime Text Tips"
 backgroundImage = "img/sublime-text.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Sublime", "Sublime Text Tips", "regex, text", "regular expressions", "search", "filters", "minify"]
+categories = ["How To"]
 thumbnail = "img/sublime-thumbnail.jpg"
 
 +++
 
 For use in Sublime Text’s “Find In Files…” Dialog (⇧⌘F)
 
-![](http://realeyes.com/wp-content/uploads/overviewScreenshot.jpg)
+![](/img/blog-content/overviewScreenshot.jpg)
 
 Sublime Text offers many, many options for navigating within your project’s code or searching within either a single file, or the entire codebase of the project. The “Find” Menu offers over a dozen different options for Find and Replace, and depending on which you choose, there are 3 separate “Find” Dialog Panels available.
 
@@ -30,7 +30,7 @@ The actual syntax of regex can vary slightly between coding languages (PHP and J
 
 It’s important to note that in order to use these strings in your searches, you will need to enable Regular Expressions in search by ensuring that the “Regular expression” button (functions as a checkbox) is selected. The appearance can vary depending on the theme you are using with Sublime Text, but generally the button displays either “*” or “.*” as an icon.
 
-![](http://realeyes.com/wp-content/uploads/enableRegexScreenshot.jpg)
+![](/img/blog-content/enableRegexScreenshot.jpg)
 
 *While the appearance of these Option Buttons can change depending on the theme in use, I do not recall ever seeing a Sublime Theme change the location or order of the buttons.*
 
@@ -81,7 +81,7 @@ I’d be willing to bet that there’s a much more succinct way of accomplishing
 
 ## Include/Exclude Filters
 
-![](http://realeyes.com/wp-content/uploads/filterScreenshot.jpg)
+![](/img/blog-content/filterScreenshot.jpg)
 
 These are some useful strings to use in the “Where:” field to make your search run faster, and avoid cluttering your results with, say, the entirety of jQuery in it’s minified format, or all of the libraries you’re pulling in with npm/bower/etc.
 

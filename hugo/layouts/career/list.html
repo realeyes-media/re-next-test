@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-services-list{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 {{ partial "career-list-header.html" (dict "background" .Params.careerBackground "heading" .Params.careerHeading "subheading" .Params.careerSubHeading "subheading1"  .Params.careerContent "content" .)}}
 <div class="absolute-career-image  col-sm-12 col-md-5"><img src="{{ .Site.BaseURL }}/img/team-shot3.jpeg" /></div>

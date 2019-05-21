@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-contact{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 
 {{ partial "contact-hero-header.html" (dict "background" .Params.contactBackground "heading" .Params.contactHeading "subheading" .Params.contactSubHeading "content" .)}}

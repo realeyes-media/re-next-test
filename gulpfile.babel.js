@@ -384,15 +384,14 @@ function indexSearch() {
         title: frontMatter.title,
         tags: frontMatter.tags,
         categories: frontMatter.categories,
-        href: href,
-        content: S(content[2]).trim().stripTags().stripPunctuation().s
+        href: href
       };
 
       return pageIndex;
     }
     return
   };
-
+  // fs.unlinkSync("hugo/static/js/lunr/PagesIndex.json")
   fs.writeFileSync("hugo/static/js/lunr/PagesIndex.json", JSON.stringify(indexPages()));
   log(null, "Search index built", gulpConfig.generator.label)
 }

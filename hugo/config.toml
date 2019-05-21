@@ -4,6 +4,8 @@ title = "RealEyes Media"
 themesDir = "themes"
 theme = "hugo-hero-theme"
 relativeURLs = true
+preserveTaxonomyNames = true
+sourceRelativeLinksEval=true
 
 [params]
   google_analytics_prod="UA-67705314-1"
@@ -15,7 +17,7 @@ relativeURLs = true
     meta_og_title = "RealEyes"
     meta_og_type = "website"
     meta_og_url = "http://www.realeyes.com/"
-    meta_og_image = "/img/Final Images/Hompage - optimized delivery workflows.jpg"
+    meta_og_image = "http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg"
     meta_og_description = "RealEyes | Stream It Like The World Is Watching."
     meta_twitter_card = "summary"
     meta_twitter_site = "@realeyesmedia"
