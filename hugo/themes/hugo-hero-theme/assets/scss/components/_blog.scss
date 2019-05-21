@@ -155,11 +155,6 @@
     }
 }
 
-.search-bar:focus{
-    content: "";
-    color: blue;
-}
-
 .search-bar:before {
     content: "\f002";
     font-family: FontAwesome;
