@@ -51,19 +51,6 @@ The Accounting/Operations Assistant will also help to ensure that RealEyes' comm
 * Familiar with the digital media landscape, including mid-level understanding of web and mobile technologies or the desire to learn about the streaming media business, industry, and high level technology
 
 
-#### **If you are an iOS/TVOS dev, this is what we’re looking for:**
-* 3+ years of real world Objective C/Swift skills (Swift preferred)
-* Knowledge of application submission distribution through the store
-
-#### **Potential Responsibilities**
-* Code native mobile and set-top device applications
-* Work in a variety of development frameworks
-* Potentially provide development support to the Java or JavaScript teams during spare cycles
-* Work with data models sourced from JSON, XML, and DB queries
-* Work in a DevOps and Agile software development environment with CI and CD
-* Analyze, review and modify web systems by designing, maintaining, documenting, testing, developing and monitoring
-
-
 **Ability to work onsite, full-time at RealEyes Media in Denver, CO is a requirement. If you are interested and qualified, please contact us.
 Please, no out of state/country applicants or third parties - yes that means you recruiters! Local candidates preferred. Unable to sponsor visas. Candidate's authorized to work without sponsorship are encouraged to apply.
 RealEyes is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, or protected veteran status and will not be discriminated against on the basis of disability.**
