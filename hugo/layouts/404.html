@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html>
+{{ define "header_css" }}{{ end }}
+{{ define "header_classes" }}{{ end }}
 
-<head>
+  <div id="wrapper" class="wrapper">
+    <div class="container pt-9 pb-9 pt-md-13 pb-md-13">
+      <div class="row justify-content-center align-content-between">
+        <div class="col-9 text-center">
+          <h1 class="display-1 text-primary mb-4">Page not found</h1>
+        </div>
+        <div class="col-9 text-center mb-2">
+          <a href="{{ .Site.BaseURL }}" class="btn btn-primary">Home</a>
+        </div>
+        <div class="col-9 text-center mb-2">
+          <a href="{{ .Site.BaseURL }}/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
 
-  <title>Page Not Found</title>
-
-</head>
-<body bgcolor="black">
-
-</body>
-<script>
-    setTimeout(function(){ window.location.href="https://www.realeyes.com"; }, 0);
-</script>
-
-</html>
+  </div>
