@@ -24,7 +24,7 @@ We are a fun, thriving, internationally-recognized streaming media development f
 * The ability to generate requirements, estimates and plans for projects
 * Demonstrated ability to work with teams and take ownership of a project as an individual
 * Strong analytical and creative problem-solving skills to resolve highly complex software design issues and create software for new projects
-* Demonstrated ability to adapt to dynamic requirements and 
+* Demonstrated ability to adapt to dynamic requirements 
 
 
 #### **Responsibilities**
