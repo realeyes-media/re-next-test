@@ -1,7 +1,7 @@
 +++
 date = "2019-05-20"
 title = 'OPERATIONS'
-position = "Accountant/Operations Assistant"
+position = "Accountant / Operations Assistant"
 location = "DENVER, CO"
 term = "FULL-TIME"
 
