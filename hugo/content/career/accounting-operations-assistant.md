@@ -13,7 +13,7 @@ RealEyes is a fun, thriving, internationally-recognized streaming media developm
 
 In assisting the Accounting Manager, the candidate will conduct routine clerical accounting and bookkeeping duties associated with Accounts Receivable, Accounts Payable, Payroll, monthly reconciliations, and other accounting functions with guidance from Accounting Manager.
 
-In assisting Operations, candidate is detail oriented, can learn new technologies and technological terms quickly, and desires a career path in business administration and operations. This position is an excellent opportunity to become familiar with the practices and business operations of a world class streaming media focused digital agency.
+In assisting Operations, candidate is detail-oriented, can learn new technologies and technological terms quickly, and desires a career path in business administration and operations. This position is an excellent opportunity to become familiar with the practices and business operations of a world class streaming media focused digital agency.
 
 The Accounting/Operations Assistant will also help to ensure that RealEyes' communication and documentation processes during the project process are followed.
 
