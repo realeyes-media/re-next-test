@@ -5,8 +5,8 @@ date = "2017-04-16"
 title = "Using the AngularJS $logProvider"
 backgroundImage = "img/angularjs.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Angular", "Using the AngularJS $logProvider", "AngularJS", "$logProvider", "JavaScript based applications", "Logging and debugging"]
+categories = ["How To"]
 thumbnail = "img/angularjs-thumbnail.jpg"
 
 +++
@@ -17,7 +17,8 @@ Logging and debugging is a daily occurrence when developing JavaScript based app
 Enabling the $logProvider is as simple as injecting the $log object into your object and then calling $log.debug(); to send logs to the console.
 
 Example:
-<iframe src="http://jsfiddle.net/jccrosby/7qpzB/embedded/js,html,result" height="300" width="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/qabwzs2h/2/embedded/js,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 
 ## Turning off logging
 
@@ -26,14 +27,14 @@ You can disable logging (AngularJS 1.1.2+) by calling
 $logProvider.debugEnabled(false);
 
 Example:
-<iframe src="http://jsfiddle.net/jccrosby/N2B6R/embedded/js,html,result" height="300" width="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/304jm612/2/embedded/js,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Extending
 
 AngularJS provides a mechanisms to extend the built in $logProvider, $provider.decorator(). An example will get the point across much more quickly than me trying to explain it all.
 
 Example:
-<iframe src="http://jsfiddle.net/jccrosby/d7P5C/embedded/js,html,result" height="300" width="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/bp3289/tfev9j4m/embedded/js,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Basically we intercept the call using decorate so we can add on the features and functionality we need to the $log.debug() call.
 

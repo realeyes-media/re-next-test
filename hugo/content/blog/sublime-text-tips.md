@@ -6,15 +6,15 @@ date = "2018-09-10"
 title = "Sublime Text Tips"
 backgroundImage = "img/sublime-text.jpg"
 accentTextColor = ""
-tags = ["Docker", "Raspberry Pi", "Devices", "Marcy", "Nugent"]
-categories = ["category1", "marcy"]
+tags = ["Sublime", "Sublime Text Tips", "regex, text", "regular expressions", "search", "filters", "minify"]
+categories = ["How To"]
 thumbnail = "img/sublime-thumbnail.jpg"
 
 +++
 
 For use in Sublime Text’s “Find In Files…” Dialog (⇧⌘F)
 
-![](http://realeyes.com/wp-content/uploads/overviewScreenshot.jpg)
+![](/img/blog-content/overviewScreenshot.jpg)
 
 Sublime Text offers many, many options for navigating within your project’s code or searching within either a single file, or the entire codebase of the project. The “Find” Menu offers over a dozen different options for Find and Replace, and depending on which you choose, there are 3 separate “Find” Dialog Panels available.
 
@@ -30,7 +30,7 @@ The actual syntax of regex can vary slightly between coding languages (PHP and J
 
 It’s important to note that in order to use these strings in your searches, you will need to enable Regular Expressions in search by ensuring that the “Regular expression” button (functions as a checkbox) is selected. The appearance can vary depending on the theme you are using with Sublime Text, but generally the button displays either “*” or “.*” as an icon.
 
-![](http://realeyes.com/wp-content/uploads/enableRegexScreenshot.jpg)
+![](/img/blog-content/enableRegexScreenshot.jpg)
 
 *While the appearance of these Option Buttons can change depending on the theme in use, I do not recall ever seeing a Sublime Theme change the location or order of the buttons.*
 
@@ -81,7 +81,7 @@ I’d be willing to bet that there’s a much more succinct way of accomplishing
 
 ## Include/Exclude Filters
 
-![](http://realeyes.com/wp-content/uploads/filterScreenshot.jpg)
+![](/img/blog-content/filterScreenshot.jpg)
 
 These are some useful strings to use in the “Where:” field to make your search run faster, and avoid cluttering your results with, say, the entirety of jQuery in it’s minified format, or all of the libraries you’re pulling in with npm/bower/etc.
 
@@ -110,13 +110,9 @@ Although we really just scratched the surface of what Sublime Text and Regular E
 
 ### Tangents and non sequiturs
 
-1
+1. I’m sure it affects overall search performance, and in general, adding more possibilities to match against will result in more matches being returned – which is good, I suppose, if you’ve run a more limited search already and the code you’re hoping for is not showing up – but if you get back a huge list of questionable relevance then that defeats the entire purpose of searching in the first place.
 
-I’m sure it affects overall search performance, and in general, adding more possibilities to match against will result in more matches being returned – which is good, I suppose, if you’ve run a more limited search already and the code you’re hoping for is not showing up – but if you get back a huge list of questionable relevance then that defeats the entire purpose of searching in the first place.
-
-2
-
-So, actually, I bet you could probably write a search with enough parameters, and a large enough range of proximity that (depending on your system specs and the size of your code base) it would in fact hang or crash Sublime Text – but I think you’d have to be trying fairly deliberately to do that.
+2. So, actually, I bet you could probably write a search with enough parameters, and a large enough range of proximity that (depending on your system specs and the size of your code base) it would in fact hang or crash Sublime Text – but I think you’d have to be trying fairly deliberately to do that.
 
 
 

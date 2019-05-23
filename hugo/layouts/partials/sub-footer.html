@@ -9,9 +9,9 @@
                   <div class="col-12">
                     <div class="sub-footer-inner">
                       <div class="type-writer">
-                      <p class="line-1 anim-typewriter mainTitle">Stream it like you mean it.</p>
+                      <p class="line-1 anim-typewriter mainTitle">Stream it like the world is watching.</p>
                       </div>  
-                    <hr class="hr mx-auto">
+                    <hr class="sub-footer-hr mx-auto">
                     </div>
                   </div>
                 </div>
@@ -25,14 +25,14 @@
             </div>
                 <div class="col-6 secondCol">
                 <div class="sub-footer-inner-bottom">
-                <a class="pageLinks" href="{{ .Site.BaseURL }}/who">TEAM</a>
-                <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CAREERS</a>
-                <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CONTACT US</a>
+                {{/*  <a class="pageLinks" href="{{ .Site.BaseURL }}/who">TEAM</a>  */}}
+                <a class="pageLinks" href="{{ .Site.BaseURL }}/career">CAREERS</a>
+                {{/*  <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CONTACT US</a>  */}}
                 <div class="socialButtons">
-                    <a href="https://www.facebook.com/realeyesmedia" class="fa fa-facebook fa-2x"></a>
-                    <a href="https://twitter.com/realeyesmedia" class="fa fa-twitter fa-2x"></a>
-                    <a href="https://www.instagram.com/realeyesmedia/?hl=en" class="fa fa-instagram fa-2x"></a>
-                    <a href="https://www.linkedin.com/company/realeyes-media" class="fa fa-linkedin fa-2x"></a>
+                    <a href="https://www.facebook.com/realeyesmedia" target="_blank" class="fa fa-facebook fa-2x"></a>
+                    <a href="https://twitter.com/realeyesmedia" target="_blank" class="fa fa-twitter fa-2x"></a>
+                    <a href="https://www.instagram.com/realeyesmedia/?hl=en" target="_blank" class="fa fa-instagram fa-2x"></a>
+                    <a href="https://www.linkedin.com/company/realeyes-media" target="_blank" class="fa fa-linkedin fa-2x"></a>
                 </div>
                </div>
               </div>
@@ -46,16 +46,16 @@
                     <div class="typedtextContainer">
                     <div id="typedtext"></div>
                   </div>
-                  <hr class="hr">
+                  <hr class="sub-footer-hr">
                   </div>
                 </div>
               </div>
           <div class="row">
           <div class="col-12 firstCol">
               <div class="sub-footer-inner-bottom">
-              <!-- <a class="pageLinks" href="{{ .Site.BaseURL }}/who">TEAM</a>
-              <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CAREERS</a>
-              <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CONTACT US</a> -->
+              {{/*  <a class="pageLinks" href="{{ .Site.BaseURL }}/who">TEAM</a>  */}}
+              <a class="pageLinks" href="{{ .Site.BaseURL }}/career">CAREERS</a>
+              {{/*  <a class="pageLinks" href="{{ .Site.BaseURL }}/contact">CONTACT US</a>  */}}
               <div class="socialButtons">
                   <a href="https://www.facebook.com/realeyesmedia" class="fa fa-facebook fa-2x"></a>
                   <a href="https://twitter.com/realeyesmedia" class="fa fa-twitter fa-2x"></a>
@@ -75,7 +75,7 @@
 <script>
     var aText = new Array(
     "Stream it like", 
-    "you mean it."
+    "the world is watching."
     );
     var iSpeed = 55; 
     var iIndex = 0;
@@ -99,7 +99,7 @@
      if (iIndex < aText.length) {
      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
      }
-     if ( iTextPos++ == 14 ) {
+     if ( iTextPos++ == 22 ) {
       iTextPos = 0;
       iIndex++;
       if ( iIndex < aText.length ) {

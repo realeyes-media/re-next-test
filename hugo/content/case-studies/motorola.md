@@ -6,7 +6,7 @@ weight: 6
 heroHeading1: 'A Pivotal Year of'
 heroHeading2: 'Streaming Events'
 heroSubHeading: 'Motorola & RealEyes: Helping Law Enforcement to be Transparent'
-heroBackground: 'img/Case Studies Thumbs - Small/Homepage - Motorola - small.jpg'
+heroBackground: 'img/Case-Studies-Thumbs-Small/Homepage-Motorola-small.jpg'
 description: With the help of RealEyes, Motorola was able to launch an advanced body camera footage product that would allow the public to request and view video while maintaining the privacy of the people being filmed.
 quote: '"Realeyes created an advanced streaming media player with seamless clientside ad stitching for desktop and mobile web, worked as a trusted and valued partner to determine the best format and test multiple levels of redundancy, failover architecture and delivery."'
 quotee: 'Rick Cordelia'

@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-contact{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 
 {{ partial "contact-hero-header.html" (dict "background" .Params.contactBackground "heading" .Params.contactHeading "subheading" .Params.contactSubHeading "content" .)}}
@@ -20,7 +24,7 @@
           <form id="myForm" class="needs-validation" novalidate>
           <div class="form-group">
             <label class="form-label" for="help">How can we help you?</label>
-            <select class="custom-select form-control">
+            <select id="auto-select" class="custom-select form-control">
                 <option value="Development and/or Consulting">Development and/or Consulting</option>
                  <option value="Products">Products</option>
                  <option value="Careers">Careers</option>
@@ -130,5 +134,35 @@
       });
       }, false);
       })();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+{{/*  <script>
+    $(function() {
+      $("#auto-select").val('Careers');
+  });
+</script>  */}}
+<script>
+
+    
+        // your current click function
+        $('.scroll').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top + 'px'
+            }, 1000, 'swing');
+        });
+    
+        // *only* if we have anchor on the url
+        if(window.location.hash) {
+    
+            // smooth scroll to the anchor id
+            $('html, body').animate({
+                scrollTop: $(window.location.hash).offset().top + 'px'
+            }, 1000, 'swing');
+          
+             $("#auto-select").val('Careers');
+          
+        }
 </script>
 {{ end }}

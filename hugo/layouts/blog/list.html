@@ -2,6 +2,10 @@
 {{ define "body_classes" }}page-services-list{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta property="og:image" content="http://static.realeyes.cloud/reWebsite/Hompage-optimized-delivery-workflows.jpg" />
+{{ end }}
+
 {{ define "main" }}
 {{ partial "blog-list-header.html" (dict "categories" .Site.Taxonomies.categories)}}
 <div class="search-bar pl-2 ml-0 pl-md-5">
@@ -9,7 +13,7 @@
     <ul class="list-group" id="results">
     </ul>
 </div>
-<div class="container pb-6 pt-4 pb-md-10">
+<div class="container pb-6 pt-4 pb-md-10 blog-container">
     <div class="row">
         {{ range .Pages.ByDate }}
         <div class="col-12 col-md-4 mr-0 ml-0 pr-0 pl-0 tax">{{ .Render "summary" }}</div>
