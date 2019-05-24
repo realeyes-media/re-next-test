@@ -402,7 +402,7 @@
     iframe {
         width:1px;
         min-width: 100%;
-        height: 300px;
+        *width: 100%;
     }
 
 
