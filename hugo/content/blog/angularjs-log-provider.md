@@ -34,7 +34,7 @@ Example:
 AngularJS provides a mechanisms to extend the built in $logProvider, $provider.decorator(). An example will get the point across much more quickly than me trying to explain it all.
 
 Example:
-<iframe  height="300" src="//jsfiddle.net/bp3289/tfev9j4m/embedded/js,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe  height="300" src="//jsfiddle.net/bp3289/tfev9j4m/embedded/js,html,result" allowfullscreen="allowfullscreen" scrolling="no" frameborder="0"></iframe>
 
 Basically we intercept the call using decorate so we can add on the features and functionality we need to the $log.debug() call.
 
