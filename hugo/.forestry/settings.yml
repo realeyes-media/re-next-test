@@ -51,11 +51,15 @@ sections:
   label: Case studies
   create: all
   match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content/contact
   label: Contact
   create: all
   match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content
   label: Pages
