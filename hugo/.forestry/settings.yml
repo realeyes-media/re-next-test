@@ -37,16 +37,15 @@ sections:
   label: Homepage
   create: all
   match: "**/*"
-- type: directory
-  path: hugo/content/pages
-  label: Pages
-  create: all
-  match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content/404
   label: '404'
   create: all
   match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content/case-studies
   label: Case studies
