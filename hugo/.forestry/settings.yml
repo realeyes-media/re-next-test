@@ -5,8 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: hugo/content/career
-  label: Career
+  path: hugo/content/404
+  label: '404'
   create: all
   match: "**/*"
   templates:
@@ -19,15 +19,8 @@ sections:
   templates:
   - default
 - type: directory
-  path: hugo/content/homepage
-  label: Homepage
-  create: all
-  match: "**/*"
-  templates:
-  - default
-- type: directory
-  path: hugo/content/404
-  label: '404'
+  path: hugo/content/career
+  label: Career
   create: all
   match: "**/*"
   templates:
@@ -42,6 +35,13 @@ sections:
 - type: directory
   path: hugo/content/contact
   label: Contact
+  create: all
+  match: "**/*"
+  templates:
+  - default
+- type: directory
+  path: hugo/content/homepage
+  label: Homepage
   create: all
   match: "**/*"
   templates:
