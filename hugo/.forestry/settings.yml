@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: hugo/content/media
+  label: Media
+  create: all
+  match: "**/*"
+  templates:
+  - default
+- type: directory
   path: hugo/content/events
   label: Events
   create: all
