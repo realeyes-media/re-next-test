@@ -19,13 +19,6 @@ sections:
   templates:
   - default
 - type: directory
-  path: hugo/content/work
-  label: Work
-  create: all
-  match: "**/*"
-  templates:
-  - default
-- type: directory
   path: hugo/content/homepage
   label: Homepage
   create: all
