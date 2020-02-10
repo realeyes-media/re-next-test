@@ -30,6 +30,8 @@ sections:
   label: Who
   create: all
   match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content/homepage
   label: Homepage
