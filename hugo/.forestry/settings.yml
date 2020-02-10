@@ -12,11 +12,6 @@ sections:
   templates:
   - default
 - type: directory
-  path: hugo/content/services
-  label: Services
-  create: all
-  match: "**/*"
-- type: directory
   path: hugo/content/work
   label: Work
   create: all
@@ -56,6 +51,8 @@ sections:
   label: Pages
   create: all
   match: "*"
+  templates:
+  - default
 upload_dir: hugo/static
 public_path: "/static"
 front_matter_path: ''
