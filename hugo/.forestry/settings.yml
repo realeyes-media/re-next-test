@@ -23,6 +23,8 @@ sections:
   label: Work
   create: all
   match: "**/*"
+  templates:
+  - default
 - type: directory
   path: hugo/content/who
   label: Who
